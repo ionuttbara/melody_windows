@@ -845,60 +845,25 @@ Windows Registry Editor Version 5.00
 "Win32PrioritySeparation"=dword:00000038
 
 
-; 003. MMSSVC
+; 003. MMcss
 
-
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile\Tasks\Audio]
-"Affinity"=dword:00000007
-"Background Only"="True"
-"Clock Rate"=dword:00002710
-"GPU Priority"=dword:00000008
-"Priority"=dword:00000006
-"Scheduling Category"="High"
-"SFIO Priority"="Normal"
-
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile\Tasks\Low Latency]
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile\Tasks\Capture]
 "Affinity"=dword:00000000
-"Background Only"="False"
-"BackgroundPriority"=dword:00000000
-"GPU Priority"=dword:00000008
-"Priority"=dword:00000002
+"Background Only"="True"
+"BackgroundPriority"=dword:00000018
+"Clock Rate"=dword:00002710
+"GPU Priority"=dword:00000012
+"Priority"=dword:00000008
 "Scheduling Category"="High"
 "SFIO Priority"="High"
 "Latency Sensitive"="True"
 
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile\Tasks\Audio]
-"Affinity"=dword:00000007
-"Background Only"="True"
-"GPU Priority"=dword:00000001
-"Priority"=dword:00000002
-"Scheduling Category"="High"
-"SFIO Priority"="High"
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile\Tasks\Capture]
-"Affinity"=dword:00000007
-"Background Only"="True"
-"GPU Priority"=dword:00000008
-"Priority"=dword:00000005
-"Scheduling Category"="High"
-"SFIO Priority"="Normal"
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile\Tasks\DisplayPostProcessing]
-"Affinity"=dword:00000000
-"Background Only"="True"
-"BackgroundPriority"=dword:00000008
-"Clock Rate"=dword:00002710
-"GPU Priority"=dword:00000008
-"Priority"=dword:00000008
-"Scheduling Category"="High"
-"SFIO Priority"="Normal"
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile\Tasks\Distribution]
 "Affinity"=dword:00000000
 "Background Only"="True"
 "GPU Priority"=dword:00000008
+"Clock Rate"=dword:00002710
 "Priority"=dword:00000004
 "Scheduling Category"="High"
 "SFIO Priority"="Normal"
@@ -913,42 +878,43 @@ Windows Registry Editor Version 5.00
 "Scheduling Category"="High"
 "SFIO Priority"="Normal"
 
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile\Tasks\Pro Audio]
-"Affinity"=dword:00000007
-"Background Only"="False"
-"GPU Priority"=dword:00000008
-"Priority"=dword:00000001
-"Scheduling Category"="High"
-"SFIO Priority"="Normal"
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile\Tasks\Window Manager]
 "Affinity"=dword:00000007
 "Background Only"="True"
+"Clock Rate"=dword:00002710
 "GPU Priority"=dword:00000008
 "Priority"=dword:00000005
 "Scheduling Category"="High"
 "SFIO Priority"="Normal"
 
 
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile\Tasks\DisplayPostProcessing]
-"Affinity"=dword:00000000
-"Background Only"="True"
-"BackgroundPriority"=dword:00000018
-"Clock Rate"=dword:00002710
-"GPU Priority"=dword:00000012
-"Priority"=dword:00000008
-"Scheduling Category"="High"
-"SFIO Priority"="High"
-"Latency Sensitive"="True"
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile\Tasks\Games]
 "Affinity"=dword:00000000
-"Background Only"="False" 
-"GPU Priority"=dword:00000008
-"Priority"=dword:00000006
+"GPU Priority"=dword:00000012
+"Priority"=dword:00000002
 "Scheduling Category"="High"
 "SFIO Priority"="High"
 
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile\Tasks\DisplayPostProcessing]
+"GPU Priority"=dword:00000008
+"Priority"=dword:00000002
+"Scheduling Category"="High"
+"SFIO Priority"="High"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile\Tasks\Audio]
+"GPU Priority"=dword:00000001
+"Priority"=dword:00000002
+"Scheduling Category"="Medium"
+"SFIO Priority"="High"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile\Tasks\Pro Audio]
+"GPU Priority"=dword:00000001
+"Priority"=dword:00000002
+"Scheduling Category"="High"
+"SFIO Priority"="High"
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile]
 "NoLazyMode"=dword:00000001
@@ -4203,6 +4169,47 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Diagnostics\DiagTrack\Aggregation\Instrumentation\UusFailover]
 "HbStart"=dword:00000000
 
+[-HKEY_CURRENT_USER\Software\Classes\ms-search]
+[-HKEY_CURRENT_USER\Software\Classes\ms-screensketch]
+[-HKEY_CURRENT_USER\Software\Classes\ms-powerautomate]
+[-HKEY_CURRENT_USER\Software\Classes\ms-phone]
+[-HKEY_CURRENT_USER\Software\Classes\ms-people]
+[-HKEY_CURRENT_USER\Software\Classes\ms-officecmd]
+[-HKEY_CURRENT_USER\Software\Classes\ms-penworkspace]
+[-HKEY_CURRENT_USER\Software\Classes\ms-officeapp]
+[-HKEY_CURRENT_USER\Software\Classes\msnweather]
+[-HKEY_CURRENT_USER\Software\Classes\msnnews]
+[-HKEY_CURRENT_USER\Software\Classes\msnews]
+[-HKEY_CURRENT_USER\Software\Classes\ms-getoffice]
+[-HKEY_CURRENT_USER\Software\Classes\ms-meetnowflyout]
+[-HKEY_CURRENT_USER\Software\Classes\ms-get-started]
+[-HKEY_CURRENT_USER\Software\Classes\ms-photos]
+[-HKEY_CURRENT_USER\Software\Classes\ms-screenclip]
+[-HKEY_CURRENT_USER\Software\Classes\msteams]
+[-HKEY_CURRENT_USER\Software\Classes\ms-walk-to]
+[-HKEY_CURRENT_USER\Software\Classes\ms-eyecontrolspeech]
+[-HKEY_CURRENT_USER\Software\Classes\ms-gamebarservices]
+[-HKEY_CURRENT_USER\Software\Classes\ms-gamingoverlay]
+[-HKEY_CURRENT_USER\Software\Classes\ms-default-location]
+[-HKEY_CURRENT_USER\Software\Classes\ms-cortana2]
+[-HKEY_CURRENT_USER\Software\Classes\microsoft-edge-holographic]
+[-HKEY_CURRENT_USER\Software\Classes\microsoft-edge]
+[-HKEY_CURRENT_USER\Software\Classes\ms-contact-support]
+[-HKEY_CURRENT_USER\Software\Classes\microsoftvideo]
+[-HKEY_CURRENT_USER\Software\Classes\microsoft.windows.photos.picker]
+[-HKEY_CURRENT_USER\Software\Classes\microsoft.windows.photos.crop]
+[-HKEY_CURRENT_USER\Software\Classes\microsoft.windows.photos.videoedit]
+[-HKEY_CURRENT_USER\Software\Classes\windows-feedback]
+[-HKEY_CURRENT_USER\Software\Classes\zune]
+[-HKEY_CURRENT_USER\Software\Classes\AppXwrkgv3vjytw2z92anega8abb35xqdnqh]
+[-HKEY_CURRENT_USER\Software\Classes\AppXq0fevzme2pys62n3e0fbqa7peapykr8v]
+[-HKEY_CURRENT_USER\Software\Classes\AppXpzkxgsbx9mzsg8kedsrg63eqxykxrtcx]
+[-HKEY_CURRENT_USER\Software\Classes\AppXbemgape21yns3k5pd4ah40jz06yq6xrk]
+[-HKEY_CURRENT_USER\Software\Classes\AppXe05qdnx2p14g0mw29139zqs9s5n3wcne]
+[-HKEY_CURRENT_USER\Software\Classes\AppXdn5b0j699ka5fqvrr3pgjad0evqarm6d]
+[-HKEY_CURRENT_USER\Software\Classes\AppX7rm9drdg8sk7vqndwj3sdjw11x96jc0y]
+[-HKEY_CURRENT_USER\Software\Classes\AppX90nv6nhay5n6a98fnetv7tpk64pp35es]
+[-HKEY_CURRENT_USER\Software\Classes\AppX3xxs313wwkfjhythsb8q46xdsq8d2cvv]
 
 ;019. Disable Telemetry
 
@@ -5222,7 +5229,7 @@ Windows Registry Editor Version 5.00
 "FeatureSettings"=dword:00000001
 "FeatureSettingsOverride"=dword:00000003
 "FeatureSettingsOverrideMask"=dword:00000003
-"PoolUsageMaximum"=dword:000000c0
+"PoolUsageMaximum"=dword:00000060
 "EnableCfg"=dword:00000000
 "IoPageLockLimit"=dword:ffffffff
 "ProtectionMode"=dword:00000000
@@ -5230,6 +5237,12 @@ Windows Registry Editor Version 5.00
 "MoveImages"=dword:00000000
 "PhysicalAddressExtension"=dword:00000001
 "SecondLevelDataCache"=dword:00003072
+"NonPagedPoolQuota"=dword:00000000
+"NonPagedPoolSize"=dword:00000000
+"PagedPoolQuota"=dword:00000000
+"SessionPoolSize"=dword:000000c0
+"SessionViewSize"=dword:000000c0
+
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\kernel]
 "DpcWatchdogProfileOffset"=dword:00000000
@@ -5900,8 +5913,15 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\kbdclass\Parameters]
 "KeyboardDataQueueSize"=dword:00000032
 
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\PrecisionTouchPad]
+"AAPDisabled"=dword:00000001
+"HorizontalOffset"=dword:00000000
+"RightClickZoneHeight"=dword:00000000
+"RightClickZoneWidth"=dword:00000000
+"SpaceBarOffset"=dword:000003e8
+
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\MMCSS]
-"Start"=dword:00000004
+"Start"=dword:00000002
 
 [HKEY_USERS\.DEFAULT\Control Panel\Mouse]
 "MouseSpeed"="0"
@@ -9670,77 +9690,152 @@ Windows Registry Editor Version 5.00
 ;079. UWP Permission
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\AppPrivacy]
+"LetAppsRunInBackground"=dword:00000002
 "LetAppsAccessPhone"=dword:00000002
-"LetAppsAccessPhone_UserInControlOfTheseApps"=hex(7):00,00
-"LetAppsAccessPhone_ForceAllowTheseApps"=hex(7):00,00
-"LetAppsAccessPhone_ForceDenyTheseApps"=hex(7):00,00
 "LetAppsAccessGazeInput"=dword:00000002
-"LetAppsAccessGazeInput_UserInControlOfTheseApps"=hex(7):00,00
-"LetAppsAccessGazeInput_ForceAllowTheseApps"=hex(7):00,00
-"LetAppsAccessGazeInput_ForceDenyTheseApps"=hex(7):00,00
 "LetAppsAccessCallHistory"=dword:00000002
-"LetAppsAccessCallHistory_UserInControlOfTheseApps"=hex(7):00,00
-"LetAppsAccessCallHistory_ForceAllowTheseApps"=hex(7):00,00
-"LetAppsAccessCallHistory_ForceDenyTheseApps"=hex(7):00,00
 "LetAppsAccessContacts"=dword:00000002
-"LetAppsAccessContacts_UserInControlOfTheseApps"=hex(7):00,00
-"LetAppsAccessContacts_ForceAllowTheseApps"=hex(7):00,00
-"LetAppsAccessContacts_ForceDenyTheseApps"=hex(7):00,00
 "LetAppsGetDiagnosticInfo"=dword:00000002
-"LetAppsGetDiagnosticInfo_UserInControlOfTheseApps"=hex(7):00,00
-"LetAppsGetDiagnosticInfo_ForceAllowTheseApps"=hex(7):00,00
-"LetAppsGetDiagnosticInfo_ForceDenyTheseApps"=hex(7):00,00
 "LetAppsAccessEmail"=dword:00000002
-"LetAppsAccessEmail_UserInControlOfTheseApps"=hex(7):00,00
-"LetAppsAccessEmail_ForceAllowTheseApps"=hex(7):00,00
-"LetAppsAccessEmail_ForceDenyTheseApps"=hex(7):00,00
 "LetAppsAccessLocation"=dword:00000002
-"LetAppsAccessLocation_UserInControlOfTheseApps"=hex(7):00,00
-"LetAppsAccessLocation_ForceAllowTheseApps"=hex(7):00,00
-"LetAppsAccessLocation_ForceDenyTheseApps"=hex(7):00,00
 "LetAppsAccessMessaging"=dword:00000002
-"LetAppsAccessMessaging_UserInControlOfTheseApps"=hex(7):00,00
-"LetAppsAccessMessaging_ForceAllowTheseApps"=hex(7):00,00
-"LetAppsAccessMessaging_ForceDenyTheseApps"=hex(7):00,00
 "LetAppsAccessMotion"=dword:00000002
-"LetAppsAccessMotion_UserInControlOfTheseApps"=hex(7):00,00
-"LetAppsAccessMotion_ForceAllowTheseApps"=hex(7):00,00
-"LetAppsAccessMotion_ForceDenyTheseApps"=hex(7):00,00
 "LetAppsAccessNotifications"=dword:00000002
-"LetAppsAccessNotifications_UserInControlOfTheseApps"=hex(7):00,00
-"LetAppsAccessNotifications_ForceAllowTheseApps"=hex(7):00,00
-"LetAppsAccessNotifications_ForceDenyTheseApps"=hex(7):00,00
 "LetAppsAccessTasks"=dword:00000002
-"LetAppsAccessTasks_UserInControlOfTheseApps"=hex(7):00,00
-"LetAppsAccessTasks_ForceAllowTheseApps"=hex(7):00,00
-"LetAppsAccessTasks_ForceDenyTheseApps"=hex(7):00,00
 "LetAppsAccessCalendar"=dword:00000002
-"LetAppsAccessCalendar_UserInControlOfTheseApps"=hex(7):00,00
-"LetAppsAccessCalendar_ForceAllowTheseApps"=hex(7):00,00
-"LetAppsAccessCalendar_ForceDenyTheseApps"=hex(7):00,00
 "LetAppsAccessTrustedDevices"=dword:00000000
-"LetAppsAccessTrustedDevices_UserInControlOfTheseApps"=hex(7):00,00
-"LetAppsAccessTrustedDevices_ForceAllowTheseApps"=hex(7):00,00
-"LetAppsAccessTrustedDevices_ForceDenyTheseApps"=hex(7):00,00
 "LetAppsAccessBackgroundSpatialPerception"=dword:00000002
-"LetAppsAccessBackgroundSpatialPerception_UserInControlOfTheseApps"=hex(7):00,\
-  00
-"LetAppsAccessBackgroundSpatialPerception_ForceAllowTheseApps"=hex(7):00,00
-"LetAppsAccessBackgroundSpatialPerception_ForceDenyTheseApps"=hex(7):00,00
 "LetAppsActivateWithVoice"=dword:00000002
 "LetAppsActivateWithVoiceAboveLock"=dword:00000002
-"LetAppsSyncWithDevices"=dword:00000001
-"LetAppsSyncWithDevices_UserInControlOfTheseApps"=hex(7):00,00
-"LetAppsSyncWithDevices_ForceAllowTheseApps"=hex(7):00,00
-"LetAppsSyncWithDevices_ForceDenyTheseApps"=hex(7):00,00
+"LetAppsSyncWithDevices"=dword:00000002
 "LetAppsAccessRadios"=dword:00000000
-"LetAppsAccessRadios_UserInControlOfTheseApps"=hex(7):00,00
-"LetAppsAccessRadios_ForceAllowTheseApps"=hex(7):00,00
-"LetAppsAccessRadios_ForceDenyTheseApps"=hex(7):00,00
 "LetAppsAccessAccountInfo"=dword:00000002
-"LetAppsAccessAccountInfo_UserInControlOfTheseApps"=hex(7):00,00
-"LetAppsAccessAccountInfo_ForceAllowTheseApps"=hex(7):00,00
-"LetAppsAccessAccountInfo_ForceDenyTheseApps"=hex(7):00,00
+"LetAppsAccessGraphicsCaptureWithoutBorder"=dword:00000002
+"LetAppsAccessGraphicsCaptureProgrammatic"=dword:00000002
+"LetAppsAccessCamera"=dword:00000001
+"LetAppsAccessMicrophone"=dword:00000001
 
 
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\activity]
+"Value"="Deny"
 
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\appDiagnostics]
+"Value"="Deny"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\appointments]
+"Value"="Allow"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\bluetooth]
+"Value"="Allow"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\bluetoothSync]
+"Value"="Allow"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\broadFileSystemAccess]
+"Value"="Allow"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\cellularData]
+"Value"="Allow"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\chat]
+"Value"="Deny"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\contacts]
+"Value"="Deny"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\documentsLibrary]
+"Value"="Allow"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\downloadsFolder]
+"Value"="Allow"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\email]
+"Value"="Deny"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\gazeInput]
+"Value"="Allow"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\graphicsCaptureProgrammatic]
+"Value"="Deny"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\graphicsCaptureWithoutBorder]
+"Value"="Deny"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\humanInterfaceDevice]
+"Value"="Allow"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\location]
+"Value"="Deny"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\microphone]
+"Value"="Allow"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\microphone\NonPackaged]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\microphone\NonPackaged\C:#Windows#System32#svchost.exe]
+"LastUsedTimeStart"=hex(b):9d,83,cb,79,15,25,d8,01
+"LastUsedTimeStop"=hex(b):14,17,9d,b5,15,25,d8,01
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\musicLibrary]
+"Value"="Allow"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\phoneCall]
+"Value"="Deny"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\phoneCallHistory]
+"Value"="Allow"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\picturesLibrary]
+"Value"="Allow"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\radios]
+"Value"="Allow"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\sensors.custom]
+"Value"="Deny"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\serialCommunication]
+"Value"="Allow"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\usb]
+"Value"="Allow"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\userAccountInformation]
+"Value"="Allow"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\userDataTasks]
+"Value"="Deny"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\userNotificationListener]
+"Value"="Deny"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\videosLibrary]
+"Value"="Allow"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\webcam]
+"Value"="Allow"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\wifiData]
+"Value"="Deny"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\wiFiDirect]
+"Value"="Allow"
+
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\AppModelUnlock]
+"AllowDevelopmentWithoutDevLicense"=dword:00000001
+"AllowAllTrustedApps"=dword:00000001
+
+; Execution powershell
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PowerShell\1\ShellIds\Microsoft.PowerShell]
+"ExecutionPolicy"="Unrestricted"
+
+[HKEY_CURRENT_USER\Software\Microsoft\PowerShell\1\ShellIds\Microsoft.PowerShell]
+"ExecutionPolicy"="Unrestricted"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Explorer]
+"ShowRunAsDifferentUserInStart"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\InputPersonalization]
+"AllowInputPersonalization"=dword:00000000
