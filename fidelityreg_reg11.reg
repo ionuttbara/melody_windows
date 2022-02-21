@@ -2,7 +2,33 @@ Windows Registry Editor Version 5.00
 
 ;000. Task Scheduler Optimizer
 
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PolicyManager\default\Settings\AllowOnlineTips]
+"value"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+"AllowOnlineTips"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\TextInput]
+"AllowLinguisticDataCollection"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Microsoft\Input\TIPC]
+"Enabled"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Microsoft\InputPersonalization]
+"RestrictImplicitInkCollection"=dword:00000001
+"RestrictImplicitTextCollection"=dword:00000001
+
+[HKEY_CURRENT_USER\Software\Microsoft\InputPersonalization\TrainedDataStore]
+"HarvestContacts"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Microsoft\Personalization\Settings]
+"AcceptedPrivacyPolicy"=dword:00000000
+
+
 [-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Tree\Microsoft\Windows\Live]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Tree\Microsoft\Windows\USB]
 
 [-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Tree\Microsoft\Windows\Windows Subsystem For Linux]
 
@@ -119,8 +145,6 @@ Windows Registry Editor Version 5.00
 [-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Tree\Microsoft\Windows\Time Synchronization]
 
 [-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Tree\Microsoft\Windows\UPnP]
-
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Tree\Microsoft\Windows\USB]
 
 [-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Tree\Microsoft\Windows\WaaSMedic]
 
@@ -6491,11 +6515,11 @@ Windows Registry Editor Version 5.00
   ff,00,00,00,ff,ff,ff,ff,00,00,00,00,00,00,00,00
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\USB]
-"AllowIdleIrpInD3"=dword:00000000
+"AllowIdleIrpInD3"=dword:00000001
 "EnhancedPowerManagementEnabled"=dword:00000000
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\USBXHCI\Parameters\Wdf]
-"NoExtraBufferRoom"=dword:00000001
+"NoExtraBufferRoom"=dword:00000000
 
 
 ;045. PSCHED
@@ -7280,8 +7304,6 @@ Windows Registry Editor Version 5.00
 "{D8463C28-4598-4C25-94C4-7E91E059411B}"="v2.31|Action=Block|Active=TRUE|Dir=Out|Protocol=6|App=C:\\Windows\\SysWOW64\\scriptrunner.exe|Name=Block scriptrunner.exe netconns|"
 "{94742D91-C3AB-4EFB-A3CF-3E9001D09065}"="v2.31|Action=Block|Active=TRUE|Dir=Out|Protocol=6|App=C:\\Windows\\system32\\SyncAppvPublishingServer.exe|Name=Block SyncAppvPublishingServer.exe netconns|"
 "{0B5EA8E4-2904-4397-9062-B2E62D18D94F}"="v2.31|Action=Block|Active=TRUE|Dir=Out|Protocol=6|App=C:\\Windows\\SysWOW64\\SyncAppvPublishingServer.exe|Name=Block SyncAppvPublishingServer.exe netconns|"
-"{7EEA5128-2E77-429A-AAA0-1DCE104EA2CF}"="v2.31|Action=Block|Active=TRUE|Dir=Out|Protocol=6|App=C:\\Windows\\system32\\wbem\\wmic.exe|Name=Block wmic.exe netconns|"
-"{B5222588-9C53-4CA5-ADB1-5463F5BB381A}"="v2.31|Action=Block|Active=TRUE|Dir=Out|Protocol=6|App=C:\\Windows\\SysWOW64\\wbem\\wmic.exe|Name=Block wmic.exe netconns|"
 "{EED9D903-BE0E-49E1-9063-58DD50FE876B}"="v2.31|Action=Block|Active=TRUE|Dir=Out|Protocol=6|App=C:\\Windows\\system32\\wscript.exe|Name=Block wscript.exe netconns|"
 "{9BA3B229-DBAA-46C7-B6A0-9C83F159DF70}"="v2.31|Action=Block|Active=TRUE|Dir=Out|Protocol=6|App=C:\\Windows\\SysWOW64\\wscript.exe|Name=Block wscript.exe netconns|"
 "{B8CB1011-3DA3-4608-8386-DE12D17669CC}"="v2.31|Action=Block|Active=TRUE|Dir=Out|Protocol=6|App=C:\\Program Files (x86)\\Microsoft Office\\root\\client\\AppVLP.exe|Name=Block appvlp.exe netconns|"
@@ -7314,8 +7336,6 @@ Windows Registry Editor Version 5.00
 "{47706A1F-014E-4567-93B2-07B6D78974C5}"="v2.31|Action=Block|Active=TRUE|Dir=Out|Protocol=6|App=C:\\Windows\\SysWOW64\\nltest.exe|Name=Block nltest.exe netconns|"
 "{04B25DAB-31BD-42A2-9110-F98202619486}"="v2.31|Action=Block|Active=TRUE|Dir=Out|Protocol=6|App=C:\\Windows\\system32\\notepad.exe|Name=Block Notepad.exe netconns|"
 "{65C7F1F9-6F89-4DF8-A853-DBE7F4494939}"="v2.31|Action=Block|Active=TRUE|Dir=Out|Protocol=6|App=C:\\Windows\\SysWOW64\\notepad.exe|Name=Block Notepad.exe netconns|"
-"{92013DA1-B7F2-4885-A334-402A12D1EB21}"="v2.31|Action=Block|Active=TRUE|Dir=Out|Protocol=6|App=C:\\Windows\\system32\\odbcconf.exe|Name=Block odbcconf.exe netconns|"
-"{3D7E67B0-BA2E-462A-9760-AE229FC4E1AF}"="v2.31|Action=Block|Active=TRUE|Dir=Out|Protocol=6|App=C:\\Windows\\SysWOW64\\odbcconf.exe|Name=Block odbcconf.exe netconns|"
 "{8E53E989-28F3-44D2-9837-4CBEA1EAD7FD}"="v2.31|Action=Block|Active=TRUE|Dir=Out|Protocol=6|App=C:\\Windows\\system32\\pcalua.exe|Name=Block pcalua.exe netconns|"
 "{77C6580C-A3B4-42E4-8D1C-05B0FB6D788B}"="v2.31|Action=Block|Active=TRUE|Dir=Out|Protocol=6|App=C:\\Windows\\SysWOW64\\pcalua.exe|Name=Block pcalua.exe netconns|"
 "{D6144267-D624-45FC-B279-B13E49F47901}"="v2.31|Action=Block|Active=TRUE|Dir=Out|Protocol=6|App=C:\\Windows\\system32\\regasm.exe|Name=Block regasm.exe netconns|"
@@ -7433,6 +7453,17 @@ Windows Registry Editor Version 5.00
 "{4970DDF1-D1EB-4450-B341-E4188360A9A2}"="v2.31|Action=Block|Active=TRUE|Dir=Out|Protocol=6|App=C:\\Windows\\SysWOW64\\rpcping.exe|Name=Block rpcping.exe netconns|"
 "{7ADFE507-30FB-42F0-8DB9-91D04E572DB6}"="v2.31|Action=Block|Active=TRUE|Dir=Out|Protocol=6|App=C:\\Windows\\system32\\rundll32.exe|Name=Block rundll32.exe netconns|"
 "{4B47C2E3-A030-42A4-B8A3-656A76355622}"="v2.31|Action=Block|Active=TRUE|Dir=Out|Protocol=6|App=C:\\Windows\\SysWOW64\\rundll32.exe|Name=Block rundll32.exe netconns|"
+"{CA6BC3DE-6D51-43CE-9585-685A52A515A6}"="v2.32|Action=Block|Active=TRUE|Dir=Out|RA4=134.170.30.202|Name=TrackingIP-134.170.30.202|"
+"{C6DD2240-947D-4A1B-AC35-E004136CB469}"="v2.32|Action=Block|Active=TRUE|Dir=Out|RA4=137.116.81.24|Name=TrackingIP-137.116.81.24|"
+"{E1C637CB-42F4-4D33-8548-3F8B42FF9E14}"="v2.32|Action=Block|Active=TRUE|Dir=Out|RA4=157.56.106.189|Name=TrackingIP-157.56.106.189|"
+"{1C2A72A9-77F8-4863-A5D3-F3FDDD8F2531}"="v2.32|Action=Block|Active=TRUE|Dir=Out|RA4=2.22.61.43|Name=TrackingIP-2.22.61.43|"
+"{95ECAECE-0E4C-42FB-B4BF-B9AC8EAC8574}"="v2.32|Action=Block|Active=TRUE|Dir=Out|RA4=2.22.61.66|Name=TrackingIP-2.22.61.66|"
+"{0C3927FA-523D-4D47-96F9-3CE8F9D8ECD3}"="v2.32|Action=Block|Active=TRUE|Dir=Out|RA4=204.79.197.200|Name=TrackingIP-204.79.197.200|"
+"{F0EC34EF-B60B-40EB-A060-992A32B1F854}"="v2.32|Action=Block|Active=TRUE|Dir=Out|RA4=23.218.212.69|Name=TrackingIP-23.218.212.69|"
+"{C85824C2-A1DB-4B01-B9D2-EC124D7320E4}"="v2.32|Action=Block|Active=TRUE|Dir=Out|RA4=64.4.54.254|Name=TrackingIP-64.4.54.254|"
+"{2E7A24D6-80A2-4A3E-AF09-A4A77C2A3EAA}"="v2.32|Action=Block|Active=TRUE|Dir=Out|RA4=65.39.117.230|Name=TrackingIP-65.39.117.230|"
+"{FD9B115E-CFA2-4CD8-A46D-3213656431C9}"="v2.32|Action=Block|Active=TRUE|Dir=Out|RA4=65.52.108.33|Name=TrackingIP-65.52.108.33|"
+"{005D532B-C84F-4363-B6AE-796B28EC3D90}"="v2.32|Action=Block|Active=TRUE|Dir=Out|RA4=65.55.108.23|Name=TrackingIP-65.55.108.23|"
 "{E3917AE8-6AD3-41C7-8E73-AA9E308D2E6C}"="v2.31|Action=Block|Active=TRUE|Dir=Out|Protocol=6|App=C:\\Windows\\system32\\runscripthelper.exe|Name=Block runscripthelper.exe netconns|"
 "{806A68C9-159E-4800-A4F6-7E43157CAC7A}"="v2.31|Action=Block|Active=TRUE|Dir=Out|Protocol=6|App=C:\\Windows\\SysWOW64\\runscripthelper.exe|Name=Block runscripthelper.exe netconns|"
 "{25D05800-49CD-491F-A193-4F2B7904D5C2}"="v2.31|Action=Block|Active=TRUE|Dir=Out|Protocol=6|App=C:\\Windows\\system32\\scriptrunner.exe|Name=Block scriptrunner.exe netconns|"
@@ -7492,9 +7523,6 @@ Windows Registry Editor Version 5.00
 "{039B198D-705E-49B3-9E3D-828B56FD59D3}"="v2.31|Action=Block|Active=TRUE|Dir=Out|Protocol=6|App=C:\\Windows\\SysWOW64\\scriptrunner.exe|Name=Block scriptrunner.exe netconns|"
 "{F7162BAF-365F-4D5D-B271-5BD418F01975}"="v2.31|Action=Block|Active=TRUE|Dir=Out|Protocol=6|App=C:\\Windows\\system32\\SyncAppvPublishingServer.exe|Name=Block SyncAppvPublishingServer.exe netconns|"
 "{7EAE5C3D-307B-462A-A858-EA0B594CE82B}"="v2.31|Action=Block|Active=TRUE|Dir=Out|Protocol=6|App=C:\\Windows\\SysWOW64\\SyncAppvPublishingServer.exe|Name=Block SyncAppvPublishingServer.exe netconns|"
-"{63B55664-E517-41AE-9F09-DFCBFF9AC504}"="v2.31|Action=Block|Active=TRUE|Dir=Out|Protocol=6|App=C:\\Windows\\system32\\wbem\\wmic.exe|Name=Block wmic.exe netconns|"
-"{CE52B9D1-5897-4F03-9018-5DCDC89EDC2B}"="v2.31|Action=Block|Active=TRUE|Dir=Out|Protocol=6|App=C:\\Windows\\SysWOW64\\wbem\\wmic.exe|Name=Block wmic.exe netconns|"
-"{BC8BFA97-1F9D-457A-BCF3-109534E78138}"="v2.31|Action=Block|Active=TRUE|Dir=Out|Protocol=6|App=C:\\Windows\\system32\\wscript.exe|Name=Block wscript.exe netconns|"
 "{CB28C9A0-0A12-4F2D-83DC-72BF557F7FEF}"="v2.31|Action=Block|Active=TRUE|Dir=Out|Protocol=6|App=C:\\Windows\\SysWOW64\\wscript.exe|Name=Block wscript.exe netconns|"
 "{2B5B36AD-4AF6-434A-A1CF-416AFA0FA052}"="v2.31|Action=Block|Active=TRUE|Dir=Out|Protocol=6|App=C:\\Program Files (x86)\\Microsoft Office\\root\\client\\AppVLP.exe|Name=Block appvlp.exe netconns|"
 "{E8743456-58A6-48D5-A52E-403C70C6ECA2}"="v2.31|Action=Block|Active=TRUE|Dir=Out|Protocol=6|App=C:\\Program Files\\Microsoft Office\\root\\client\\AppVLP.exe|Name=Block appvlp.exe netconns|"
@@ -7708,6 +7736,63 @@ Windows Registry Editor Version 5.00
 "{23FB6F20-8E80-4274-B2CE-5310A4543D7E}"="v2.31|Action=Block|Active=TRUE|Dir=Out|Protocol=6|App=C:\\Windows\\SysWOW64\\wbem\\wmic.exe|Name=Block wmic.exe netconns|"
 "{CB3E27CB-7567-440E-A224-2F5F55F180FA}"="v2.31|Action=Block|Active=TRUE|Dir=Out|Protocol=6|App=C:\\Windows\\system32\\wscript.exe|Name=Block wscript.exe netconns|"
 "{D577FBC1-ACD1-4D2C-BBB7-BC9753C0725E}"="v2.31|Action=Block|Active=TRUE|Dir=Out|Protocol=6|App=C:\\Windows\\SysWOW64\\wscript.exe|Name=Block wscript.exe netconns|"
+"{8790D750-E1CC-49ED-9536-604F206FFF62}"="v2.32|Action=Block|Active=TRUE|Dir=Out|RA4=191.232.139.254|Name=telemetry_vortex.data.microsoft.com|"
+"{13D85D78-6CF0-4D03-85E3-FBEF52CBB1C8}"="v2.32|Action=Block|Active=TRUE|Dir=Out|RA4=65.55.252.92|Name=telemetry_telecommand.telemetry.microsoft.com|"
+"{50786A8F-2D79-48A0-B64B-0A6D74370B47}"="v2.32|Action=Block|Active=TRUE|Dir=Out|RA4=65.55.252.63|Name=telemetry_oca.telemetry.microsoft.com|"
+"{2EBED008-8672-4D02-A939-3BDF98A2BD1F}"="v2.32|Action=Block|Active=TRUE|Dir=Out|RA4=65.55.252.93|Name=telemetry_sqm.telemetry.microsoft.com|"
+"{3B73E0CB-4BC4-4A9D-A745-0344387F74AC}"="v2.32|Action=Block|Active=TRUE|Dir=Out|RA4=65.52.108.29|RA4=65.55.252.43|Name=telemetry_watson.telemetry.microsoft.com|"
+"{7C2D7CAD-DBA6-476F-BC6B-4D76725C1E35}"="v2.32|Action=Block|Active=TRUE|Dir=Out|RA4=194.44.4.200|RA4=194.44.4.208|Name=telemetry_redir.metaservices.microsoft.com|"
+"{580C8E56-2495-4608-82B8-74A306B39A00}"="v2.32|Action=Block|Active=TRUE|Dir=Out|RA4=157.56.91.77|Name=telemetry_choice.microsoft.com|"
+"{E897D5C3-768D-4B80-B0F3-9DD09E7B2B2F}"="v2.32|Action=Block|Active=TRUE|Dir=Out|RA4=65.52.100.7|Name=telemetry_df.telemetry.microsoft.com|"
+"{D771FD73-0DDD-427D-B2EF-4B725FBA3C48}"="v2.32|Action=Block|Active=TRUE|Dir=Out|RA4=65.52.100.91|Name=telemetry_reports.wes.df.telemetry.microsoft.com|"
+"{85C594AF-835E-4399-BB64-91F64D7A95BF}"="v2.32|Action=Block|Active=TRUE|Dir=Out|RA4=65.52.100.93|Name=telemetry_wes.df.telemetry.microsoft.com|"
+"{4FEE262B-5A90-4728-8DCD-4D33466ADCFD}"="v2.32|Action=Block|Active=TRUE|Dir=Out|RA4=65.52.100.92|Name=telemetry_services.wes.df.telemetry.microsoft.com|"
+"{F96DA374-99FC-44AC-914B-2E9637700B6E}"="v2.32|Action=Block|Active=TRUE|Dir=Out|RA4=65.52.100.94|Name=telemetry_sqm.df.telemetry.microsoft.com|"
+"{277CA01C-0B51-4405-8FE9-EBE591A58195}"="v2.32|Action=Block|Active=TRUE|Dir=Out|RA4=65.52.100.9|Name=telemetry_telemetry.microsoft.com|"
+"{38BEB386-8381-4D65-8BB8-FC25AE8FDA0C}"="v2.32|Action=Block|Active=TRUE|Dir=Out|RA4=65.52.100.11|Name=telemetry_watson.ppe.telemetry.microsoft.com|"
+"{508A86D2-A5A3-49C9-9E60-2AA8187B1B39}"="v2.32|Action=Block|Active=TRUE|Dir=Out|RA4=168.63.108.233|Name=telemetry_telemetry.appex.bing.net|"
+"{03B80533-A87A-45FD-866D-469B5795DCB4}"="v2.32|Action=Block|Active=TRUE|Dir=Out|RA4=157.56.74.250|Name=telemetry_telemetry.urs.microsoft.com|"
+"{769965B5-E05F-447C-90C9-F4167A64EF39}"="v2.32|Action=Block|Active=TRUE|Dir=Out|RA4=111.221.29.177|Name=telemetry_settings-sandbox.data.microsoft.com|"
+"{E9EDE39B-911E-4397-9664-83C407CBD45D}"="v2.32|Action=Block|Active=TRUE|Dir=Out|RA4=64.4.54.32|Name=telemetry_vortex-sandbox.data.microsoft.com|"
+"{BD4FA4A3-DC47-4A93-9D37-7A3CFB8B19C5}"="v2.32|Action=Block|Active=TRUE|Dir=Out|RA4=207.68.166.254|Name=telemetry_survey.watson.microsoft.com|"
+"{5096495F-6867-4B86-A332-E9188A237B4E}"="v2.32|Action=Block|Active=TRUE|Dir=Out|RA4=207.46.223.94|Name=telemetry_watson.live.com|"
+"{F07050B2-8239-4399-80E6-AF158BCAFC71}"="v2.32|Action=Block|Active=TRUE|Dir=Out|RA4=65.55.252.71|Name=telemetry_watson.microsoft.com|"
+"{77798BCA-335C-4AF5-991D-C79F1A8C08EB}"="v2.32|Action=Block|Active=TRUE|Dir=Out|RA4=64.4.54.22|Name=telemetry_statsfe2.ws.microsoft.com|"
+"{88CF85E4-4FA4-47EF-8D62-B007561D7CC1}"="v2.32|Action=Block|Active=TRUE|Dir=Out|RA4=131.107.113.238|Name=telemetry_corpext.msitadfs.glbdns2.microsoft.com|"
+"{2AD4D205-7067-46D9-86C4-61E707DC28BC}"="v2.32|Action=Block|Active=TRUE|Dir=Out|RA4=23.99.10.11|Name=telemetry_compatexchange.cloudapp.net|"
+"{61D5315E-31BA-4D5A-AEEB-79D941846804}"="v2.32|Action=Block|Active=TRUE|Dir=Out|RA4=68.232.34.200|Name=telemetry_cs1.wpc.v0cdn.net|"
+"{DDF4A8B6-1E1E-4638-B028-CCB962A58799}"="v2.32|Action=Block|Active=TRUE|Dir=Out|RA4=204.79.197.200|Name=telemetry_a-0001.a-msedge.net|"
+"{829D92B1-7ED0-429E-91EE-760442A61351}"="v2.32|Action=Block|Active=TRUE|Dir=Out|RA4=64.4.54.22|Name=telemetry_statsfe2.update.microsoft.com.akadns.net|"
+"{EBA616F6-56EA-4D40-AB16-AF3A8CCBFA53}"="v2.32|Action=Block|Active=TRUE|Dir=Out|RA4=157.56.77.139|Name=telemetry_sls.update.microsoft.com.akadns.net|"
+"{6A610730-C472-4568-912F-2322886B2C2A}"="v2.32|Action=Block|Active=TRUE|Dir=Out|RA4=66.119.144.190|RA4=134.170.51.190|RA4=134.170.53.29|RA4=134.170.53.30|RA4=134.170.58.118|RA4=134.170.58.121|RA4=134.170.58.123|RA4=134.170.58.189|Name=telemetry_fe2.update.microsoft.com.akadns.net|"
+"{2C807E76-74FA-40BE-A7AE-E57DFC38B5BF}"="v2.32|Action=Block|Active=TRUE|Dir=Out|RA4=157.56.121.89|Name=telemetry_diagnostics.support.microsoft.com|"
+"{CFF85446-B628-468F-BC2B-A0CA91D9637A}"="v2.32|Action=Block|Active=TRUE|Dir=Out|RA4=131.107.113.238|Name=telemetry_corp.sts.microsoft.com|"
+"{89A998E8-E86A-4589-A57E-B3154F6A9CB6}"="v2.32|Action=Block|Active=TRUE|Dir=Out|RA4=134.170.115.60|Name=telemetry_statsfe1.ws.microsoft.com|"
+"{63072A34-07B3-463B-BAC7-AE858053E3CF}"="v2.32|Action=Block|Active=TRUE|Dir=Out|RA4=204.79.197.200|Name=telemetry_pre.footprintpredict.com|"
+"{14B87A98-42C6-4BE9-8CA6-9CFCF08DB66C}"="v2.32|Action=Block|Active=TRUE|Dir=Out|RA4=104.82.22.249|Name=telemetry_i1.services.social.microsoft.com|"
+"{86250562-CE27-4F85-973A-0E59F669F3AA}"="v2.32|Action=Block|Active=TRUE|Dir=Out|RA4=134.170.185.70|Name=telemetry_feedback.windows.com|"
+"{B03C5691-8E4F-42B0-8CBB-71DC2FF983B2}"="v2.32|Action=Block|Active=TRUE|Dir=Out|RA4=64.4.6.100|RA4=65.55.39.10|Name=telemetry_feedback.microsoft-hohm.com|"
+"{A3687974-9F95-4329-9C4C-6CA0D0AD103B}"="v2.32|Action=Block|Active=TRUE|Dir=Out|RA4=157.55.129.21|Name=telemetry_feedback.search.microsoft.com|"
+"{79C9921F-0D32-4850-901E-B5B026068248}"="v2.32|Action=Block|Active=TRUE|Dir=Out|RA4=207.46.194.25|Name=telemetry_rad.msn.com|"
+"{6B78BBDC-B20D-4CC6-86F4-7A00DED65589}"="v2.32|Action=Block|Active=TRUE|Dir=Out|RA4=23.102.21.4|Name=telemetry_preview.msn.com|"
+"{0C75B14F-961E-472F-B29C-A165A40FF065}"="v2.32|Action=Block|Active=TRUE|Dir=Out|RA4=173.194.113.219|RA4=173.194.113.220|RA4=216.58.209.166|Name=telemetry_dart.l.doubleclick.net|"
+"{9708269D-A52F-44D8-BA4B-3C3F0E5F8C6B}"="v2.32|Action=Block|Active=TRUE|Dir=Out|RA4=8.254.209.254|RA4=104.82.14.146|RA4=157.56.23.91|RA4=157.56.91.82|RA4=185.13.160.61|RA4=207.123.56.252|Name=telemetry_ads.msn.com|"
+"{8B0A2C4E-47F0-4B20-AF5B-5247F4C3230C}"="v2.32|Action=Block|Active=TRUE|Dir=Out|RA4=185.13.160.61|RA4=198.78.208.254|Name=telemetry_a.ads1.msn.com|"
+"{31A838B4-3B5B-435B-80E7-7E50FF2CD412}"="v2.32|Action=Block|Active=TRUE|Dir=Out|RA4=8.254.209.254|RA4=185.13.160.61|RA4=207.123.56.252|Name=telemetry_global.msads.net.c.footprint.net|"
+"{D48A9CE4-D882-4248-8BE0-4ACD4E52AF68}"="v2.32|Action=Block|Active=TRUE|Dir=Out|RA4=68.232.34.200|Name=telemetry_az361816.vo.msecnd.net|"
+"{01B94A0B-6850-4057-94C2-21C25182F013}"="v2.32|Action=Block|Active=TRUE|Dir=Out|RA4=65.55.252.63|Name=telemetry_oca.telemetry.microsoft.com.nsatc.net|"
+"{9F302859-8756-435B-BB7E-86E5140362EB}"="v2.32|Action=Block|Active=TRUE|Dir=Out|RA4=65.52.100.91|Name=telemetry_reports.wes.df.telemetry.microsoft.com|"
+"{1ED214ED-3FDE-4F5D-904A-28A211FE4953}"="v2.32|Action=Block|Active=TRUE|Dir=Out|RA4=65.52.100.7|Name=telemetry_df.telemetry.microsoft.com|"
+"{C91A030E-5EFE-402F-A1AA-617A675E3A59}"="v2.32|Action=Block|Active=TRUE|Dir=Out|RA4=68.232.34.200|Name=telemetry_cs1.wpc.v0cdn.net|"
+"{0F43A25D-F7E3-4895-9487-EC0B1B38B9C0}"="v2.32|Action=Block|Active=TRUE|Dir=Out|RA4=64.4.54.32|Name=telemetry_vortex-sandbox.data.microsoft.com|"
+"{C5114349-B6AC-4B1C-B80C-CCF0E45844B4}"="v2.32|Action=Block|Active=TRUE|Dir=Out|RA4=204.79.197.200|Name=telemetry_pre.footprintpredict.com|"
+"{D18A353E-42F5-4A45-89EC-BE56F9FF07C2}"="v2.32|Action=Block|Active=TRUE|Dir=Out|RA4=104.82.22.249|Name=telemetry_i1.services.social.microsoft.com|"
+"{9C510BB7-C2FD-47A2-ADAB-D4B1C71F5F9B}"="v2.32|Action=Block|Active=TRUE|Dir=Out|RA4=207.46.101.29|Name=telemetry_ssw.live.com|"
+"{651E4FC3-EB82-4EF1-8F7E-DEC82C0EFE7B}"="v2.32|Action=Block|Active=TRUE|Dir=Out|RA4=134.170.115.60|Name=telemetry_statsfe1.ws.microsoft.com|"
+"{E12293ED-603B-4022-B602-FBB72DFD3235}"="v2.32|Action=Block|Active=TRUE|Dir=Out|RA4=65.55.108.23|Name=telemetry_msnbot-65-55-108-23.search.msn.com|"
+"{0F29025A-D7B0-453E-8FCC-3F295BBA1ABC}"="v2.32|Action=Block|Active=TRUE|Dir=Out|RA4=23.218.212.69|Name=telemetry_a23-218-212-69.deploy.static.akamaitechnologies.com|"
+
+
 
 [HKEY_CLASSES_ROOT\CLSID\{679F85cb-0220-4080-b29b-5540cc05aab6}\ShellFolder]
 "Attributes"=dword:a0700000
@@ -9631,9 +9716,7 @@ Windows Registry Editor Version 5.00
 
 [-HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Explorer\ShellServiceObjects\{ff363bfe-4941-4179-a81c-f3f1ca72d820}]
 
-
 [-HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Explorer\ShellServiceObjects\{3BF043EF-A974-49B3-8322-B853CF1E5EC5}]
-
 
 [-HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Explorer\ShellServiceObjects\{fbeb8a05-beee-4442-804e-409d6c4515e9}]
 
@@ -9655,12 +9738,9 @@ Windows Registry Editor Version 5.00
 
 [-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\ShellServiceObjects\{ff363bfe-4941-4179-a81c-f3f1ca72d820}]
 
-
 [-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\ShellServiceObjects\{3BF043EF-A974-49B3-8322-B853CF1E5EC5}]
 
-
 [-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\ShellServiceObjects\{fbeb8a05-beee-4442-804e-409d6c4515e9}]
-
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer]
 "NoPublishingWizard"=dword:00000001
