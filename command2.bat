@@ -6,13 +6,12 @@ CD /D "%~dp0"
 :: Starting 
 PowerRun.exe Regedit.exe /S fidelityreg_reg11.reg
 Regedit.exe /S fidelityreg_reg11.reg
-
+PowerRun.exe "wum2.bat"
 :: Installing Microsoft's Certs (because they removed sometime)...
 
 	echo Installing %%f...
 	certutil -f -addstore Root "%~dp0\certificates\%%f"
 )
-
 reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Fidelity" /v DisplayName /t reg_sz /d "Melody 12.0 (EAS, partially applied)" /f
 
 :: Removal of Components
@@ -226,7 +225,6 @@ dism /Online /Remove-Capability /CapabilityName:OpenSSH.Server~~~~0.0.1.0  /NoRe
 dism /Online /Remove-Capability /CapabilityName:OneCoreUAP.OneSync~~~~0.0.1.0  /NoRestart
 dism /Online /Remove-Capability /CapabilityName:Print.Fax.Scan~~~~0.0.1.0 /NoRestart
 dism /Online /Remove-Capability /CapabilityName:MathRecognizer~~~~0.0.1.0  /NoRestart
-dism /Online /Remove-Capability /CapabilityName:Media.WindowsMediaPlayer~~~~0.0.12.0  /NoRestart
 dism /Online /Remove-Capability /CapabilityName:OpenSSH.Server~~~~0.0.1.0  /NoRestart
 dism /Online /Remove-Capability /CapabilityName:OpenSSH.Server~~~~0.0.1.0  /NoRestart
 dism /Online /Remove-Capability /CapabilityName:Accessibility.Braille~~~~0.0.1.0  /NoRestart
@@ -423,7 +421,15 @@ del "C:\Windows\System32\Tasks\Microsoft\Windows\WindowsUpdate\Automatic Update"
 del "C:\Windows\System32\Tasks\Microsoft\Office\*" /F /S /Q
 
 :: Remove Telemetry
-
+rmdir /s /q "C:\Program Files (x86)\Microsoft\EdgeUpdate"
+rmdir /s /q "C:\Program Files (x86)\Microsoft\EdgeCore"
+rmdir /s /q "C:\Program Files (x86)\Microsoft\EdgeWebview"
+rmdir /s /q "C:\Windows\SystemApps\Microsoft.MicrosoftEdge_8wekyb3d8bbwe"
+rmdir /s /q "C:\Windows\SystemApps\Microsoft.MicrosoftEdgeDevToolsClient_8wekyb3d8bbwe"
+rmdir /s /q "C:\Windows\SystemApps\Microsoft.Windows.AppRep.ChxApp_cw5n1h2txyewy"
+rmdir /s /q "C:\Windows\SystemApps\microsoft.windows.narratorquickstart_8wekyb3d8bbwe"
+rmdir /s /q "C:\Windows\SystemApps\Microsoft.Windows.PeopleExperienceHost_cw5n1h2txyewy"
+rmdir /s /q "C:\Windows\SystemApps\ParentalControls_cw5n1h2txyewy"
 takeown /f C:\Windows\System32\smartscreen.exe
 cacls C:\Windows\System32\smartscreen.exe /E /P %username%:F
 del /F /Q "C:\Windows\System32\smartscreen.exe"
@@ -549,26 +555,14 @@ bcdedit /set recoveryenabled NO
 bcdedit /set x2apicpolicy enable 
 bcdedit /set tscsyncpolicy legacy
 bcdedit /set disabledynamictick yes 
-bcdedit /deletevalue useplatformclock 
 bcdedit /set useplatformtick yes
+bcdedit /deletevalue useplatformclock 
 bcdedit /set bootmenupolicy Legacy 
 bcdedit -set NOINTEGRITYCHECKS OFF
 bcdedit -set TESTSIGNING OFF
 
 :: Copy Files to Windows Folder
 xcopy "*.ico" "C:\Windows" /Y /E /H /C /I
-
-:: Mitigation Stuff
-
-
-powershell "ForEach($v in (Get-Command -Name \"Set-ProcessMitigation\").Parameters[\"Disable\"].Attributes.ValidValues){Set-ProcessMitigation -System -Disable $v.ToString().Replace(\" \", \"\").Replace(\"`n\", \"\") -ErrorAction SilentlyContinue}"
-powershell "Set-ProcessMitigation -System -Enable CFG"
-powershell "Set-ProcessMitigation -Name vgc.exe -Enable AuditDynamicCode"
-powershell "Set-ProcessMitigation -Name vgc.exe -Enable CFG"
-powershell "Set-ProcessMitigation -Name csgo.exe -Disable CFG"
-powershell "Set-ProcessMitigation -Name FarCry6.exe -Disable CFG"
-
-:: You can add,another *.exes, if that app crashes when is opening.
 
 :: Disable Windows Update Driver Search
 
@@ -589,5 +583,8 @@ copy "%~dp0\SDL.dll" "C:\Windows\SysWOW64\SDL.dll" /Y
 :: Another Tweaks
 for /f %%i in ('Reg query "HKLM\SYSTEM\CurrentControlSet\Services" /s /f DmaRemappingCompatible ^| find /i "Services\" ') do (Reg add "%%i" /v "DmaRemappingCompatible" /t Reg_DWORD /d "0" /f )
 netsh Advfirewall set allprofiles state on
+fsutil behavior set disable8dot3 1
+fsutil behavior set disableLastAccess 0
 reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Fidelity" /v DisplayName /t reg_sz /d "Melody 12.03 (EAS)" /f
+
 shutdown /r /f /t 0

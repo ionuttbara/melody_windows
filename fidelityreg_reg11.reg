@@ -3,6 +3,9 @@ Windows Registry Editor Version 5.00
 ;000. Task Scheduler Optimizer
 
 
+[HKEY_CURRENT_USER\Control Panel\UnsupportedHardwareNotificationCache]
+"SV2"=dword:00000000
+
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PolicyManager\default\Settings\AllowOnlineTips]
 "value"=dword:00000000
 
@@ -1830,18 +1833,12 @@ Windows Registry Editor Version 5.00
 "IoPriority"=dword:00000003
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\acrotray.exe]
-"MaxLoaderThreads"=dword:00000001
-"MitigationOptions"=hex:22,22,22,22,22,22,22,22,22,22,22,22,22,22,22,22,22,22,\
-  22,22,22,22,22,22
-"MitigationAuditOptions"=hex:22,22,22,22,22,22,22,22,22,22,22,22,22,22,22,22,\
-  22,22,22,22,22,22,22,22
+"Debugger"="C:\\WINDOWS\\system32\\systray.exe"
 
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\acrotray.exe\PerfOptions]
-"CpuPriorityClass"=dword:00000005
-"IoPriority"=dword:00000001
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\acrotray.exe\PerfOptions]
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\Among Us.exe]
-"MaxLoaderThreads"=dword:00000001
+"MaxLoaderThreads"=dword:00000002
 "MitigationOptions"=hex:22,22,22,22,22,22,22,22,22,22,22,22,22,22,22,22,22,22,\
   22,22,22,22,22,22
 "MitigationAuditOptions"=hex:22,22,22,22,22,22,22,22,22,22,22,22,22,22,22,22,\
@@ -1859,7 +1856,7 @@ Windows Registry Editor Version 5.00
   22,22,22,22,22,22,22,22
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\audiodg.exe\PerfOptions]
-"CpuPriorityClass"=dword:00000005
+"CpuPriorityClass"=dword:00000006
 "IoPriority"=dword:00000001
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\BananaBugs.exe]
@@ -1923,7 +1920,7 @@ Windows Registry Editor Version 5.00
   22,22,22,22,22,22
 "MitigationAuditOptions"=hex:22,22,22,22,22,22,22,22,22,22,22,22,22,22,22,22,\
   22,22,22,22,22,22,22,22
-"EAFModules"=""
+"EAFModules"=-
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\chrome.exe\PerfOptions]
 "CpuPriorityClass"=dword:00000006
@@ -1952,10 +1949,10 @@ Windows Registry Editor Version 5.00
 "IoPriority"=dword:00000003
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\cmd.exe]
-"MitigationOptions"=hex:00,00,00,00,00,02,00,00,00,02,00,00,00,00,00,00,00,00,\
-  00,00,00,00,00,00
-"MitigationAuditOptions"=hex:00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\
-  00,00,00,00,00,00,00,00
+"MitigationOptions"=hex:22,22,22,22,22,22,22,22,22,22,22,22,22,22,22,22,22,22,\
+  22,22,22,22,22,22
+"MitigationAuditOptions"=hex:22,22,22,22,22,22,22,22,22,22,22,22,22,22,22,22,\
+  22,22,22,22,22,22,22,22
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\converter.exe]
 "MaxLoaderThreads"=dword:00000001
@@ -2129,7 +2126,11 @@ Windows Registry Editor Version 5.00
   00,00,00,00,00,00
 "MitigationAuditOptions"=hex:00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\
   00,00,00,00,00,00,00,00
-"EAFModules"=""
+
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\FarCry6.exe\PerfOptions]
+"CpuPriorityClass"=dword:00000003
+"IoPriority"=dword:00000003
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\firefox.exe]
 "MaxLoaderThreads"=dword:00000001
@@ -2205,15 +2206,7 @@ Windows Registry Editor Version 5.00
 "IoPriority"=dword:00000003
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\GameOverlayUI.exe]
-"MaxLoaderThreads"=dword:00000001
-"MitigationOptions"=hex:22,22,22,22,22,22,22,22,22,22,22,22,22,22,22,22,22,22,\
-  22,22,22,22,22,22
-"MitigationAuditOptions"=hex:22,22,22,22,22,22,22,22,22,22,22,22,22,22,22,22,\
-  22,22,22,22,22,22,22,22
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\GameOverlayUI.exe\PerfOptions]
-"CpuPriorityClass"=dword:00000001
-"IoPriority"=dword:00000001
+"Debugger"="C:\\WINDOWS\\system32\\systray.exe"
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\GeometryDash.exe]
 "MaxLoaderThreads"=dword:00000001
@@ -2449,6 +2442,15 @@ Windows Registry Editor Version 5.00
   00,00,00,00,00,00,00,00
 "EAFModules"=""
 
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\vgc.exe]
+"MitigationOptions"=hex:00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\
+  00,00,00,00,00,00
+"MitigationAuditOptions"=hex:00,00,00,00,10,00,00,00,00,00,00,00,00,00,00,00,\
+  00,00,00,00,00,00,00,00
+"EAFModules"=""
+
+
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\msaccess.exe]
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\msaccess.exe\PerfOptions]
@@ -2659,8 +2661,8 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\steamwebhelper.exe]
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\steamwebhelper.exe\PerfOptions]
-"CpuPriorityClass"=dword:00000001
-"IoPriority"=dword:00000001
+"CpuPriorityClass"=dword:00000004
+"IoPriority"=dword:00000003
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\svchost.exe]
 "MaxLoaderThreads"=dword:00000001
@@ -2703,13 +2705,6 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\Update.exe\PerfOptions]
 "CpuPriorityClass"=dword:00000006
 "IoPriority"=dword:00000003
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\vgc.exe]
-"MitigationOptions"=hex:00,00,00,00,00,01,00,00,00,00,00,00,00,00,00,00,00,00,\
-  00,00,00,00,00,00
-"MitigationAuditOptions"=hex:00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\
-  00,00,00,00,00,00,00,00
-"EAFModules"=""
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\VideoEditorPlus.exe]
 
@@ -2756,6 +2751,28 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\Zoom.exe\PerfOptions]
 "CpuPriorityClass"=dword:00000006
 "IoPriority"=dword:00000003
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\CompatTelRunner.exe]
+"Debugger"="C:\\WINDOWS\\system32\\systray.exe"
+
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\EOSNotify.exe]
+"Debugger"="C:\\WINDOWS\\system32\\systray.exe"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\AcroServicesUpdater.exe]
+"Debugger"="C:\\WINDOWS\\system32\\systray.exe"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\mssfeedssync.exe]
+"Debugger"="C:\\WINDOWS\\system32\\systray.exe"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\WebExperienceHostApp.exe]
+"Debugger"="C:\\WINDOWS\\system32\\systray.exe"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\wermgr.exe]
+"Debugger"="C:\\WINDOWS\\system32\\systray.exe"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\ngentask.exe]
+"Debugger"="C:\\WINDOWS\\system32\\systray.exe"
 
 
 ; 008. Connections
@@ -5275,8 +5292,10 @@ Windows Registry Editor Version 5.00
 "DisableExceptionChainValidation"=dword:00000001
 "KernelSEHOPEnabled"=dword:00000000
 "DpcWatchdogProfileOffset"=dword:00000000
-"MitigationOptions"=hex:22,22,22,22,22,22,22,22,20,02,00,00,00,20,00,00
-"MitigationAuditOptions"=hex:20,00,00,20,20,20,22,22,00,00,00,00,00,00,00,00
+"MitigationAuditOptions"=hex:00,00,00,00,00,00,20,22,00,00,00,00,00,00,00,20,\
+  00,00,00,00,00,00,00,00
+"MitigationOptions"=hex:00,22,22,20,22,20,22,22,20,00,00,00,00,20,00,20,00,00,\
+  00,00,00,00,00,00
 "DisableExceptionChainValidation"=dword:00000001
 "MaximumSharedReadyQueueSize"=dword:00000001
 "DisableAutoBoost"=dword:00000001
