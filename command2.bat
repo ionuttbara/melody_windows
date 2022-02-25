@@ -4,6 +4,7 @@ pushd "%CD%"
 CD /D "%~dp0"
 
 :: Starting 
+xcopy "TimerTool.exe" "C:\Windows" /Y /E /H /C /I
 PowerRun.exe Regedit.exe /S fidelityreg_reg11.reg
 Regedit.exe /S fidelityreg_reg11.reg
 PowerRun.exe "wum2.bat"

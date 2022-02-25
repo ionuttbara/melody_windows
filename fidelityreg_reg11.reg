@@ -1,6 +1,10 @@
 Windows Registry Editor Version 5.00
 
 ;0.001. Disable Services Spliting
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run]
+"Latency"="\"C:\\Windows\\TimerTool.exe\" -t 0.5 -minimized"
+
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\AarSvc]
 "SvcHostSplitDisable"=dword:00000001
 
