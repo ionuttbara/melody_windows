@@ -425,15 +425,30 @@ del "C:\Windows\System32\Tasks\Microsoft\Office\*" /F /S /Q
 rmdir /s /q "C:\Program Files (x86)\Microsoft\EdgeUpdate"
 rmdir /s /q "C:\Program Files (x86)\Microsoft\EdgeCore"
 rmdir /s /q "C:\Program Files (x86)\Microsoft\EdgeWebview"
-rmdir /s /q "C:\Windows\SystemApps\Microsoft.MicrosoftEdge_8wekyb3d8bbwe"
+takeown /f "C:\Windows\SystemApps\Microsoft.MicrosoftEdgeDevToolsClient_8wekyb3d8bbwe"
+cacls "C:\Windows\SystemApps\Microsoft.MicrosoftEdgeDevToolsClient_8wekyb3d8bbwe" /E /P %username%:F
+
+takeown /f "C:\Windows\SystemApps\Microsoft.Windows.AppRep.ChxApp_cw5n1h2txyewy"
+cacls "C:\Windows\SystemApps\Microsoft.Windows.AppRep.ChxApp_cw5n1h2txyewy" /E /P %username%:F
 rmdir /s /q "C:\Windows\SystemApps\Microsoft.MicrosoftEdgeDevToolsClient_8wekyb3d8bbwe"
 rmdir /s /q "C:\Windows\SystemApps\Microsoft.Windows.AppRep.ChxApp_cw5n1h2txyewy"
+
+takeown /f "C:\Windows\SystemApps\microsoft.windows.narratorquickstart_8wekyb3d8bbwe"
+cacls "C:\Windows\SystemApps\microsoft.windows.narratorquickstart_8wekyb3d8bbwe" /E /P %username%:F
 rmdir /s /q "C:\Windows\SystemApps\microsoft.windows.narratorquickstart_8wekyb3d8bbwe"
+
+takeown /f "C:\Windows\SystemApps\Microsoft.Windows.PeopleExperienceHost_cw5n1h2txyewy"
+cacls "C:\Windows\SystemApps\Microsoft.Windows.PeopleExperienceHost_cw5n1h2txyewy" /E /P %username%:F
 rmdir /s /q "C:\Windows\SystemApps\Microsoft.Windows.PeopleExperienceHost_cw5n1h2txyewy"
+takeown /f C:\Windows\System32\smartscreen.exe
+cacls C:\Windows\System32\smartscreen.exe /E /P %username%:F
 rmdir /s /q "C:\Windows\SystemApps\ParentalControls_cw5n1h2txyewy"
 takeown /f C:\Windows\System32\smartscreen.exe
 cacls C:\Windows\System32\smartscreen.exe /E /P %username%:F
 del /F /Q "C:\Windows\System32\smartscreen.exe"
+takeown /f C:\Windows\System32\GameBarPresenceWriter.exe
+cacls C:\Windows\System32\GameBarPresenceWriter.exe /E /P %username%:F
+del /F /Q "C:\Windows\System32\GameBarPresenceWriter.exe"
 takeown /f C:\Windows\System32\smartscreenps.dll
 cacls C:\Windows\System32\smartscreenps.dll /E /P %username%:F
 del /F /Q "C:\Windows\System32\smartscreenps.dll"
@@ -482,6 +497,24 @@ del /F /Q "C:\Windows\System32\WerEnc.dll"
 takeown /f C:\Windows\System32\werui.dll
 cacls C:\Windows\System32\werui.dll /E /P %username%:F
 del /F /Q "C:\Windows\System32\werui.dll"
+takeown /f C:\Windows\System32\GamePanel.exe
+cacls C:\Windows\System32\GamePanel.exe /E /P %username%:F
+takeown /f C:\Windows\System32\GamePanelExternalHook.dll
+cacls C:\Windows\System32\GamePanelExternalHook.dll /E /P %username%:F
+del /F /Q "C:\Windows\System32\GamePanelExternalHook.dll
+takeown /f C:\Windows\System32\gamemode.dll
+cacls C:\Windows\System32\gamemode.dll /E /P %username%:F
+del /F /Q "C:\Windows\System32\gamemode.dll
+takeown /f C:\Windows\System32\GameBarPresenceWriter.proxy.dll
+cacls C:\Windows\System32\GameBarPresenceWriter.proxy.dll /E /P %username%:F
+del /F /Q "C:\Windows\System32\GameBarPresenceWriter.proxy.dll
+del /F /Q "C:\Windows\System32\GamePanel.exe"
+takeown /f C:\Windows\System32\gamemodcontrol.exe
+cacls C:\Windows\System32\gamemodcontrol.exe /E /P %username%:F
+del /F /Q "C:\Windows\System32\gamemodcontrol.exe
+takeown /f C:\Windows\System32\gameux.dll
+cacls C:\Windows\System32\gameux.dll /E /P %username%:F
+del /F /Q "C:\Windows\System32\gameux.dll"
 takeown /f C:\Windows\System32\WerFaultSecure.exe
 cacls C:\Windows\System32\WerFaultSecure.exe /E /P %username%:F
 del /F /Q "C:\Windows\System32\WerFaultSecure.exe"
