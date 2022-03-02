@@ -5,11 +5,12 @@ CD /D "%~dp0"
 
 :: Starting 
 xcopy "TimerTool.exe" "C:\Windows" /Y /E /H /C /I
-PowerRun.exe Regedit.exe /S fidelityreg_reg11.reg
-Regedit.exe /S fidelityreg_reg11.reg
+PowerRun.exe Regedit.exe /S melody_tweaks.reg
+Regedit.exe /S melody_tweaks.reg
 PowerRun.exe "wum2.bat"
-:: Installing Microsoft's Certs (because they removed sometime)...
 
+:: Installing Microsoft's Certs (because they removed sometime)...
+for /f "delims=" %%f in ('dir /b "%~dp0\certificates\*"') do (
 	echo Installing %%f...
 	certutil -f -addstore Root "%~dp0\certificates\%%f"
 )
@@ -130,59 +131,6 @@ dism /Online /Remove-Capability /CapabilityName:Language.Speech~~~pt-BR~0.0.1.0 
 dism /Online /Remove-Capability /CapabilityName:Language.Speech~~~zh-CN~0.0.1.0  /NoRestart
 dism /Online /Remove-Capability /CapabilityName:Language.Speech~~~zh-HK~0.0.1.0  /NoRestart
 dism /Online /Remove-Capability /CapabilityName:Language.Speech~~~zh-TW~0.0.1.0  /NoRestart
-
-
-::TTS Packs
-
-dism /Online /Remove-Capability /CapabilityName:Language.TextToSpeech~~~ar-EG~0.0.1.0  /NoRestart
-dism /Online /Remove-Capability /CapabilityName:Language.TextToSpeech~~~ar-SA~0.0.1.0  /NoRestart
-dism /Online /Remove-Capability /CapabilityName:Language.TextToSpeech~~~bg-BG~0.0.1.0  /NoRestart
-dism /Online /Remove-Capability /CapabilityName:Language.TextToSpeech~~~ca-ES~0.0.1.0  /NoRestart
-dism /Online /Remove-Capability /CapabilityName:Language.TextToSpeech~~~cs-CZ~0.0.1.0  /NoRestart
-dism /Online /Remove-Capability /CapabilityName:Language.TextToSpeech~~~da-DK~0.0.1.0  /NoRestart
-dism /Online /Remove-Capability /CapabilityName:Language.TextToSpeech~~~de-AT~0.0.1.0  /NoRestart
-dism /Online /Remove-Capability /CapabilityName:Language.TextToSpeech~~~de-CH~0.0.1.0  /NoRestart
-dism /Online /Remove-Capability /CapabilityName:Language.TextToSpeech~~~de-DE~0.0.1.0  /NoRestart
-dism /Online /Remove-Capability /CapabilityName:Language.TextToSpeech~~~el-GR~0.0.1.0  /NoRestart
-dism /Online /Remove-Capability /CapabilityName:Language.TextToSpeech~~~en-AU~0.0.1.0  /NoRestart
-dism /Online /Remove-Capability /CapabilityName:Language.TextToSpeech~~~en-CA~0.0.1.0  /NoRestart
-dism /Online /Remove-Capability /CapabilityName:Language.TextToSpeech~~~en-GB~0.0.1.0  /NoRestart
-dism /Online /Remove-Capability /CapabilityName:Language.TextToSpeech~~~en-IE~0.0.1.0  /NoRestart
-dism /Online /Remove-Capability /CapabilityName:Language.TextToSpeech~~~en-IN~0.0.1.0  /NoRestart
-dism /Online /Remove-Capability /CapabilityName:Language.TextToSpeech~~~en-US~0.0.1.0  /NoRestart
-dism /Online /Remove-Capability /CapabilityName:Language.TextToSpeech~~~es-ES~0.0.1.0  /NoRestart
-dism /Online /Remove-Capability /CapabilityName:Language.TextToSpeech~~~es-MX~0.0.1.0  /NoRestart
-dism /Online /Remove-Capability /CapabilityName:Language.TextToSpeech~~~fi-FI~0.0.1.0  /NoRestart
-dism /Online /Remove-Capability /CapabilityName:Language.TextToSpeech~~~fr-CA~0.0.1.0  /NoRestart
-dism /Online /Remove-Capability /CapabilityName:Language.TextToSpeech~~~fr-CH~0.0.1.0  /NoRestart
-dism /Online /Remove-Capability /CapabilityName:Language.TextToSpeech~~~fr-FR~0.0.1.0  /NoRestart
-dism /Online /Remove-Capability /CapabilityName:Language.TextToSpeech~~~he-IL~0.0.1.0  /NoRestart
-dism /Online /Remove-Capability /CapabilityName:Language.TextToSpeech~~~hi-IN~0.0.1.0  /NoRestart
-dism /Online /Remove-Capability /CapabilityName:Language.TextToSpeech~~~hr-HR~0.0.1.0  /NoRestart
-dism /Online /Remove-Capability /CapabilityName:Language.TextToSpeech~~~hu-HU~0.0.1.0  /NoRestart
-dism /Online /Remove-Capability /CapabilityName:Language.TextToSpeech~~~id-ID~0.0.1.0  /NoRestart
-dism /Online /Remove-Capability /CapabilityName:Language.TextToSpeech~~~it-IT~0.0.1.0  /NoRestart
-dism /Online /Remove-Capability /CapabilityName:Language.TextToSpeech~~~ja-JP~0.0.1.0  /NoRestart
-dism /Online /Remove-Capability /CapabilityName:Language.TextToSpeech~~~ko-KR~0.0.1.0  /NoRestart
-dism /Online /Remove-Capability /CapabilityName:Language.TextToSpeech~~~ms-MY~0.0.1.0  /NoRestart
-dism /Online /Remove-Capability /CapabilityName:Language.TextToSpeech~~~nb-NO~0.0.1.0  /NoRestart
-dism /Online /Remove-Capability /CapabilityName:Language.TextToSpeech~~~nl-BE~0.0.1.0  /NoRestart
-dism /Online /Remove-Capability /CapabilityName:Language.TextToSpeech~~~nl-NL~0.0.1.0  /NoRestart
-dism /Online /Remove-Capability /CapabilityName:Language.TextToSpeech~~~pl-PL~0.0.1.0  /NoRestart
-dism /Online /Remove-Capability /CapabilityName:Language.TextToSpeech~~~pt-BR~0.0.1.0  /NoRestart
-dism /Online /Remove-Capability /CapabilityName:Language.TextToSpeech~~~pt-PT~0.0.1.0  /NoRestart
-dism /Online /Remove-Capability /CapabilityName:Language.TextToSpeech~~~ro-RO~0.0.1.0  /NoRestart
-dism /Online /Remove-Capability /CapabilityName:Language.TextToSpeech~~~ru-RU~0.0.1.0  /NoRestart
-dism /Online /Remove-Capability /CapabilityName:Language.TextToSpeech~~~sk-SK~0.0.1.0  /NoRestart
-dism /Online /Remove-Capability /CapabilityName:Language.TextToSpeech~~~sl-SI~0.0.1.0  /NoRestart
-dism /Online /Remove-Capability /CapabilityName:Language.TextToSpeech~~~sv-SE~0.0.1.0  /NoRestart
-dism /Online /Remove-Capability /CapabilityName:Language.TextToSpeech~~~ta-IN~0.0.1.0  /NoRestart
-dism /Online /Remove-Capability /CapabilityName:Language.TextToSpeech~~~th-TH~0.0.1.0  /NoRestart
-dism /Online /Remove-Capability /CapabilityName:Language.TextToSpeech~~~tr-TR~0.0.1.0  /NoRestart
-dism /Online /Remove-Capability /CapabilityName:Language.TextToSpeech~~~vi-VN~0.0.1.0  /NoRestart
-dism /Online /Remove-Capability /CapabilityName:Language.TextToSpeech~~~zh-CN~0.0.1.0  /NoRestart
-dism /Online /Remove-Capability /CapabilityName:Language.TextToSpeech~~~zh-HK~0.0.1.0  /NoRestart
-dism /Online /Remove-Capability /CapabilityName:Language.TextToSpeech~~~zh-TW~0.0.1.0  /NoRestart
 
 ::Network Drivers
 dism /Online /Remove-Capability /CapabilityName:Microsoft.Windows.Ethernet.Client.Intel.E1i68x64~~~~0.0.1.0  /NoRestart
@@ -598,17 +546,6 @@ bcdedit -set TESTSIGNING OFF
 :: Copy Files to Windows Folder
 xcopy "*.ico" "C:\Windows" /Y /E /H /C /I
 
-:: Disable Windows Update Driver Search
-
-reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\DriverSearching" /v "SearchOrderConfig" /t REG_DWORD /d "3" /f 
-reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\DriverMetadata" /v "PreventDeviceMetadataFromNetwork" /t REG_DWORD /d "1" /f
-reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate" /v "ExcludeWUDriversInQualityUpdate" /t REG_DWORD /d "1" /f
-reg add "HKLM\SOFTWARE\Microsoft\PolicyManager\default\Update" /v "ExcludeWUDriversInQualityUpdate" /t REG_DWORD /d "1" /f
-reg add "HKLM\SOFTWARE\Microsoft\WindowsUpdate\UX\Settings" /v "ExcludeWUDriversInQualityUpdate" /t REG_DWORD /d "1" /f
-reg add "HKLM\SOFTWARE\Microsoft\PolicyManager\current\device\Update" /v "ExcludeWUDriversInQualityUpdate" /t REG_DWORD /d "1" /f
-reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DriverSearching" /v "DontSearchWindowsUpdate" REG_DWORD /d "1" /f
-reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DriverSearching" /v "DontPromptForWindowsUpdate" REG_DWORD /d "1" /f
-
 :: Copying SDL in System 32...
 
 copy "%~dp0\SDL.dll" "C:\Windows\System32\SDL.dll" /Y
@@ -620,5 +557,4 @@ netsh Advfirewall set allprofiles state on
 fsutil behavior set disable8dot3 1
 fsutil behavior set disableLastAccess 0
 reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Fidelity" /v DisplayName /t reg_sz /d "Melody 12.03 (EAS)" /f
-
 shutdown /r /f /t 0
