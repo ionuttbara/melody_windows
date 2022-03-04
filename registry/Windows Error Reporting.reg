@@ -1,0 +1,42 @@
+Windows Registry Editor Version 5.00
+
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\Windows Error Reporting]
+"Disabled"=dword:00000001
+"AutoApproveOSDumps"=dword:00000000
+"ConfigureArchive"=dword:00000000
+"DisableArchive"=dword:00000001
+"DontSendAdditionalData"=dword:00000001
+"LoggingDisabled"=dword:00000001
+"DontShowUI"=dword:00000001
+"BypassDataThrottling"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Error Reporting]
+"Disabled"=dword:00000001
+"DontShowUI"=dword:00000001
+"DoReport"=dword:00000000
+"AutoApproveOSDumps"=dword:00000000
+"ConfigureArchive"=dword:00000000
+"DisableArchive"=dword:00000001
+"DontSendAdditionalData"=dword:00000001
+"LoggingDisabled"=dword:00000001
+"DontShowUI"=dword:00000001
+"BypassDataThrottling"=dword:00000000
+"OobeCompleted"=dword:00000001
+
+[HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Windows\Windows Error Reporting]
+"Disabled"=dword:00000001
+"DontShowUI"=dword:00000001
+"DoReport"=dword:00000000
+"AutoApproveOSDumps"=dword:00000000
+"ConfigureArchive"=dword:00000000
+"DisableArchive"=dword:00000001
+"DontSendAdditionalData"=dword:00000001
+"LoggingDisabled"=dword:00000001
+"DontShowUI"=dword:00000001
+"BypassDataThrottling"=dword:00000000
+"OobeCompleted"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\PCHealth\ErrorReporting]
+"ShowUI"=dword:00000000
+"DoReport"=dword:00000000
