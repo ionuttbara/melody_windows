@@ -1,0 +1,567 @@
+Windows Registry Editor Version 5.00
+
+
+[HKEY_CLASSES_ROOT\exefile\shell\Priority]
+"MUIVerb"="Run with priority"
+"SubCommands"=""
+
+
+[HKEY_CLASSES_ROOT\exefile\Shell\Priority\shell\001flyout]
+@="Realtime"
+
+[HKEY_CLASSES_ROOT\exefile\Shell\Priority\shell\001flyout\command]
+@="cmd.exe /c start \"\" /Realtime \"%1\""
+
+
+[HKEY_CLASSES_ROOT\exefile\Shell\Priority\shell\002flyout]
+@="High"
+
+[HKEY_CLASSES_ROOT\exefile\Shell\Priority\shell\002flyout\command]
+@="cmd.exe /c start \"\" /High \"%1\""
+
+
+[HKEY_CLASSES_ROOT\exefile\Shell\Priority\shell\003flyout]
+@="Above normal"
+
+[HKEY_CLASSES_ROOT\exefile\Shell\Priority\shell\003flyout\command]
+@="cmd.exe /c start \"\" /AboveNormal \"%1\""
+
+
+[HKEY_CLASSES_ROOT\exefile\Shell\Priority\shell\004flyout]
+@="Normal"
+
+[HKEY_CLASSES_ROOT\exefile\Shell\Priority\shell\004flyout\command]
+@="cmd.exe /c start \"\" /Normal \"%1\""
+
+
+[HKEY_CLASSES_ROOT\exefile\Shell\Priority\shell\005flyout]
+@="Below normal"
+
+[HKEY_CLASSES_ROOT\exefile\Shell\Priority\shell\005flyout\command]
+@="cmd.exe /c start \"\" /BelowNormal \"%1\""
+
+
+[HKEY_CLASSES_ROOT\exefile\Shell\Priority\shell\006flyout]
+@="Low"
+
+[HKEY_CLASSES_ROOT\exefile\Shell\Priority\shell\006flyout\command]
+@="cmd.exe /c start \"\" /Low \"%1\""
+
+
+
+[HKEY_CLASSES_ROOT\AllFilesystemObjects\shell\Windows.PermanentDelete]
+"CommandStateSync"=""
+"ExplorerCommandHandler"="{E9571AB2-AD92-4ec6-8924-4E5AD33790F5}"
+"Icon"="shell32.dll,-240"
+"Position"="Bottom"
+
+
+
+[HKEY_CLASSES_ROOT\Msi.Package\shell\Extract\command]
+@="msiexec.exe /a \"%1\" /qb TARGETDIR=\"%1 Contents\""
+
+
+[HKEY_CLASSES_ROOT\VBSFile\Shell\runas\command]
+@="C:\\Windows\\System32\\WScript.exe \"%1\" %*"
+
+
+[HKEY_CLASSES_ROOT\SystemFileAssociations\image\shell\print]
+"ProgrammaticAccessOnly"=""
+
+[HKEY_CLASSES_ROOT\batfile\shell\print]
+"ProgrammaticAccessOnly"=""
+
+[HKEY_CLASSES_ROOT\cmdfile\shell\print]
+"ProgrammaticAccessOnly"=""
+
+[HKEY_CLASSES_ROOT\docxfile\shell\print]
+"ProgrammaticAccessOnly"=""
+
+[HKEY_CLASSES_ROOT\fonfile\shell\print]
+"ProgrammaticAccessOnly"=""
+
+[HKEY_CLASSES_ROOT\htmlfile\shell\print]
+"ProgrammaticAccessOnly"=""
+
+[HKEY_CLASSES_ROOT\inffile\shell\print]
+"ProgrammaticAccessOnly"=""
+
+[HKEY_CLASSES_ROOT\inifile\shell\print]
+"ProgrammaticAccessOnly"=""
+
+[HKEY_CLASSES_ROOT\JSEFile\Shell\Print]
+"ProgrammaticAccessOnly"=""
+
+[HKEY_CLASSES_ROOT\otffile\shell\print]
+"ProgrammaticAccessOnly"=""
+
+[HKEY_CLASSES_ROOT\pfmfile\shell\print]
+"ProgrammaticAccessOnly"=""
+
+[HKEY_CLASSES_ROOT\regfile\shell\print]
+"ProgrammaticAccessOnly"=""
+
+[HKEY_CLASSES_ROOT\rtffile\shell\print]
+"ProgrammaticAccessOnly"=""
+
+[HKEY_CLASSES_ROOT\ttcfile\shell\print]
+"ProgrammaticAccessOnly"=""
+
+[HKEY_CLASSES_ROOT\ttffile\shell\print]
+"ProgrammaticAccessOnly"=""
+
+[HKEY_CLASSES_ROOT\txtfile\shell\print]
+"ProgrammaticAccessOnly"=""
+
+[HKEY_CLASSES_ROOT\VBEFile\Shell\Print]
+"ProgrammaticAccessOnly"=""
+
+[HKEY_CLASSES_ROOT\VBSFile\Shell\Print]
+"ProgrammaticAccessOnly"=""
+
+[HKEY_CLASSES_ROOT\WSFFile\Shell\Print]
+"ProgrammaticAccessOnly"=""
+
+[HKEY_CLASSES_ROOT\*\shell\GetFileHash]
+"MUIVerb"="Hash"
+"SubCommands"=""
+
+[HKEY_CLASSES_ROOT\*\shell\GetFileHash\shell\01SHA1]
+"MUIVerb"="SHA1"
+
+[HKEY_CLASSES_ROOT\*\shell\GetFileHash\shell\01SHA1\command]
+@="powershell.exe -noexit get-filehash -literalpath '%1' -algorithm SHA1 | format-list"
+
+[HKEY_CLASSES_ROOT\*\shell\GetFileHash\shell\02SHA256]
+"MUIVerb"="SHA256"
+
+[HKEY_CLASSES_ROOT\*\shell\GetFileHash\shell\02SHA256\command]
+@="powershell.exe -noexit get-filehash -literalpath '%1' -algorithm SHA256 | format-list"
+
+
+[HKEY_CLASSES_ROOT\*\shell\GetFileHash\shell\03SHA384]
+"MUIVerb"="SHA384"
+
+[HKEY_CLASSES_ROOT\*\shell\GetFileHash\shell\03SHA384\command]
+@="powershell.exe -noexit get-filehash -literalpath '%1' -algorithm SHA384 | format-list"
+
+
+[HKEY_CLASSES_ROOT\*\shell\GetFileHash\shell\04SHA512]
+"MUIVerb"="SHA512"
+
+[HKEY_CLASSES_ROOT\*\shell\GetFileHash\shell\04SHA512\command]
+@="powershell.exe -noexit get-filehash -literalpath '%1' -algorithm SHA512 | format-list"
+
+[HKEY_CLASSES_ROOT\*\shell\GetFileHash\shell\05MACTripleDES]
+"MUIVerb"="MACTripleDES"
+
+[HKEY_CLASSES_ROOT\*\shell\GetFileHash\shell\05MACTripleDES\command]
+@="powershell.exe -noexit get-filehash -literalpath '%1' -algorithm MACTripleDES | format-list"
+
+
+[HKEY_CLASSES_ROOT\*\shell\GetFileHash\shell\06MD5]
+"MUIVerb"="MD5"
+
+[HKEY_CLASSES_ROOT\*\shell\GetFileHash\shell\06MD5\command]
+@="powershell.exe -noexit get-filehash -literalpath '%1' -algorithm MD5 | format-list"
+
+[HKEY_CLASSES_ROOT\*\shell\GetFileHash\shell\07RIPEMD160]
+"MUIVerb"="RIPEMD160"
+
+[HKEY_CLASSES_ROOT\*\shell\GetFileHash\shell\07RIPEMD160\command]
+@="powershell.exe -noexit get-filehash -literalpath '%1' -algorithm RIPEMD160 | format-list"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\UEV\Agent]
+"Enabled"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WorkFolders]
+"AutoProvision"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WinRE]
+"DisableSetup"=dword:00000001
+
+[HKEY_CLASSES_ROOT\*\shell\TakeOwnership]
+@="Take Ownership"
+"Extended"=-
+"HasLUAShield"=""
+"NoWorkingDirectory"=""
+"NeverDefault"=""
+
+[HKEY_CLASSES_ROOT\*\shell\TakeOwnership\command]
+@="powershell -windowstyle hidden -command \"Start-Process cmd -ArgumentList '/c takeown /f \\\"%1\\\" && icacls \\\"%1\\\" /grant *S-1-3-4:F /t /c /l' -Verb runAs\""
+"IsolatedCommand"= "powershell -windowstyle hidden -command \"Start-Process cmd -ArgumentList '/c takeown /f \\\"%1\\\" && icacls \\\"%1\\\" /grant *S-1-3-4:F /t /c /l' -Verb runAs\""
+
+
+[HKEY_CLASSES_ROOT\Directory\shell\TakeOwnership]
+@="Take Ownership"
+"AppliesTo"="NOT (System.ItemPathDisplay:=\"C:\\Users\" OR System.ItemPathDisplay:=\"C:\\ProgramData\" OR System.ItemPathDisplay:=\"C:\\Windows\" OR System.ItemPathDisplay:=\"C:\\Windows\\System32\" OR System.ItemPathDisplay:=\"C:\\Program Files\" OR System.ItemPathDisplay:=\"C:\\Program Files (x86)\")"
+"Extended"=-
+"HasLUAShield"=""
+"NoWorkingDirectory"=""
+"Position"="middle"
+
+[HKEY_CLASSES_ROOT\Directory\shell\TakeOwnership\command]
+@="powershell -windowstyle hidden -command \"Start-Process cmd -ArgumentList '/c takeown /f \\\"%1\\\" /r /d y && icacls \\\"%1\\\" /grant *S-1-3-4:F /t /c /l /q' -Verb runAs\""
+"IsolatedCommand"="powershell -windowstyle hidden -command \"Start-Process cmd -ArgumentList '/c takeown /f \\\"%1\\\" /r /d y && icacls \\\"%1\\\" /grant *S-1-3-4:F /t /c /l /q' -Verb runAs\""
+
+[HKEY_CLASSES_ROOT\Drive\shell\runas]
+@="Take Ownership"
+"Extended"=-
+"HasLUAShield"=""
+"NoWorkingDirectory"=""
+"Position"="middle"
+"AppliesTo"="NOT (System.ItemPathDisplay:=\"C:\\\")"
+
+[HKEY_CLASSES_ROOT\Drive\shell\runas\command]
+@="cmd.exe /c takeown /f \"%1\\\" /r /d y && icacls \"%1\\\" /grant *S-1-3-4:F /t /c"
+"IsolatedCommand"="cmd.exe /c takeown /f \"%1\\\" /r /d y && icacls \"%1\\\" /grant *S-1-3-4:F /t /c"
+
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\Restart]
+"Icon"="shell32.dll,-16739"
+"Position"="Bottom"
+"SubCommands"=""
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\Restart\shell\001flyout]
+"MUIVerb"="Force apps to close, and full shutdown and restart PC with no time-out or warning"
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\Restart\shell\001flyout\command]
+@="shutdown /r /f /t 0"
+
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\Restart\shell\002flyout]
+"MUIVerb"="Full shutdown and restart PC with warning"
+"CommandFlags"=dword:00000020
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\Restart\shell\002flyout\command]
+@="shutdown /r"
+
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\Restart\shell\003flyout]
+"MUIVerb"="Full shutdown and restart PC. After rebooted, restart any opened registered apps."
+"CommandFlags"=dword:00000020
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\Restart\shell\003flyout\command]
+@="shutdown /g /t 0"
+
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\Restart\shell\004flyout]
+"MUIVerb"="Restart to Advanced Startup Options"
+"CommandFlags"=dword:00000020
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\Restart\shell\004flyout\command]
+@="shutdown /r /o /f /t 0"
+
+
+[-HKEY_CLASSES_ROOT\CABFolder\Shell\RunAs]
+
+[HKEY_CLASSES_ROOT\CABFolder\Shell\RunAs]
+@="Install"
+"HasLUAShield"=""
+
+[HKEY_CLASSES_ROOT\CABFolder\Shell\RunAs\Command]
+@="cmd /k dism /online /add-package /packagepath:\"%1\""
+
+
+[HKEY_CLASSES_ROOT\*\shell\Copy Content to Clipboard]
+"MUIVerb"="Copy Content to Clipboard"
+"Icon"="DxpTaskSync.dll,-52"
+"Position"="Center"
+
+[HKEY_CLASSES_ROOT\*\shell\Copy Content to Clipboard\Command]
+@="cmd /c clip < \"%1\""
+
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\Safely Remove Hardware]
+"MUIVerb"="Safely Remove Hardware"
+"Icon"="hotplug.dll,-100"
+"Position"="Center"
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\Safely Remove Hardware\Command]
+@="C:\\Windows\\system32\\control.exe hotplug.dll"
+
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\Firewall]
+"MUIVerb"="Windows Firewall"
+"Icon"="FirewallControlPanel.dll,-1"
+"Position"="Bottom"
+"SubCommands"=""
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\Firewall\shell]
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\Firewall\shell\Command001]
+"MUIVerb"="Windows Firewall"
+"Icon"="FirewallControlPanel.dll,-1"
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\Firewall\shell\Command001\Command]
+@="RunDll32.exe shell32.dll,Control_RunDLL firewall.cpl"
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\Firewall\shell\Command002]
+"MUIVerb"="Windows Firewall with Advanced Security"
+"HasLUAShield"=""
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\Firewall\shell\Command002\Command]
+@="mmc.exe /s wf.msc"
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\Firewall\shell\Command003]
+"MUIVerb"="Configure Allowed Apps"
+"Icon"="FirewallControlPanel.dll,-1"
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\Firewall\shell\Command003\Command]
+@="explorer.exe shell:::{4026492F-2F69-46B8-B9BF-5654FC07E423} -Microsoft.WindowsFirewall\\pageConfigureApps"
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\Firewall\shell\Command004]
+"MUIVerb"="Turn On Windows Firewall"
+"HasLUAShield"=""
+"CommandFlags"=dword:00000020
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\Firewall\shell\Command004\Command]
+@="powershell.exe -windowstyle hidden -command \"Start-Process cmd -ArgumentList '/s,/c,netsh advfirewall set allprofiles state on' -Verb runAs\""
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\Firewall\shell\Command005]
+"MUIVerb"="Turn Off Windows Firewall"
+"HasLUAShield"=""
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\Firewall\shell\Command005\Command]
+@="powershell.exe -windowstyle hidden -command \"Start-Process cmd -ArgumentList '/s,/c,netsh advfirewall set allprofiles state off' -Verb runAs\""
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\Firewall\shell\Command006]
+"MUIVerb"="Reset Windows Firewall"
+"HasLUAShield"=""
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\Firewall\shell\Command006\Command]
+@="powershell.exe -windowstyle hidden -command \"Start-Process cmd -ArgumentList '/s,/c,netsh advfirewall reset' -Verb runAs\""
+
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\KillNRTasks]
+"icon"="taskmgr.exe,-30651"
+"MUIverb"="Kill all not responding tasks"
+"Position"="Top"
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\KillNRTasks\command]
+@="CMD.exe /C taskkill.exe /f /fi \"status eq Not Responding\" & Pause"
+
+
+[HKEY_CURRENT_USER\Software\Classes\*\shellex\ContextMenuHandlers\PintoStartScreen]
+@="{470C0EBD-5D73-4d58-9CED-E91E22E23282}"
+
+[HKEY_CURRENT_USER\Software\Classes\AllFileSystemObjects]
+
+[HKEY_CURRENT_USER\Software\Classes\AllFileSystemObjects\shellex]
+
+[HKEY_CURRENT_USER\Software\Classes\AllFileSystemObjects\shellex\ContextMenuHandlers]
+
+[HKEY_CURRENT_USER\Software\Classes\AllFileSystemObjects\shellex\ContextMenuHandlers\PintoStartScreen]
+@="{470C0EBD-5D73-4d58-9CED-E91E22E23282}"
+
+
+[-HKEY_CLASSES_ROOT\DesktopBackground\Shell\AdvancedBootOptions]
+
+
+; 1.6. Restart File Explorer
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\Restart Explorer]
+"icon"="explorer.exe"
+"Position"="Center"
+"SubCommands"=""
+"MUIVerb"="Restart/Pause File Explorer "
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\Restart Explorer\shell]
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\Restart Explorer\shell\01menu]
+"MUIVerb"="Restart File Explorer"
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\Restart Explorer\shell\01menu\command]
+@="cmd.exe /c taskkill /f /im explorer.exe  & start explorer.exe"
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\Restart Explorer\shell\02menu]
+"MUIVerb"="Pause File Explorer"
+"CommandFlags"=dword:00000020
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\Restart Explorer\shell\02menu\command]
+@="cmd.exe /c @echo off & echo. & echo Stopping explorer.exe process . . . & echo. & taskkill /f /im explorer.exe & echo. & echo. & echo Waiting to start explorer.exe process when you are ready . . . & pause && start explorer.exe && exit"
+
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\DismContextMenu]
+"Icon"="WmiPrvSE.exe"
+"MUIVerb"="Repair Windows Image"
+"Position"="Bottom"
+"SubCommands"=""
+
+[HKEY_CLASSES_ROOT\DesktopBackground\shell\DismContextMenu\shell\CheckHealth]
+"HasLUAShield"=""
+"MUIVerb"="Check Health of Windows Image"
+
+[HKEY_CLASSES_ROOT\DesktopBackground\shell\DismContextMenu\shell\CheckHealth\command]
+@="PowerShell -windowstyle hidden -command \"Start-Process cmd -ArgumentList '/s,/k, Dism /Online /Cleanup-Image /CheckHealth' -Verb runAs\""
+
+[HKEY_CLASSES_ROOT\DesktopBackground\shell\DismContextMenu\shell\RestoreHealth]
+"HasLUAShield"=""
+"MUIVerb"="Repair Windows Image"
+
+[HKEY_CLASSES_ROOT\DesktopBackground\shell\DismContextMenu\shell\RestoreHealth\command]
+@="PowerShell -windowstyle hidden -command \"Start-Process cmd -ArgumentList '/s,/k, Dism /Online /Cleanup-Image /RestoreHealth' -Verb runAs\""
+
+
+
+[HKEY_CLASSES_ROOT\DesktopBackground\shell\DismContextMenu\shell\Corruptions]
+"HasLUAShield"=""
+"MUIVerb"="Check for Corruptions"
+
+
+[HKEY_CLASSES_ROOT\DesktopBackground\shell\DismContextMenu\shell\Corruptions\command]
+@="PowerShell -windowstyle hidden -command \"Start-Process cmd -ArgumentList '/s,/k, sfc.exe /scannow' -Verb runAs\""
+
+
+
+[HKEY_CLASSES_ROOT\DesktopBackground\shell\DismContextMenu\shell\Corruptions_log]
+"HasLUAShield"=""
+"MUIVerb"="View Scan Logs"
+
+
+[HKEY_CLASSES_ROOT\DesktopBackground\shell\DismContextMenu\shell\Corruptions_log\command]
+@="PowerShell (Select-String [SR] $env:windir\\Logs\\CBS\\CBS.log -s).Line >\"$env:userprofile\\Desktop\\SFC_LOG.txt\""
+
+
+
+;; 1.2.Windows Terminal
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Shell Extensions\Blocked]
+"{9F156763-7844-4DC4-B2B1-901F640F5155}"=""
+
+[HKEY_CLASSES_ROOT\Directory\shell\OpenWindowsTerminalProfiles]
+"MUIVerb"="Open in Windows Terminal"
+"SubCommands"=""
+
+[HKEY_CLASSES_ROOT\Directory\Shell\OpenWindowsTerminalProfiles\shell\01DefaultProfile]
+"MUIVerb"="Default Profile"
+
+[HKEY_CLASSES_ROOT\Directory\Shell\OpenWindowsTerminalProfiles\shell\01DefaultProfile\command]
+@="cmd.exe /c start wt.exe -d \"%1\""
+
+
+[HKEY_CLASSES_ROOT\Directory\Shell\OpenWindowsTerminalProfiles\shell\02CommandPromptProfile]
+"MUIVerb"="Command Prompt"
+"Icon"="imageres.dll,-5323"
+
+[HKEY_CLASSES_ROOT\Directory\Shell\OpenWindowsTerminalProfiles\shell\02CommandPromptProfile\command]
+@="cmd.exe /c start wt.exe -p \"Command Prompt\" -d \"%1\""
+
+
+[HKEY_CLASSES_ROOT\Directory\Shell\OpenWindowsTerminalProfiles\shell\03PowerShellProfile]
+"MUIVerb"="PowerShell"
+"Icon"="powershell.exe"
+
+[HKEY_CLASSES_ROOT\Directory\Shell\OpenWindowsTerminalProfiles\shell\03PowerShellProfile\command]
+@="cmd.exe /c start wt.exe -p \"Windows PowerShell\" -d \"%1\""
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\OpenWindowsTerminalProfiles]
+"MUIVerb"="Open in Windows Terminal"
+"SubCommands"=""
+
+
+[HKEY_CLASSES_ROOT\Directory\Background\Shell\OpenWindowsTerminalProfiles\shell\01DefaultProfile]
+"MUIVerb"="Default Profile"
+
+[HKEY_CLASSES_ROOT\Directory\Background\Shell\OpenWindowsTerminalProfiles\shell\01DefaultProfile\command]
+@="cmd.exe /c start wt.exe -d \"%V\""
+
+
+[HKEY_CLASSES_ROOT\Directory\Background\Shell\OpenWindowsTerminalProfiles\shell\02CommandPromptProfile]
+"MUIVerb"="Command Prompt"
+"Icon"="imageres.dll,-5323"
+
+[HKEY_CLASSES_ROOT\Directory\Background\Shell\OpenWindowsTerminalProfiles\shell\02CommandPromptProfile\command]
+@="cmd.exe /c start wt.exe -p \"Command Prompt\" -d \"%V\""
+
+
+[HKEY_CLASSES_ROOT\Directory\Background\Shell\OpenWindowsTerminalProfiles\shell\03PowerShellProfile]
+"MUIVerb"="PowerShell"
+"Icon"="powershell.exe"
+
+[HKEY_CLASSES_ROOT\Directory\Background\Shell\OpenWindowsTerminalProfiles\shell\03PowerShellProfile\command]
+@="cmd.exe /c start wt.exe -p \"Windows PowerShell\" -d \"%V\""
+
+
+;add new files
+
+[HKEY_CLASSES_ROOT\.bat\ShellNew]
+"NullFile"=""
+"ItemName"=hex(2):40,00,25,00,53,00,79,00,73,00,74,00,65,00,6d,00,52,00,6f,00,\
+  6f,00,74,00,25,00,5c,00,53,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,00,5c,\
+  00,61,00,63,00,70,00,70,00,61,00,67,00,65,00,2e,00,64,00,6c,00,6c,00,2c,00,\
+  2d,00,36,00,30,00,30,00,32,00,00,00
+
+[HKEY_CLASSES_ROOT\.html\ShellNew]
+"NullFile"=""
+
+[HKEY_CLASSES_ROOT\.reg\ShellNew]
+"NullFile"=""
+
+[HKEY_CLASSES_ROOT\.txt\ShellNew]
+"NullFile"=""
+
+[HKEY_CLASSES_ROOT\.cmd\ShellNew]
+"NullFile"=""
+
+[HKEY_CLASSES_ROOT\.ini\ShellNew]
+"NullFile"=""
+
+[HKEY_CLASSES_ROOT\.ps1\ShellNew]
+"NullFile"=""
+
+[HKEY_CLASSES_ROOT\.vbs\ShellNew]
+"NullFile"=""
+"ItemName"=hex(2):40,00,43,00,3a,00,5c,00,57,00,69,00,6e,00,64,00,6f,00,77,00,\
+  73,00,5c,00,53,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,00,5c,00,77,00,73,\
+  00,68,00,65,00,78,00,74,00,2e,00,64,00,6c,00,6c,00,2c,00,2d,00,34,00,38,00,\
+  30,00,32,00,00,00
+
+[-HKEY_CLASSES_ROOT\Directory\shellex\ContextMenuHandlers\ FileSyncEx]
+
+[-HKEY_CLASSES_ROOT\*\shellex\ContextMenuHandlers\ FileSyncEx]
+
+[-HKEY_CLASSES_ROOT\lnkfile\shellex\ContextMenuHandlers\ FileSyncEx]
+
+
+[-HKEY_CLASSES_ROOT\lnkfile\shellex\ContextMenuHandlers\NvAppShExt]
+
+[-HKEY_CLASSES_ROOT\lnkfile\shellex\ContextMenuHandlers\OpenGLShExt]
+
+
+;Register DLL
+
+[HKEY_CLASSES_ROOT\dllfile\shell\Register\Command]
+@="regsvr32.exe \"%1\""
+
+[HKEY_CLASSES_ROOT\dllfile\shell\Unregister\Command]
+@="regsvr32.exe /u \"%1\""
+
+[HKEY_CLASSES_ROOT\ocxfile\shell\Register\Command]
+@="regsvr32.exe \"%1\""
+
+[HKEY_CLASSES_ROOT\ocxfile\shell\Unregister\Command]
+@="regsvr32.exe /u \"%1\""
+
+
+[-HKEY_CLASSES_ROOT\CompressedFolder\ShellEx\ContextMenuHandlers\{b8cdcb65-b1bf-4b42-9428-1dfdb7ee92af}]
+
+[-HKEY_CLASSES_ROOT\LibraryFolder\background\shellex\ContextMenuHandlers\New]
+
+[-HKEY_CLASSES_ROOT\CompressedFolder\Shell\find]
+
+
+[-HKEY_CLASSES_ROOT\CLSID\{20D04FE0-3AEA-1069-A2D8-08002B30309D}\shell\find]
+
+[-HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\MenuExt]
+
+[HKEY_CLASSES_ROOT\CLSID\{20D04FE0-3AEA-1069-A2D8-08002B30309D}\shell\ASP]
+"MUIVerb"="Advanced System Properties"
+"HasLUAShield"=""
+"Position"="Center"
+
+[HKEY_CLASSES_ROOT\CLSID\{20D04FE0-3AEA-1069-A2D8-08002B30309D}\shell\ASP\command]
+@=hex(2):53,00,79,00,73,00,74,00,65,00,6d,00,50,00,72,00,6f,00,70,00,65,00,72,\
+  00,74,00,69,00,65,00,73,00,41,00,64,00,76,00,61,00,6e,00,63,00,65,00,64,00,\
+  2e,00,65,00,78,00,65,00,00,00
+
