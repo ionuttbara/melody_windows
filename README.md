@@ -1,11 +1,11 @@
 # Melody Script
-Optimized your Windows for Gaming
-Disables Windows Telemetry
-Optimizes Windows for better Input Latency
-Disables Windows Services
-Disable Splitting of svchost.exe for RAM memory saving
-Fixes some errors on Windows
-Adds some costum and beautiful contextual menus
+<h4 align="center">Optimized your Windows for Gaming </h4>
+<h4 align="center">Disables Windows Telemetry </h4>
+<h4 align="center">Optimizes Windows for better Input Latency </h4>
+<h4 align="center">Disables Windows Services </h4>
+<h4 align="center">Disable Splitting of svchost.exe for RAM memory saving </h4>
+<h4 align="center">Fixes some errors on Windows </h4>
+<h4 align="center">Adds some costum and beautiful contextual menus </h4>
 <h1 align="center">
   <br>
   <img src="https://raw.githubusercontent.com/jbara2002/melody12/master/logo.png" alt="Melody logo"></a>
