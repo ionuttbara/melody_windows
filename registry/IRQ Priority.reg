@@ -50,7 +50,10 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\services\rtump64x64\Parameters]
 "ThreadPriority"=dword:0000001f
 
+
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\PriorityControl]
+"ConvertibleSlateMode"=dword:00000000
+"Win32PrioritySeparation"=dword:00000026
 "IRQ4294967253Priority"=dword:00000001
 "IRQ4294967254Priority"=dword:00000001
 "IRQ4294967259Priority"=dword:00000001
@@ -78,4 +81,4 @@ Windows Registry Editor Version 5.00
 "IRQ55Priority"=dword:00000001
 "IRQ57Priority"=dword:00000001
 "IRQ8Priority"=dword:00000001
-"Win32PrioritySeparation"=dword:00000038
+

@@ -6,6 +6,30 @@ Windows Registry Editor Version 5.00
 "BootId"=-
 "BaseTime"=-
 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Terminal Server]
+"fDenyTSConnections"=dword:00000001
+"fSingleSessionPerUser"=dword:00000001
+"StartRCM"=dword:00000000
+"TSUserEnabled"=dword:00000000
+"fAllowToGetHelp"=dword:00000000
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Diagnostics]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services]
+"fAllowToGetHelp"=dword:00000000
+"fDenyTSConnections"=dword:00000001
+"fAllowFullControl"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services\Client]
+"fEnableUsbBlockDeviceBySetupClass"=dword:00000000
+"fEnableUsbNoAckIsochWriteToDevice"=dword:00000000
+"fEnableUsbSelectDeviceByInterface"=dword:00000000
+
+
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\FlightedFeatures]
+"ComponentUIForWinRTPicker"=dword:00000001
+"ImmersiveContextMenu"=dword:00000000
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SCMConfig]
 "EnableSvchostMitigationPolicy"=hex(b):00,00,00,00,00,00,00,00
