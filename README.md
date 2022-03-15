@@ -40,7 +40,7 @@
 ## Uninstallation
 ##### After uninstallation steps
 * Download Uninstaller where you had downloaded the ".exe" file.
-* Run "*Uninstaller_vxxxx.exe" and wait to apply.
+* Run "*Uninstaller_vxxxx.exe" and wait to apply. (Uninstaller will be added soon)
 * After you ran the script , the PC will reboot.
 
 
