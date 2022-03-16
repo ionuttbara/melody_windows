@@ -10,7 +10,7 @@ Windows Registry Editor Version 5.00
 "MouseWheelRouting"=dword:00000002
 "WaitToKillAppTimeout"="1"
 "WaitToKillServiceTimeout"=dword:00000001
-"HungAppTimeout"="1"
+"HungAppTimeout"="1000"
 "LowLevelHooksTimeout"=dword:00000001
 "Win8DpiScaling"=dword:00000000
 
