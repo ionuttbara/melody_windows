@@ -8,8 +8,6 @@ Windows Registry Editor Version 5.00
 "CortanaCapabilityFlags"=dword:00000000
 "DeviceHistoryEnabled"=dword:00000000
 "HasAboveLockTips"=dword:00000000
-"InstalledPackagedAppsRevision"="-"
-"InstalledWin32AppsRevision"="-"
 "WebControlStatus"=dword:00000000
 "WebControlSecondaryStatus"=dword:00000000
 "CortanaEnabled"=dword:00000000

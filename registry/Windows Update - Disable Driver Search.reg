@@ -1,9 +1,9 @@
 Windows Registry Editor Version 5.00
 
-;001. Windows Update - Driver Searching
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate]
 "ExcludeWUDriversInQualityUpdate"=dword:00000001
+
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PolicyManager\default\Update]
 "ExcludeWUDriversInQualityUpdate"=dword:00000001
@@ -23,7 +23,7 @@ Windows Registry Editor Version 5.00
 "PreventDeviceMetadataFromNetwork"=dword:00000001
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DriverSearching]
-"SearchOrderConfig"=dword:00000000
+"SearchOrderConfig"=dword:00000003
 "DontSearchWindowsUpdate"=dword:00000001
 "DontPromptForWindowsUpdate"=dword:00000001
 "DriverServerSelection"=dword:00000001
@@ -38,6 +38,6 @@ Windows Registry Editor Version 5.00
 "DisableSystemRestore"=dword:00000001
 "DisableSendGenericDriverNotFoundToWER"=dword:00000001
 
-[HKEY_LOCAL_MACHINE\PolicyManager\default\Update\ExcludeWUDriversInQualityUpdates]
-"value"=dword:00000001
 
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PolicyManager\default\Update\ExcludeWUDriversInQualityUpdates]
+"value"=dword:00000001

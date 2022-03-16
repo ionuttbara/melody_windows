@@ -10,28 +10,27 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Avalon.Graphics]
 "DisableHWAcceleration"=dword:00000000
 "MaxMultisampleSize"=dword:00000000
-"UseReferenceRasterizer"=dword:00000000
+"UseReferenceRasterizer"=dword:00000001
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Avalon.Graphics]
 "DisableHWAcceleration"=dword:00000000
 "MaxMultisampleSize"=dword:00000000
-"UseReferenceRasterizer"=dword:00000000
+"UseReferenceRasterizer"=dword:00000001
 
 [HKEY_USERS\.DEFAULT\SOFTWARE\Microsoft\Avalon.Graphics]
 "DisableHWAcceleration"=dword:00000000
 "MaxMultisampleSize"=dword:00000000
-"UseReferenceRasterizer"=dword:00000000
+"UseReferenceRasterizer"=dword:00000001
 
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Avalon.Graphics]
 "DisableHWAcceleration"=dword:00000000
 "MaxMultisampleSize"=dword:00000000
-"UseReferenceRasterizer"=dword:00000000
+"UseReferenceRasterizer"=dword:00000001
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Direct3D]
 "DisableVidMemVBs"=dword:00000001
 "MMX Fast Path"=dword:00000001
 "FlipNoVsync"=dword:00000001
-
 
 [HKEY_USERS\.DEFAULT\SOFTWARE\Microsoft\Direct3D]
 "DisableVidMemVBs"=dword:00000001
@@ -75,17 +74,12 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\GraphicsDrivers]
 "RmGpsPsEnablePerCpuCoreDpc"=dword:00000001
 
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\GraphicsDrivers\Power]
-"RmGpsPsEnablePerCpuCoreDpc"=dword:00000001
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\nvlddmkm]
-"RmGpsPsEnablePerCpuCoreDpc"=dword:00000001
-
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\nvlddmkm\NVAPI]
 "RmGpsPsEnablePerCpuCoreDpc"=dword:00000001
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\nvlddmkm\Global\NVTweak]
 "RmGpsPsEnablePerCpuCoreDpc"=dword:00000001
+"DisplayPowerSaving"=dword:00000000
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\amdkmpfd]
 "RmGpsPsEnablePerCpuCoreDpc"=dword:00000001
@@ -105,9 +99,6 @@ Windows Registry Editor Version 5.00
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\nvlddmkm\FTS]
 "EnableRID61684"=dword:00000001
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\nvlddmkm\Global\NVTweak]
-"DisplayPowerSaving"=dword:00000000
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\GraphicsDrivers\Scheduler]
 "EnablePreemption"=dword:00000000
@@ -164,7 +155,6 @@ Windows Registry Editor Version 5.00
 "RMDisablePostL2Compression"=dword:00000001
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\GraphicsDrivers\Power]
-"UseGpuTimer"=dword:00000001
 "RmGpsPsEnablePerCpuCoreDpc"=dword:00000001
 "PowerSavingTweaks"=dword:00000000
 "DisableWriteCombining"=dword:00000001
@@ -173,7 +163,7 @@ Windows Registry Editor Version 5.00
 "FlTransitionLatency"=dword:00000000
 "D3PCLatency"=dword:00000000
 "RMDeepLlEntryLatencyUsec"=dword:00000000
-"PciLatencyTimerControl"=dword:00000020
+"PciLatencyTimerControl"=dword:00000001
 "Node3DLowLatency"=dword:00000001
 "LOWLATENCY"=dword:00000001
 "RmDisableRegistryCaching"=dword:00000001
@@ -207,222 +197,6 @@ Windows Registry Editor Version 5.00
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\GraphicsDrivers]
 "DpiMapIommuContiguous"=dword:00000001
-
-
-[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Video\{3D9D220F-16B0-11EC-AA00-D49CC0720C6C}\0001]
-"DDC2Disabled"=dword:00000001
-"MultiFunctionSupported"=dword:00000001
-"TimingSelection"=dword:00000000
-"VgaCompatible"=dword:00000000
-"Adaptive De-interlacing"=dword:00000000
-"VPE Adaptive De-interlacing"=dword:00000000
-"GCOOPTION_DisableGPIOPowerSaveMode"=dword:00000001
-"TVEnableOverscan"=dword:00000000
-"UA_Enabled"=dword:00000001 
-"KMD_EnableOPM2Interface"=dword:00000001
-"WmAgpMaxIdleClk"=dword:00000020
-"MemInitLatencyTimer"=dword:00000001
-"GamePerformanceAdviserEnabled"=dword:00000000
-"DisableAllClockGating"=dword:00000001 
-"DisableGfxCGPowerGating"=dword:00000001
-"DisableCpPowerGating"=dword:00000001
-"DisableStaticGfxMGPowerGating"=dword:00000001
-"DisableSAMUPowerGating"=dword:00000001
-"DisablePowerGating"=dword:00000001
-"DisablePCIConfigAsicReset"=dword:00000001
-"KMD_CursorMagnificationThreshold"=-0
-"DisableDynamicGfxMGPowerGating"=dword:00000001
-"EnableLBPWSupport"=dword:00000001
-"DisableRlcSmuPGHandshake"=dword:00000001
-"DisableSysClockGating"=dword:00000001
-"DisableGfxClockGating"=dword:00000001
-"EnableUlps"=dword:00000000
-"DisableFBCSupport"=dword:00000001
-"EnableCrossFireAutoLink"=dword:00000000
-"ExtEvent_BIOSEventByInterrupt"=dword:00000000
-"TVDisableModes"=dword:00000001
-"LazyPreload"=dword:00000001
-
-[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Video\{3D9D220F-16B0-11EC-AA00-D49CC0720C6C}\0002]
-"DDC2Disabled"=dword:00000001
-"MultiFunctionSupported"=dword:00000001
-"TimingSelection"=dword:00000000
-"VgaCompatible"=dword:00000000
-"Adaptive De-interlacing"=dword:00000000
-"VPE Adaptive De-interlacing"=dword:00000000
-"GCOOPTION_DisableGPIOPowerSaveMode"=dword:00000001
-"TVEnableOverscan"=dword:00000000
-"UA_Enabled"=dword:00000001 
-"KMD_EnableOPM2Interface"=dword:00000001
-"WmAgpMaxIdleClk"=dword:00000020
-"MemInitLatencyTimer"=dword:00000001
-"GamePerformanceAdviserEnabled"=dword:00000000
-"DisableAllClockGating"=dword:00000001 
-"DisableGfxCGPowerGating"=dword:00000001
-"DisableCpPowerGating"=dword:00000001
-"DisableStaticGfxMGPowerGating"=dword:00000001
-"DisableSAMUPowerGating"=dword:00000001
-"DisablePowerGating"=dword:00000001
-"DisablePCIConfigAsicReset"=dword:00000001
-"KMD_CursorMagnificationThreshold"=-0
-"DisableDynamicGfxMGPowerGating"=dword:00000001
-"EnableLBPWSupport"=dword:00000001
-"DisableRlcSmuPGHandshake"=dword:00000001
-"DisableSysClockGating"=dword:00000001
-"DisableGfxClockGating"=dword:00000001
-"EnableUlps"=dword:00000000
-"DisableFBCSupport"=dword:00000001
-"EnableCrossFireAutoLink"=dword:00000000
-"ExtEvent_BIOSEventByInterrupt"=dword:00000000
-"TVDisableModes"=dword:00000001
-"LazyPreload"=dword:00000001
-
-[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Video\{3D9D2216-16B0-11EC-AA00-005056C00008}\0000]
-"DDC2Disabled"=dword:00000001
-"MultiFunctionSupported"=dword:00000001
-"TimingSelection"=dword:00000000
-"VgaCompatible"=dword:00000000
-"Adaptive De-interlacing"=dword:00000000
-"VPE Adaptive De-interlacing"=dword:00000000
-"GCOOPTION_DisableGPIOPowerSaveMode"=dword:00000001
-"TVEnableOverscan"=dword:00000000
-"UA_Enabled"=dword:00000001 
-"KMD_EnableOPM2Interface"=dword:00000001
-"WmAgpMaxIdleClk"=dword:00000020
-"MemInitLatencyTimer"=dword:00000001
-"GamePerformanceAdviserEnabled"=dword:00000000
-"DisableAllClockGating"=dword:00000001 
-"DisableGfxCGPowerGating"=dword:00000001
-"DisableCpPowerGating"=dword:00000001
-"DisableStaticGfxMGPowerGating"=dword:00000001
-"DisableSAMUPowerGating"=dword:00000001
-"DisablePowerGating"=dword:00000001
-"DisablePCIConfigAsicReset"=dword:00000001
-"KMD_CursorMagnificationThreshold"=-0
-"DisableDynamicGfxMGPowerGating"=dword:00000001
-"EnableLBPWSupport"=dword:00000001
-"DisableRlcSmuPGHandshake"=dword:00000001
-"DisableSysClockGating"=dword:00000001
-"DisableGfxClockGating"=dword:00000001
-"EnableUlps"=dword:00000000
-"DisableFBCSupport"=dword:00000001
-"EnableCrossFireAutoLink"=dword:00000000
-"ExtEvent_BIOSEventByInterrupt"=dword:00000000
-"TVDisableModes"=dword:00000001
-"LazyPreload"=dword:00000001
-
-
-[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Video\{3D9D2216-16B0-11EC-AA00-005056C00008}\0001]
-"DDC2Disabled"=dword:00000001
-"MultiFunctionSupported"=dword:00000001
-"TimingSelection"=dword:00000000
-"VgaCompatible"=dword:00000000
-"Adaptive De-interlacing"=dword:00000000
-"VPE Adaptive De-interlacing"=dword:00000000
-"GCOOPTION_DisableGPIOPowerSaveMode"=dword:00000001
-"TVEnableOverscan"=dword:00000000
-"UA_Enabled"=dword:00000001 
-"KMD_EnableOPM2Interface"=dword:00000001
-"WmAgpMaxIdleClk"=dword:00000020
-"MemInitLatencyTimer"=dword:00000001
-"GamePerformanceAdviserEnabled"=dword:00000000
-"DisableAllClockGating"=dword:00000001 
-"DisableGfxCGPowerGating"=dword:00000001
-"DisableCpPowerGating"=dword:00000001
-"DisableStaticGfxMGPowerGating"=dword:00000001
-"DisableSAMUPowerGating"=dword:00000001
-"DisablePowerGating"=dword:00000001
-"DisablePCIConfigAsicReset"=dword:00000001
-"KMD_CursorMagnificationThreshold"=-0
-"DisableDynamicGfxMGPowerGating"=dword:00000001
-"EnableLBPWSupport"=dword:00000001
-"DisableRlcSmuPGHandshake"=dword:00000001
-"DisableSysClockGating"=dword:00000001
-"DisableGfxClockGating"=dword:00000001
-"EnableUlps"=dword:00000000
-"DisableFBCSupport"=dword:00000001
-"EnableCrossFireAutoLink"=dword:00000000
-"ExtEvent_BIOSEventByInterrupt"=dword:00000000
-"TVDisableModes"=dword:00000001
-"LazyPreload"=dword:00000001
-"DisableForceRemoveWrite"=dword:00000000
-"DisableDrmdmaPowerGating"=dword:00000001
-"PP_ThermalAutoThrottlingEnable"=dword:00000000
-
-[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Video\{3D9D2216-16B0-11EC-AA00-005056C00008}\0002]
-"DDC2Disabled"=dword:00000001
-"MultiFunctionSupported"=dword:00000001
-"TimingSelection"=dword:00000000
-"VgaCompatible"=dword:00000000
-"Adaptive De-interlacing"=dword:00000000
-"VPE Adaptive De-interlacing"=dword:00000000
-"GCOOPTION_DisableGPIOPowerSaveMode"=dword:00000001
-"TVEnableOverscan"=dword:00000000
-"UA_Enabled"=dword:00000001 
-"KMD_EnableOPM2Interface"=dword:00000001
-"WmAgpMaxIdleClk"=dword:00000020
-"MemInitLatencyTimer"=dword:00000001
-"GamePerformanceAdviserEnabled"=dword:00000000
-"DisableAllClockGating"=dword:00000001 
-"DisableGfxCGPowerGating"=dword:00000001
-"DisableCpPowerGating"=dword:00000001
-"DisableStaticGfxMGPowerGating"=dword:00000001
-"DisableSAMUPowerGating"=dword:00000001
-"DisablePowerGating"=dword:00000001
-"DisablePCIConfigAsicReset"=dword:00000001
-"KMD_CursorMagnificationThreshold"=-0
-"DisableDynamicGfxMGPowerGating"=dword:00000001
-"EnableLBPWSupport"=dword:00000001
-"DisableRlcSmuPGHandshake"=dword:00000001
-"DisableSysClockGating"=dword:00000001
-"DisableGfxClockGating"=dword:00000001
-"EnableUlps"=dword:00000000
-"DisableFBCSupport"=dword:00000001
-"EnableCrossFireAutoLink"=dword:00000000
-"ExtEvent_BIOSEventByInterrupt"=dword:00000000
-"TVDisableModes"=dword:00000001
-"LazyPreload"=dword:00000001
-"DisableForceRemoveWrite"=dword:00000000
-"DisableDrmdmaPowerGating"=dword:00000001
-"PP_ThermalAutoThrottlingEnable"=dword:00000000
-
-[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Video\{3D9D2216-16B0-11EC-AA00-005056C00008}\0003]
-"DDC2Disabled"=dword:00000001
-"MultiFunctionSupported"=dword:00000001
-"TimingSelection"=dword:00000000
-"VgaCompatible"=dword:00000000
-"Adaptive De-interlacing"=dword:00000000
-"VPE Adaptive De-interlacing"=dword:00000000
-"GCOOPTION_DisableGPIOPowerSaveMode"=dword:00000001
-"TVEnableOverscan"=dword:00000000
-"UA_Enabled"=dword:00000001 
-"KMD_EnableOPM2Interface"=dword:00000001
-"WmAgpMaxIdleClk"=dword:00000020
-"MemInitLatencyTimer"=dword:00000001
-"GamePerformanceAdviserEnabled"=dword:00000000
-"DisableAllClockGating"=dword:00000001 
-"DisableGfxCGPowerGating"=dword:00000001
-"DisableCpPowerGating"=dword:00000001
-"DisableStaticGfxMGPowerGating"=dword:00000001
-"DisableSAMUPowerGating"=dword:00000001
-"DisablePowerGating"=dword:00000001
-"DisablePCIConfigAsicReset"=dword:00000001
-"KMD_CursorMagnificationThreshold"=-0
-"DisableDynamicGfxMGPowerGating"=dword:00000001
-"EnableLBPWSupport"=dword:00000001
-"DisableRlcSmuPGHandshake"=dword:00000001
-"DisableSysClockGating"=dword:00000001
-"DisableGfxClockGating"=dword:00000001
-"EnableUlps"=dword:00000000
-"DisableFBCSupport"=dword:00000001
-"EnableCrossFireAutoLink"=dword:00000000
-"ExtEvent_BIOSEventByInterrupt"=dword:00000000
-"TVDisableModes"=dword:00000001
-"LazyPreload"=dword:00000001
-"DisableForceRemoveWrite"=dword:00000000
-"DisableDrmdmaPowerGating"=dword:00000001
-"PP_ThermalAutoThrottlingEnable"=dword:00000000
-
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0001]
 "LTRSnoopL1Latency"=dword:00000001
@@ -476,7 +250,6 @@ Windows Registry Editor Version 5.00
 "PowerMizerLevel"=dword:00000001
 "PowerMizerLevelAC"=dword:00000001
 
-
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000]
 "LTRSnoopL1Latency"=dword:00000001
 "LTRSnoopL0Latency"=dword:00000001
@@ -529,14 +302,12 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\nvlddmkm]
 "NVFBCEnable"=dword:00000001
 "DisablePreemption"=dword:00000001
-"DisableCudaContextPreemption"=dword:00000001
 "DisableWriteCombining"=dword:00000001
 "EnableTiledDisplay"=dword:00000000
 "ComputePreemption"=dword:00000000
 "DisablePreemptionOnS3S4"=dword:00000001
 "EnableCEPreemption"=dword:00000000
-
-
+"RmGpsPsEnablePerCpuCoreDpc"=dword:00000001
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power]
 "ExitLatency "=dword:00000001

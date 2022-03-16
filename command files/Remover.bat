@@ -28,7 +28,6 @@ del /F /Q "C:\Windows\System32\WerEnc.dll"
 del /F /Q "C:\Windows\System32\WerFault.exe"
 del /F /Q "C:\Windows\System32\wercplsupport.dll"
 del /F /Q "C:\Windows\System32\werdiagcontroller.dll"
-del /F /Q "C:\Windows\System32\lfsvc.dll"
 del /F /Q "C:\Windows\System32\WerEnc.dll"
 del /F /Q "C:\Windows\System32\werui.dll"
 del /F /Q "C:\Windows\System32\GamePanelExternalHook.dll

@@ -3,7 +3,6 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\BitLocker]
 "PreventDeviceEncryption"=dword:00000001
 
-
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\System]
 "EnableSmartScreen"=dword:00000000
 "AllowCrossDeviceClipboard"=dword:00000000
@@ -24,6 +23,12 @@ Windows Registry Editor Version 5.00
 "EnableCdp"=dword:00000000
 "AllowBlockingAppsAtShutdown"=dword:00000000
 "HiberbootEnabled"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\Explorer]
+"ShowOrHideMostUsedApps"=dword:00000002
+"NoRecentDocsHistory"=dword:00000001
+"HideRecentlyAddedApps"=dword:00000001
+"NoStartMenuMFUprogramsList"=dword:00000001
 
 [HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
 "SeparateProcess"=dword:00000001
@@ -105,8 +110,6 @@ Windows Registry Editor Version 5.00
 "Enabled"=dword:00000000
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System]
-"ConsentPromptBehaviorAdmin"=dword:00000000
-"ConsentPromptBehaviorUser"=dword:00000000
 "DSCAutomationHostEnabled"=dword:00000000
 "EnableCursorSuppression"=dword:00000000
 "EnableInstallerDetection"=dword:00000000
@@ -126,7 +129,6 @@ Windows Registry Editor Version 5.00
 "EnableDynamicVirtualization"=dword:00000000
 "ProcessesUsingVirtualComponents"=dword:00000000
 
-
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System]
 "EnableLUA"=dword:00000000
 
@@ -142,8 +144,6 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\NetworkProvider]
 "RestoreConnection"=dword:00000001
 "WakeUp"=dword:00000000
-
-
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
 "UseOLEDTaskbarTransparency"=-
@@ -172,13 +172,11 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Throttle]
 "PerfEnablePackageIdle"=dword:00000000
 
-
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\MSIServer]
 @="Service"
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SafeBoot\Minimal\MSIServer]
 @="Service"
-
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\FileHistory]
 "Disabled"=dword:00000001
@@ -268,7 +266,6 @@ Windows Registry Editor Version 5.00
 [HKEY_CURRENT_USER\Software\Policies\Microsoft\WindowsMediaPlayer]
 "PreventCodecDownload"=dword:00000001
 
-
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\MobilityCenter]
 "NoMobilityCenter"=dword:00000001
 
@@ -298,7 +295,6 @@ CAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WcmSvc\Local]
 "fSoftDisconnectConnections"=dword:00000000
 "fMinimizeConnections"=dword:00000000
 
-
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WcmSvc\Local]
 "WCMPresent"=dword:00000001
 
@@ -306,8 +302,6 @@ CAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WcmSvc\Local]
 "fDisablePowerManagement"=dword:00000001
 "fSoftDisconnectConnections"=dword:00000000
 "fMinimizeConnections"=dword:00000000
-
-
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\usbhub\hubg]
 "DisableOnSoftRemove"=dword:00000001
@@ -322,7 +316,6 @@ CAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WcmSvc\Local]
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\USBXHCI\Parameters\Wdf]
 "NoExtraBufferRoom"=dword:00000000
 
-
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\usbflags]
 "fid_D1Latency"=dword:00000001
 "fid_D2Latency"=dword:00000001
@@ -331,7 +324,6 @@ CAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WcmSvc\Local]
 [HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Themes]
 "ThemeChangesMousePointers"=dword:00000000
 "ThemeChangesDesktopIcons"=dword:00000000
-
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WCN\UI]
 "DisableWcnUi"=dword:00000001

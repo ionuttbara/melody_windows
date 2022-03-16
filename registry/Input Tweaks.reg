@@ -44,6 +44,31 @@ Windows Registry Editor Version 5.00
 "EnableDoubleTapSpace"=dword:00000000
 "EnableInkingWithTouch"=dword:00000000
 
+[HKEY_CURRENT_USER\Software\Microsoft\InputPersonalization]
+"Installed"=dword:00000000
+"Shutdown"=dword:00000001
+"HarvestContacts"=dword:00000000
+"RestrictImplicitInkCollection"=dword:00000001
+"RestrictImplicitTextCollection"=dword:00000001
+"AcceptedPrivacyPolicy"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Microsoft\InputPersonalization\TrainedDataStore]
+"HarvestContacts"=dword:00000000
+"InsightsEnabled"=dword:00000000
+"LMDataLoggerEnabled"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\InputPersonalization]
+"RestrictImplicitInkCollection"=dword:00000001
+"RestrictImplicitTextCollection"=dword:00000001
+"Installed"=dword:00000000
+"Shutdown"=dword:00000001
+"AllowInputPersonalization"-
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\InputPersonalization]
+"AllowInputPersonalization"-
+"RestrictImplicitInkCollection"=dword:00000001
+"RestrictImplicitTextCollection"=dword:00000001
+
 [HKEY_CURRENT_USER\Software\Microsoft\Input\Settings]
 "EnableExpressiveInputShellHotkey"=dword:00000001
 "EnableExpressiveInputEmojiMultipleSelection"=dword:00000001
@@ -72,7 +97,6 @@ Windows Registry Editor Version 5.00
 "ChainUrlRetrievalTimeoutMilliseconds"=dword:0000000e
 "CrossCertDownloadIntervalHours"=dword:000000a8
 "Options"=dword:00000000
-
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Input\Settings]
 "AutoAccent"=dword:00000000
@@ -107,7 +131,6 @@ Windows Registry Editor Version 5.00
 "Prediction"=dword:00000000
 "Private"=dword:00000000
 "ProofDataSources"=dword:00000000
-"SearchDataSources"=dword:00000000
 "Spellcheck"=dword:00000000
 
 [HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Speech]
@@ -118,16 +141,9 @@ Windows Registry Editor Version 5.00
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CPSS\UserPolicy\ImproveInkingAndTyping]
 "DefaultValue"=dword:00000000
-"InheritsFromDevice"=dword:00000000
-"LegacyKeyName"="Enabled"
-"LegacyKeyType"=dword:00000000
-"LegacyProjection"=dword:00000000
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CPSS\UserPolicy\InkingAndTypingPersonalization]
 "DefaultValue"=dword:00000000
-"InheritsFromDevice"=dword:00000000
-"LegacyKeyType"=dword:00000000
-"LegacyProjection"=dword:00000000
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\TabletPC]
 "PreventHandwritingDataSharing"=dword:00000001
@@ -137,9 +153,6 @@ Windows Registry Editor Version 5.00
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\PenTraining]
 "DisablePenTraining"=dword:00000001
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Input\Settings\ControllerProcessor\CursorSpeed]
-"CursorUpdateInterval"=dword:00000001
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\mouclass\Parameters]
 "MouseDataQueueSize"=dword:00000032
@@ -154,13 +167,6 @@ Windows Registry Editor Version 5.00
 "RightClickZoneWidth"=dword:00000000
 "SpaceBarOffset"=dword:000003e8
 
-[HKEY_CURRENT_USER\Control Panel\Mouse]
-"MouseSpeed"="0"
-"MouseThreshold1"="0"
-"MouseThreshold2"="0"
-"Beep"="No"
-"ExtendedSounds"="No"
-
 [HKEY_USERS\.DEFAULT\Control Panel\Sound]
 "Beep"="no"
 "ExtendedSounds"="no"
@@ -170,10 +176,6 @@ Windows Registry Editor Version 5.00
 "KeyboardSpeed"="10"
 "InitialKeyboardIndicators"="2"
 
-[HKEY_CURRENT_USER\Control Panel\Mouse]
-"MouseHoverTime"="1"
-
-
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\TouchPrediction]
 "Latency"=dword:00000001
 "SampleTime"=dword:00000001
@@ -181,13 +183,18 @@ Windows Registry Editor Version 5.00
 
 [HKEY_CURRENT_USER\Control Panel\Mouse]
 "MouseSensitivity"="10"
-
+"MouseSpeed"="0"
+"MouseThreshold1"="0"
+"MouseThreshold2"="0"
+"Beep"="No"
+"ExtendedSounds"="No"
+"MouseHoverTime"="1"
 
 [HKEY_CURRENT_USER\Control Panel\PowerCfg]
 "CurrentPowerPolicy"="4"
+
 [HKEY_CURRENT_USER\Software\Microsoft\Input\TIPC]
 "Enabled"=dword:00000000
-
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\mouhid\Parameters]
 "TreatAbsolutePointerAsAbsolute"=dword:00000001

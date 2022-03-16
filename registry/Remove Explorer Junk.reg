@@ -1,5 +1,69 @@
 Windows Registry Editor Version 5.00
 
+[-HKEY_CLASSES_ROOT\batfile\shell\print]
+
+
+[-HKEY_CLASSES_ROOT\Directory\shellex\ContextMenuHandlers\ FileSyncEx]
+
+[-HKEY_CLASSES_ROOT\*\shellex\ContextMenuHandlers\ FileSyncEx]
+
+[-HKEY_CLASSES_ROOT\lnkfile\shellex\ContextMenuHandlers\ FileSyncEx]
+
+
+[-HKEY_CLASSES_ROOT\lnkfile\shellex\ContextMenuHandlers\NvAppShExt]
+
+[-HKEY_CLASSES_ROOT\lnkfile\shellex\ContextMenuHandlers\OpenGLShExt]
+
+
+[-HKEY_CLASSES_ROOT\cmdfile\shell\print]
+
+
+[-HKEY_CLASSES_ROOT\docxfile\shell\print]
+
+
+[-HKEY_CLASSES_ROOT\fonfile\shell\print]
+
+
+[-HKEY_CLASSES_ROOT\htmlfile\shell\print]
+
+
+[-HKEY_CLASSES_ROOT\inffile\shell\print]
+
+
+[-HKEY_CLASSES_ROOT\inifile\shell\print]
+
+
+[-HKEY_CLASSES_ROOT\JSEFile\Shell\Print]
+
+
+[-HKEY_CLASSES_ROOT\otffile\shell\print]
+
+
+[-HKEY_CLASSES_ROOT\pfmfile\shell\print]
+
+
+[-HKEY_CLASSES_ROOT\regfile\shell\print]
+
+
+[-HKEY_CLASSES_ROOT\rtffile\shell\print]
+
+
+[-HKEY_CLASSES_ROOT\ttcfile\shell\print]
+
+
+[-HKEY_CLASSES_ROOT\ttffile\shell\print]
+
+
+[-HKEY_CLASSES_ROOT\txtfile\shell\print]
+
+
+[-HKEY_CLASSES_ROOT\VBEFile\Shell\Print]
+
+
+[-HKEY_CLASSES_ROOT\VBSFile\Shell\Print]
+
+[-HKEY_CLASSES_ROOT\WSFFile\Shell\Print]
+
 
 [-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Feeds]
 

@@ -4,15 +4,14 @@ Windows Registry Editor Version 5.00
 [HKEY_CURRENT_USER\Control Panel\Desktop]
 "AutoEndTasks"="1"
 "MenuShowDelay"="0"
-"AutoEndTasks"="1"
 "ScreenSaveTimeOut"=-
 "SCRNSAVE.EXE"=-
 "ForegroundLockTimeout"=dword:00000000
 "MouseWheelRouting"=dword:00000002
 "WaitToKillAppTimeout"="1"
-"WaitToKillServiceTimeout"=dword:00000002
-"HungAppTimeout"="900"
-"LowLevelHooksTimeout"=dword:00000005
+"WaitToKillServiceTimeout"=dword:00000001
+"HungAppTimeout"="1"
+"LowLevelHooksTimeout"=dword:00000001
 "Win8DpiScaling"=dword:00000000
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Power]

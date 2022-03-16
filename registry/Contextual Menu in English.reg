@@ -5,7 +5,6 @@ Windows Registry Editor Version 5.00
 "MUIVerb"="Run with priority"
 "SubCommands"=""
 
-
 [HKEY_CLASSES_ROOT\exefile\Shell\Priority\shell\001flyout]
 @="Realtime"
 
@@ -47,80 +46,17 @@ Windows Registry Editor Version 5.00
 [HKEY_CLASSES_ROOT\exefile\Shell\Priority\shell\006flyout\command]
 @="cmd.exe /c start \"\" /Low \"%1\""
 
-
-
 [HKEY_CLASSES_ROOT\AllFilesystemObjects\shell\Windows.PermanentDelete]
 "CommandStateSync"=""
 "ExplorerCommandHandler"="{E9571AB2-AD92-4ec6-8924-4E5AD33790F5}"
 "Icon"="shell32.dll,-240"
 "Position"="Bottom"
 
-
-
 [HKEY_CLASSES_ROOT\Msi.Package\shell\Extract\command]
 @="msiexec.exe /a \"%1\" /qb TARGETDIR=\"%1 Contents\""
 
-
 [HKEY_CLASSES_ROOT\VBSFile\Shell\runas\command]
 @="C:\\Windows\\System32\\WScript.exe \"%1\" %*"
-
-
-[HKEY_CLASSES_ROOT\SystemFileAssociations\image\shell\print]
-"ProgrammaticAccessOnly"=""
-
-[HKEY_CLASSES_ROOT\batfile\shell\print]
-"ProgrammaticAccessOnly"=""
-
-[HKEY_CLASSES_ROOT\cmdfile\shell\print]
-"ProgrammaticAccessOnly"=""
-
-[HKEY_CLASSES_ROOT\docxfile\shell\print]
-"ProgrammaticAccessOnly"=""
-
-[HKEY_CLASSES_ROOT\fonfile\shell\print]
-"ProgrammaticAccessOnly"=""
-
-[HKEY_CLASSES_ROOT\htmlfile\shell\print]
-"ProgrammaticAccessOnly"=""
-
-[HKEY_CLASSES_ROOT\inffile\shell\print]
-"ProgrammaticAccessOnly"=""
-
-[HKEY_CLASSES_ROOT\inifile\shell\print]
-"ProgrammaticAccessOnly"=""
-
-[HKEY_CLASSES_ROOT\JSEFile\Shell\Print]
-"ProgrammaticAccessOnly"=""
-
-[HKEY_CLASSES_ROOT\otffile\shell\print]
-"ProgrammaticAccessOnly"=""
-
-[HKEY_CLASSES_ROOT\pfmfile\shell\print]
-"ProgrammaticAccessOnly"=""
-
-[HKEY_CLASSES_ROOT\regfile\shell\print]
-"ProgrammaticAccessOnly"=""
-
-[HKEY_CLASSES_ROOT\rtffile\shell\print]
-"ProgrammaticAccessOnly"=""
-
-[HKEY_CLASSES_ROOT\ttcfile\shell\print]
-"ProgrammaticAccessOnly"=""
-
-[HKEY_CLASSES_ROOT\ttffile\shell\print]
-"ProgrammaticAccessOnly"=""
-
-[HKEY_CLASSES_ROOT\txtfile\shell\print]
-"ProgrammaticAccessOnly"=""
-
-[HKEY_CLASSES_ROOT\VBEFile\Shell\Print]
-"ProgrammaticAccessOnly"=""
-
-[HKEY_CLASSES_ROOT\VBSFile\Shell\Print]
-"ProgrammaticAccessOnly"=""
-
-[HKEY_CLASSES_ROOT\WSFFile\Shell\Print]
-"ProgrammaticAccessOnly"=""
 
 [HKEY_CLASSES_ROOT\*\shell\GetFileHash]
 "MUIVerb"="Hash"
@@ -262,7 +198,6 @@ Windows Registry Editor Version 5.00
 [HKEY_CLASSES_ROOT\CABFolder\Shell\RunAs\Command]
 @="cmd /k dism /online /add-package /packagepath:\"%1\""
 
-
 [HKEY_CLASSES_ROOT\*\shell\Copy Content to Clipboard]
 "MUIVerb"="Copy Content to Clipboard"
 "Icon"="DxpTaskSync.dll,-52"
@@ -270,16 +205,6 @@ Windows Registry Editor Version 5.00
 
 [HKEY_CLASSES_ROOT\*\shell\Copy Content to Clipboard\Command]
 @="cmd /c clip < \"%1\""
-
-
-[HKEY_CLASSES_ROOT\DesktopBackground\Shell\Safely Remove Hardware]
-"MUIVerb"="Safely Remove Hardware"
-"Icon"="hotplug.dll,-100"
-"Position"="Center"
-
-[HKEY_CLASSES_ROOT\DesktopBackground\Shell\Safely Remove Hardware\Command]
-@="C:\\Windows\\system32\\control.exe hotplug.dll"
-
 
 [HKEY_CLASSES_ROOT\DesktopBackground\Shell\Firewall]
 "MUIVerb"="Windows Firewall"
@@ -354,17 +279,13 @@ Windows Registry Editor Version 5.00
 [HKEY_CURRENT_USER\Software\Classes\AllFileSystemObjects\shellex\ContextMenuHandlers\PintoStartScreen]
 @="{470C0EBD-5D73-4d58-9CED-E91E22E23282}"
 
-
-[-HKEY_CLASSES_ROOT\DesktopBackground\Shell\AdvancedBootOptions]
-
-
 ; 1.6. Restart File Explorer
 
 [HKEY_CLASSES_ROOT\DesktopBackground\Shell\Restart Explorer]
 "icon"="explorer.exe"
 "Position"="Center"
 "SubCommands"=""
-"MUIVerb"="Restart/Pause File Explorer "
+"MUIVerb"="Restart/Pause File Explorer"
 
 [HKEY_CLASSES_ROOT\DesktopBackground\Shell\Restart Explorer\shell]
 
@@ -380,7 +301,6 @@ Windows Registry Editor Version 5.00
 
 [HKEY_CLASSES_ROOT\DesktopBackground\Shell\Restart Explorer\shell\02menu\command]
 @="cmd.exe /c @echo off & echo. & echo Stopping explorer.exe process . . . & echo. & taskkill /f /im explorer.exe & echo. & echo. & echo Waiting to start explorer.exe process when you are ready . . . & pause && start explorer.exe && exit"
-
 
 [HKEY_CLASSES_ROOT\DesktopBackground\Shell\DismContextMenu]
 "Icon"="WmiPrvSE.exe"
@@ -402,8 +322,6 @@ Windows Registry Editor Version 5.00
 [HKEY_CLASSES_ROOT\DesktopBackground\shell\DismContextMenu\shell\RestoreHealth\command]
 @="PowerShell -windowstyle hidden -command \"Start-Process cmd -ArgumentList '/s,/k, Dism /Online /Cleanup-Image /RestoreHealth' -Verb runAs\""
 
-
-
 [HKEY_CLASSES_ROOT\DesktopBackground\shell\DismContextMenu\shell\Corruptions]
 "HasLUAShield"=""
 "MUIVerb"="Check for Corruptions"
@@ -411,8 +329,6 @@ Windows Registry Editor Version 5.00
 
 [HKEY_CLASSES_ROOT\DesktopBackground\shell\DismContextMenu\shell\Corruptions\command]
 @="PowerShell -windowstyle hidden -command \"Start-Process cmd -ArgumentList '/s,/k, sfc.exe /scannow' -Verb runAs\""
-
-
 
 [HKEY_CLASSES_ROOT\DesktopBackground\shell\DismContextMenu\shell\Corruptions_log]
 "HasLUAShield"=""
@@ -517,18 +433,6 @@ Windows Registry Editor Version 5.00
   00,68,00,65,00,78,00,74,00,2e,00,64,00,6c,00,6c,00,2c,00,2d,00,34,00,38,00,\
   30,00,32,00,00,00
 
-[-HKEY_CLASSES_ROOT\Directory\shellex\ContextMenuHandlers\ FileSyncEx]
-
-[-HKEY_CLASSES_ROOT\*\shellex\ContextMenuHandlers\ FileSyncEx]
-
-[-HKEY_CLASSES_ROOT\lnkfile\shellex\ContextMenuHandlers\ FileSyncEx]
-
-
-[-HKEY_CLASSES_ROOT\lnkfile\shellex\ContextMenuHandlers\NvAppShExt]
-
-[-HKEY_CLASSES_ROOT\lnkfile\shellex\ContextMenuHandlers\OpenGLShExt]
-
-
 ;Register DLL
 
 [HKEY_CLASSES_ROOT\dllfile\shell\Register\Command]
@@ -542,26 +446,4 @@ Windows Registry Editor Version 5.00
 
 [HKEY_CLASSES_ROOT\ocxfile\shell\Unregister\Command]
 @="regsvr32.exe /u \"%1\""
-
-
-[-HKEY_CLASSES_ROOT\CompressedFolder\ShellEx\ContextMenuHandlers\{b8cdcb65-b1bf-4b42-9428-1dfdb7ee92af}]
-
-[-HKEY_CLASSES_ROOT\LibraryFolder\background\shellex\ContextMenuHandlers\New]
-
-[-HKEY_CLASSES_ROOT\CompressedFolder\Shell\find]
-
-
-[-HKEY_CLASSES_ROOT\CLSID\{20D04FE0-3AEA-1069-A2D8-08002B30309D}\shell\find]
-
-[-HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\MenuExt]
-
-[HKEY_CLASSES_ROOT\CLSID\{20D04FE0-3AEA-1069-A2D8-08002B30309D}\shell\ASP]
-"MUIVerb"="Advanced System Properties"
-"HasLUAShield"=""
-"Position"="Center"
-
-[HKEY_CLASSES_ROOT\CLSID\{20D04FE0-3AEA-1069-A2D8-08002B30309D}\shell\ASP\command]
-@=hex(2):53,00,79,00,73,00,74,00,65,00,6d,00,50,00,72,00,6f,00,70,00,65,00,72,\
-  00,74,00,69,00,65,00,73,00,41,00,64,00,76,00,61,00,6e,00,63,00,65,00,64,00,\
-  2e,00,65,00,78,00,65,00,00,00
 

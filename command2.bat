@@ -23,8 +23,6 @@ PowerRun.exe cmd.exe /c PowerRun2.bat
 
 :: Software Telemetry
 
-
-regedit /s "registry\3rd Software Telemetry.reg"
 regedit /s "registry\Windows Telemetry DataCollection.reg"
 regedit /s "registry\Windows Error Reporting.reg"
 regedit /s "registry\Disable WMI Keylogger.reg"
@@ -38,11 +36,9 @@ regedit /s "registry\SVCHOST Split.reg"
 
 :: Windows Operating System Tweaks
 
-regedit /s "registry\Action Center Messages.reg"
 regedit /s "registry\Apparence Optimization.reg"
 regedit /s "registry\AutoPlay Handlers.reg"
 regedit /s "registry\Contextual Menu in English.reg"
-regedit /s "registry\Control Panel Elements.reg"
 regedit /s "registry\Disable Windows Disk Quota.reg"
 regedit /s "registry\Disk Optimization.reg"
 regedit /s "registry\Feature Manipulation.reg"
@@ -72,13 +68,14 @@ regedit /s "registry\IRQ Priority.reg"
 regedit /s "registry\Internet Speed Optimization.reg"
 regedit /s "registry\GPU Usage Optimization.reg"
 regedit /s "registry\Application Priority and Affinities.reg"
+regedit /s "registry\Windows Update - Disable Driver Search.reg"
 
 :: Installing Microsoft's Certs (because they removed sometime)...
 for /f "delims=" %%f in ('dir /b "%~dp0\certificates\*"') do (
 	echo Installing %%f...
 	certutil -f -addstore Root "%~dp0\certificates\%%f"
 )
-reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Fidelity" /v DisplayName /t reg_sz /d "Melody 12.0 (EAS, partially applied)" /f
+reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\odex.melody" /v DisplayName /t reg_sz /d "Melody 12.0 (EAS, partially applied)" /f
 
 :: Removal of Components
 
@@ -251,6 +248,7 @@ dism /Online /Remove-Capability /CapabilityName:Hello.Face.20134~~~~0.0.1.0  /No
 
 :: Another Tweaks
 for /f %%i in ('Reg query "HKLM\SYSTEM\CurrentControlSet\Services" /s /f DmaRemappingCompatible ^| find /i "Services\" ') do (Reg add "%%i" /v "DmaRemappingCompatible" /t Reg_DWORD /d "0" /f )
-reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Fidelity" /v DisplayName /t reg_sz /d "Melody 12.07 (EAS)" /f
+reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\odex.melody" /v DisplayName /t reg_sz /d "Melody 12.07 (EAS)" /f
+netsh interface tcp set global autotuningl=experimental
 timeout 20
-shutdown /r /f /t /0
+shutdown /r /f /t 0

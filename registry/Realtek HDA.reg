@@ -1,14 +1,10 @@
 Windows Registry Editor Version 5.00
 
-
-
 [HKEY_CURRENT_USER\Software\Realtek\Audio\RtkNGUI64\General]
 "JDPopup"=dword:00000001
 "CplExecuted_104386C7_104386C7"=dword:00000001
-"LastFixDefaultTime"=hex:e2,07,0c,00,02,00,04,00,00,00,20,00,33,00,fd,00
 "RenderDefaultFixed"=dword:00000001
 "CaptureDefaultFixed"=dword:00000001
-"Language"=dword:00000000
 "CplExecuted_103C830C_103C830C"=dword:00000001
 "AutoSelectChannelByJackConf"=dword:00000001
 
@@ -17,3 +13,8 @@ Windows Registry Editor Version 5.00
 "DelayTime"=dword:00000003
 "OnlyBattery"=dword:00000000
 "PowerState"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Realtek\AECBF\icrcAudioProcessingDemo]
+"AcousticEchoCancellation"=dword:00000000
+"AcousticSourceTracking"=dword:00000000
+"Beamforming"=dword:00000000
