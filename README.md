@@ -53,6 +53,12 @@
 
 | Applied Tweak | Description | Required Windows Version |
 | ------ | ------ |------ |
+
+|StartAllBack| Integration of StartAllBack. 3rd Party Software. Fixing Windows inconsistency in UI. | Windows 10 or newer |
+|Ditto Integration| Integration of Ditto Clipboard Manager with Windows. Also pressing WIN key together with V will open Ditto. | Windows 10 or newer |
+|Ear Trumpet Integration | Removing Windows Audio Default Icon and Replacing with EarTrumpet | Windows 10 or newer |
+|Accesibilty Tweaks| Disables Narrator annoying and Keyboard Flags | Windows 11|
+|Holographic Tweaks| Optimizes Windows Holographic App | Windows 10 and 11 |
 |Certificates from Microsoft| Microsoft is removing some certificates in Windows 10 versions.| Windows 10.0 version 1803 or newer|
 | Apparence Optimization (registry)| Disables transparency and animations for Current User and SYSTEM USER (disables animations in WinLogonUI.exe)| Windows 10 or newer|
 |Application Priority | Changed some Windows Services and Application Priority| none |
@@ -100,6 +106,8 @@
  | Applied Tweak |Description | Required Windows Version 
 | ------ | ------ |------ |
 |Office Tweaks| Disables Office Telemetry and data collection | Office 2013 or newer|
-
+|Chrome Tweaks| Adds uBlock Origin Extension, Tweaking DNS Client of Browser | Chrome 96 or newer|
+|Edge  Tweaks| Adds uBlock Origin Extension, Tweaking DNS Client of Browser | Edge 92 or newer|
+|Chromium Browser Updater Tweaks| Optimizes Update Pipeline |Chrome/Edge Updater 1.42 or newer|
 ## License
 [![License: CC0-1.0](https://img.shields.io/badge/License-CC0%201.0-lightgrey.svg)](https://tldrlegal.com/license/creative-commons-cc0-1.0-universal)
