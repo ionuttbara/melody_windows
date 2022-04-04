@@ -447,3 +447,183 @@ Windows Registry Editor Version 5.00
 [HKEY_CLASSES_ROOT\ocxfile\shell\Unregister\Command]
 @="regsvr32.exe /u \"%1\""
 
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\HiddenFiles]
+"Icon"="imageres.dll,-5314"
+"MUIVerb"="Hidden items"
+"Position"="Bottom"
+"Extended"=-
+"SubCommands"=""
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\HiddenFiles\shell\Windows.ShowHiddenFiles]
+"CommandStateSync"=""
+"Description"="@shell32.dll,-37573"
+"ExplorerCommandHandler"="{f7300245-1f4b-41ba-8948-6fd392064494}"
+"Icon"="imageres.dll,-5314"
+"MUIVerb"="Hide/Show Hidden items"
+
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\HiddenFiles\shell\x1menu]
+"MUIVerb"="Hide protected OS files"
+"Icon"="imageres.dll,-5314"
+"CommandFlags"=dword:00000020
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\HiddenFiles\shell\x1menu\command]
+@="cmd /c, REG ADD \"HKCU\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced\" /V ShowSuperHidden /T REG_DWORD /D 0 /F & taskkill /f /im explorer.exe & start explorer.exe"
+
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\HiddenFiles\shell\x2menu]
+"MUIVerb"="Show protected OS files"
+"Icon"="imageres.dll,-5314"
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\HiddenFiles\shell\x2menu\command]
+@="cmd /c, REG ADD \"HKCU\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced\" /V Hidden /T REG_DWORD /D 1 /F & REG ADD \"HKCU\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced\" /V ShowSuperHidden /T REG_DWORD /D 1 /F & taskkill /f /im explorer.exe & start explorer.exe"
+
+
+[HKEY_CLASSES_ROOT\AllFilesystemObjects\shell\HiddenFiles]
+"Icon"="imageres.dll,-5314"
+"MUIVerb"="Hidden items"
+"Position"="Bottom"
+"Extended"=-
+"SubCommands"=""
+
+[HKEY_CLASSES_ROOT\AllFilesystemObjects\shell\HiddenFiles\shell\Windows.ShowHiddenFiles]
+"CommandStateSync"=""
+"Description"="@shell32.dll,-37573"
+"ExplorerCommandHandler"="{f7300245-1f4b-41ba-8948-6fd392064494}"
+"Icon"="imageres.dll,-5314"
+"MUIVerb"="Hide/Show hidden items"
+
+[HKEY_CLASSES_ROOT\AllFilesystemObjects\shell\HiddenFiles\shell\Windows.HideSelected]
+"Description"="@shell32.dll,-37575"
+"ExplorerCommandHandler"="{0947c622-f98a-48a5-9df7-60e5fe202e07}"
+"Icon"="imageres.dll,-5314"
+"MUIVerb"="Hide/Unhide selected items"
+
+
+[HKEY_CLASSES_ROOT\AllFilesystemObjects\shell\HiddenFiles\shell\x1menu]
+"MUIVerb"="Hide protected OS files"
+"Icon"="imageres.dll,-5314"
+"CommandFlags"=dword:00000020
+
+[HKEY_CLASSES_ROOT\AllFilesystemObjects\shell\HiddenFiles\shell\x1menu\command]
+@="cmd /c, REG ADD \"HKCU\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced\" /V ShowSuperHidden /T REG_DWORD /D 0 /F & taskkill /f /im explorer.exe & start explorer.exe"
+
+
+[HKEY_CLASSES_ROOT\AllFilesystemObjects\shell\HiddenFiles\shell\x2menu]
+"MUIVerb"="Show protected OS files"
+"Icon"="imageres.dll,-5314"
+
+[HKEY_CLASSES_ROOT\AllFilesystemObjects\shell\HiddenFiles\shell\x2menu\command]
+@="cmd /c, REG ADD \"HKCU\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced\" /V Hidden /T REG_DWORD /D 1 /F & REG ADD \"HKCU\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced\" /V ShowSuperHidden /T REG_DWORD /D 1 /F & taskkill /f /im explorer.exe & start explorer.exe"
+
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\SafeMode]
+"icon"="bootux.dll,-1032"
+"MUIVerb"="Safe Mode"
+"Position"=-
+"SubCommands"=""
+
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\SafeMode\shell\001-NormalMode]
+@="Restart in Normal Mode"
+"HasLUAShield"=""
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\SafeMode\shell\001-NormalMode\command]
+@="powershell -windowstyle hidden -command \"Start-Process cmd -ArgumentList '/s,/c,bcdedit /deletevalue {current} safeboot & bcdedit /deletevalue {current} safebootalternateshell & shutdown -r -t 00 -f' -Verb runAs\""
+
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\SafeMode\shell\002-SafeMode]
+@="Restart in Safe Mode"
+"HasLUAShield"=""
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\SafeMode\shell\002-SafeMode\command]
+@="powershell -windowstyle hidden -command \"Start-Process cmd -ArgumentList '/s,/c,bcdedit /set {current} safeboot minimal & bcdedit /deletevalue {current} safebootalternateshell & shutdown -r -t 00 -f' -Verb runAs\""
+
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\SafeMode\shell\003-SafeModeNetworking]
+@="Restart in Safe Mode with Networking"
+"HasLUAShield"=""
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\SafeMode\shell\003-SafeModeNetworking\command]
+@="powershell -windowstyle hidden -command \"Start-Process cmd -ArgumentList '/s,/c,bcdedit /set {current} safeboot network & bcdedit /deletevalue {current} safebootalternateshell & shutdown -r -t 00 -f' -Verb runAs\""
+
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\SafeMode\shell\004-SafeModeCommandPrompt]
+@="Restart in Safe Mode with Command Prompt"
+"HasLUAShield"=""
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\SafeMode\shell\004-SafeModeCommandPrompt\command]
+@="powershell -windowstyle hidden -command \"Start-Process cmd -ArgumentList '/s,/c,bcdedit /set {current} safeboot minimal & bcdedit /set {current} safebootalternateshell yes & shutdown -r -t 00 -f' -Verb runAs\""
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power\PowerSettings\54533251-82be-4824-96c1-47b60b740d00\06cadf0e-64ed-448a-8927-ce7bf90eb35d]
+"Attributes"=dword:00000002
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power\PowerSettings\501a4d13-42af-4429-9fd1-a8218c268e20\ee12f906-d277-404b-b6da-e5fa1a576df5]
+"Attributes"=dword:00000002
+
+; Removed from Properties tab
+[-HKEY_CLASSES_ROOT\AllFilesystemObjects\shellex\PropertySheetHandlers\{596AB062-B4D2-4215-9F74-E9109B0A8153}]
+
+[-HKEY_CLASSES_ROOT\CLSID\{450D8FBA-AD25-11D0-98A8-0800361B1103}\shellex\PropertySheetHandlers\{596AB062-B4D2-4215-9F74-E9109B0A8153}]
+
+[-HKEY_CLASSES_ROOT\Directory\shellex\PropertySheetHandlers\{596AB062-B4D2-4215-9F74-E9109B0A8153}]
+
+[-HKEY_CLASSES_ROOT\Drive\shellex\PropertySheetHandlers\{596AB062-B4D2-4215-9F74-E9109B0A8153}]
+
+
+; Remove from context menu
+[-HKEY_CLASSES_ROOT\AllFilesystemObjects\shellex\ContextMenuHandlers\{596AB062-B4D2-4215-9F74-E9109B0A8153}]
+
+[-HKEY_CLASSES_ROOT\CLSID\{450D8FBA-AD25-11D0-98A8-0800361B1103}\shellex\ContextMenuHandlers\{596AB062-B4D2-4215-9F74-E9109B0A8153}]
+
+[-HKEY_CLASSES_ROOT\Directory\shellex\ContextMenuHandlers\{596AB062-B4D2-4215-9F74-E9109B0A8153}]
+
+[-HKEY_CLASSES_ROOT\Drive\shellex\ContextMenuHandlers\{596AB062-B4D2-4215-9F74-E9109B0A8153}]
+
+
+; To clear any policies
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer]
+"NoPreviousVersionsPage"=-
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer]
+"NoPreviousVersionsPage"=-
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\PreviousVersions]
+"DisableLocalPage"=-
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer]
+"NoPreviousVersionsPage"=-
+
+[HKEY_CURRENT_USER\Software\Policies\Microsoft\PreviousVersions]
+"DisableLocalPage"=-
+
+[-HKEY_CLASSES_ROOT\AllFilesystemObjects\shell\pintohome]
+
+[-HKEY_CLASSES_ROOT\Drive\shell\pintohome]
+
+[-HKEY_CLASSES_ROOT\Folder\shell\pintohome]
+
+[-HKEY_CLASSES_ROOT\Network\shell\pintohome]
+
+[-HKEY_CLASSES_ROOT\AllFilesystemObjects\shellex\PropertySheetHandlers\{7EFA68C6-086B-43e1-A2D2-55A113531240}]
+
+[-HKEY_CLASSES_ROOT\Directory\shellex\PropertySheetHandlers\Offline Files]
+
+[-HKEY_CLASSES_ROOT\Folder\shellex\PropertySheetHandlers\Offline Files]
+
+
+[-HKEY_CLASSES_ROOT\Unknown\shell\OpenWithSetDefaultOn]
+
+[HKEY_CLASSES_ROOT\Unknown\shell\OpenWithSetDefaultOn]
+"MultiSelectModel"="Single"
+"ProgrammaticAccessOnly"=""
+
+[HKEY_CLASSES_ROOT\Unknown\shell\OpenWithSetDefaultOn\command]
+@=hex(2):25,00,53,00,79,00,73,00,74,00,65,00,6d,00,52,00,6f,00,6f,00,74,00,25,\
+  00,5c,00,73,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,00,5c,00,4f,00,70,00,\
+  65,00,6e,00,57,00,69,00,74,00,68,00,2e,00,65,00,78,00,65,00,20,00,2d,00,6f,\
+  00,76,00,65,00,72,00,72,00,69,00,64,00,65,00,20,00,22,00,25,00,31,00,22,00,\
+  00,00
+"DelegateExecute"="{e44e9428-bdbc-4987-a099-40dc8fd255e7}"
+

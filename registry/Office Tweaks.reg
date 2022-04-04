@@ -9,7 +9,6 @@ Windows Registry Editor Version 5.00
 "sendtelemetry"=dword:00000003
 
 [HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\16.0\Common\General]
-"shownfirstrunoptin"=dword:00000000
 "skydrivesigninoption"=dword:00000000
 
 [HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\16.0\Common\ptwatson]
@@ -17,7 +16,6 @@ Windows Registry Editor Version 5.00
 
 [HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\16.0\Firstrun]
 "disablemovie"=dword:00000001
-"bootedrtm"=dword:00000001
 
 [HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\16.0\OSM]
 "enablelogging"=dword:00000000
@@ -206,9 +204,8 @@ Windows Registry Editor Version 5.00
 "dontshowwhatsnew"=dword:00000001
 
 [HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\16.0\common\privacy]
-"controllerconnectedservicesenabled"=dword:00000002
-"disconnectedstate"=dword:00000002
-"usercontentdisabled"=dword:00000002
+"disconnectedstate"=-
+"usercontentdisabled"=-
 
 [HKEY_CURRENT_USER\software\policies\microsoft\shared tools\proofing tools\1.0\office]
 "publisherspellingoptions"=dword:00000003

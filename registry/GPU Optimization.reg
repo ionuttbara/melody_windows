@@ -4,7 +4,13 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows Media Foundation]
 "EnableFrameServerMode"=dword:00000000
 
-[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\AppHost]
+[HKEY_CURRENT_USER\Software\Microsoft\DirectX\GraphicsSettings]
+"SwapEffectUpgradeCache"=dword:00000001
+
+[HKEY_CURRENT_USER\Software\Microsoft\DirectX\UserGpuPreferences]
+"DirectXUserGlobalSettings"="SwapEffectUpgradeEnable=1;"
+
+[-HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\AppHost]
 "EnableWebContentEvaluation"=dword:00000000
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Avalon.Graphics]
@@ -22,7 +28,7 @@ Windows Registry Editor Version 5.00
 "MaxMultisampleSize"=dword:00000000
 "UseReferenceRasterizer"=dword:00000001
 
-[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Avalon.Graphics]
+[-HKEY_CURRENT_USER\SOFTWARE\Microsoft\Avalon.Graphics]
 "DisableHWAcceleration"=dword:00000000
 "MaxMultisampleSize"=dword:00000000
 "UseReferenceRasterizer"=dword:00000001
@@ -37,7 +43,7 @@ Windows Registry Editor Version 5.00
 "MMX Fast Path"=dword:00000001
 "FlipNoVsync"=dword:00000001
 
-[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Direct3D]
+[-HKEY_CURRENT_USER\SOFTWARE\Microsoft\Direct3D]
 "DisableVidMemVBs"=dword:00000001
 "MMX Fast Path"=dword:00000001
 "FlipNoVsync"=dword:00000001
@@ -48,7 +54,7 @@ Windows Registry Editor Version 5.00
 [HKEY_USERS\.DEFAULT\SOFTWARE\Microsoft\Direct3D\Drivers]
 "SoftwareOnly"=dword:00000000
 
-[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Direct3D\Drivers]
+[-HKEY_CURRENT_USER\SOFTWARE\Microsoft\Direct3D\Drivers]
 "SoftwareOnly"=dword:00000000
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DirectDraw]
@@ -57,7 +63,7 @@ Windows Registry Editor Version 5.00
 [HKEY_USERS\.DEFAULT\SOFTWARE\Microsoft\DirectDraw]
 "EmulationOnly"=dword:00000000
 
-[HKEY_CURRENT_USER\SOFTWARE\Microsoft\DirectDraw]
+[-HKEY_CURRENT_USER\SOFTWARE\Microsoft\DirectDraw]
 "EmulationOnly"=dword:00000000
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Direct3D]
@@ -91,7 +97,7 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\GraphicsDrivers]
 "PlatformSupportMiracast"=dword:00000001
 
-[HKEY_CURRENT_USER\SOFTWARE\NVIDIA Corporation\Global\NVTweak\Devices\509901423-0\Color]
+[-HKEY_CURRENT_USER\SOFTWARE\NVIDIA Corporation\Global\NVTweak\Devices\509901423-0\Color]
 "NvCplUseColorCorrection"=dword:00000000
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\SubSystems]

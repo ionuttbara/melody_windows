@@ -6,7 +6,7 @@ Windows Registry Editor Version 5.00
 "fSavePageSettings"=dword:00000001
 "fSaveWindowPositions"=dword:00000001
 "fWindowsOnlyEOL"=dword:00000000
-"fPasteOriginalEOL"=dword:00000001
+"fPasteOriginalEOL"=dword:00000000
 
 [HKEY_CLASSES_ROOT\*\shell\Open with Notepad]
 "Icon"="notepad.exe,-2"

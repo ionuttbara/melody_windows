@@ -1,0 +1,830 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Bugsnag</name>
+    </assembly>
+    <members>
+        <member name="T:Bugsnag.IBreadcrumbs">
+            <summary>
+            Represents a collection of breadcrumbs
+            </summary>
+        </member>
+        <member name="M:Bugsnag.IBreadcrumbs.Leave(System.String)">
+            <summary>
+            Add a breadcrumb to the collection
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="M:Bugsnag.IBreadcrumbs.Leave(System.String,Bugsnag.BreadcrumbType,System.Collections.Generic.IDictionary{System.String,System.String})">
+            <summary>
+            Add a breadcrumb to the collection with the specified type and metadata
+            </summary>
+            <param name="message"></param>
+            <param name="type"></param>
+            <param name="metadata"></param>
+        </member>
+        <member name="M:Bugsnag.IBreadcrumbs.Leave(Bugsnag.Payload.Breadcrumb)">
+            <summary>
+            Add a pre assembled breadcrumb to the collection.
+            </summary>
+            <param name="breadcrumb"></param>
+        </member>
+        <member name="M:Bugsnag.IBreadcrumbs.Retrieve">
+            <summary>
+            Retrieve the collection of left breadcrumbs.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Bugsnag.Breadcrumbs">
+            <summary>
+            Implements an in memory collection of breadcrumbs. Keeping a configurable
+            number of the most recently added breadcrumbs.
+            </summary>
+        </member>
+        <member name="M:Bugsnag.Breadcrumbs.#ctor(Bugsnag.IConfiguration)">
+            <summary>
+            Constructs a collection of breadcrumbs
+            </summary>
+            <param name="configuration"></param>
+        </member>
+        <member name="M:Bugsnag.Breadcrumbs.Leave(System.String)">
+            <summary>
+            Add a breadcrumb to the collection using Manual type and no metadata.
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="M:Bugsnag.Breadcrumbs.Leave(System.String,Bugsnag.BreadcrumbType,System.Collections.Generic.IDictionary{System.String,System.String})">
+            <summary>
+            Add a breadcrumb to the collection with the specified type and metadata
+            </summary>
+            <param name="message"></param>
+            <param name="type"></param>
+            <param name="metadata"></param>
+        </member>
+        <member name="M:Bugsnag.Breadcrumbs.Leave(Bugsnag.Payload.Breadcrumb)">
+            <summary>
+            Add a pre assembled breadcrumb to the collection.
+            </summary>
+            <param name="breadcrumb"></param>
+        </member>
+        <member name="M:Bugsnag.Breadcrumbs.Retrieve">
+            <summary>
+            Retrieve the collection of breadcrumbs at this point in time.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Bugsnag.BreadcrumbType">
+            <summary>
+            Represents all of the possible breadcrumb types that the Bugsnag API supports.
+            </summary>
+        </member>
+        <member name="F:Bugsnag.BreadcrumbType.Navigation">
+            <summary>
+            A breadcrumb with navigation information.
+            </summary>
+        </member>
+        <member name="F:Bugsnag.BreadcrumbType.Request">
+            <summary>
+            A breadcrumb with request information.
+            </summary>
+        </member>
+        <member name="F:Bugsnag.BreadcrumbType.Process">
+            <summary>
+            A breadcrumb with process information.
+            </summary>
+        </member>
+        <member name="F:Bugsnag.BreadcrumbType.Log">
+            <summary>
+            A breadcrumb with log information.
+            </summary>
+        </member>
+        <member name="F:Bugsnag.BreadcrumbType.User">
+            <summary>
+            A breadcrumb with user information.
+            </summary>
+        </member>
+        <member name="F:Bugsnag.BreadcrumbType.State">
+            <summary>
+            A breadcrumb with state information.
+            </summary>
+        </member>
+        <member name="F:Bugsnag.BreadcrumbType.Error">
+            <summary>
+            A breadcrumb with error information.
+            </summary>
+        </member>
+        <member name="F:Bugsnag.BreadcrumbType.Manual">
+            <summary>
+            A manually logged breadcrumb.
+            </summary>
+        </member>
+        <member name="T:Bugsnag.Client">
+            <summary>
+            The Bugsnag client is used to process and send error reports to Bugsnag.
+            </summary>
+        </member>
+        <member name="F:Bugsnag.Client.DefaultInternalMiddleware">
+            <summary>
+            The default middleware that the Bugsnag client will always run before
+            running any user specified middleware and sending the error report.
+            </summary>
+        </member>
+        <member name="M:Bugsnag.Client.#ctor(System.String)">
+            <summary>
+            Constructs a client with the given apiKey using the default configuration values.
+            </summary>
+            <param name="apiKey"></param>
+        </member>
+        <member name="M:Bugsnag.Client.#ctor(Bugsnag.IConfiguration)">
+            <summary>
+            Constructs a client with the default storage and delivery classes.
+            </summary>
+            <param name="configuration"></param>
+        </member>
+        <member name="M:Bugsnag.Client.#ctor(Bugsnag.IConfiguration,Bugsnag.IDelivery,Bugsnag.IBreadcrumbs,Bugsnag.ISessionTracker)">
+            <summary>
+            Constructs a client with the specified storage and delivery classes.
+            </summary>
+            <param name="configuration"></param>
+            <param name="delivery"></param>
+            <param name="breadcrumbs"></param>
+            <param name="sessionTracking"></param>
+        </member>
+        <member name="P:Bugsnag.Client.InternalMiddleware">
+            <summary>
+            The default middleware that the Bugsnag client will always run before
+            running any user specified middleware and sending the error report.
+            </summary>
+        </member>
+        <member name="T:Bugsnag.Configuration">
+            <summary>
+            An in memory implementation of the IConfiguration interface, with default
+            values populated.
+            </summary>
+        </member>
+        <member name="M:Bugsnag.IClient.Notify(System.Exception)">
+            <summary>
+            Notify Bugsnag of the provided exception.
+            </summary>
+            <param name="exception"></param>
+        </member>
+        <member name="M:Bugsnag.IClient.Notify(System.Exception,Bugsnag.Middleware)">
+            <summary>
+            Notify Bugsnag of the provided exception and use the provided middleware
+            for this exception.
+            </summary>
+            <param name="exception"></param>
+            <param name="callback"></param>
+        </member>
+        <member name="M:Bugsnag.IClient.Notify(System.Exception,Bugsnag.Severity)">
+            <summary>
+            Notify Bugsnag of the provided exception and specified severity.
+            </summary>
+            <param name="exception"></param>
+            <param name="severity"></param>
+        </member>
+        <member name="M:Bugsnag.IClient.Notify(System.Exception,Bugsnag.Severity,Bugsnag.Middleware)">
+            <summary>
+            Notify Bugsnag of the provided exception, specified severity and use
+            the provided middleware.
+            </summary>
+            <param name="exception"></param>
+            <param name="severity"></param>
+            <param name="callback"></param>
+        </member>
+        <member name="M:Bugsnag.IClient.Notify(System.Exception,Bugsnag.Payload.HandledState)">
+            <summary>
+            Notify Bugsnag of the provided exception, using the specified handled
+            state.
+            </summary>
+            <param name="exception"></param>
+            <param name="handledState"></param>
+        </member>
+        <member name="M:Bugsnag.IClient.Notify(System.Exception,Bugsnag.Payload.HandledState,Bugsnag.Middleware)">
+            <summary>
+            Notify Bugsnag of the provided exception, using the specified handled
+            state and use the provided middleware.
+            </summary>
+            <param name="exception"></param>
+            <param name="handledState"></param>
+            <param name="callback"></param>
+        </member>
+        <member name="M:Bugsnag.IClient.Notify(Bugsnag.Payload.Report,Bugsnag.Middleware)">
+            <summary>
+            Notify Bugsnag of the prebuilt report object and use the provided
+            middleware for this report.
+            </summary>
+            <param name="report"></param>
+            <param name="callback"></param>
+        </member>
+        <member name="P:Bugsnag.IClient.Breadcrumbs">
+            <summary>
+            The breadcrumbs for this client.
+            </summary>
+        </member>
+        <member name="P:Bugsnag.IClient.SessionTracking">
+            <summary>
+            The session tracking functionality for this client.
+            </summary>
+        </member>
+        <member name="P:Bugsnag.IClient.Configuration">
+            <summary>
+            The configuration for this client.
+            </summary>
+        </member>
+        <member name="M:Bugsnag.IClient.BeforeNotify(Bugsnag.Middleware)">
+            <summary>
+            Add a middleware function that will be called before a report is sent
+            by the client.
+            </summary>
+            <param name="middleware"></param>
+        </member>
+        <member name="P:Bugsnag.IConfiguration.ApiKey">
+            <summary>
+            The API Key that the Bugsnag client will submit error reports to the Bugsnag
+            API.
+            </summary>
+        </member>
+        <member name="P:Bugsnag.IConfiguration.Endpoint">
+            <summary>
+            The endpoint that Bugsnag will submit error reports to, this should default to
+            https://notify.bugsnag.com
+            </summary>
+        </member>
+        <member name="P:Bugsnag.IConfiguration.AutoNotify">
+            <summary>
+            Determines if the client will automatically catch unhandled exceptions.
+            </summary>
+        </member>
+        <member name="P:Bugsnag.IConfiguration.ReleaseStage">
+            <summary>
+            The release stage that the application is currently running in eg. development, staging, production etc.
+            </summary>
+        </member>
+        <member name="P:Bugsnag.IConfiguration.NotifyReleaseStages">
+            <summary>
+            Filter error reports from being sent to Bugsnag unless the ReleaseStage property is included in this list
+            </summary>
+        </member>
+        <member name="P:Bugsnag.IConfiguration.AppVersion">
+            <summary>
+            The version of the application that Bugsnag will attach to error reports
+            </summary>
+        </member>
+        <member name="P:Bugsnag.IConfiguration.AppType">
+            <summary>
+            The type of application that is being run that Bugsnag will attach to error reports.
+            </summary>
+        </member>
+        <member name="P:Bugsnag.IConfiguration.ProjectRoots">
+            <summary>
+            These will be used to strip the beginning of the file name from stack trace lines in order to produce uniform
+            stack trace file names to aid in grouping.
+            </summary>
+        </member>
+        <member name="P:Bugsnag.IConfiguration.ProjectNamespaces">
+            <summary>
+            These will be used to mark stack trace lines as being 'In Project' if the line occurs in one of the provided
+            namespaces. This will aid in grouping.
+            </summary>
+        </member>
+        <member name="P:Bugsnag.IConfiguration.IgnoreClasses">
+            <summary>
+            These will be used to filter exceptions from being sent to Bugsnag based on the Error Class of the exception.
+            eg. "System.FileNotFoundException"
+            </summary>
+        </member>
+        <member name="P:Bugsnag.IConfiguration.GlobalMetadata">
+            <summary>
+            This can be used to include these values as metadata in all error reports submitted to Bugsnag.
+            </summary>
+        </member>
+        <member name="P:Bugsnag.IConfiguration.MetadataFilters">
+            <summary>
+            Used to filter these keys from data being sent to Bugsnag.
+            </summary>
+        </member>
+        <member name="P:Bugsnag.IConfiguration.AutoCaptureSessions">
+            <summary>
+            Should the client send session tracking information.
+            </summary>
+        </member>
+        <member name="P:Bugsnag.IConfiguration.SessionEndpoint">
+            <summary>
+            The endpoint that the Bugsnag client will submit session data to.
+            </summary>
+        </member>
+        <member name="P:Bugsnag.IConfiguration.SessionTrackingInterval">
+            <summary>
+            Used to determine how often to flush session data to Bugsnag.
+            </summary>
+        </member>
+        <member name="P:Bugsnag.IConfiguration.Proxy">
+            <summary>
+            If provided will be used to send data to Bugsnag.
+            </summary>
+        </member>
+        <member name="P:Bugsnag.IConfiguration.MaximumBreadcrumbs">
+            <summary>
+            The maximum number of breadcrumbs to store per error report,
+            evicted in a FIFO manner.
+            </summary>
+        </member>
+        <member name="T:Bugsnag.IDelivery">
+            <summary>
+            Used by Bugsnag clients to send serialized error reports to an endpoint.
+            </summary>
+        </member>
+        <member name="T:Bugsnag.IFilterable">
+            <summary>
+            An interface to mark payload objects as having filtering applied to them.
+            </summary>
+        </member>
+        <member name="T:Bugsnag.Middleware">
+            <summary>
+            Signature for Bugsnag client middleware that can be used to manipulate the
+            error report before it is sent.
+            </summary>
+            <param name="report"></param>
+        </member>
+        <member name="T:Bugsnag.InternalMiddleware">
+            <summary>
+            The middleware that is applied by default by the Bugsnag client.
+            </summary>
+        </member>
+        <member name="F:Bugsnag.InternalMiddleware.ReleaseStageFilter">
+            <summary>
+            Sets the Ignore flag to true if the configuration is setup so that
+            the report should not be sent based on the release stage information.
+            </summary>
+        </member>
+        <member name="F:Bugsnag.InternalMiddleware.RemoveProjectRoots">
+            <summary>
+            Strips any provided project roots from stack trace lines included in the report.
+            </summary>
+        </member>
+        <member name="F:Bugsnag.InternalMiddleware.DetectInProjectNamespaces">
+            <summary>
+            Marks stack trace lines as being 'in project' if they are from a provided namespace.
+            </summary>
+        </member>
+        <member name="F:Bugsnag.InternalMiddleware.CheckIgnoreClasses">
+            <summary>
+            Ignore the report if any of the exceptions in it are included in the
+            IgnoreClasses.
+            </summary>
+        </member>
+        <member name="F:Bugsnag.InternalMiddleware.AttachGlobalMetadata">
+            <summary>
+            Attaches global metadata if provided by the configuration to each error report.
+            </summary>
+        </member>
+        <member name="F:Bugsnag.InternalMiddleware.ApplyMetadataFilters">
+            <summary>
+            Applies the configured metadata filters to specified sections of the report.
+            
+            This is no longer used by the notifier and can be removed in the next
+            major version bump.
+            </summary>
+        </member>
+        <member name="F:Bugsnag.InternalMiddleware.DetermineDefaultContext">
+            <summary>
+            Uses a request if set on the report to provide a default context.
+            
+            This is no longer used by the notifier and can be removed in the next
+            major version bump. Replaced by code in <see cref="P:Bugsnag.Payload.Event.Request"/>
+            </summary>
+        </member>
+        <member name="T:Bugsnag.Payload.App">
+            <summary>
+            Represents the "app" key in the error report payload.
+            </summary>
+        </member>
+        <member name="T:Bugsnag.Payload.Breadcrumb">
+            <summary>
+            Represents an individual breadcrumb in the error report payload.
+            </summary>
+        </member>
+        <member name="M:Bugsnag.Payload.Breadcrumb.FromReport(Bugsnag.Payload.Report)">
+            <summary>
+            Build a new breadcrumb from an error report. This is used to attach a previously occurring exception to the
+            next error report.
+            </summary>
+            <param name="report"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Bugsnag.Payload.Code">
+            <summary>
+            TODO: Do we want to include this? It will only work in development so may
+            be confusing for users why it doesn't work in other environments
+            </summary>
+        </member>
+        <member name="T:Bugsnag.Payload.Device">
+            <summary>
+            Represents the "device" key in the error report payload.
+            </summary>
+        </member>
+        <member name="P:Bugsnag.Payload.Device.Hostname">
+            <summary>
+            Resolve the hostname using either "COMPUTERNAME" (win) or "HOSTNAME" (*nix) environment variable.
+            </summary>
+        </member>
+        <member name="T:Bugsnag.Payload.Event">
+            <summary>
+            Represents a single event in a Bugsnag payload.
+            </summary>
+        </member>
+        <member name="M:Bugsnag.Payload.Event.TrimExtraData">
+            <summary>
+            Called if the payload size is too large to send, removes data so that the payload
+            can be sent succesfully.
+            </summary>
+        </member>
+        <member name="T:Bugsnag.Payload.Exceptions">
+            <summary>
+            Represents a set of Bugsnag payload exceptions that are generated from a single exception by resolving
+            the inner exceptions present.
+            </summary>
+        </member>
+        <member name="T:Bugsnag.Payload.Exception">
+            <summary>
+            Represents an individual exception in the Bugsnag payload.
+            </summary>
+        </member>
+        <member name="T:Bugsnag.Payload.HandledState">
+            <summary>
+            Represents the various fields that can be set in the "event" payload for
+            showing the exceptions handled/unhandled state and severity.
+            </summary>
+        </member>
+        <member name="M:Bugsnag.Payload.HandledState.ForUnhandledException">
+            <summary>
+            Creates a HandledState object for an error report payload where the exception was not handled by the application
+            and caught by a global error handler.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Bugsnag.Payload.HandledState.ForHandledException">
+            <summary>
+            Creates a HandledState object for an error report payload where the exception was handled by the application
+            and notified manually.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Bugsnag.Payload.HandledState.ForUserSpecifiedSeverity(Bugsnag.Severity)">
+            <summary>
+            Creates a HandledState object for an error report payload where the exception was handled by the application
+            and notified manually and the error severity was also passed in to override the default severity.
+            </summary>
+            <param name="severity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bugsnag.Payload.HandledState.ForCallbackSpecifiedSeverity(Bugsnag.Severity,Bugsnag.Payload.HandledState)">
+            <summary>
+            Creates a HandledState object for an error report payload where the severity for the exception was modified
+            while running the middleware/callback.
+            </summary>
+            <param name="severity"></param>
+            <param name="previousSeverity"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Bugsnag.Payload.HandledState.SeverityReason">
+            <summary>
+            Represents the "severityReason" key in the error report payload.
+            </summary>
+        </member>
+        <member name="T:Bugsnag.Payload.Metadata">
+            <summary>
+            Represents Metadata that can be attached to error reports sent to Bugsnag.
+            </summary>
+        </member>
+        <member name="F:Bugsnag.Payload.NotifierInfo.NotifierInfoInstance">
+            <summary>
+            A single instance of the current notifier info to attach to all error reports.
+            </summary>
+        </member>
+        <member name="M:Bugsnag.Payload.PayloadExtensions.AddToPayload``1(System.Collections.Generic.Dictionary{System.String,``0},System.String,``0)">
+            <summary>
+            Adds a key to the Bugsnag payload. If provided a null or empty string
+            value will remove the key from the dictionary.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="dictionary"></param>
+            <param name="key"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:Bugsnag.Payload.PayloadExtensions.FilterPayload(System.Collections.IDictionary,System.String[])">
+             <summary>
+             Filters an IDictionary using the provided filters.
+            
+             This is no longer used and can be removed in the next major version bump.
+             </summary>
+             <param name="dictionary"></param>
+             <param name="filters"></param>
+        </member>
+        <member name="M:Bugsnag.Payload.PayloadExtensions.FilterPayload(System.Collections.IDictionary,System.String[],System.Collections.IDictionary)">
+             <summary>
+             Filters an IDictionary using the provided filters.
+            
+             This is no longer used and can be removed in the next major version bump.
+             </summary>
+             <param name="dictionary"></param>
+             <param name="filters"></param>
+             <param name="seen"></param>
+        </member>
+        <member name="M:Bugsnag.Payload.PayloadExtensions.FilterPayload(System.Collections.IEnumerable,System.String[],System.Collections.IDictionary)">
+             <summary>
+             Filters an IEnumerable using the provided filters.
+            
+             This is no longer used and can be removed in the next major version bump.
+             </summary>
+             <param name="enumerable"></param>
+             <param name="filters"></param>
+             <param name="seen"></param>
+        </member>
+        <member name="M:Bugsnag.Payload.PayloadExtensions.FilterUri(System.Uri,System.String[])">
+             <summary>
+             Filters a Uri using the provided filters
+            
+             This is no longer used and can be removed in the next major version bump.
+             </summary>
+             <param name="uri"></param>
+             <param name="filters"></param>
+        </member>
+        <member name="F:Bugsnag.Payload.Report.MaximumSize">
+            <summary>
+            The maximum size of the serialized payload which can be sent
+            to Bugsnag. The report will be trimmed if it exceeds this size.
+            </summary>
+        </member>
+        <member name="M:Bugsnag.Payload.Report.#ctor(Bugsnag.IConfiguration,System.Exception,Bugsnag.Payload.HandledState,Bugsnag.Payload.Breadcrumb[],Bugsnag.Payload.Session)">
+            <summary>
+            Represents an error report that can be sent to the Bugsnag error notification endpoint.
+            </summary>
+            <param name="configuration"></param>
+            <param name="exception"></param>
+            <param name="severity"></param>
+            <param name="breadcrumbs"></param>
+            <param name="session"></param>
+        </member>
+        <member name="M:Bugsnag.Payload.Report.Ignore">
+            <summary>
+            Used to indicate to the Bugsnag client that this report should not be delivered.
+            </summary>
+        </member>
+        <member name="P:Bugsnag.Payload.Report.Event">
+            <summary>
+            The list of Bugsnag payload events contained in this report. There is usually only a single
+            event per payload but the Bugsnag error reporting API supports/requires this key to be an array.
+            </summary>
+        </member>
+        <member name="P:Bugsnag.Payload.Report.Endpoint">
+            <summary>
+            THe endpoint to send the error report to.
+            </summary>
+        </member>
+        <member name="T:Bugsnag.Payload.Request">
+            <summary>
+            Represents the "request" key in the error report payload.
+            </summary>
+        </member>
+        <member name="T:Bugsnag.Payload.StackTrace">
+            <summary>
+            Represents a set of Bugsnag payload stacktrace lines that are generated from a single StackTrace provided
+            by the runtime.
+            </summary>
+        </member>
+        <member name="T:Bugsnag.Payload.StackTraceLine">
+            <summary>
+            Represents an individual stack trace line in the Bugsnag payload.
+            </summary>
+        </member>
+        <member name="T:Bugsnag.Reflection">
+            <summary>
+            Handle the reflection differences between the full .net framework and
+            what is provided by netstandard
+            </summary>
+        </member>
+        <member name="T:Bugsnag.Severity">
+            <summary>
+            Represents all of the possible severities that the Bugsnag API supports.
+            </summary>
+        </member>
+        <member name="M:Bugsnag.TypeNameHelper.GetTypeDisplayName(System.Type,System.Boolean,System.Boolean)">
+            <summary>
+            Pretty print a type name.
+            </summary>
+            <param name="type">The <see cref="T:System.Type"/>.</param>
+            <param name="fullName"><c>true</c> to print a fully qualified name.</param>
+            <param name="includeGenericParameterNames"><c>true</c> to include generic parameter names.</param>
+            <returns>The pretty printed type name.</returns>
+        </member>
+        <member name="T:SimpleJson.JsonArray">
+            <summary>
+            Represents the json array.
+            </summary>
+        </member>
+        <member name="M:SimpleJson.JsonArray.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:SimpleJson.JsonArray"/> class.
+            </summary>
+        </member>
+        <member name="M:SimpleJson.JsonArray.#ctor(System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SimpleJson.JsonArray"/> class.
+            </summary>
+            <param name="capacity">The capacity of the json array.</param>
+        </member>
+        <member name="M:SimpleJson.JsonArray.ToString">
+            <summary>
+            The json representation of the array.
+            </summary>
+            <returns>The json representation of the array.</returns>
+        </member>
+        <member name="T:SimpleJson.JsonObject">
+            <summary>
+            Represents the json object.
+            </summary>
+        </member>
+        <member name="F:SimpleJson.JsonObject._members">
+            <summary>
+            The internal member dictionary.
+            </summary>
+        </member>
+        <member name="M:SimpleJson.JsonObject.#ctor">
+            <summary>
+            Initializes a new instance of <see cref="T:SimpleJson.JsonObject"/>.
+            </summary>
+        </member>
+        <member name="M:SimpleJson.JsonObject.#ctor(System.Collections.Generic.IEqualityComparer{System.String})">
+            <summary>
+            Initializes a new instance of <see cref="T:SimpleJson.JsonObject"/>.
+            </summary>
+            <param name="comparer">The <see cref="T:System.Collections.Generic.IEqualityComparer`1"/> implementation to use when comparing keys, or null to use the default <see cref="T:System.Collections.Generic.EqualityComparer`1"/> for the type of the key.</param>
+        </member>
+        <member name="P:SimpleJson.JsonObject.Item(System.Int32)">
+            <summary>
+            Gets the <see cref="T:System.Object"/> at the specified index.
+            </summary>
+            <value></value>
+        </member>
+        <member name="M:SimpleJson.JsonObject.Add(System.String,System.Object)">
+            <summary>
+            Adds the specified key.
+            </summary>
+            <param name="key">The key.</param>
+            <param name="value">The value.</param>
+        </member>
+        <member name="M:SimpleJson.JsonObject.ContainsKey(System.String)">
+            <summary>
+            Determines whether the specified key contains key.
+            </summary>
+            <param name="key">The key.</param>
+            <returns>
+                <c>true</c> if the specified key contains key; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="P:SimpleJson.JsonObject.Keys">
+            <summary>
+            Gets the keys.
+            </summary>
+            <value>The keys.</value>
+        </member>
+        <member name="M:SimpleJson.JsonObject.Remove(System.String)">
+            <summary>
+            Removes the specified key.
+            </summary>
+            <param name="key">The key.</param>
+            <returns></returns>
+        </member>
+        <member name="M:SimpleJson.JsonObject.TryGetValue(System.String,System.Object@)">
+            <summary>
+            Tries the get value.
+            </summary>
+            <param name="key">The key.</param>
+            <param name="value">The value.</param>
+            <returns></returns>
+        </member>
+        <member name="P:SimpleJson.JsonObject.Values">
+            <summary>
+            Gets the values.
+            </summary>
+            <value>The values.</value>
+        </member>
+        <member name="P:SimpleJson.JsonObject.Item(System.String)">
+            <summary>
+            Gets or sets the <see cref="T:System.Object"/> with the specified key.
+            </summary>
+            <value></value>
+        </member>
+        <member name="M:SimpleJson.JsonObject.Add(System.Collections.Generic.KeyValuePair{System.String,System.Object})">
+            <summary>
+            Adds the specified item.
+            </summary>
+            <param name="item">The item.</param>
+        </member>
+        <member name="M:SimpleJson.JsonObject.Clear">
+            <summary>
+            Clears this instance.
+            </summary>
+        </member>
+        <member name="M:SimpleJson.JsonObject.Contains(System.Collections.Generic.KeyValuePair{System.String,System.Object})">
+            <summary>
+            Determines whether [contains] [the specified item].
+            </summary>
+            <param name="item">The item.</param>
+            <returns>
+            	<c>true</c> if [contains] [the specified item]; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:SimpleJson.JsonObject.CopyTo(System.Collections.Generic.KeyValuePair{System.String,System.Object}[],System.Int32)">
+            <summary>
+            Copies to.
+            </summary>
+            <param name="array">The array.</param>
+            <param name="arrayIndex">Index of the array.</param>
+        </member>
+        <member name="P:SimpleJson.JsonObject.Count">
+            <summary>
+            Gets the count.
+            </summary>
+            <value>The count.</value>
+        </member>
+        <member name="P:SimpleJson.JsonObject.IsReadOnly">
+            <summary>
+            Gets a value indicating whether this instance is read only.
+            </summary>
+            <value>
+            	<c>true</c> if this instance is read only; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="M:SimpleJson.JsonObject.Remove(System.Collections.Generic.KeyValuePair{System.String,System.Object})">
+            <summary>
+            Removes the specified item.
+            </summary>
+            <param name="item">The item.</param>
+            <returns></returns>
+        </member>
+        <member name="M:SimpleJson.JsonObject.GetEnumerator">
+            <summary>
+            Gets the enumerator.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SimpleJson.JsonObject.System#Collections#IEnumerable#GetEnumerator">
+            <summary>
+            Returns an enumerator that iterates through a collection.
+            </summary>
+            <returns>
+            An <see cref="T:System.Collections.IEnumerator"/> object that can be used to iterate through the collection.
+            </returns>
+        </member>
+        <member name="M:SimpleJson.JsonObject.ToString">
+            <summary>
+            Returns a json <see cref="T:System.String"/> that represents the current <see cref="T:System.Object"/>.
+            </summary>
+            <returns>
+            A json <see cref="T:System.String"/> that represents the current <see cref="T:System.Object"/>.
+            </returns>
+        </member>
+        <member name="T:SimpleJson.SimpleJson">
+             <summary>
+             This class encodes and decodes JSON strings.
+             Spec. details, see http://www.json.org/
+            
+             JSON uses Arrays and Objects. These correspond here to the datatypes JsonArray(IList&lt;object>) and JsonObject(IDictionary&lt;string,object>).
+             All numbers are parsed to doubles.
+             </summary>
+        </member>
+        <member name="M:SimpleJson.SimpleJson.DeserializeObject(System.String)">
+            <summary>
+            Parses the string json into a value
+            </summary>
+            <param name="json">A JSON string.</param>
+            <returns>An IList&lt;object>, a IDictionary&lt;string,object>, a double, a string, null, true, or false</returns>
+        </member>
+        <member name="M:SimpleJson.SimpleJson.TryDeserializeObject(System.String,System.Object@)">
+            <summary>
+            Try parsing the json string into a value.
+            </summary>
+            <param name="json">
+            A JSON string.
+            </param>
+            <param name="obj">
+            The object.
+            </param>
+            <returns>
+            Returns true if successfull otherwise false.
+            </returns>
+        </member>
+        <member name="M:SimpleJson.SimpleJson.SerializeObject(System.Object,SimpleJson.IJsonSerializerStrategy,System.Collections.IDictionary)">
+            <summary>
+            Converts a IDictionary&lt;string,object> / IList&lt;object> object into a JSON string
+            </summary>
+            <param name="json">A IDictionary&lt;string,object> / IList&lt;object></param>
+            <param name="jsonSerializerStrategy">Serializer strategy to use</param>
+            <param name="seen"></param>
+            <returns>A JSON encoded string, or null if object 'json' is not serializable</returns>
+        </member>
+    </members>
+</doc>

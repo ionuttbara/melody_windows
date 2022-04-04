@@ -35,6 +35,7 @@ Windows Registry Editor Version 5.00
 "BackgroundAppGlobalToggle"=dword:00000000
 "AllowSearchToUseLocation"=dword:00000000
 "AllowCortanaAboveLock"=dword:00000000
-
+"ConnectedSearchPrivacy"=dword:00000003
+"ConnectedSearchSafeSearch"=dword:00000003
 
 [-HKEY_CURRENT_USER\Software\Classes\ms-search]

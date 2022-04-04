@@ -405,12 +405,12 @@ Windows Registry Editor Version 5.00
 
 ;DNS
 
-[HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows NT\DNSClient]
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows NT\DNSClient]
+"DisableSmartNameResolution"=dword:00000001
 "EnableIdnMapping"=dword:00000000
 "RegistrationEnabled"=dword:00000000
 "PreferLocalOverLowerBindingDNS"=dword:00000001
 "EnableMulticast"=dword:00000000
-"DisableSmartNameResolution"=dword:00000001
 "DisableSmartProtocolReordering"=dword:00000001
 
 ;Network

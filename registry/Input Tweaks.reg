@@ -18,44 +18,19 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PolicyManager\default\WindowsInkWorkspace\AllowWindowsInkWorkspace]
 "value"=dword:00000000
 
-[HKEY_CURRENT_USER\SOFTWARE\Microsoft\TabletTip\1.7]
-"HideIPTIPTarget"=dword:00000001
-"HideIPTIPTouchTarget"=dword:00000001
-"IncludeRareChar"=dword:00000000
-"DisableEdgeTarget"=dword:00000001
-"DisableACIntegration"=dword:00000001
-"EnableAutocorrection"=dword:00000000
-"EnableSpellchecking"=dword:00000000
-"EnableTextPrediction"=dword:00000000
-"EnablePredictionSpaceInsertion"=dword:00000000
-"EnableDoubleTapSpace"=dword:00000000
-"EnableInkingWithTouch"=dword:00000000
 
-[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\TabletTip\1.7]
-"HideIPTIPTarget"=dword:00000001
-"HideIPTIPTouchTarget"=dword:00000001
-"IncludeRareChar"=dword:00000000
-"DisableEdgeTarget"=dword:00000001
-"DisableACIntegration"=dword:00000001
-"EnableAutocorrection"=dword:00000000
-"EnableSpellchecking"=dword:00000000
-"EnableTextPrediction"=dword:00000000
-"EnablePredictionSpaceInsertion"=dword:00000000
-"EnableDoubleTapSpace"=dword:00000000
-"EnableInkingWithTouch"=dword:00000000
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Accessibility]
+"Configuration"=""
 
-[HKEY_CURRENT_USER\Software\Microsoft\InputPersonalization]
-"Installed"=dword:00000000
-"Shutdown"=dword:00000001
-"HarvestContacts"=dword:00000000
-"RestrictImplicitInkCollection"=dword:00000001
-"RestrictImplicitTextCollection"=dword:00000001
-"AcceptedPrivacyPolicy"=dword:00000000
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Authentication\LogonUI\BootAnimation]
+"DisableStartupSound"=dword:00000001
 
-[HKEY_CURRENT_USER\Software\Microsoft\InputPersonalization\TrainedDataStore]
-"HarvestContacts"=dword:00000000
-"InsightsEnabled"=dword:00000000
-"LMDataLoggerEnabled"=dword:00000000
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\EditionOverrides]
+"UserSetting_DisableStartupSound"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\MicrosoftEdge\PhishingFilter]
+"EnabledV9"=dword:00000000
+
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\InputPersonalization]
 "RestrictImplicitInkCollection"=dword:00000001
@@ -68,13 +43,6 @@ Windows Registry Editor Version 5.00
 "AllowInputPersonalization"-
 "RestrictImplicitInkCollection"=dword:00000001
 "RestrictImplicitTextCollection"=dword:00000001
-
-[HKEY_CURRENT_USER\Software\Microsoft\Input\Settings]
-"EnableExpressiveInputShellHotkey"=dword:00000001
-"EnableExpressiveInputEmojiMultipleSelection"=dword:00000001
-
-[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\PenWorkspace]
-"PenWorkspaceAppSuggestionsEnabled"=dword:00000000
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Input\Settings\ControllerProcessor\CursorSpeed]
 "CursorSensitivity"=dword:00002710
@@ -97,6 +65,7 @@ Windows Registry Editor Version 5.00
 "ChainUrlRetrievalTimeoutMilliseconds"=dword:0000000e
 "CrossCertDownloadIntervalHours"=dword:000000a8
 "Options"=dword:00000000
+
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Input\Settings]
 "AutoAccent"=dword:00000000
@@ -136,8 +105,197 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Speech]
 "AllowSpeechModelUpdate"=dword:00000000
 
+
+[HKEY_USERS\.DEFAULT\SOFTWARE\Microsoft\TabletTip\1.7]
+"HideIPTIPTarget"=dword:00000001
+"HideIPTIPTouchTarget"=dword:00000001
+"IncludeRareChar"=dword:00000000
+"DisableEdgeTarget"=dword:00000001
+"DisableACIntegration"=dword:00000001
+"EnableAutocorrection"=dword:00000000
+"EnableSpellchecking"=dword:00000000
+"EnableTextPrediction"=dword:00000000
+"EnablePredictionSpaceInsertion"=dword:00000000
+"EnableDoubleTapSpace"=dword:00000000
+"EnableInkingWithTouch"=dword:00000000
+"EnableShiftLock"=dword:00000001
+"EnableAutoShiftEngage"=dword:00000000
+"EnableKeyAudioFeedback"=dword:00000000
+"EnableDesktopModeAutoInvoke"=dword:00000000
+
+[HKEY_USERS\.DEFAULT\SOFTWARE\Microsoft\TabletTip\EmbeddedInkControl]
+"EnableInkingWithTouch"=dword:00000000
+
+
+[HKEY_USERS\.DEFAULT\Control Panel\Accessibility\ToggleKeys]
+"Flags"="58"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Biometrics]
+"Enabled"=-
+
+
+[HKEY_USERS\.DEFAULT\Control Panel\Cursors]
+"PenVisualization"=dword:00000020
+
+[HKEY_USERS\.DEFAULT\SOFTWARE\Microsoft\Windows\CurrentVersion\PrecisionTouchPad]
+"AAPThreshold"=dword:00000000
+
+
+
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\TabletTip\1.7]
+"HideIPTIPTarget"=dword:00000001
+"HideIPTIPTouchTarget"=dword:00000001
+"IncludeRareChar"=dword:00000000
+"DisableEdgeTarget"=dword:00000001
+"DisableACIntegration"=dword:00000001
+"EnableAutocorrection"=dword:00000000
+"EnableSpellchecking"=dword:00000000
+"EnableTextPrediction"=dword:00000000
+"EnablePredictionSpaceInsertion"=dword:00000000
+"EnableDoubleTapSpace"=dword:00000000
+"EnableInkingWithTouch"=dword:00000000
+"EnableShiftLock"=dword:00000001
+"EnableAutoShiftEngage"=dword:00000000
+"EnableKeyAudioFeedback"=dword:00000000
+"EnableDesktopModeAutoInvoke"=dword:00000000
+
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\TabletTip\EmbeddedInkControl]
+"EnableInkingWithTouch"=dword:00000000
+
+
+[HKEY_CURRENT_USER\Control Panel\Accessibility\ToggleKeys]
+"Flags"="58"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Biometrics]
+"Enabled"=-
+
+
+[HKEY_CURRENT_USER\Control Panel\Cursors]
+"PenVisualization"=dword:00000020
+
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\PrecisionTouchPad]
+"AAPThreshold"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\TabletTip\1.7]
+"HideIPTIPTarget"=dword:00000001
+"HideIPTIPTouchTarget"=dword:00000001
+"IncludeRareChar"=dword:00000000
+"DisableEdgeTarget"=dword:00000001
+"DisableACIntegration"=dword:00000001
+"EnableAutocorrection"=dword:00000000
+"EnableSpellchecking"=dword:00000000
+"EnableTextPrediction"=dword:00000000
+"EnablePredictionSpaceInsertion"=dword:00000000
+"EnableDoubleTapSpace"=dword:00000000
+"EnableInkingWithTouch"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Microsoft\InputPersonalization]
+"Installed"=dword:00000000
+"Shutdown"=dword:00000001
+"HarvestContacts"=dword:00000000
+"RestrictImplicitInkCollection"=dword:00000001
+"RestrictImplicitTextCollection"=dword:00000001
+"AcceptedPrivacyPolicy"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Microsoft\InputPersonalization\TrainedDataStore]
+"HarvestContacts"=dword:00000000
+"InsightsEnabled"=dword:00000000
+"LMDataLoggerEnabled"=dword:00000000
+
+
+[HKEY_CURRENT_USER\Software\Microsoft\Input\Settings]
+"EnableExpressiveInputShellHotkey"=dword:00000001
+"EnableExpressiveInputEmojiMultipleSelection"=dword:00000001
+
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\PenWorkspace]
+"PenWorkspaceAppSuggestionsEnabled"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Microsoft\Input\TIPC]
+"Enabled"=dword:00000000
+
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Privacy]
 "TailoredExperiencesWithDiagnosticDataEnabled"=dword:00000000
+
+[HKEY_CURRENT_USER\Control Panel\Keyboard]
+"KeyboardDelay"="0"
+"KeyboardSpeed"="10"
+"InitialKeyboardIndicators"="2"
+
+[HKEY_CURRENT_USER\Control Panel\Mouse]
+"MouseSensitivity"="10"
+"MouseSpeed"="0"
+"MouseThreshold1"="0"
+"MouseThreshold2"="0"
+"Beep"="No"
+"ExtendedSounds"="No"
+"MouseHoverTime"="1"
+
+[HKEY_CURRENT_USER\Control Panel\PowerCfg]
+"CurrentPowerPolicy"="4"
+
+[HKEY_CURRENT_USER\Software\Microsoft\Input\TIPC]
+"Enabled"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\TabletTip\1.7]
+"HideIPTIPTarget"=dword:00000001
+"HideIPTIPTouchTarget"=dword:00000001
+"IncludeRareChar"=dword:00000000
+"DisableEdgeTarget"=dword:00000001
+"DisableACIntegration"=dword:00000001
+"EnableAutocorrection"=dword:00000000
+"EnableSpellchecking"=dword:00000000
+"EnableTextPrediction"=dword:00000000
+"EnablePredictionSpaceInsertion"=dword:00000000
+"EnableDoubleTapSpace"=dword:00000000
+"EnableInkingWithTouch"=dword:00000000
+
+[HKEY_USERS\.DEFAULT\Software\Microsoft\InputPersonalization]
+"Installed"=dword:00000000
+"Shutdown"=dword:00000001
+"HarvestContacts"=dword:00000000
+"RestrictImplicitInkCollection"=dword:00000001
+"RestrictImplicitTextCollection"=dword:00000001
+"AcceptedPrivacyPolicy"=dword:00000000
+
+[HKEY_USERS\.DEFAULT\Software\Microsoft\InputPersonalization\TrainedDataStore]
+"HarvestContacts"=dword:00000000
+"InsightsEnabled"=dword:00000000
+"LMDataLoggerEnabled"=dword:00000000
+
+
+[HKEY_USERS\.DEFAULT\Software\Microsoft\Input\Settings]
+"EnableExpressiveInputShellHotkey"=dword:00000001
+"EnableExpressiveInputEmojiMultipleSelection"=dword:00000001
+
+[HKEY_USERS\.DEFAULT\SOFTWARE\Microsoft\Windows\CurrentVersion\PenWorkspace]
+"PenWorkspaceAppSuggestionsEnabled"=dword:00000000
+
+[HKEY_USERS\.DEFAULT\Software\Microsoft\Input\TIPC]
+"Enabled"=dword:00000000
+
+[HKEY_USERS\.DEFAULT\SOFTWARE\Microsoft\Windows\CurrentVersion\Privacy]
+"TailoredExperiencesWithDiagnosticDataEnabled"=dword:00000000
+
+[HKEY_USERS\.DEFAULT\Control Panel\Keyboard]
+"KeyboardDelay"="0"
+"KeyboardSpeed"="10"
+"InitialKeyboardIndicators"="2"
+
+[HKEY_USERS\.DEFAULT\Control Panel\Mouse]
+"MouseSensitivity"="10"
+"MouseSpeed"="0"
+"MouseThreshold1"="0"
+"MouseThreshold2"="0"
+"Beep"="No"
+"ExtendedSounds"="No"
+"MouseHoverTime"="1"
+
+[HKEY_USERS\.DEFAULT\Control Panel\PowerCfg]
+"CurrentPowerPolicy"="4"
+
+[HKEY_USERS\.DEFAULT\Software\Microsoft\Input\TIPC]
+"Enabled"=dword:00000000
+
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CPSS\UserPolicy\ImproveInkingAndTyping]
 "DefaultValue"=dword:00000000
@@ -171,30 +329,10 @@ Windows Registry Editor Version 5.00
 "Beep"="no"
 "ExtendedSounds"="no"
 
-[HKEY_CURRENT_USER\Control Panel\Keyboard]
-"KeyboardDelay"="0"
-"KeyboardSpeed"="10"
-"InitialKeyboardIndicators"="2"
-
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\TouchPrediction]
 "Latency"=dword:00000001
 "SampleTime"=dword:00000001
 "UseHWTimeStamp"=dword:00000001
-
-[HKEY_CURRENT_USER\Control Panel\Mouse]
-"MouseSensitivity"="10"
-"MouseSpeed"="0"
-"MouseThreshold1"="0"
-"MouseThreshold2"="0"
-"Beep"="No"
-"ExtendedSounds"="No"
-"MouseHoverTime"="1"
-
-[HKEY_CURRENT_USER\Control Panel\PowerCfg]
-"CurrentPowerPolicy"="4"
-
-[HKEY_CURRENT_USER\Software\Microsoft\Input\TIPC]
-"Enabled"=dword:00000000
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\mouhid\Parameters]
 "TreatAbsolutePointerAsAbsolute"=dword:00000001
