@@ -4,9 +4,6 @@
   <br>
   <img src="https://raw.githubusercontent.com/jbara2002/melody12/master/logo.png" alt="Melody logo"></a>
 </h1>
-
-<h4 align="center">A high-quality settings built for everyone.</h4>
-<h4 align="center">Unlike another tweaks apps (O&O Shutup10 or SpyBot Antibeacon), our tool is OPEN-SOURCE.</h4>
       
 <p align="center">
   <a href="#about">About</a> •
