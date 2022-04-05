@@ -106,6 +106,14 @@
 |Edge  Tweaks| Adds uBlock Origin Extension, Tweaking DNS Client of Browser | Edge 92 or newer|
 |Chromium Browser Updater Tweaks| Optimizes Update Pipeline |Chrome/Edge Updater 1.42 or newer|
 
+## Sources
+
+Some privacy Tweaks (registry Settings) are provided by Microsoft (Policy Tweaks) Check out the website by clicking the <a href="admx.help">link</a>.
+Performance Tweaks are provied by AskVG website.
+Latency Tweaks are provided by me. Latency Service is a SFX version by TimerTool, which this tool isn't mine.
+EarTrumpet Integration is created by me. The application is created by File-New-Project. (I forked the project).
+Also Clipboard "Integration" is provided by me. The Application is created by Ditto. (provided with GNU GPL-3 License).
+
 ## Updating
 
 > You can create a own version of Melody by using the provided sources of cmds , registry files ,and apps integration.
