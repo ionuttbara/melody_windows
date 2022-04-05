@@ -107,7 +107,7 @@
 
 ## Sources
 
-Some privacy Tweaks (registry Settings) are provided by Microsoft (Policy Tweaks) Check out the website by clicking the <a href="admx.help">link</a>.
+Some privacy Tweaks (registry Settings) are provided by Microsoft (Policy Tweaks) Check out the website by clicking the <a href="https://admx.help">link</a>.
 Performance Tweaks are provied by AskVG website.
 Latency Tweaks are provided by me. Latency Service is a SFX version by TimerTool, which this tool isn't mine.
 EarTrumpet Integration is created by me. The application is created by File-New-Project. (I forked the project).
