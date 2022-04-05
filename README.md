@@ -8,7 +8,6 @@
 <p align="center">
   <a href="#about">About</a> •
   <a href="#installation">Installation</a> •
-  <a href="#features">Features</a> •
   <a href="#sources">Sources</a> •
   <a href="#updating">Creating own version of Melody</a> •
   <a href="#license">License</a>
