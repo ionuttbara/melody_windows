@@ -98,16 +98,18 @@
 > In this part i had done a research about replacement of Windows OS shit-like apps and Tools.
 > This is why i forked Files-NewProjects's EarTrumpet, and added a custom clipboard system. Also the system is integrated for batter organise of management.
 
+
 | Added | Description |
-| EarTrumpet| Replaces Windows Volume Flyout|
-| Start AllBack| Windows inconsistences.|
-| Ditto Clipboard (modified)| Replaces Windows Clipboard (Win+V) shit-like tool. This tool is not require Microsoft Account or Telemetry.|
+| ------ | ------ |
+| EarTrumpet | Replaces Windows Volume Flyout |
+| Start AllBack | Windows inconsistences. |
+| Ditto Clipboard (modified) | Replaces Windows Clipboard (Win+V) shit-like tool. This tool is not require Microsoft Account or Telemetry. |
 
 ##### 3rd Party Software Optimization
 > In this part i have a research to disable 3rd party Updaters , metrics and telemetry. 
 > Some configurations are policies and be found to [admx.help].
 
- | Applied Tweak |Description | Required Windows Version 
+ | Applied Tweak | Description | Required Windows Version |
 | ------ | ------ |------ |
 |Office Tweaks| Disables Office Telemetry and data collection | Office 2013 or newer|
 |Chrome Tweaks| Adds uBlock Origin Extension, Tweaking DNS Client of Browser | Chrome 96 or newer|
