@@ -1,5 +1,24 @@
 Windows Registry Editor Version 5.00
 
+[-HKEY_CLASSES_ROOT\Interface\{101704EA-A7F9-46D2-AB94-016865AFDB25}]
+
+[-HKEY_CLASSES_ROOT\Interface\{1D5EE066-188D-5BA9-4387-ACAEB0E7E305}]
+
+[-HKEY_CLASSES_ROOT\Interface\{76E915B1-FF36-407C-9F57-160D3E540747}]
+
+[-HKEY_CLASSES_ROOT\Interface\{76E915B1-FF36-407C-9F57-160D3E540747}]
+
+[-HKEY_CLASSES_ROOT\Interface\{926130B8-9955-4C74-BDC1-7CD0DECF9B03}]
+
+[-HKEY_CLASSES_ROOT\WOW6432Node\Interface\{101704EA-A7F9-46D2-AB94-016865AFDB25}]
+
+[-HKEY_CLASSES_ROOT\WOW6432Node\Interface\{1D5EE066-188D-5BA9-4387-ACAEB0E7E305}]
+
+[-HKEY_CLASSES_ROOT\WOW6432Node\Interface\{76E915B1-FF36-407C-9F57-160D3E540747}]
+
+[-HKEY_CLASSES_ROOT\WOW6432Node\Interface\{926130B8-9955-4C74-BDC1-7CD0DECF9B03}]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\AMD\CN\ANALYTICS]
 
 ;018. Microsoft Windows's Keylogger Disable
 
@@ -74,3 +93,69 @@ Windows Registry Editor Version 5.00
 [-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\WMI\Autologger\WiFiSession]
 
 [-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\WMI\Autologger\WinPhoneCritical]
+
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Reliability Analysis\WMI]
+"WMIEnable"=dword:00000000
+
+;Disable Loggers
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\EventLog\ProtectedEventLogging]
+"EnableProtectedEventLogging"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\EventLog\Setup]
+"Enabled"="0"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Installer]
+"DisableLoggingFromPackage"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CloudExperienceHost]
+"ETWLoggingEnabled"=dword:00000000
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\WINEVT\Publishers]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\WINEVT\Channels]
+
+
+[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\EventLog\System]
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\EventLog\System\Microsoft-Windows-TaskScheduler]
+"ProviderGuid"="{de7b24ea-73c8-4a09-985d-5bdadcfa9017}"
+"EventMessageFile"=hex(2):25,00,53,00,79,00,73,00,74,00,65,00,6d,00,52,00,6f,\
+  00,6f,00,74,00,25,00,5c,00,73,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,00,\
+  5c,00,73,00,63,00,68,00,65,00,64,00,73,00,76,00,63,00,2e,00,64,00,6c,00,6c,\
+  00,00,00
+
+
+[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\EventLog\Key Management Service]
+
+[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\EventLog\Windows PowerShell]
+
+[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\EventLog\Security]
+
+[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\EventLog\HardwareEvents]
+
+[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\EventLog\Application]
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\EventLog\Application]
+"DisplayNameFile"=hex(2):25,00,53,00,79,00,73,00,74,00,65,00,6d,00,52,00,6f,00,\
+  6f,00,74,00,25,00,5c,00,73,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,00,5c,\
+  00,77,00,65,00,76,00,74,00,61,00,70,00,69,00,2e,00,64,00,6c,00,6c,00,00,00
+"DisplayNameID"=dword:00000100
+"File"=hex(2):25,00,53,00,79,00,73,00,74,00,65,00,6d,00,52,00,6f,00,6f,00,74,\
+  00,25,00,5c,00,73,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,00,5c,00,77,00,\
+  69,00,6e,00,65,00,76,00,74,00,5c,00,4c,00,6f,00,67,00,73,00,5c,00,41,00,70,\
+  00,70,00,6c,00,69,00,63,00,61,00,74,00,69,00,6f,00,6e,00,2e,00,65,00,76,00,\
+  74,00,78,00,00,00
+"MaxSize"=dword:01400000
+"PrimaryModule"="Application"
+"Retention"=dword:00000000
+"RestrictGuestAccess"=dword:00000001
+"AutoBackupLogFiles"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\EventLog\Application\Application]
+"CategoryCount"=dword:00000007
+"CategoryMessageFile"=hex(2):25,00,53,00,79,00,73,00,74,00,65,00,6d,00,52,00,\
+  6f,00,6f,00,74,00,25,00,5c,00,73,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,\
+  00,5c,00,77,00,65,00,76,00,74,00,61,00,70,00,69,00,2e,00,64,00,6c,00,6c,00,\
+  00,00
