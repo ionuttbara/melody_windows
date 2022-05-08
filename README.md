@@ -60,7 +60,7 @@
 |App Permision| Set some UWP Apps Permission| Windows 10 1909|
 |AutoPlay Handlers| Open Folder automaticly when a storage device was inserted | none
 |Windows Quota| Disables Windows Quota | Windows NT|
-|Disable WMI KeyLogger| Disables KeyLoggers (from Blackbird)|Windows 10 1507 or newer|
+|Disable WMI KeyLogger| Disables KeyLoggers (from Blackbird), and Windows Event Logger Keylogger and Logger|Windows 10 1507 or newer|
 |Disk Optization| Manipulation of filesystem for security and performance| Windows 10 1507 or newer|
 |Feature Manipulation| Added some "hidden features" in Windows 10| Windows 10 2004 or newer|
 |Firewall Rules| Blocks unwanted applications to connect to the Internet (Notepad, csrss.exe etc.) and adds Telemetry Rules| Windows 10 1507 or newer|
