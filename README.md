@@ -33,12 +33,6 @@
 * **[Download]** the latest version of the settings.
 * After downloading them wait a bit. After settings was applied the PC will reboot.
 
-## Uninstallation
-##### After uninstallation steps
-* Download Uninstaller where you had downloaded the ".exe" file.
-* Run "*Uninstaller_vxxxx.exe" and wait to apply. (Uninstaller will be added soon)
-* After you ran the script , the PC will reboot.
-
 
 ## Components of Melody
 
