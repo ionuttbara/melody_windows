@@ -125,5 +125,10 @@ Also Clipboard "Integration" is provided by me. The Application is created by Di
 > If you want to add registry/CMDs files you MUST to write the files in commands2.bat (the file will run to current USER) or in PowerRun2.bat (th file will run to the SYSTEM user).
 > Stable version of Melody will launch every 3 months. First 2 weeks after release, the version will be revisioned. (added integration from beta or adding tweaks).
  
+ ## Another Versions of Melody Script
+ <a href="https://github.com/jbara2002/melody_android">Melody for Android </a>  
+  <a href="https://github.com/jbara2002/melody_apple">Melody for Apple Devices</a>  
+   <a href="https://github.com/jbara2002/melody_linux">Melody for Linux Distros</a>  
+   
 ## License
 [![License: CC0-1.0](https://img.shields.io/badge/License-CC0%201.0-lightgrey.svg)](https://tldrlegal.com/license/creative-commons-cc0-1.0-universal)
