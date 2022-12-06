@@ -1,0 +1,17 @@
+Windows Registry Editor Version 5.00
+
+
+;VPN
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PolicyManager\default\Connectivity\AllowVPNOverCellular]
+"value"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PolicyManager\default\Connectivity\AllowVPNRoamingOverCellular]
+"value"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\RasMan\Parameters\Config\VpnCostedNetworkSettings]
+"NoRoamingNetwork"=dword:00000001
+"NoCostedNetwork"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PolicyManager\default\Settings\AllowVPN]
+"value"=dword:00000000
