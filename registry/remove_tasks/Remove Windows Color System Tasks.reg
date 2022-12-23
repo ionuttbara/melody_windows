@@ -1,0 +1,10 @@
+Windows Registry Editor Version 5.00
+
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Tree\
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Tasks\{53243377-CA1A-4ED1-AF0D-3666FF7DE358}]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Logon\{53243377-CA1A-4ED1-AF0D-3666FF7DE358}]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Plain\{53243377-CA1A-4ED1-AF0D-3666FF7DE358}]
