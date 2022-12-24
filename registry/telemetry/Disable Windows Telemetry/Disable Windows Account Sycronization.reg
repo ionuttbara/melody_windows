@@ -1,0 +1,34 @@
+Windows Registry Editor Version 5.00
+
+; Windows Sycronization
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\UEV\Agent\Configuration\WindowsSettings]
+"DesktopSettings"=dword:00000000
+"EaseOfAccessSettings"=dword:00000000
+"ThemeSettings"=dword:00000000
+"RoamingCredentialSettings"=dword:00000000
+"NetworkPrinters"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\UEV\Agent\Configuration]
+"DontSyncWindows8AppSettings"=dword:00000001
+"FirstUseNotificationEnabled"=hex(b):00,00,00,00,00,00,00,00
+"SyncProviderPingEnabled"=dword:00000000
+"SyncUnlistedWindows8Apps"=dword:00000000
+"SyncEnabled"=dword:00000000
+"CustomerExperienceImprovementProgram"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\UEV\Agent]
+"Enabled"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\SettingSync]
+"DisableSettingSync"=dword:00000002
+"DisableSettingSyncUserOverride"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PolicyManager\default\Experience\DoNotSyncBrowserSettings]
+"value"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PolicyManager\default\Experience\AllowSyncMySettings]
+"value"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PolicyManager\default\Experience\PreventUsersFromTurningOnBrowserSyncing]
+"value"=dword:00000001

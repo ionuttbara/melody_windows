@@ -1,0 +1,85 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Windows Error Reporting]
+"Disabled"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Windows Error Reporting\Escalation]
+"DisableEscalation"=dword:00000001
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\Windows Error Reporting]
+"AutoApproveOSDumps"=dword:00000000
+"Disabled"=dword:00000001
+"DontSendAdditionalData"=dword:00000001
+"DontShowUI"=dword:00000001
+"LoggingDisabled"=dword:00000001
+"ConfigureArchive"=dword:00000000
+"DisableArchive"=dword:00000001
+"BypassDataThrottling"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Error Reporting]
+"Disabled"=dword:00000001
+"DontShowUI"=dword:00000001
+"DoReport"=dword:00000000
+"AutoApproveOSDumps"=dword:00000000
+"ConfigureArchive"=dword:00000000
+"DisableArchive"=dword:00000001
+"DontSendAdditionalData"=dword:00000001
+"LoggingDisabled"=dword:00000001
+"DontShowUI"=dword:00000001
+"BypassDataThrottling"=dword:00000000
+"OobeCompleted"=dword:00000001
+
+[HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Windows\Windows Error Reporting]
+"Disabled"=dword:00000001
+"DontShowUI"=dword:00000001
+"DoReport"=dword:00000000
+"AutoApproveOSDumps"=dword:00000000
+"ConfigureArchive"=dword:00000000
+"DisableArchive"=dword:00000001
+"DontSendAdditionalData"=dword:00000001
+"LoggingDisabled"=dword:00000001
+"DontShowUI"=dword:00000001
+"BypassDataThrottling"=dword:00000000
+"OobeCompleted"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\PCHealth\ErrorReporting]
+"DoReport"=dword:00000000
+"ForceQueueMode"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\PCHealth\ErrorReporting\DW]
+"DWFileTreeRoot"="0"
+"DWNoExternalURL"=dword:00000001
+"DWNoFileCollection"=dword:00000001
+"DWNoSecondLevelCollection"=dword:00000001
+"DWReporteeName"="0"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Windows Error Reporting]
+"Disabled"=dword:00000001
+"EnableZip"=dword:00000001
+"ErrorPort"=-
+"ServiceTimeout"=-
+"MachineID"="0"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Windows Error Reporting\Assert Filtering Policy]
+"ReportAndContinue"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Windows Error Reporting\BrokerUp]
+"WWAJSE"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Windows Error Reporting\Consent]
+"DefaultConsent"=dword:00000000
+"NewUserDefaultConsent"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Windows Error Reporting\WMR]
+"Disable"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\UnattendSettings\Windows Error Reporting]
+"DisableWER"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\UnattendSettings\Windows Error Reporting\Consent]
+"DefaultConsent"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Windows]
+"ErrorMode"=dword:00000002
+"NoInteractiveServices"=dword:00000001
+"ShellErrorMode"=dword:00000000
