@@ -15,6 +15,7 @@ This is a selection of Tweaks which I've selected for using in the creation of t
 <li> Wi-Fi Hospot Dialog & Autoconnection Disabled
 <li> Tweaked NSI Adapter for CTCP Congestion Enabler
 <li> Disabled QOS for better performance
+<li> Custom timeout for Windows Hospot Service
 
 # Changelog
  (02.02.2023) - 14.02 - Added more settings and making module
