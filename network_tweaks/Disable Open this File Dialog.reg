@@ -1,0 +1,25 @@
+Windows Registry Editor Version 5.00
+
+;Unsigned Files
+
+[HKEY_CURRENT_USER\Software\Policies\Microsoft\Internet Explorer\Download]
+"CheckExeSignatures"="no"
+"RunInvalidSignatures"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Internet Explorer\Download]
+"CheckExeSignatures"="no"
+"RunInvalidSignatures"=dword:00000001
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Attachments]
+"SaveZoneInformation"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Attachments]
+"SaveZoneInformation"=dword:00000001
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Associations]
+"LowRiskFileTypes"=".zip;.rar;.nfo;.txt;.exe;.bat;.com;.cmd;.reg;.msi;.htm;.html;.gif;.bmp;.jpg;.avi;.mpg;.mpeg;.mov;.mp3;.m3u;.wav;"
+"ModRiskFileTypes"=".bat;.exe;.reg;.vbs;.chm;.msi;.js;.cmd"
+
+[HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\Associations]
+"LowRiskFileTypes"=".zip;.rar;.nfo;.txt;.exe;.bat;.com;.cmd;.reg;.msi;.htm;.html;.gif;.bmp;.jpg;.avi;.mpg;.mpeg;.mov;.mp3;.m3u;.wav;"
+"ModRiskFileTypes"=".bat;.exe;.reg;.vbs;.chm;.msi;.js;.cmd"

@@ -6,53 +6,47 @@ CD /D "%~dp0"
 color 6
 title Melody - Network Settings
 
-:: for Windows (<= 7) Version command Settings
-netsh interface tcp set global netdma=disabled >nul
-
-
 :: Autotuning Internet Speed and making it persistent 
-netsh interface tcp set global autotuningl = experimental >nul
-netsh interface tcp set global autotuning = experimental >nul
-netsh interface tcp set heuristics disabled >nul
+netsh.exe interface tcp set global autotuningl = experimental >nul
+netsh.exe interface tcp set global autotuning = experimental >nul
+netsh.exe interface tcp set heuristics disabled >nul
 
 :: Setting the Congestion Provider for better Internet Speeds and Latency, to CTCP
 
-netsh interface tcp set supplemental Internet congestionprovider=ctcp >nul
-netsh interface tcp set supplemental InternetCustom congestionprovider=ctcp >nul
+netsh.exe interface tcp set supplemental Internet congestionprovider=ctcp >nul
+netsh.exe interface tcp set supplemental InternetCustom congestionprovider=ctcp >nul
 
 :: Reducing CPU for veryfast Internet Connections
 
-netsh interface tcp set global chimney=disabled >nul 
-netsh interface tcp set global dca=enabled >nul
-netsh interface tcp set global rsc=disabled >nul
-netsh interface tcp set global ecncapability=enabled >nul
-netsh interface tcp set global timestamps=disabled >nul
-netsh interface tcp set global nonsackrttresiliency=disabled >nul
-netsh interface tcp set global maxsynretransmissions=2 >nul
-netsh interface tcp set supplemental template=custom icw=10 >nul
-netsh interface tcp set global fastopen=enabled >nul
-netsh interface tcp set global fastopenfallback=enabled >nul
-netsh interface tcp set security mpp=disabled >nul
-netsh interface tcp set security profiles=disabled >nul
-netsh interface udp set global uro=enabled >nul
-netsh interface 6to4 set state state=enabled >nul
-netsh interface tcp set global hystart=disabled >nul
-netsh interface tcp set global pacingprofile=off >nul
-netsh interface tcp set global initialRto=3000 >nul
+netsh.exe interface tcp set global chimney=disabled >nul 
+netsh.exe interface tcp set global dca=enabled >nul
+netsh.exe interface tcp set global rsc=disabled >nul
+netsh.exe interface tcp set global ecncapability=enabled >nul
+netsh.exe interface tcp set global timestamps=disabled >nul
+netsh.exe interface tcp set global nonsackrttresiliency=disabled >nul
+netsh.exe interface tcp set global maxsynretransmissions=2 >nul
+netsh.exe interface tcp set supplemental template=custom icw=10 >nul
+netsh.exe interface tcp set global fastopen=enabled >nul
+netsh.exe interface tcp set global fastopenfallback=enabled >nul
+netsh.exe interface tcp set security mpp=disabled >nul
+netsh.exe interface tcp set security profiles=disabled >nul
+netsh.exe interface udp set global uro=enabled >nul
+netsh.exe interface 6to4 set state state=enabled >nul
+:: some powershell.exe commands which apply to all present network adapters (optimizations for I/O Overhead and getting better ping in worse internet connections)
 
-:: some powershell commands which apply to all present network adapters (optimizations for I/O Overhead and getting better ping in worse internet connections)
-
-powershell "Disable-NetAdapterChecksumOffload -Name *" >nul
-powershell "Enable-NetAdapterRss -Name *" >nul
-powershell "Disable-NetAdapterLso -Name *" >nul
-powershell "Set-NetOffloadGlobalSetting -PacketCoalescingFilter disabled" >nul 
+powershell.exe "Disable-NetAdapterChecksumOffload -Name "*"" >nul
+powershell.exe "Enable-NetAdapterRss -Name "*"" >nul
+powershell.exe "Disable-NetAdapterLso -Name "*"" >nul
+powershell.exe "Set-NetOffloadGlobalSetting -PacketCoalescingFilter disabled" >nul 
+powershell.exe "Disable-NetAdapterRsc -Name "*"" >nul
+powershell.exe "Disable-NetAdapterQos -Name "*"" >nul
 
 :: Firewall Rules
 
-netsh advfirewall firewall set rule group="Network Discovery" new enable=Yes >nul
-netsh advfirewall firewall set rule group="File and Printer Sharing" new enable=Yes >nul
-netsh advfirewall firewall set rule group="Delivery Optimization" new enable=No >nul
-netsh advfirewall firewall set rule group="Microsoft Family Safety" new enable=No >nul
+netsh.exe advfirewall firewall set rule group="Network Discovery" new enable=Yes >nul
+netsh.exe advfirewall firewall set rule group="File and Printer Sharing" new enable=Yes >nul
+netsh.exe advfirewall firewall set rule group="Delivery Optimization" new enable=No >nul
+netsh.exe advfirewall firewall set rule group="Microsoft Family Safety" new enable=No >nul
 
 
 :: Adding NetBios Options

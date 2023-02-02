@@ -1,0 +1,23 @@
+Windows Registry Editor Version 5.00
+
+;QoS
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Psched]
+"TimerResolution"=dword:00000001
+"MaxOutstandingSends"=dword:00000000
+"NonBestEffortLimit"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Tcpip\QoS]
+"Do not use NLA"="1" 
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Psched\DiffservByteMappingConforming]
+"ServiceTypeGuaranteed"=dword:0000002e
+"ServiceTypeNetworkControl"=dword:00000038
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Psched\DiffservByteMappingNonConforming]
+"ServiceTypeGuaranteed"=dword:0000002e
+"ServiceTypeNetworkControl"=dword:00000038
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Psched\UserPriorityMapping]
+"ServiceTypeGuaranteed"=dword:00000005
+"ServiceTypeNetworkControl"=dword:00000007

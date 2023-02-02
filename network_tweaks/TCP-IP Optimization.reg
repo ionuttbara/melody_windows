@@ -7,6 +7,11 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\LanmanWorkstation]
 "AllowOfflineFilesforCAShares"=dword:00000000
 
+[HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\LanmanWorkstation\Parameters]
+"DisableBandwidthThrottling"=dword:00000001
+"DisableLargeMtu"=dword:00000000
+
+
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\NetworkProvider]
 "RestoreConnection"=dword:00000001
 "WakeUp"=dword:00000000
@@ -35,6 +40,8 @@ Windows Registry Editor Version 5.00
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\services\Tcpip\Parameters]
 "EnableWsd"=dword:00000000
+"TcpInitialRTT"=dword:00003000
+"TcpHybridAck"=dword:00000000
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters]
 "EnableConnectionRateLimiting"=dword:00000000
@@ -47,7 +54,7 @@ Windows Registry Editor Version 5.00
 "EnableTCPA"=dword:00000000
 "DisableTaskOffload"=dword:00000001
 "TcpMaxDupAcks"=dword:00000002
-"Tcp1323Opts"=dword:00000001
+"Tcp1323Opts"=dword:00000000
 "TcpTimedWaitDelay"=dword:0000001e
 "GlobalMaxTcpWindowSize"=dword:0000ffff
 "TcpWindowSize"=dword:00256960
@@ -115,32 +122,6 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\I/O System]
 "IoEnableSessionZeroAccessCheck"=dword:00000001
 
-
-; AFD Parameters
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\AFD\Parameters]
-"DynamicSendBufferDisable"=dword:00000000
-"FastSendDatagramThreshold"=dword:00001000
-"MaxActiveTransmitFileCount"=dword:00000000
-"MaxFastCopyTransmit"=dword:00001000
-"MaxFastTransmit"=dword:00008000
-"PriorityBoost"=dword:00000004
-"DoNotHoldNICBuffers"=dword:00000001
-"TransmitWorker"=dword:00000020
-"DefaultReceiveWindow"=dword:00008192
-"DefaultSendWindow"=dword:00008192
-"DisableAddressSharing"=dword:00000001
-"LargeBufferSize"=dword:00010000
-"IRPStackSize"=dword:00000014
-"DisableRawSecurity"=dword:00000001
-"DisableDirectAcceptEx"=dword:00000001
-"DisableChainedReceive"=dword:00000001
-"EnableDynamicBacklog"=dword:00000001
-"MinimumDynamicBacklog"=dword:00000020
-"MaximumDynamicBacklog"=dword:00001000
-"DynamicBacklogGrowthDelta"=dword:00000010
-"BufferMultiplier"=dword:00000400
-
 ;Disabled cached Windows Logons
 
 [HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Winlogon]
@@ -167,6 +148,7 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\services\NDIS\Parameters]
 "RssBaseCpu"=dword:00000001
 "MaxNumRssCpus"=dword:00000004
+"TrackNblOwner"=dword:00000000
 
 ; branch cache
 
@@ -191,48 +173,6 @@ Windows Registry Editor Version 5.00
 "EnablePMTUBDetect"=dword:00000000
 "EnableICMPRedirect"=dword:00000001
 "DisableDynamicDiscovery"=dword:00000001
-
-;IPv6 Fix
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\LLTD]
-"EnableLLTDIO"=dword:00000001
-"AllowLLTDIOOnDomain"=dword:00000001
-"ProhibitLLTDIOOnPrivateNet"=dword:00000000
-"AllowLLTDIOOnPublicNet"=dword:00000000
-"EnableRspndr"=dword:00000001
-"AllowRspndrOnDomain"=dword:00000001
-"AllowRspndrOnPublicNet"=dword:00000000
-"ProhibitRspndrOnPrivateNet"=dword:00000001
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\TCPIP\v6Transition]
-"Teredo_ClientPort"=dword:00000000
-"Teredo_DefaultQualified"="Enabled"
-"Teredo_RefreshRate"=dword:0000001e
-"Teredo_ServerName"="win10.ipv6.microsoft.com"
-"Teredo_State"="Enterprise Client"
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip6\Parameters]
-"DisabledComponents"=dword:00000000
-
-; NLA Parameters
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\NlaSvc\Parameters\Internet]
-"ActiveDnsProbeContent"="208.67.222.222"
-"ActiveDnsProbeContentV6"="2620:119:35::35"
-"ActiveDnsProbeHost"="resolver1.opendns.com"
-"ActiveDnsProbeHostV6"="resolver1.opendns.com"
-"ActiveWebProbeContent"="success"
-"ActiveWebProbeContentV6"="success"
-"ActiveWebProbeHost"="detectportal.firefox.com"
-"ActiveWebProbeHostV6"="detectportal.firefox.com"
-"ActiveWebProbePath"="success.txt"
-"ActiveWebProbePathV6"="success.txt"
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\NetworkConnectivityStatusIndicator]
-"NoActiveProbe"=dword:00000001
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PolicyManager\default\Connectivity\DisallowNetworkConnectivityActiveTests]
-"value"=dword:00000001
 
 ;rasman
 
@@ -267,270 +207,8 @@ Windows Registry Editor Version 5.00
 "EnableSecuritySignature"=dword:00000000
 "RequireSecuritySignature"=dword:00000000
 
-
-;Wi-Fi Connection
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DataCollection\Default\WifiAutoConnectConfig]
-"AutoConnectEnabled"=dword:00000001
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PolicyManager\default\WiFi\AllowAutoConnectToWiFiSenseHotspots]
-"Value"=dword:00000000
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WcmSvc\wifinetworkmanager\SocialNetworks\ABCH]
-"OptInStatus"=dword:00000000
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WcmSvc\wifinetworkmanager\SocialNetworks\ABCH-SKYPE]
-"OptInStatus"=dword:00000000
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WcmSvc\wifinetworkmanager\SocialNetworks\FACEBOOK]
-"OptInStatus"=dword:00000000
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WcmSvc\wifinetworkmanager\config]
-"AutoConnectAllowedOEM"=dword:00000000
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WcmSvc\wifinetworkmanager]
-"WiFiSenseCredShared"=dword:00000000
-"WiFiSenseOpen"=dword:00000000
-
-[HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\WcmSvc\GroupPolicy]
-"fSoftDisconnectConnections"=dword:00000001
-"fMinimizeConnections"=dword:00000001
-
-[HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\WCN\UI]
-"DisableWcnUi"=dword:000000001
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\HotspotAuthentication]
-"Enabled"=dword:00000001
-
-[HKEY_LOCAL_MACHINE\Software\Microsoft\wcmsvc\wifinetworkmanager\config]
-"AutoConnectAllowedOEM"=dword:00000000
-
-;Peernet
-
-[HKEY_LOCAL_MACHINE\Software\policies\Microsoft\Peernet]
-"Disabled"=dword:00000001
-
-[HKEY_LOCAL_MACHINE\Software\policies\Microsoft\Peernet\Pnrp\IPv6-Global]
-"DisableMulticastBootstrap"=dword:00000001
-"Disabled"=dword:00000001
-
-[HKEY_LOCAL_MACHINE\Software\policies\Microsoft\Peernet\Pnrp\IPv6-Local]
-"DisableMulticastBootstrap"=dword:00000001
-"Disabled"=dword:00000001
-
-[HKEY_LOCAL_MACHINE\Software\policies\Microsoft\Peernet\Pnrp\IPv6-SiteLocal]
-"DisableMulticastBootstrap"=dword:00000001
-"Disabled"=dword:00000001
-
-[HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Peernet]
-"Disabled"=dword:00000001
-
-;Unsigned Files
-
-[HKEY_CURRENT_USER\Software\Policies\Microsoft\Internet Explorer\Download]
-"CheckExeSignatures"="no"
-"RunInvalidSignatures"=dword:00000001
-
-[HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Internet Explorer\Download]
-"CheckExeSignatures"="no"
-"RunInvalidSignatures"=dword:00000001
-
-[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Attachments]
-"SaveZoneInformation"=dword:00000001
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Attachments]
-"SaveZoneInformation"=dword:00000001
-
-[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Associations]
-"LowRiskFileTypes"=".zip;.rar;.nfo;.txt;.exe;.bat;.com;.cmd;.reg;.msi;.htm;.html;.gif;.bmp;.jpg;.avi;.mpg;.mpeg;.mov;.mp3;.m3u;.wav;"
-"ModRiskFileTypes"=".bat;.exe;.reg;.vbs;.chm;.msi;.js;.cmd"
-
-[HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\Associations]
-"LowRiskFileTypes"=".zip;.rar;.nfo;.txt;.exe;.bat;.com;.cmd;.reg;.msi;.htm;.html;.gif;.bmp;.jpg;.avi;.mpg;.mpeg;.mov;.mp3;.m3u;.wav;"
-"ModRiskFileTypes"=".bat;.exe;.reg;.vbs;.chm;.msi;.js;.cmd"
-
-; NSI Adapter
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Nsi\{eb004a03-9b1a-11d4-9123-0050047759bc}\0]
-"0200"=hex:00,00,00,00,01,00,00,07,00,00,00,00,00,00,00,00,1e,00,00,00,00,00,\
-  00,00,00,00,00,00,02,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,ff,\
-  00,ff,00,ff,ff,00,00,00,00,00,00,00,00,ff,ff,ff,ff,00,00,00,00,00,00,00,00,\
-  ff,ff,00,00,ff,ff,ff,ff,00,00,00,00,00,00,00,00
-"1700"=hex:00,00,00,00,01,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\
-  00,00,00,00,00,00,02,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\
-  00,ff,00,ff,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\
-  ff,00,00,00,ff,ff,ff,ff,00,00,00,00,00,00,00,00
-
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Nsi\{eb004a03-9b1a-11d4-9123-0050047759bc}\26]
-"00000000"=hex:00,00,00,00,00,00,00,00,00,00,00,00,02,00,00,00,00,00,00,00,00,\
-  00,00,00,00,00,00,00,ff,ff,ff,ff,ff,ff,00,00,ff,ff,ff,00
-"04000000"=hex:00,00,00,00,00,00,00,00,00,00,00,00,02,00,00,00,00,00,00,00,00,\
-  00,00,00,00,00,00,00,ff,ff,ff,ff,ff,ff,00,00,ff,ff,ff,00
-"01000000"=hex:00,00,00,00,00,00,00,00,00,00,00,00,02,00,00,00,00,00,00,00,00,\
-  00,00,00,00,00,00,00,ff,ff,ff,ff,ff,ff,00,00,ff,ff,ff,00
-"02000000"=hex:00,00,00,00,00,00,00,00,00,00,00,00,02,00,00,00,00,00,00,00,00,\
-  00,00,00,00,00,00,00,ff,ff,ff,ff,ff,ff,00,00,ff,ff,ff,00
-
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Internet Connection Wizard]
 "ExitOnMSICW"=dword:00000001
-
-
-;Network
-
-
-[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings]
-"CertificateRevocation"=dword:00000001
-"DisableCachingOfSSLPages"=dword:00000000
-"PrivacyAdvanced"=dword:00000001
-"SecureProtocols"=dword:00002aa0
-"EnableNegotiate"=dword:00000001
-"MigrateProxy"=dword:00000001
-"ProxyEnable"=dword:00000000
-"WarnonZoneCrossing"=dword:00000000
-"EnableHttp1_1"=dword:00000001
-"ProxyHttp1.1"=dword:00000001
-"EnableHTTP2"=dword:00000001
-"EnablePunycode"=dword:00000001
-"UrlEncoding"=dword:00000000
-"DisableIDNPrompt"=dword:00000000
-"ShowPunycode"=dword:00000000
-"WarnonBadCertRecving"=dword:00000001
-"WarnOnPostRedirect"=dword:00000001
-"SyncMode5"=dword:00000003
-
-
-[HKEY_USERS\.DEFAULT\Microsoft\Windows\CurrentVersion\Internet Settings]
-"CertificateRevocation"=dword:00000001
-"DisableCachingOfSSLPages"=dword:00000000
-"PrivacyAdvanced"=dword:00000001
-"SecureProtocols"=dword:00002aa0
-"EnableNegotiate"=dword:00000001
-"MigrateProxy"=dword:00000001
-"ProxyEnable"=dword:00000000
-"WarnonZoneCrossing"=dword:00000000
-"EnableHttp1_1"=dword:00000001
-"ProxyHttp1.1"=dword:00000001
-"EnableHTTP2"=dword:00000001
-"EnablePunycode"=dword:00000001
-"UrlEncoding"=dword:00000000
-"DisableIDNPrompt"=dword:00000000
-"ShowPunycode"=dword:00000000
-"WarnonBadCertRecving"=dword:00000001
-"WarnOnPostRedirect"=dword:00000001
-"SyncMode5"=dword:00000003
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\CurrentVersion\Internet Settings]
-"CertificateRevocation"=dword:00000001
-"DisableCachingOfSSLPages"=dword:00000000
-"PrivacyAdvanced"=dword:00000001
-"SecureProtocols"=dword:00002aa0
-"EnableNegotiate"=dword:00000001
-"MigrateProxy"=dword:00000001
-"ProxyEnable"=dword:00000000
-"WarnonZoneCrossing"=dword:00000000
-"EnableHttp1_1"=dword:00000001
-"ProxyHttp1.1"=dword:00000001
-"EnableHTTP2"=dword:00000001
-"EnablePunycode"=dword:00000001
-"UrlEncoding"=dword:00000000
-"DisableIDNPrompt"=dword:00000000
-"ShowPunycode"=dword:00000000
-"WarnonBadCertRecving"=dword:00000001
-"WarnOnPostRedirect"=dword:00000001
-"SyncMode5"=dword:00000003
-
-; Network Setting Policy
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\4]
-"140C"=dword:00000000
-"270C"=dword:00000003
-"1806"=dword:00000000
-"180E"=dword:00000003
-"2301"=dword:00000003
-"1004"=dword:00000000
-"1802"=dword:00000000
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\3]
-"140C"=dword:00000000
-"270C"=dword:00000003
-"1806"=dword:00000000
-"180E"=dword:00000003
-"2301"=dword:00000003
-"1004"=dword:00000000
-"1802"=dword:00000000
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\2]
-"140C"=dword:00000000
-"270C"=dword:00000003
-"1806"=dword:00000000
-"180E"=dword:00000003
-"2301"=dword:00000003
-"1004"=dword:00000000
-"1802"=dword:00000000
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\1]
-"140C"=dword:00000000
-"270C"=dword:00000003
-"1806"=dword:00000000
-"180E"=dword:00000003
-"2301"=dword:00000003
-"1004"=dword:00000000
-"1802"=dword:00000000
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\0]
-"140C"=dword:00000000
-"270C"=dword:00000003
-"1806"=dword:00000000
-"180E"=dword:00000003
-"2301"=dword:00000003
-"1004"=dword:00000000
-"1802"=dword:00000000
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Lockdown_Zones\0]
-"140C"=dword:00000000
-"270C"=dword:00000003
-"1806"=dword:00000000
-"180E"=dword:00000003
-"2301"=dword:00000003
-"1004"=dword:00000000
-"1802"=dword:00000000
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Lockdown_Zones\1]
-"140C"=dword:00000000
-"270C"=dword:00000003
-"1806"=dword:00000000
-"180E"=dword:00000003
-"2301"=dword:00000003
-"1004"=dword:00000000
-"1802"=dword:00000000
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Lockdown_Zones\2]
-"140C"=dword:00000000
-"270C"=dword:00000003
-"1806"=dword:00000000
-"180E"=dword:00000003
-"2301"=dword:00000003
-"1004"=dword:00000000
-"1802"=dword:00000000
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Lockdown_Zones\3]
-"140C"=dword:00000000
-"270C"=dword:00000003
-"1806"=dword:00000000
-"180E"=dword:00000003
-"2301"=dword:00000003
-"1004"=dword:00000000
-"1802"=dword:00000000
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Lockdown_Zones\4]
-"140C"=dword:00000000
-"270C"=dword:00000003
-"1806"=dword:00000000
-"180E"=dword:00000003
-"2301"=dword:00000003
-"1004"=dword:00000000
-"1802"=dword:00000000
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\ZoneMap]
 "AutoDetect"=dword:00000000
@@ -561,29 +239,6 @@ Windows Registry Editor Version 5.00
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PlayToReceiver]
 "AutoEnabled"=dword:00000001
-
-;QoS
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Psched]
-"TimerResolution"=dword:00000001
-"MaxOutstandingSends"=dword:00000000
-"NonBestEffortLimit"=dword:00000000
-
-[HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Tcpip\QoS]
-"Do not use NLA"="1" 
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Psched\DiffservByteMappingConforming]
-"ServiceTypeGuaranteed"=dword:0000002e
-"ServiceTypeNetworkControl"=dword:00000038
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Psched\DiffservByteMappingNonConforming]
-"ServiceTypeGuaranteed"=dword:0000002e
-"ServiceTypeNetworkControl"=dword:00000038
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Psched\UserPriorityMapping]
-"ServiceTypeGuaranteed"=dword:00000005
-"ServiceTypeNetworkControl"=dword:00000007
-
 
 ;winhttp tracking
 
@@ -621,3 +276,20 @@ Windows Registry Editor Version 5.00
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\Triple DES 168]
 “Enabled”=dword:00000000
+
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters]
+; Allow only reply of request DNS by oneself.
+"QueryIpMatching"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Internet Connection Wizard]
+"ExitOnMSICW"=dword:00000001
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings]
+"AutoDetect"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\UDP\Parameters]
+"EnableUDPFastSend"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\TCPIP\v6Transition]
+"TcpAutotuningLevel"=dword:00000003
