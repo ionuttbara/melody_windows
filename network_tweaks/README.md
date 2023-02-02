@@ -5,7 +5,7 @@ This is a selection of Tweaks which I've selected for using in the creation of t
 <li>  Autotuning Internet Speed and making it persistent 
 <li> I/O Offload
 <li> AFD Parameters
-<li> IPv6 Fix for Windows Applications (and Xbox Live /MSFT Store Games)
+<li> IPv6 Fix for Windows Applications (and Xbox Live / MSFT Store Games)
 <li> NLA Parameters (Network Detection changed to detectportal.firefox.com)
 <li> Network Setting Policy
 <li> Disabled Nagle's Algorithm for ALL Network Adapters
@@ -14,6 +14,8 @@ This is a selection of Tweaks which I've selected for using in the creation of t
 <li> BITS Peercaching Disabled
 <li> Wi-Fi Hospot Dialog & Autoconnection Disabled
 <li> Tweaked NSI Adapter for CTCP Congestion Enabler
+<li> Disabled QOS for better performance
 
 # Changelog
+ (02.02.2023) - 14.02 - Added more settings and making module
 (06.12.2022) - 14.0 - Fixing the 300mbps limit of network speed in Windows 10 and Windows 11.
