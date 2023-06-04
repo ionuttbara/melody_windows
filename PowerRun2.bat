@@ -1,5 +1,0 @@
-regedit /s "registry\Remove Explorer Junk.reg"
-regedit /s "registry\Task Scheduler Tweaking.reg"
-regedit /s "registry\TCP-IP Optimization.reg"
-regedit /s "registry\Windows Kernel Tweaks.reg"
-regedit /s "registry\Service Optimizer.reg"
