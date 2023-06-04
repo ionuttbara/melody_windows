@@ -1,8 +1,9 @@
 
 # Melody Script
 <h1 align="center">
-  <br>
-  <img src="https://raw.githubusercontent.com/jbara2002/melody12/master/logo.png" alt="Melody logo"></a>
+ 
+
+ <img src=https://github.com/jbara2002/melody_windows/assets/76656855/58afdbe0-afee-4afc-8ec9-2f4037d7e174> </img>
 </h1>
       
 <p align="center">
@@ -101,7 +102,8 @@
 
 ##### 3rd Party Software Optimization
 > In this part i have a research to disable 3rd party Updaters , metrics and telemetry. 
-> Some configurations are policies and be found to [admx.help].
+> Some config!
+urations are policies and be found to [admx.help].
 
  | Applied Tweak | Description | Required Windows Version |
 | ------ | ------ |------ |
