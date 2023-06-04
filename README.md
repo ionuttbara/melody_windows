@@ -1,7 +1,7 @@
 
 # Melody Script
 <h1 align="center">
- 
+ <a href="https://github.com/jbara2002/melody_windows/tree/master"> Link for registry files </a>
 
  <img src=https://github.com/jbara2002/melody_windows/assets/76656855/58afdbe0-afee-4afc-8ec9-2f4037d7e174> </img>
 </h1>
