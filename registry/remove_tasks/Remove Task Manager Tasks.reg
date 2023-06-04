@@ -1,9 +1,0 @@
-Windows Registry Editor Version 5.00
-
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Tree\Microsoft\Windows\Task Manager]
-
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Tasks\{07A7F046-F3DC-46EB-A704-B937C235A279}]
-
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Logon\{07A7F046-F3DC-46EB-A704-B937C235A279}]
-
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Plain\{07A7F046-F3DC-46EB-A704-B937C235A279}]

@@ -1,9 +1,0 @@
-Windows Registry Editor Version 5.00
-
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Tree\Microsoft\Windows\Windows Media Sharing]
-
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Tasks\{0A91F0B0-8E9B-42DC-BECA-5141371BD67C}]
-
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Logon\{0A91F0B0-8E9B-42DC-BECA-5141371BD67C}]
-
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Plain\{0A91F0B0-8E9B-42DC-BECA-5141371BD67C}]

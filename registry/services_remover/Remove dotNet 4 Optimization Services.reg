@@ -1,9 +1,0 @@
-Windows Registry Editor Version 5.00
-
-[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\clr_optimization_v4.0.30319_64]
-
-[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\clr_optimization_v4.0.30319_32]
-
-[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\clr_optimization_v2.0.50727_64]
-
-[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\clr_optimization_v2.0.50727_32]
