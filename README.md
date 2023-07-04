@@ -87,6 +87,7 @@
 |Windows Update - Derivery Optimization| Disables Delivery Optimization| Windows 10 or newer
 |Windows Update| Optimizes Windows Update. Disables notifications and deferes some Quality Updates and Features Updates |Windows 10 or newer 
 |Xbox Gaming Optimization| Fixing errors with Teredo Connectivity (also in TCP-IP optimization) and disables GameBar| Windows 10 1511 or newer.
+|Removal of Drive Indicator Icon in This PC | Removing drive indicator it will show infos in 3 rows instead of one. (name , size and file system type) | Windows 7 or newer
 
 
 ##### Integrations
