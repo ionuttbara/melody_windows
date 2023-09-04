@@ -634,6 +634,72 @@ vestea.net###sdj_ticker_script_bottom
 vestea.net##.widget-area
 vestea.net##.site-info
 vestea.net##.site-footer
+
+! 2023-02-06 https://ak537.anime-kage.eu
+ak537.anime-kage.eu##.banner-container
+
+! 2023-09-04 https://www.thewindowsclub.com
+www.thewindowsclub.com###ezmobfooter .ezmob-footer-desktop.ezo_ad.ezoic-floating-bottom.ezmob-footer
+www.thewindowsclub.com##.adtester-container-691.adtester-container.medrectangle-1691.medrectangle-1.ezoic-at-0.ezoic-ad
+www.thewindowsclub.com##.site-footer
+www.thewindowsclub.com##.adtester-container-815.adtester-container.medrectangle-4815.medrectangle-4.ezoic-at-0.ezoic-ad > .ezoic-ad
+www.thewindowsclub.com##.adtester-container-815.adtester-container.medrectangle-4815.medrectangle-4.ezoic-at-0.ezoic-ad
+www.thewindowsclub.com##.adtester-container-826.adtester-container.box-4826.box-4.ezoic-at-0.ezoic-ad
+www.thewindowsclub.com##.adtester-container-663.adtester-container.banner-1663.banner-1.ezoic-at-0.ezoic-ad
+www.thewindowsclub.com##.adtester-container-664.adtester-container.leader-1664.leader-1.ezoic-at-0.ezoic-ad
+www.thewindowsclub.com##p:nth-of-type(17)
+www.thewindowsclub.com##.author-box
+||disqus.com/embed/comments/$subdocument
+
+! 2023-09-04 https://news.thewindowsclub.com
+news.thewindowsclub.com###ezmobfooter .ezmob-footer-desktop.ezo_ad.ezoic-floating-bottom.ezmob-footer
+
+! 2023-09-04 https://reviews.thewindowsclub.com
+reviews.thewindowsclub.com##.adtester-container-195.adtester-container.medrectangle-1195.medrectangle-1.ezoic-at-0.ezoic-ad
+reviews.thewindowsclub.com###ezmobfooter .ezmob-footer-desktop.ezo_ad.ezoic-floating-bottom.ezmob-footer
+||disqus.com/embed/comments/$subdocument
+reviews.thewindowsclub.com##.site-footer
+reviews.thewindowsclub.com##.author-box
+reviews.thewindowsclub.com###disqus_thread
+
+! 2023-09-04 https://www.xda-developers.com
+www.xda-developers.com##.adzone-above-latest
+www.xda-developers.com###dynamically-injected-refresh-ad-zone-div-gpt-ad-149790128315-sb1 > .ad-current
+www.xda-developers.com###dynamically-injected-refresh-ad-zone-div-gpt-ad-149790128315-sb2 > .ad-current
+www.xda-developers.com###dynamically-injected-refresh-ad-zone-div-gpt-ad-149790128315-sbd > .ad-current
+www.xda-developers.com##.ad-loading.ad-zone-container-loading-animation-enabled.ad-zone-container-background-details-enabled.adsninja-ad-zone-container-with-set-height.ad-zone-container-sidebar-first.ad-zone-container
+www.xda-developers.com###dynamically-injected-refresh-ad-zone-adsninja-ad-unit-belowFirstParagraph-5ff35759809f1 > .ad-current
+www.xda-developers.com##.ad-loading.ad-zone-container-loading-animation-enabled.ad-zone-container-background-details-enabled.adsninja-ad-zone-container-with-set-height.ad-zone-container-content-character-count-repeatable-1.ad-zone-container
+www.xda-developers.com###dynamically-injected-refresh-ad-zone-div-gpt-ad-1553804529761-sbd > .ad-current
+www.xda-developers.com##.ad-loading.ad-zone-container-loading-animation-enabled.ad-zone-container-background-details-enabled.adsninja-ad-zone-container-with-set-height.ad-zone-container-content-character-count-repeatable.ad-zone-container
+www.xda-developers.com###dynamically-injected-refresh-ad-zone-adsninja-ad-unit-belowTheAuthor-6029640103d498 > .ad-current
+www.xda-developers.com###waypointLoader
+www.xda-developers.com###dynamically-injected-refresh-ad-zone-div-gpt-ad-1553804529761-sf > .ad-current
+www.xda-developers.com##.article-footer-newsletter
+
+! 2023-09-04 https://pureinfotech.com
+pureinfotech.com##.headerBottom.site-footer
+pureinfotech.com###newswrapper
+pureinfotech.com##.news-item-3-ad
+
+! 2023-09-04 https://www.airbnb.com
+www.airbnb.com##.dir-ltr.dir.c1dbtjd2
+www.airbnb.com##.dir-ltr.dir.ff6a337
+
+! 2023-09-04 https://www.cfrcalatori.ro
+www.cfrcalatori.ro###footer-widget
+www.cfrcalatori.ro##.site-footer
+||www.cfrcalatori.ro/wp-content/themes/cfr-companie/img/slide2.jpg$image
+www.cfrcalatori.ro###rev_slider_1_1_wrapper
+
+! 2023-09-04 https://www.scoalarutiera.ro
+||www.scoalarutiera.ro/img/frontend/scoala-rutiera-ro.jpg$image
+||www.scoalarutiera.ro/img/frontend/background_exam.jpg$image
+www.scoalarutiera.ro##.hidden-sm.hidden-xs.mtb20tc
+www.scoalarutiera.ro##.mlr5.text-center
+www.scoalarutiera.ro##.text-center.panel-heading
+www.scoalarutiera.ro##.mtb20.nopadding.col-sm-offset-3.col-md-offset-3.col-lg-offset-4.col-xs-12.col-sm-6.col-md-6.col-lg-4
+www.scoalarutiera.ro##.mtb20tc
 vestea.net##.sd-sharing.sd-social-icon.sd-social.sd-block.robots-nocontent
 vestea.net##.related-content
 
