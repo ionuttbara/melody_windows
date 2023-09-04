@@ -1,0 +1,639 @@
+! 2023-02-03 https://observatornews.ro
+observatornews.ro##div.billboard.ads-div:nth-of-type(5)
+observatornews.ro##div.billboard.ads-div:nth-of-type(5)
+observatornews.ro##div.billboard.ads-div:nth-of-type(1)
+observatornews.ro##.video-container
+observatornews.ro##.cnt > .ads-div
+observatornews.ro##.abonare-newsletter
+observatornews.ro##.recomandari-cross.stiri
+observatornews.ro##.social-logo
+observatornews.ro##.appstores
+observatornews.ro##footer
+observatornews.ro##section.box-design:nth-of-type(5)
+observatornews.ro##aside > span.title-box > strong
+observatornews.ro##section.box-design:nth-of-type(4)
+observatornews.ro##.box-design.top-stiri
+observatornews.ro##aside
+observatornews.ro##.linkuri-in-article
+observatornews.ro##.related-video
+observatornews.ro##.related-video-more
+observatornews.ro##.article-image-container > .bracket-right.bracket
+observatornews.ro##.article-image-container > .bracket-left.bracket
+observatornews.ro##.media-top
+observatornews.ro##.ads-div
+observatornews.ro##.seo-cnt
+observatornews.ro##.banner-aside
+observatornews.ro##h1
+
+! 2023-02-03 https://www.neowin.net
+www.neowin.net##div.category-bar:nth-of-type(2)
+www.neowin.net###neowin_header
+www.neowin.net##div.widget-ad-sidebar-middle.widget-ad.widget > .widget-content
+www.neowin.net##div.widget-ad-sidebar-middle.widget-ad.widget > .widget-header
+www.neowin.net##.widget-poll.widget
+www.neowin.net##.widget-ad-sidebar-bottom.stickyAd > .widget-header
+www.neowin.net##.rrrec
+www.neowin.net##.footer-top > .wrap > .row
+www.neowin.net##.footer-bot
+www.neowin.net##.article-next-to-comments.w-col-4.d-col-4.sidebar-col
+www.neowin.net##.category-bar
+
+! 2023-02-03 https://www.ziarpiatraneamt.ro
+www.ziarpiatraneamt.ro##.widget_text.widget.primary-sidebar-widget.w-t.h-ni
+www.ziarpiatraneamt.ro##.footer-social-icons
+www.ziarpiatraneamt.ro##.copy-footer
+www.ziarpiatraneamt.ro##div.pagination-animate.bs-listing-single-tab.bs-listing-listing-thumbnail-1.bs-listing:nth-of-type(2)
+www.ziarpiatraneamt.ro##.use-pretty-tabs.hidden-xs.topbar-style-1.topbar
+
+! 2023-02-03 https://www.ziarbicaz.ro
+||www.ziarbicaz.ro/wp-content/uploads/2022/10/banner-site*.png$image
+||www.ziarbicaz.ro/wp-content/uploads/2020/08/ardealul*.png$image
+||www.ziarbicaz.ro/wp-content/uploads/2020/10/122911509_3481204868614785_6520724818074775743_n*.jpg$image
+||www.ziarpiatraneamt.ro/wp-content/uploads/2021/02/ava.gif$image
+||www.ziarpiatraneamt.ro/wp-content/uploads/2021/02/ava.gif$image
+www.ziarbicaz.ro###footer-container
+www.ziarbicaz.ro##.comments-area
+www.ziarbicaz.ro##hr.none:nth-of-type(3)
+||www.ziarbicaz.ro/wp-content/themes/saladmag/img/icons/facebook.png$image
+
+! 2023-02-03 https://romantv.ro
+romantv.ro###mvp-leader-wrap > div
+||romantv.ro/site/wp-content/uploads/2023/01/campanie-teatru.jpg$image
+||romantv.ro/site/wp-content/uploads/2022/05/panifcom-mai.jpg$image
+romantv.ro###custom_html-6 > .custom-html-widget.textwidget > center > div > .adsbygoogle
+romantv.ro###mvp_facebook_widget-3 > .mvp-widget-home-head
+romantv.ro###custom_html-8 > .custom-html-widget.textwidget > center > div > .adsbygoogle
+||romantv.ro/site/wp-content/uploads/2019/03/bg.jpg$image
+||romantv.ro/site/wp-content/uploads/2019/03/bg.jpg$image
+||romantv.ro/site/wp-content/uploads/2019/03/bg.jpg$image
+
+! 2023-02-03 https://twitter.com
+twitter.com##.r-1bro5k0.css-1dbjc4n > .css-1dbjc4n > .r-1f1sjgu.r-ymttw5.r-1ny4l3l.r-1wtj0ep.css-1dbjc4n
+twitter.com##.r-6416eg.r-o7ynqc.r-1yzf0co.r-ymttw5.r-1ny4l3l.r-1loqt21.r-1moyyf3.r-1pp923h.css-1dbjc4n.css-18t94o4.css-4rbku5
+twitter.com##.r-1bro5k0.css-1dbjc4n
+twitter.com##div.r-1udh08x.r-1ifxtd0.r-rs99b7.r-1phboty.r-1867qdf.r-14wv3jr.r-g2wdr4.css-1dbjc4n:nth-of-type(3)
+twitter.com##div.r-1udh08x.r-1ifxtd0.r-rs99b7.r-1phboty.r-1867qdf.r-14wv3jr.r-g2wdr4.css-1dbjc4n:nth-of-type(4)
+
+! 2023-02-03 https://winaero.com
+winaero.com##.ramain-top
+winaero.com##.pwbd-close
+winaero.com##.category-software-announcements.hentry.sticky.has-post-thumbnail.format-standard.status-publish.type-post.post.post-33474
+winaero.com##.site-footer
+winaero.com##.supportus
+winaero.com##.author-info
+winaero.com##.pwsb
+winaero.com##.comment-reply-title
+winaero.com##.comment-form
+
+! 2023-02-03 https://www.youtube.com
+www.youtube.com###copyright
+www.youtube.com###guide-links-primary
+www.youtube.com###guide-links-secondary
+
+! 2023-02-03 https://www.17track.net
+www.17track.net##.yq-panel-coop.page-content
+www.17track.net##.yq-panel-solutions.page-content
+www.17track.net##.yq-panel-advantage.page-content
+www.17track.net##.yq-panel-register.page-content > .fixWidth
+www.17track.net##.yq-panel-register.page-content
+www.17track.net##.padding-0.fixWidth
+||res.17track.net/asset/imgs/shopify/ShopifyApp.gif$image
+www.17track.net##.yq-panel-footer.page-content
+
+! 2023-02-03 https://www.autogari.ro
+||www.autogari.ro/include/images/header-bg4.jpg$image
+||www.autogari.ro/include/images/oferte-bg2.jpg$image
+www.autogari.ro##.extracontainer
+www.autogari.ro##.alteLeg > .row
+||www.autogari.ro/include/images/Autogari-footer.svg$object
+www.autogari.ro##.container.numbers
+www.autogari.ro##.container.offers-boxes
+www.autogari.ro##.default.container.last > .articol
+||www.autogari.ro/include/images/footer-anim2.svg$object
+www.autogari.ro##.articol
+www.autogari.ro##.offers > .container
+www.autogari.ro##.offers
+
+! 2023-02-03 https://github.com
+github.com##.pt-6.mt-6.flex-lg-nowrap.flex-wrap.flex-lg-row.flex-column-reverse.color-border-muted.border-top.color-fg-muted.f6.pb-2.flex-items-center.d-flex.position-relative
+
+! 2023-02-03 http://www.filmeserialeonline.org
+www.filmeserialeonline.org##.news_home
+www.filmeserialeonline.org###slid01 > .s_home.slider_box
+www.filmeserialeonline.org###footer
+www.filmeserialeonline.org##.comentarios
+www.filmeserialeonline.org##.slider_box
+www.filmeserialeonline.org##.usermenuadmin > a[href^="/wp-login.php"]
+
+! 2023-02-03 https://forum.xda-developers.com
+forum.xda-developers.com##.uix_extendedFooter
+forum.xda-developers.com##.p-footer-inner > .pageContent
+forum.xda-developers.com###xdadevelopers_right_1
+forum.xda-developers.com###xdadevelopers_right_2
+forum.xda-developers.com##.p-sectionLinks > .pageContent
+
+! 2023-02-03 https://www.wikipedia.org
+www.wikipedia.org##.site-license
+www.wikipedia.org##.footer
+www.wikipedia.org##hr:nth-of-type(2)
+www.wikipedia.org##.lang-list-button-wrapper
+www.wikipedia.org##.lang-list-border
+
+! 2023-02-03 https://www.digi24.ro
+www.digi24.ro##.nav-social
+www.digi24.ro##.widget-title-alt.widget-title.section-title
+www.digi24.ro##.footer-top
+www.digi24.ro##.footer-network
+www.digi24.ro##.footer-bottom
+www.digi24.ro##section:nth-of-type(9)
+www.digi24.ro##section:nth-of-type(6)
+www.digi24.ro##section:nth-of-type(5)
+www.digi24.ro##section:nth-of-type(4)
+www.digi24.ro##section.bg:nth-of-type(3)
+www.digi24.ro##.bg-digi24.bg.widget-shows
+www.digi24.ro##.widget-cross.section
+www.digi24.ro##.col-md-12.col-2
+www.digi24.ro##.bg.section
+www.digi24.ro##div.section > .container > .flex-center.flex
+www.digi24.ro##.widget-news.section > .container > .flex
+www.digi24.ro##.gutter-container-0 > p
+www.digi24.ro##.col-sm-12.col-10 > .social
+www.digi24.ro##.col-sm-12.col-md-9.col-2
+
+! 2023-02-03 https://www.scribd.com
+www.scribd.com###global_footer
+
+! 2023-02-03 https://www.g4media.ro
+www.g4media.ro##.button
+www.g4media.ro##.site-footer
+www.g4media.ro##.post-footer
+www.g4media.ro##.doneaza-cont
+www.g4media.ro##div.sectiune-doneaza:nth-of-type(2)
+www.g4media.ro##div.sectiune-doneaza:nth-of-type(3)
+www.g4media.ro##.mc4wp-form-fields
+www.g4media.ro##.paypal-box
+www.g4media.ro##.donate-odata
+www.g4media.ro##div.sectiune-doneaza:nth-of-type(1)
+www.g4media.ro##.clearfix.thisone.with-padding
+www.g4media.ro###respond
+www.g4media.ro##.similar-posts-wrapper
+www.g4media.ro##.read-more
+||cdn.g4media.ro/wp-content/uploads/2022/02/combo-sf-sava.gif$image
+||cdn.g4media.ro/wp-content/uploads/2022/02/combo-sf-sava.gif$image
+
+! 2023-02-03 https://www.google.com
+www.google.com##div.fbar:nth-of-type(3)
+www.google.com##.B4GxFc.b0KoTc
+www.google.com##.uU7dJb
+www.google.com##.SSwjIe.KxwPGc
+www.google.com##.lJ9FBc.FPdoLc > center > .RNmpXc
+www.google.com##div.gb_p.gb_o:nth-of-type(1)
+
+! 2023-02-03 https://www.eneba.com
+www.eneba.com###page-footer
+www.eneba.com##.iacaV8
+
+! 2023-02-03 https://www.olx.ro
+www.olx.ro###mainpageAds
+www.olx.ro##.sitepopularbox
+www.olx.ro##.clr.siteinfobox.pding15_0
+www.olx.ro##.footer-business-partner
+www.olx.ro##.footer-bottom
+www.olx.ro###body-container
+www.olx.ro##.topbarbanner
+www.olx.ro##.css-bq4r8t
+www.olx.ro##.css-9kkh8y.accordion-item__toggle-contents
+www.olx.ro##.css-slyno6
+
+! 2023-02-03 https://www.booking.com
+www.booking.com##.emk_footer_update_space.emk_footer_centered.emk_footer_update
+www.booking.com##.footer-wrapper
+www.booking.com##.bui-spacer--large.bui-tab--rounded.bui-tab
+www.booking.com##.bui-banner.bh-awareness-campaign-index-banner__link
+||cf.bstatic.com/psb/capla/static/media/world-map.7d457a5d.png$image
+www.booking.com##.a11y_blue_grey.clearfix.index.bui-spacer--largest.d-index__section.wcu-seo-tabs > .d-index__header-section.bui-spacer--large.bui-f-font-display_two
+www.booking.com##.js-close.js-bh-awareness-campaign-index-banner-close-trigger.bui-banner__close > .-streamline-close.bk-icon
+www.booking.com##.ec45347134 > div
+www.booking.com##.bf5eb398a1 > div
+www.booking.com##.desktop-communities-recommendations--desktop.desktop-communities-recommendations > .bui-u-bleed\@small.bui-carousel--medium.bui-carousel > .bui-carousel__inner
+www.booking.com##.desktop-communities-recommendations__title-wrapper > .d-index__header-section.bui-spacer--large.bui-f-font-display_two
+www.booking.com##.travel-articles-block.bui-spacer--largest
+www.booking.com##.ed233f6bad
+www.booking.com##.a0caa5790e
+www.booking.com##.b22b7e2609 > div
+www.booking.com##.c3fe6d96c9.d08f526e0d.afd256fc79.fe821aea6c.a826ba81c4
+www.booking.com##.bd09386e88.ef9845d4b3.ed11e24d01.d08f526e0d.afd256fc79.fa2f36ad22.fe821aea6c.a826ba81c4
+www.booking.com##.f8eea03da8.ef9845d4b3.ed11e24d01.d08f526e0d.afd256fc79.fa2f36ad22.fe821aea6c.a826ba81c4
+www.booking.com##.dba326cf56.d4f3be4ddb > .fff8c74b55
+www.booking.com##.a2cb913cd1.b5ea5312ab.b3d1cacd40
+www.booking.com##.a11y_fix_footer_contrast_footerconstraint.footer_no_lang_track.cnd-onview-anchor.footerconstraint
+www.booking.com##.google-one-tap
+www.booking.com##.c18942749c > div
+www.booking.com##.basiclayout_pe
+
+! 2023-02-03 https://www.airbnb.com
+www.airbnb.com##.dir-ltr.dir.a1stauiv > .dir-ltr.dir.c1yo0219
+www.airbnb.com##.dir-ltr.dir.atm_8w_15dce1s.atm_li_ke7zzc.atm_lj_ke7zzc.atm_gw_1wugsn5.atm_j3_1371zjx.atm_mj_1wugsn5.atm_le_dlk8xv.atm_lo_w1gvyb.atm_h_1h6ojuz.atm_fc_1yb4nlp.atm_9s_1txwivl
+www.airbnb.com##._174uh40
+www.airbnb.com##.dir-ltr.dir.rd7fm2t.cr4ekrk > .dir-ltr.dir.s1yvqyx7 > .dir-ltr.dir > .dir-ltr.dir.awuxh4x > .dir-ltr.dir.cw9aemg > .dir-ltr.dir.c14whb16
+www.airbnb.com##.dir-ltr.dir.e1gc5f0n.e13keydh
+
+! 2023-02-03 https://www.deviantart.com
+www.deviantart.com##._3Cbmi._1rFXc._2HvYQ._2Och2.XN05V._1LNZO
+www.deviantart.com##._1tR0D
+
+! 2023-02-03 https://lrepacks.net
+lrepacks.net##.block-with-icons > li
+lrepacks.net##.footer-top
+lrepacks.net##.footer-bottom
+lrepacks.net##.glo
+
+! 2023-02-03 https://uploadrar.com
+uploadrar.com###news_last
+uploadrar.com##.txt
+uploadrar.com##.menufooter
+uploadrar.com##.banner3
+uploadrar.com###footer2
+uploadrar.com##footer
+uploadrar.com##header
+
+! 2023-02-03 https://filecr.com
+filecr.com##.alert-wrap
+filecr.com##.top-header-ad
+filecr.com###filec-1338948701
+filecr.com###filec-1654781663
+filecr.com###filec-691671076 > .adsbygoogle
+filecr.com##.FixedWidget__stop_widget.site-footer
+filecr.com###filec-929757605 > .adsbygoogle
+filecr.com##div.post-wrap:nth-of-type(3)
+filecr.com###filec-1448234926
+filecr.com###filec-1722946817
+filecr.com###filec-2134603943 > .adsbygoogle
+filecr.com###filec-1238142447 > .adsbygoogle
+filecr.com###filec-786008023 > .adsbygoogle
+filecr.com###filec-98852344
+filecr.com##.FixedWidget__stop_widget.ads-wrapper-footer
+filecr.com###filec-1120647635
+filecr.com##.ads-wrapper
+
+! 2023-02-03 https://diakov.net
+diakov.net###accordion > li
+diakov.net##.container.footer
+diakov.net##div.mb15.card:nth-of-type(5)
+
+! 2023-02-03 https://www.reddit.com
+www.reddit.com##._2QeqBqfT5UbHBoViZUt-wX._1G4yU68P50vRZ4USXfaceV._2wqyhtudP4weVGsZdVXJgt > ._3RPJ8hHnfFohktLZca18J6
+www.reddit.com##.TmgZY6tDcdErbE5d7E0HJ
+www.reddit.com##._1b1Jalg2nxA_Z-BjKXRfAV
+www.reddit.com##._1oRQu-aolgpPPJDblUGTw5
+www.reddit.com##._10wb7d3rGvj56Gcs4IQWL5._1FUNcfOeszr8eruqLxCMcR
+www.reddit.com##._24UNt1hkbrZxLzs5vkvuDh
+www.reddit.com##.icon-coins.icon._1F-AgkBVxGxQsEfI3oVkVa
+www.reddit.com##.jEUbSHJJx8vISKpWirlfx
+www.reddit.com##a._3dZnYgFFpifT-M_Vs2FAq6:nth-of-type(1)
+www.reddit.com##span._3dZnYgFFpifT-M_Vs2FAq6
+www.reddit.com##._23q1waDr4n_2fR5A7zcZzb.x0hiXHicn7r3BG9m1FJH4
+
+! 2023-02-03 https://www.umfst.ro
+www.umfst.ro##.footerBox.container
+www.umfst.ro##.copyright.row
+
+! 2023-02-03 https://www.yahoo.com
+www.yahoo.com###footer-wrapper
+www.yahoo.com##.scores-container
+www.yahoo.com##.trendingNowTextList.srch-m
+
+! 2023-02-03 https://www.emag.ro
+www.emag.ro##.stories-section.page-section
+www.emag.ro##.ns-content
+www.emag.ro##.footer-inverse.footer-copy
+www.emag.ro##.collapse-group.footer-inverse.footer-content
+www.emag.ro##.sell-with-emag
+www.emag.ro##.footer-aux
+www.emag.ro###main-container > section.page-section > .pad-sep-xs.container
+||s13emagst.akamaized.net/layout/ro/images/db/$image
+www.emag.ro##.custom-page-section.page-section
+www.emag.ro##.hp-slider-section.hp-slider.pad-sep-xs.mrg-sep-sm.page-section > .container
+www.emag.ro##.widgets-holder > section > .container
+www.emag.ro##.hp-slider-section.hp-slider.pad-sep-xs.mrg-sep-sm.page-section
+www.emag.ro##.seo-links-section.page-section-light.page-section
+www.emag.ro##.mrg-sep-sm.disclaimer-section > p
+
+! 2023-02-03 https://www.pcgamingwiki.com
+www.pcgamingwiki.com###site-notice
+www.pcgamingwiki.com##.ad-header-container
+www.pcgamingwiki.com##.home-subheader
+www.pcgamingwiki.com##div.home-information-column:nth-of-type(3)
+www.pcgamingwiki.com##.pcgw-footer
+
+! 2023-02-03 https://www.bbc.com
+www.bbc.com##.orbit-domestic-no.orb-footer
+www.bbc.com##.module--languages.module--highlight.module
+www.bbc.com##.module--highlight.module--world-in-pictures.module
+www.bbc.com##.module--secondary-special-features.module--special-features.module--collapse-images.module
+www.bbc.com##.module--more-bbc.module--highlight.module--collapse-images.module
+www.bbc.com##.module--highlight.module--video.module--collapse-images.module
+www.bbc.com##.module--primary-special-features.module--special-features.module--collapse-images.module
+www.bbc.com##.module--planet.module--reel.module
+www.bbc.com##.module--world-service.module
+www.bbc.com##.module--editors-picks.module--highlight.module--collapse-images.module
+www.bbc.com##section.module--reel.module:nth-of-type(5)
+www.bbc.com##.module--weather.module
+www.bbc.com###idcta-link
+
+! 2023-02-03 https://www.allkeyshop.com
+www.allkeyshop.com##.footer
+www.allkeyshop.com##.reward-program-info-footer.justify-content-center.row
+www.allkeyshop.com##.content-box-rewardprogram.content-box > div.row
+
+! 2023-02-03 https://imgur.com
+||s.imgur.com/desktop-assets/desktop-assets/homebg.e52b5cdf24f83bcd55f9f1318855f2ef.png$image
+imgur.com##.Footer-navbar
+imgur.com##div.Footer:nth-of-type(1)
+imgur.com##.Button.EmeraldButton
+imgur.com##.TrendingTags-container
+imgur.com##.CoverChangeGallery
+imgur.com##.TrendingTags-header
+imgur.com##.UploadSpinner-contentWrapper
+
+! 2023-02-03 https://www.scoalarutiera.ro
+www.scoalarutiera.ro##.pull-right.video
+www.scoalarutiera.ro##div.clearfix:nth-of-type(3)
+www.scoalarutiera.ro##div.clearfix:nth-of-type(4)
+www.scoalarutiera.ro##.mt20.btn-block.btn-warning.btn-lg.btn-ar.btn
+www.scoalarutiera.ro##.page-scroll.btn-block.btn-lg.btn-info.btn
+www.scoalarutiera.ro##section:nth-of-type(2)
+www.scoalarutiera.ro##.mb50.comment-form
+www.scoalarutiera.ro###footer-widgets
+www.scoalarutiera.ro###footer
+www.scoalarutiera.ro##.container-for-xs.container > .text-center
+www.scoalarutiera.ro##.progress-text
+www.scoalarutiera.ro##.h50.bg-white.progress-lg.progress-striped.progress
+www.scoalarutiera.ro##.text-center.hidden-sm.hidden-xs.text-right.col-md-5
+www.scoalarutiera.ro##.hidden-sm.top-nav-social > li
+www.scoalarutiera.ro###quiz-login-btn
+
+! 2023-02-03 https://www.aliexpress.com
+www.aliexpress.com##.site-server-box
+www.aliexpress.com##.user-helper-footer
+www.aliexpress.com##.site-footer
+www.aliexpress.com##.footer-copywrite
+www.aliexpress.com##.container.Pd-zt
+www.aliexpress.com##.multi-sidebar-tab
+www.aliexpress.com##._3KrBP
+
+! 2023-02-03 https://canyoublockit.com
+canyoublockit.com##.elementor-element-c405699.elementor-element.elementor-inner-column.elementor-col-33.elementor-column > .elementor-element-populated.elementor-column-wrap > .elementor-widget-wrap
+canyoublockit.com##.elementor-element-e551be1.elementor-element.elementor-inner-column.elementor-col-33.elementor-column > .elementor-element-populated.elementor-column-wrap > .elementor-widget-wrap
+canyoublockit.com##.elementor-element-c405699.elementor-element.elementor-inner-column.elementor-col-33.elementor-column > .elementor-element-populated.elementor-column-wrap
+canyoublockit.com##.elementor-widget-image.elementor-widget.elementor-element-0feec1d.elementor-element
+canyoublockit.com##.elementor-section-items-middle.elementor-section-height-default.elementor-section-boxed.elementor-section-height-min-height.elementor-element-1666e14.elementor-element.elementor-top-section.elementor-section > .elementor-column-gap-default.elementor-container
+canyoublockit.com##.elementor-section-items-middle.elementor-section-height-default.elementor-section-boxed.elementor-section-content-middle.elementor-section-height-min-height.elementor-element-1c9af9b.elementor-element.elementor-top-section.elementor-section > .elementor-column-gap-default.elementor-container
+canyoublockit.com##.elementor-element-7e933bd.elementor-element.elementor-top-column.elementor-col-50.elementor-column > .elementor-element-populated.elementor-column-wrap > .elementor-widget-wrap
+https://ads.youtube.com
+https://ads.reddit.com
+https://ads.pinterest.com
+
+! 2023-02-06 https://adevarul.ro
+adevarul.ro###gid-ads-a8f70e01-75fd-4c08-a0c1-2b259fbe7b00
+adevarul.ro###gid-ads--424366728-Adevarul2022-Adevarul_InArticle1
+adevarul.ro###gid-ads-8f030ebc-d3ca-4ab9-88e0-4b69bf251e76
+adevarul.ro###b-e831011f-6001-46eb-b1a6-30bc8afe724f > .svelte-b4f4kz.blockContainer-co-0.flex-grow0.flex-row.blockContainer.block
+adevarul.ro###gid-ads--424366728-Adevarul2022-Adevarul_Underphoto
+adevarul.ro###gid-ads-ab5dcc94-6ccc-48f8-8d29-72adba582667
+adevarul.ro##.svelte-3ygqb2.comments
+adevarul.ro###gid-ads-f0a87866-fc9b-488d-a3d0-7c2f7f1f5c97
+adevarul.ro###b-a72e09b4-a03b-4dac-a17f-de5287630023 > .google-ads-billboard.google-adposition
+adevarul.ro###b-d5aa6f40-10a0-47e8-a925-f894254381ae > .google-ads-smallStandard.google-adposition
+adevarul.ro###gid-ads-75f82c90-ab49-4914-9cf6-140fb321b3b5
+adevarul.ro###b-8478426a-cea3-457f-9903-42ebeec58729 > .google-ads-billboard.google-adposition
+adevarul.ro###gid-ads-ab31739a-439d-4cac-9325-0f85f3125a5f
+adevarul.ro###gid-ads-ec36c66e-42fa-48e9-a288-d174da97a6eb
+adevarul.ro###b-79ea1c0f-e572-43d3-b111-754a2dc5c1dd > .google-ads-smallStandard.google-adposition
+
+! 2023-02-06 https://playtech.ro
+playtech.ro##.strawberry-ads.height-md-250.height-xs-250.hidden-sm.hidden-xs
+playtech.ro##div.mg-bottom-20.height-md-400.height-xs-300.strawberry-ads:nth-of-type(1)
+playtech.ro##div.mg-bottom-20.height-md-400.height-xs-300.strawberry-ads:nth-of-type(3)
+playtech.ro##div.mg-bottom-20.height-md-400.height-xs-300.strawberry-ads:nth-of-type(4)
+playtech.ro##div.mg-bottom-20.height-md-400.height-xs-300.strawberry-ads:nth-of-type(5)
+playtech.ro##.height-sm-300.height-xs-400.strawberry-ads.text-center
+playtech.ro##div.text > .sirc
+playtech.ro##.widget_strawberry_feeds_manager_positions_widget.group > .sirc > .sirc__list
+playtech.ro##.height-md-25.height-xs-250.hidden-sm.hidden-xs
+playtech.ro##.strawberry-ads.container.height-sm-300.height-xs-400
+playtech.ro##div.strawberry-ads.height-sm-300.height-xs-400.padding-bottom-20:nth-of-type(9)
+playtech.ro##div.strawberry-ads.height-sm-300.height-xs-400.padding-bottom-20:nth-of-type(14)
+playtech.ro##div.strawberry-ads.height-sm-300.height-xs-400.padding-bottom-20:nth-of-type(19)
+playtech.ro##.padding-top-10.padding-bottom-20.container-fluid
+playtech.ro##div.mg-bottom-20.height-300:nth-of-type(3)
+playtech.ro##div.mg-bottom-20.height-300:nth-of-type(2)
+playtech.ro##div.mg-bottom-20.height-300:nth-of-type(1)
+playtech.ro##.height-md-250.mg-bottom-20.text-center
+playtech.ro##.miniside > .height-md-250.text-center
+playtech.ro##.height-md-250.hidden-sm.hidden-xs
+playtech.ro##.footer
+playtech.ro###strawberry_feeds_manager_positions_widget-2 > .sirc
+playtech.ro##div.sirc--landscape.sirc > ul > li
+playtech.ro##div.sirc--landscape.sirc:nth-of-type(4)
+playtech.ro##div.sirc--landscape.sirc:nth-of-type(6)
+playtech.ro##.padding-top-10.padding-bottom-10
+playtech.ro##div.sirc--landscape.sirc:nth-of-type(3)
+playtech.ro##div.sirc--landscape.sirc:nth-of-type(5)
+
+! 2023-02-06 https://www.impact.ro
+www.impact.ro##.height-250.text-center.mg-bottom-20
+www.impact.ro##div.height-250.mg-bottom-20.strawberry-ads-manager-container:nth-of-type(1)
+www.impact.ro##.height-250.mg-bottom-20.mg-top-20.strawberry-ads-manager-container
+www.impact.ro##div.strawberry-ads:nth-of-type(1)
+www.impact.ro##div.strawberry-ads:nth-of-type(3)
+www.impact.ro##.height-250.text-center.mg-bottom-30.mg-top-20
+www.impact.ro###strawberry_feeds_manager_positions_widget-6 > .articles--smo-2-c.articles
+www.impact.ro##.mg-top-10.mg-bottom-40.single__under
+www.impact.ro##.col-md-8 > .articles--smo-2-c.articles > div.add-border.article--list.article
+www.impact.ro##div.height-250.mg-top-20.strawberry-ads-manager-container:nth-of-type(5)
+www.impact.ro###strawberry_sticky_posts_widget-26 > div
+www.impact.ro##div.height-250.mg-top-20.strawberry-ads-manager-container:nth-of-type(2)
+www.impact.ro##.footer
+www.impact.ro##.uw-fuck-you-and-do-what-i-tell-you_51.uw-ultrawidify-base-wide-screen
+www.impact.ro##.pointer-enabled.container
+www.impact.ro###svp_static_video
+
+! 2023-02-06 https://www.libertatea.ro
+www.libertatea.ro##body > div.strawberry-ads
+www.libertatea.ro##.hp_box_3.news-container > .controller > .large-desktop-only.large-desktop-sidebar
+www.libertatea.ro##.hp_box_3.news-container > .controller > .small-news-wrapper > li > .hidden-mobile.tablet-and-desktop-only.strawberry-ads
+www.libertatea.ro##.hp_box_4.news-container > .controller > .large-desktop-only.large-desktop-sidebar > .hidden-desktop.hidden-large-tablet.hidden-tablet.hidden-mobile.minw-300.strawberry-ads--in-sidebar.large-desktop-only.strawberry-ads
+www.libertatea.ro###live-video > .controller > .large-desktop-only.large-desktop-sidebar > .minw-300.strawberry-ads--in-sidebar.large-desktop-only.strawberry-ads
+www.libertatea.ro##.hp_box_6.thematic-container.news-container > div.controller > .large-desktop-only.large-desktop-sidebar
+www.libertatea.ro##.hp_box_6.thematic-container.news-container > div.controller > .small-news-wrapper > li > .hidden-mobile.tablet-and-desktop-only.strawberry-ads
+www.libertatea.ro##.hp_box_6.thematic-container.news-container > div.controller > .small-news-wrapper > li
+www.libertatea.ro##section.thematic-container.news-container > div.controller > .small-news-wrapper > li > .hidden-mobile.tablet-and-desktop-only.strawberry-ads
+www.libertatea.ro##footer
+www.libertatea.ro##.articlead-970.gray-bg-desktop.gray-bg-tablet.strawberry-ads
+www.libertatea.ro##div.rro-livetext-wrapper > .strawberry-ads
+www.libertatea.ro##.comments-wrapper
+www.libertatea.ro##.share-buttons
+www.libertatea.ro##.google-news
+www.libertatea.ro##section.related-partners--two-content.related-partners.related.news-container:nth-of-type(7)
+www.libertatea.ro##section.related-partners.related.news-container:nth-of-type(4)
+www.libertatea.ro##section.related-partners.related.news-container:nth-of-type(6)
+www.libertatea.ro##section.related-partners.related.news-container:nth-of-type(8)
+www.libertatea.ro##section.related-partners.related.news-container:nth-of-type(10)
+www.libertatea.ro##.partners
+www.libertatea.ro##.feed-four__widget-title-wrapper
+www.libertatea.ro##section.related-partners.related.news-container:nth-of-type(13)
+www.libertatea.ro##section.related-partners.related.news-container:nth-of-type(15)
+www.libertatea.ro##.minw-300.hidden-large-tablet.hidden-tablet.hidden-mobile.desktop-only.banner.strawberry-ads--in-sidebar.strawberry-ads
+www.libertatea.ro##.article-sidebar > .hidden-tablet.hidden-mobile.strawberry-ads
+||static4.libertatea.ro/wp-content/uploads/2022/11/donatii-*.png$image
+www.libertatea.ro##.font-bold.btn-menu-donation
+
+! 2023-02-06 https://www.digisport.ro
+www.digisport.ro##.footer-top
+www.digisport.ro##.footer-content
+www.digisport.ro##.bkg-grey-light.section
+
+! 2023-02-06 https://www.cancan.ro
+www.cancan.ro##.footer
+www.cancan.ro###homepage > .mg-sm-top-20.mg-xs-top-10
+www.cancan.ro##.single__content > div.mg-bottom-20
+www.cancan.ro##.mg-md-bottom-20
+www.cancan.ro##.single__wrapper > div > div
+www.cancan.ro##.container.svp-static__wrapper
+
+! 2023-02-06 https://www.viva.ro
+www.viva.ro##.nav-up.nl-box-sticky--visible.nl-box-sticky-js.d-inline-block.nl-box-sticky
+
+! 2023-02-06 https://altex.ro
+altex.ro##main > .lg\:block.hidden
+altex.ro##.bg-newsletterYellow.overflow-hidden.rounded-bl-lg.rounded-tr-lg.relative.md\:py-4.md\:min-h-230px.py-8.mt-2.px-8.rounded
+altex.ro##.py-3\.5.bg-black
+altex.ro##.mx-2.items-start.flex.p-2.rounded.bg-white.shadow-md.border-gray-lighter.border.overflow-hidden
+altex.ro##.py-30px.items-center.space-between.md\:flex-row.flex-col.flex
+||lcdn.altex.ro/render/static/altex/images/homepage-brand-banners/altex-travel.png?randomm$image
+altex.ro##.xl\:items-end.flex-wrap.-md\:mx-4.-mx-15px.flex
+
+! 2023-02-06 https://www.pcgarage.ro
+www.pcgarage.ro###main_wrapper > .text-center
+www.pcgarage.ro###pe_forum
+www.pcgarage.ro##.disclaimer > .list_plain > li
+www.pcgarage.ro###product_bottom > .col-md-8.col-xs-24
+||3.grgs.ro/images/b_bg/09/5fb9da6261e12940569f994641b05cbf.jpg$image
+||5.grgs.ro/images/b*.png$image
+www.pcgarage.ro##.cycle-slideshow.slider-container
+
+! 2023-02-06 https://ak537.anime-kage.eu
+ak537.anime-kage.eu##.banner-container
+
+! 2023-09-04 https://a1.ro
+a1.ro##.first-ads.ads-div
+a1.ro##div.ads-div:nth-of-type(1)
+a1.ro##div.ads-div:nth-of-type(4)
+a1.ro###__textlink
+a1.ro##div.ads-div:nth-of-type(5)
+a1.ro##div.ads-div:nth-of-type(6)
+a1.ro##.hotbox
+a1.ro##section.video-section:nth-of-type(1)
+a1.ro##.widget-aplay
+a1.ro##.calup-parteneri
+||a1.ro/templates/default/images-21/icon-newsletter.svg$image
+||a1.ro/templates/default/images-21/icon-newsletter.svg$image
+a1.ro##.abonare-newsletter
+a1.ro##section.video-section:nth-of-type(3)
+||a1.ro/templates/default/images-21/shade-light.png$image
+a1.ro##.wrapper
+a1.ro##div.ads-div:nth-of-type(3)
+a1.ro##div.ads-div:nth-of-type(9)
+
+! 2023-09-04 https://www.libertatea.ro
+www.libertatea.ro##.large-desktop-only.large-desktop-sidebar
+www.libertatea.ro##.opinions-and-news.news-container > .controller > .minw-300.hidden-large-tablet.hidden-tablet.hidden-mobile.strawberry-ads
+www.libertatea.ro##.widget-ejobs-home.news-container
+www.libertatea.ro##div.strawberry-ads:nth-of-type(2)
+www.libertatea.ro##div.strawberry-ads:nth-of-type(4)
+www.libertatea.ro##div.strawberry-ads:nth-of-type(6)
+www.libertatea.ro##.lazyloaded.iframe-quiz
+www.libertatea.ro##.iframe-content-quiz
+www.libertatea.ro##section.related.news-container.under-article-four:nth-of-type(14)
+www.libertatea.ro##section.related.news-container.under-article-four:nth-of-type(16)
+www.libertatea.ro##section.related.news-container.under-article-four:nth-of-type(12)
+www.libertatea.ro##section.related.news-container.under-article-four:nth-of-type(9)
+www.libertatea.ro##section.related.news-container.under-article-four:nth-of-type(17)
+www.libertatea.ro##section.related.news-container.under-article-four:nth-of-type(7)
+www.libertatea.ro##section.related.news-container.under-article-four:nth-of-type(5)
+www.libertatea.ro##body > .mg-bottom-20.mg-top-20.clearfix.latest-news > .controller--latest-news.controller
+www.libertatea.ro##div.sticky-container:nth-of-type(2)
+www.libertatea.ro##.comment-and-share-wrap
+www.libertatea.ro##section.related-partners--two-content.related-partners.related.news-container:nth-of-type(3)
+www.libertatea.ro##section.related-partners--two-content.related-partners.related.news-container:nth-of-type(5)
+
+! 2023-09-04 https://adevarul.ro
+adevarul.ro###b-8635d9f1-3d42-48fd-b7b7-259fe214e078 > .svelte-1wb4m60
+adevarul.ro###b-24e0bca8-1d3e-4c4e-9c9a-e86ccf091a44
+adevarul.ro###b-27608776-a8fc-4b7b-bd63-62a5507d3dc3
+adevarul.ro###b-4ab606b0-575f-4ff1-a13f-94a778b77b67
+adevarul.ro###b-d8941ed7-fd68-4dba-852e-3b7ec62cb6c1
+adevarul.ro###superbetResponsiveMM1515
+adevarul.ro##div:nth-of-type(14)
+adevarul.ro###b-e831011f-6001-46eb-b1a6-30bc8afe724f > .svelte-b4f4kz.blockContainer-co-0.blockContainer-max-site-width.flex-grow0.flex-column.blockContainer.block
+adevarul.ro###b-d9763d40-1bcb-4f75-8e01-68fd0fb5e89a > .svelte-1wb4m60
+adevarul.ro###b-b57efd3b-a2ae-40f2-996f-f5301718b38c > .svelte-b4f4kz.blockContainer-co-0.flex-grow0.flex-column.blockContainer.block
+
+! 2023-09-04 https://click.ro
+click.ro##.svelte-h5fhk0 > .svelte-n451o6.google-ads-billboard.gads
+click.ro###gid-ads-4437b65b-000e-4368-be6d-1941355d05d0
+click.ro###gid-ads-955018b0-6e65-40b0-96b5-4319ae697486
+click.ro###gid-ads-ee732026-9293-4fe3-b402-f4f45fd364bd
+click.ro###b-c8509bec-fb8d-4ebd-a804-423674d59f2f > .svelte-n451o6.google-ads-billboard.gads
+click.ro##.svelte-h5fhk0 > .svelte-1h8h2hj
+click.ro###gid-ads--424366728-Click2021-Click_Underphoto
+click.ro###gid-ads--424366728-Click2021-Click_InArticle1
+click.ro###gid-ads--424366728-Click2021-Click_InArticle2
+click.ro##.svelte-uzyam9.follow-us
+click.ro###b-59ffd691-ef4d-4935-b25a-3efd6e713a07 > .svelte-b4f4kz.blockContainer-co-0.flex-grow0.flex-column.blockContainer.block
+click.ro###b-main > .svelte-n451o6.google-ads-billboard.gads
+
+! 2023-09-04 https://okmagazine.ro
+okmagazine.ro###gid-ads--424366728-OKmagazine2022-Okmagazine_Branding
+okmagazine.ro###gid-ads--424366728-OKmagazine2022-Okmagzine_Underphoto
+okmagazine.ro###gid-ads--424366728-OKmagazine2022-OKmagazine_FinArt2
+||cdn.adh.reperio.news/image-5/598b94ac-ae18-4fc7-94f3-c0832b10fa4d/index.jpeg$image
+||cdn.adh.reperio.news/image-8/82935d9f-b5f7-4b79-8242-c36664dc1888/index.jpeg$image
+||cdn.adh.reperio.news/image-5/598b94ac-ae18-4fc7-94f3-c0832b10fa4d/index.jpeg$image
+okmagazine.ro##.withSubmenu.svelte-618y3a > .svelte-dz1s8x
+okmagazine.ro###b-27e017b6-0351-466c-b2fb-1b9fa39403fc > .svelte-hyhflk.google-ads-billboard.gads
+okmagazine.ro###b-11cb4536-d9be-4459-9cb1-d35133f11a77
+okmagazine.ro###b-a978e799-23d8-4229-8140-20bf8499cb76
+okmagazine.ro###b-71d1a308-451b-4079-b5d8-6edaed0cc8b1
+okmagazine.ro##.adsbyvli
+okmagazine.ro##.svelte-618y3a > .svelte-dz1s8x
+
+! 2023-09-04 https://cavaleria.ro
+cavaleria.ro##.ja-promo-boxes
+cavaleria.ro##.widget_mc4wp_form_widget.mc4wp_form_widget-4.widget
+cavaleria.ro##.footer-is-widgets.footer-style-1.ja-footer
+
+! 2023-09-04 https://zonait.ro
+zonait.ro###footer-widgets-container
+zonait.ro##.site-info-layout-2.site-info
+zonait.ro###custom_html-7
+zonait.ro###custom_html-6
+||zonait.ro/wp-content/uploads/2023/09/3rd-Party-Media_Zonait.ro_Zonait.ro-1000-x-833px.jpg$image
+||zonait.ro/wp-content/uploads/2023/06/z790-series-600x500-1.jpg$image
+zonait.ro##.has-breaking-news.header-nav.top-nav.has-date-breaking-components
+
+! 2023-09-04 https://www.ziarbicaz.ro
+www.ziarbicaz.ro##.comment-respond
+www.ziarbicaz.ro##.copy-footer
+www.ziarbicaz.ro##.widget_media_image.widget_block.widget.primary-sidebar-widget.w-nt.h-ni
+www.ziarbicaz.ro###block-4
+
+! 2023-09-04 https://vestea.net
+vestea.net###sdj_ticker_script_bottom
+vestea.net##.widget-area
+vestea.net##.site-info
+vestea.net##.site-footer
+vestea.net##.sd-sharing.sd-social-icon.sd-social.sd-block.robots-nocontent
+vestea.net##.related-content
+
