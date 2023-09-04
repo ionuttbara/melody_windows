@@ -703,3 +703,8 @@ www.scoalarutiera.ro##.mtb20tc
 vestea.net##.sd-sharing.sd-social-icon.sd-social.sd-block.robots-nocontent
 vestea.net##.related-content
 
+uploadrar.com###commonId > ins.adsbygoogle
+uploadrar.com##.banner2 > .as_ads_guard > .adsbygoogle
+uploadrar.com##.sharefile > ul
+uploadrar.com##.blockpage > .adsbygoogle
+uploadrar.com##div.download0page > .blockpage
