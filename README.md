@@ -1,8 +1,5 @@
-
 # Melody Script
 <h1 align="center">
- <a href="https://github.com/jbara2002/melody_windows/tree/master"> Link for registry files </a>
-
  <img src=https://github.com/jbara2002/melody_windows/assets/76656855/58afdbe0-afee-4afc-8ec9-2f4037d7e174> </img>
 </h1>
       
@@ -127,11 +124,9 @@ Also Clipboard "Integration" is provided by me. The Application is created by Di
 > Also you can download the release version, open with 7-Zip and you can remove the registry files or adding.
 > If you want to add registry/CMDs files you MUST to write the files in commands2.bat (the file will run to current USER) or in PowerRun2.bat (th file will run to the SYSTEM user).
 > Stable version of Melody will launch every 3 months. First 2 weeks after release, the version will be revisioned. (added integration from beta or adding tweaks).
- 
  ## Another Versions of Melody Script
- <a href="https://github.com/jbara2002/melody_android">Melody for Android </a>  
-  <a href="https://github.com/jbara2002/melody_apple">Melody for Apple Devices</a>  
-   <a href="https://github.com/jbara2002/melody_linux">Melody for Linux Distros</a>  
-   
+ <a href="https://github.com/jbara2002/melody_android">Melody for Android </a>
+  <a href="https://github.com/jbara2002/melody_apple">Melody for Apple Devices</a>
+  <a href="https://github.com/jbara2002/melody_linux">Melody for Linux Distros</a>
 ## License
 [![License: CC0-1.0](https://img.shields.io/badge/License-CC0%201.0-lightgrey.svg)](https://tldrlegal.com/license/creative-commons-cc0-1.0-universal)
