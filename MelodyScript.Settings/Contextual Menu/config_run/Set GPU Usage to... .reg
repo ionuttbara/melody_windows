@@ -1,0 +1,24 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\exefile\Shell\GPU]
+"MUIVerb"="Set GPU usage..."
+"SubCommands"=""
+"Icon"="dxdiag.exe"
+
+[HKEY_CLASSES_ROOT\exefile\Shell\GPU\shell\001flyout]
+@="Set to Dedicated GPU"
+
+[HKEY_CLASSES_ROOT\exefile\Shell\GPU\shell\002flyout]
+@="Set to Integrated GPU"
+
+[HKEY_CLASSES_ROOT\exefile\Shell\GPU\shell\003flyout]
+@="Reset GPU usage..."
+
+[HKEY_CLASSES_ROOT\exefile\Shell\GPU\shell\001flyout\command]
+@="C:\\Windows\\System32\\REG.exe ADD HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\DirectX\\UserGpuPreferences /f /v \"%1\" /d GpuPreference=2;"
+
+[HKEY_CLASSES_ROOT\exefile\Shell\GPU\shell\002flyout\command]
+@="C:\\Windows\\System32\\REG.exe ADD HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\DirectX\\UserGpuPreferences /f /v \"%1\" /d GpuPreference=1;"
+
+[HKEY_CLASSES_ROOT\exefile\Shell\GPU\shell\003flyout\command]
+@="C:\\Windows\\System32\\REG.exe DELETE HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\DirectX\\UserGpuPreferences /v \"%1\" /f"

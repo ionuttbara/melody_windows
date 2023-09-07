@@ -1,0 +1,13 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_USERS\.DEFAULT\Software\Policies\Microsoft\Windows NT\Driver Signing]
+"BehaviorOnFailedVerify"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Driver Signing]
+"Policy"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Policies\Microsoft\Windows NT\Driver Signing]
+"BehaviorOnFailedVerify"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Microsoft\Driver Signing]
+"Policy"=dword:00000000

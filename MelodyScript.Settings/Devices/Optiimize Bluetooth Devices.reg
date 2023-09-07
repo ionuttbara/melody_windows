@@ -1,0 +1,19 @@
+Windows Registry Editor Version 5.00
+
+; Optimize Bluetooth Devices
+
+; Disable PowerManagement
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\BTHPORT\Parameters]
+"PowerManagementEnabled"=dword:00000000
+"InquiryDuration"=dword:0000ffff
+
+; low latency when link devices 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\BTHPORT\Parameters]
+"LinkSupervisionTimeout"=dword:00000050
+"PageTimeout"=dword:00000050
+"DiscoverableTimeout"=dword:0000012c
+
+; enable device to be discoverable even if the bt is connected to another device
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\BTHPORT\Parameters]
+"AllowInteractiveConnect"=dword:00000001

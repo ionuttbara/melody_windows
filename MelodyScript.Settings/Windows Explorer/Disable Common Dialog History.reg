@@ -1,0 +1,4 @@
+Windows Registry Editor Version 5.00
+; No common dialog history.
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Comdlg32]
+"NoFileMru"=dword:00000001

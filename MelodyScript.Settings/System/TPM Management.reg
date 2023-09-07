@@ -1,0 +1,19 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\TPM]
+"OSManagedAuthLevel"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\FVE]
+"EnableBDEWithNoTPM"=dword:00000001
+"UseTPM"=dword:00000000
+"UseTPMPIN"=dword:00000000
+"UseTPMKey"=dword:00000000
+"UseTPMKeyPIN"=dword:00000000
+"EnableNonTPM"=dword:00000001
+"TPMAutoReseal"=dword:00000000
+
+; Disable TPM Backup to Active Domain Services
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\TPM]
+"ActiveDirectoryBackup"=dword:00000000
+"RequireActiveDirectoryBackup"=dword:00000000

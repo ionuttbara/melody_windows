@@ -1,0 +1,60 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\exefile\shell\AppRunConfig]
+"MUIVerb"="Config Application Run"
+"SubCommands"=""
+"Icon"="taskmgr.exe,1"
+
+[HKEY_CLASSES_ROOT\exefile\Shell\AppRunConfig\shell\Priority]
+"MUIVerb"="Set priorities"
+"SubCommands"=""
+"Icon"="taskmgr.exe,1"
+
+[HKEY_CLASSES_ROOT\exefile\Shell\AppRunConfig\shell\Priority\shell\RunPrio]
+"MUIVerb"="Run with Priority"
+"SubCommands"=""
+"Icon"="taskmgr.exe"
+
+
+
+[HKEY_CLASSES_ROOT\exefile\Shell\AppRunConfig\shell\Priority\shell\RunPrio\shell\001flyout]
+@="Realtime"
+
+[HKEY_CLASSES_ROOT\exefile\Shell\AppRunConfig\shell\Priority\shell\RunPrio\shell\001flyout\command]
+@="cmd.exe /c start \"\" /Realtime \"%1\""
+
+
+[HKEY_CLASSES_ROOT\exefile\Shell\AppRunConfig\shell\Priority\shell\RunPrio\shell\002flyout]
+@="High"
+
+[HKEY_CLASSES_ROOT\exefile\Shell\AppRunConfig\shell\Priority\shell\RunPrio\shell\002flyout\command]
+@="cmd.exe /c start \"\" /High \"%1\""
+
+
+[HKEY_CLASSES_ROOT\exefile\Shell\AppRunConfig\shell\Priority\shell\RunPrio\shell\003flyout]
+@="Above normal"
+
+[HKEY_CLASSES_ROOT\exefile\Shell\AppRunConfig\shell\Priority\shell\RunPrio\shell\003flyout\command]
+@="cmd.exe /c start \"\" /AboveNormal \"%1\""
+
+
+[HKEY_CLASSES_ROOT\exefile\Shell\AppRunConfig\shell\Priority\shell\RunPrio\shell\004flyout]
+@="Normal"
+
+[HKEY_CLASSES_ROOT\exefile\Shell\AppRunConfig\shell\Priority\shell\RunPrio\shell\004flyout\command]
+@="cmd.exe /c start \"\" /Normal \"%1\""
+
+
+[HKEY_CLASSES_ROOT\exefile\Shell\AppRunConfig\shell\Priority\shell\RunPrio\shell\005flyout]
+@="Below normal"
+
+[HKEY_CLASSES_ROOT\exefile\Shell\AppRunConfig\shell\Priority\shell\RunPrio\shell\005flyout\command]
+@="cmd.exe /c start \"\" /BelowNormal \"%1\""
+
+
+[HKEY_CLASSES_ROOT\exefile\Shell\AppRunConfig\shell\Priority\shell\RunPrio\shell\006flyout]
+@="Low"
+
+[HKEY_CLASSES_ROOT\exefile\Shell\AppRunConfig\shell\Priority\shell\RunPrio\shell\006flyout\command]
+@="cmd.exe /c start \"\" /Low \"%1\""
+

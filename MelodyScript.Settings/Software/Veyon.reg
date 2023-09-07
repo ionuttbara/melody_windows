@@ -1,0 +1,6 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Veyon Solutions\Veyon\Logging]
+"LogLevel"="0"
+"LogToStdErr"="0"
+"LogToWindowsEventLog"="0"

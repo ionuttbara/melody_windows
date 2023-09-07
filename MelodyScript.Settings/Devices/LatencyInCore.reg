@@ -1,0 +1,6 @@
+Windows Registry Editor Version 5.00
+
+;disable HPET
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\HARDWARE\DEVICEMAP\ACPI\HPET]
+"Enable"=dword:00000000

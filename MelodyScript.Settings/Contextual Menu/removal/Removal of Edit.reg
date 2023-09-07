@@ -1,0 +1,5 @@
+Windows Registry Editor Version 5.00
+
+[-HKEY_CLASSES_ROOT\SystemFileAssociations\text\shell\edit]
+
+[-HKEY_CLASSES_ROOT\regfile\shell\edit]

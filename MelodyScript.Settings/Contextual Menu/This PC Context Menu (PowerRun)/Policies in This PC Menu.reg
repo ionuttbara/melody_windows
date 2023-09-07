@@ -1,0 +1,9 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{20D04FE0-3AEA-1069-A2D8-08002B30309D}\shell\Policies]
+@="Policies Manager"
+"Icon"="MSchedExe.exe,0"
+
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{20D04FE0-3AEA-1069-A2D8-08002B30309D}\shell\Policies\command]
+@="mmc C:\\WINDOWS\\SYSTEM32\\gpedit.msc"

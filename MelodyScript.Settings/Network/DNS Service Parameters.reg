@@ -1,0 +1,22 @@
+Windows Registry Editor Version 5.00
+
+;DNS
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows NT\DNSClient]
+"DisableSmartNameResolution"=dword:00000001
+"EnableIdnMapping"=dword:00000000
+"RegistrationEnabled"=dword:00000000
+"PreferLocalOverLowerBindingDNS"=dword:00000001
+"EnableMulticast"=dword:00000000
+"DisableSmartProtocolReordering"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters]
+"NetFailureCacheTime"=dword:00000000
+"MaxCacheEntryTtlLimit"=dword:0000fa00
+"MaxNegativeCacheTtl"=dword:00000000
+"CacheHashTableBucketSize"=dword:00000001
+"CacheHashTableSize"=dword:00000180
+"MaxSOACacheEntryTtlLimit"=dword:0000012d
+"ServiceDllUnloadOnStop"=dword:00000001
+"DisableParallelAandAAAA"=dword:00000001
+"MaxCacheTtl"=dword:00003840

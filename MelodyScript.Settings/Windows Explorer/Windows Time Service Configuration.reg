@@ -1,0 +1,26 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\W32Time\Parameters]
+"NtpServer"="pool.ntp.org,0x9"
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\W32Time\TimeProviders\NtpClient]
+; Synchronization interval: 1day.
+"SpecialPollInterval"=dword:00015180
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\W32Time\TimeProviders\NtpServer]
+; Disable NTP server.
+"Enabled"=dword:00000000
+
+; lists servers
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\DateTime\Servers]
+@="1"
+"1"="pool.ntp.org"
+"0"="pool.ntp.org"
+"2"="pool.ntp.org"
+"3"="ceasu.gallery.com"
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\W32Time\Config]
+; Evan if time slips off greatly, synchronization at the time.
+"MaxNegPhaseCorrection"=dword:ffffffff
+"MaxPosPhaseCorrection"=dword:ffffffff

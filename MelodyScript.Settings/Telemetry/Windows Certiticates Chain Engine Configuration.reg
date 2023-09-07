@@ -1,0 +1,7 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\SystemCertificates\ChainEngine\Config]
+"ChainRevAccumulativeUrlRetrievalTimeoutMilliseconds"=dword:0000000e
+"ChainUrlRetrievalTimeoutMilliseconds"=dword:0000000e
+"CrossCertDownloadIntervalHours"=dword:000000a8
+"Options"=dword:00000000

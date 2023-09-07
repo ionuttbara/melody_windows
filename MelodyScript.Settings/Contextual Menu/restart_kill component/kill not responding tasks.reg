@@ -1,0 +1,16 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\RestartSys]
+@=""
+"MUIVerb"="Restart/Refresh System Components "
+"Position"="Bottom"
+"Icon"="taskmgr.exe,2"
+"Subcommands"=""
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\RestartSys\shell\KillNRTasks]
+"icon"="taskmgr.exe,-30651"
+"MUIverb"="Kill all not responding tasks"
+"Position"="Top"
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\RestartSys\shell\KillNRTasks\command]
+@="CMD.exe /C taskkill.exe /f /fi \"status eq Not Responding\" & Pause"

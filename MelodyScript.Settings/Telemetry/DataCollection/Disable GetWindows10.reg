@@ -1,0 +1,9 @@
+Windows Registry Editor Version 5.00
+
+;Disable Get Windows 10 (Windows 7 Only)
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\GWX]
+"DisableGwx"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\GWX.exe]
+"Debugger"="systray.exe"

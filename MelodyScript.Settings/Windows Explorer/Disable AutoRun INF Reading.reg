@@ -1,0 +1,5 @@
+Windows Registry Editor Version 5.00
+
+;Disable USB Autorun to Save PC from USB Viruses
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\IniFileMapping\Autorun.inf]
+@=”@SYS:DoesNotExist”

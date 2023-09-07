@@ -1,0 +1,14 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon]
+"RsopDebugLevel"=dword:00000000
+"RsopLogging"=dword:00000000
+"gpsvcDebugLevel"=dword:00000000
+"ChkAccDebugLevel"=dword:00000000
+"DebugServerCommand"="no"
+"UserEnvDebugLevel"=dword:00000000
+"RSoPGarbageCollectionInterval"=-
+"RunDiagnosticLoggingGlobal"=-
+"RunDiagnosticLoggingGroupPolicy"=-
+"SlowLinkTimeOut"=-
+"NoDebugThread"=dword:00000001

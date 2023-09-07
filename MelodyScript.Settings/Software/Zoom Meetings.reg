@@ -1,0 +1,16 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Zoom\Zoom Meetings\General]
+"EnableClientAutoUpdate"=dword:00000000
+"EnableSilentAutoUpdate"=dword:00000000
+"EnableAutoUploadMemlogs"=dword:00000000
+"EnableAutoUploadDumps"=dword:00000000
+"KeepSignedIn"=dword:00000001
+
+
+[HKEY_CURRENT_USER\SOFTWARE\Policies\Zoom\Zoom Meetings\General]
+"EnableClientAutoUpdate"=dword:00000000
+"EnableSilentAutoUpdate"=dword:00000000
+"EnableAutoUploadMemlogs"=dword:00000000
+"EnableAutoUploadDumps"=dword:00000000
+"KeepSignedIn"=dword:00000001

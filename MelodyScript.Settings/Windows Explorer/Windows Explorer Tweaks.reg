@@ -1,0 +1,34 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer]
+"link"=hex:00,00,00,00
+"Reason Setting"=dword:00000000
+"HoverSelectDesktops"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+"NoRemoteRecursiveEvents"=dword:00000001
+"NoNetConnectDisconnect"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+"NoPublishingWizard"=dword:00000001
+"AllowOnlineTips"=dword:00000000
+"NoNetConnectDisconnect"=dword:00000001
+"NoMSAppLogo5ChannelNotify"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer]
+"IconUnderline"=dword:00000000
+"MachineOobeUpdates"=dword:00000000
+"NoWaitOnRoamingPayloads"=dword:00000001
+"ActiveSetupDisabled"=dword:00000001
+"ActiveSetupTaskOverride"=dword:00000001
+"AsyncRunOnce"=dword:00000001
+"AsyncUpdatePCSettings"=dword:00000000
+"DisableAppInstallsOnFirstLogon"=-
+"DisableResolveStoreCategories"=dword:00000001
+"DisableUpgradeCleanup"=dword:00000001
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Shutdown]
+"CleanShutdown"=dword:00000001
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+"GreyMSIAds"=dword:00000000

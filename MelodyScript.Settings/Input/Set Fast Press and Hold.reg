@@ -1,0 +1,5 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\Control Panel\Pen]
+"HoldActivationTime"=dword:00002000
+"HoldWidth"=dword:00000008

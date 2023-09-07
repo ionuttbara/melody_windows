@@ -1,0 +1,154 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings]
+"CertificateRevocation"=dword:00000001
+"DisableCachingOfSSLPages"=dword:00000000
+"PrivacyAdvanced"=dword:00000001
+"SecureProtocols"=dword:00002aa0
+"EnableNegotiate"=dword:00000001
+"MigrateProxy"=dword:00000001
+"ProxyEnable"=dword:00000000
+"WarnonZoneCrossing"=dword:00000000
+"EnableHttp1_1"=dword:00000001
+"ProxyHttp1.1"=dword:00000001
+"EnableHTTP2"=dword:00000001
+"EnablePunycode"=dword:00000001
+"UrlEncoding"=dword:00000000
+"DisableIDNPrompt"=dword:00000000
+"ShowPunycode"=dword:00000000
+"WarnonBadCertRecving"=dword:00000001
+"WarnOnPostRedirect"=dword:00000001
+"SyncMode5"=dword:00000003
+
+
+[HKEY_USERS\.DEFAULT\Microsoft\Windows\CurrentVersion\Internet Settings]
+"CertificateRevocation"=dword:00000001
+"DisableCachingOfSSLPages"=dword:00000000
+"PrivacyAdvanced"=dword:00000001
+"SecureProtocols"=dword:00002aa0
+"EnableNegotiate"=dword:00000001
+"MigrateProxy"=dword:00000001
+"ProxyEnable"=dword:00000000
+"WarnonZoneCrossing"=dword:00000000
+"EnableHttp1_1"=dword:00000001
+"ProxyHttp1.1"=dword:00000001
+"EnableHTTP2"=dword:00000001
+"EnablePunycode"=dword:00000001
+"UrlEncoding"=dword:00000000
+"DisableIDNPrompt"=dword:00000000
+"ShowPunycode"=dword:00000000
+"WarnonBadCertRecving"=dword:00000001
+"WarnOnPostRedirect"=dword:00000001
+"SyncMode5"=dword:00000003
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\CurrentVersion\Internet Settings]
+"CertificateRevocation"=dword:00000001
+"DisableCachingOfSSLPages"=dword:00000000
+"PrivacyAdvanced"=dword:00000001
+"SecureProtocols"=dword:00002aa0
+"EnableNegotiate"=dword:00000001
+"MigrateProxy"=dword:00000001
+"ProxyEnable"=dword:00000000
+"WarnonZoneCrossing"=dword:00000000
+"EnableHttp1_1"=dword:00000001
+"ProxyHttp1.1"=dword:00000001
+"EnableHTTP2"=dword:00000001
+"EnablePunycode"=dword:00000001
+"UrlEncoding"=dword:00000000
+"DisableIDNPrompt"=dword:00000000
+"ShowPunycode"=dword:00000000
+"WarnonBadCertRecving"=dword:00000001
+"WarnOnPostRedirect"=dword:00000001
+"SyncMode5"=dword:00000003
+
+; Network Setting Policy
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\4]
+"140C"=dword:00000000
+"270C"=dword:00000003
+"1806"=dword:00000000
+"180E"=dword:00000003
+"2301"=dword:00000003
+"1004"=dword:00000000
+"1802"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\3]
+"140C"=dword:00000000
+"270C"=dword:00000003
+"1806"=dword:00000000
+"180E"=dword:00000003
+"2301"=dword:00000003
+"1004"=dword:00000000
+"1802"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\2]
+"140C"=dword:00000000
+"270C"=dword:00000003
+"1806"=dword:00000000
+"180E"=dword:00000003
+"2301"=dword:00000003
+"1004"=dword:00000000
+"1802"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\1]
+"140C"=dword:00000000
+"270C"=dword:00000003
+"1806"=dword:00000000
+"180E"=dword:00000003
+"2301"=dword:00000003
+"1004"=dword:00000000
+"1802"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\0]
+"140C"=dword:00000000
+"270C"=dword:00000003
+"1806"=dword:00000000
+"180E"=dword:00000003
+"2301"=dword:00000003
+"1004"=dword:00000000
+"1802"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Lockdown_Zones\0]
+"140C"=dword:00000000
+"270C"=dword:00000003
+"1806"=dword:00000000
+"180E"=dword:00000003
+"2301"=dword:00000003
+"1004"=dword:00000000
+"1802"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Lockdown_Zones\1]
+"140C"=dword:00000000
+"270C"=dword:00000003
+"1806"=dword:00000000
+"180E"=dword:00000003
+"2301"=dword:00000003
+"1004"=dword:00000000
+"1802"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Lockdown_Zones\2]
+"140C"=dword:00000000
+"270C"=dword:00000003
+"1806"=dword:00000000
+"180E"=dword:00000003
+"2301"=dword:00000003
+"1004"=dword:00000000
+"1802"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Lockdown_Zones\3]
+"140C"=dword:00000000
+"270C"=dword:00000003
+"1806"=dword:00000000
+"180E"=dword:00000003
+"2301"=dword:00000003
+"1004"=dword:00000000
+"1802"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Lockdown_Zones\4]
+"140C"=dword:00000000
+"270C"=dword:00000003
+"1806"=dword:00000000
+"180E"=dword:00000003
+"2301"=dword:00000003
+"1004"=dword:00000000
+"1802"=dword:00000000

@@ -1,0 +1,228 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Internet Explorer\Main]
+"DEPOff"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Ext]
+"RunThisTimeEnabled"=dword:00000000
+"DisableFlashInIE"=dword:00000000
+"VersionCheckEnabled"=dword:00000000
+"AuditModeEnabled"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Ext\CLSID]
+"{1FD49718-1D00-4B19-AF5F-070AF6D5D54C}"="1"
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Internet Explorer\Extensions]
+
+[HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Internet Explorer\BrowserEmulation]
+"DisableSiteListEditing"=dword:00000001
+"AllSitesCompatibilityMode"=dword:00000000
+
+[HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Internet Explorer\CommandBar]
+"ShowCompatibilityViewButton"=dword:00000000
+
+[HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Internet Explorer\Feed Discovery]
+"Enabled"=dword:00000000
+
+[HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Internet Explorer\Feeds]
+"DisableFeedPane"=dword:00000001
+"DisableAddRemove"=dword:00000001
+"BackgroundSyncStatus"=dword:00000000
+"AllowBasicAuthInClear"=dword:00000000
+
+[HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Internet Explorer\Geolocation]
+"PolicyDisableGeolocation"=dword:00000001
+
+[HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Internet Explorer\InfoDelivery\Restrictions]
+"NoJITSetup"=dword:00000001
+"NoUpdateCheck"=dword:00000001
+"NoSplash"=dword:00000001
+
+[HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Internet Explorer\Main]
+"DEPOff"=dword:00000001
+"NoReportSiteProblems"=dword:00000001
+"EnableAlternativeCodec"=dword:00000001
+"XMLHTTP"=dword:00000001
+"AllowServicePoweredQSA"=dword:00000000
+"ShutdownWaitForOnUnload"=dword:00000000
+
+[HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Internet Explorer\Main\FormatDetection]
+"PhoneNumberEnabled"=dword:00000000
+
+[HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Internet Explorer\Main\WindowsSearch]
+"EnabledScopes"=dword:00000005
+
+[HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Internet Explorer\PhishingFilter]
+"PreventOverrideAppRepUnknown"=dword:00000000
+"PreventOverride"=dword:00000000
+"EnabledV9"=dword:00000000
+"Enabled"=dword:00000000
+"EnabledV8"=dword:00000000
+
+[HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Internet Explorer\Privacy]
+"CleanTrackingProtection"=dword:00000001
+"CleanCookies"=dword:00000000
+"CleanTIF"=dword:00000001
+
+[HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Internet Explorer\Recovery]
+"AutoRecover"=dword:00000000
+
+[HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Internet Explorer\Restrictions]
+"NoCrashDetection"=dword:00000001
+
+[HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Internet Explorer\Safety\PrivacIE]
+"DisableLogging"=dword:00000001
+"DisableTrackingProtection"=dword:00000001
+
+[HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Internet Explorer\Security]
+"DisableSecuritySettingsCheck"=dword:00000001
+
+[HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Internet Explorer\SQM]
+"DisableCustomerImprovementProgram"=dword:00000001
+
+[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer]
+"DownloadUI"="{7D11E719-FF90-479C-B0D7-96EB43EE55D7}"
+
+[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\BrowserEmulation]
+"CVListTTL"=dword:00000000
+"UnattendLoaded"=dword:00000001
+"AllSitesCompatibilityMode"=dword:00000001
+
+[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Document Windows]
+"height"=hex:00,00,00,00
+"Maximized"="no"
+"width"=hex:00,00,00,80
+"x"=hex:00,00,00,80
+"y"=hex:00,00,00,00
+
+[-HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\DOMStorage]
+
+
+[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Download]
+"CheckExeSignatures"="no"
+"RunInvalidSignatures"=dword:00000001
+
+[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Geolocation]
+"BlockAllWebsites"=dword:00000001
+
+[-HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Low Rights]
+
+
+[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\LowRegistry\Audio\PolicyConfig\PropertyStore\8ca958ce_0\{219ED5A0-9CBF-4F3A-B927-37C9E5C5F14F}]
+"3"=hex:04,00,00,00,00,00,00,00,00,00,80,3f,00,00,00,00,00,00,00,00,00,00,00,\
+  00
+"4"=hex:04,20,00,00,00,00,00,00,18,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\
+  00,00,00,80,3f,00,00,80,3f
+"5"=hex:0b,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\
+  00
+
+[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Main]
+"Anchor Underline"="yes"
+"Cache_Update_Frequency"="yes"
+"Disable Script Debugger"="yes"
+"DisableScriptDebuggerIE"="yes"
+"Display Inline Images"="yes"
+"Do404Search"=hex:01,00,00,00
+"Local Page"="%11%\\blank.htm"
+"Save_Session_History_On_Exit"="no"
+"Show_FullURL"="no"
+"Show_StatusBar"="yes"
+"Show_ToolBar"="yes"
+"Show_URLinStatusBar"="yes"
+"Show_URLToolBar"="yes"
+"Use_DlgBox_Colors"="yes"
+"UseClearType"="no"
+"XMLHTTP"=dword:00000001
+"DisableFirstRunCustomize"=dword:00000001
+"Enable Browser Extensions"="yes"
+"Play_Background_Sounds"="yes"
+"Play_Animations"="yes"
+"Start Page"="google.com"
+"Use FormSuggest"="yes"
+"RunOnceHasShown"=dword:00000001
+"RunOnceComplete"=dword:00000001
+"NoUpdateCheck"=dword:00000001
+"AutoHide"="yes"
+
+[-HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_96DPI_PIXEL]
+
+[-HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\MenuExt\E&xport to Microsoft Excel]
+
+[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\New Windows]
+"Use Anchor Hover Color"="1"
+"UseSecBand"="1"
+"PopupMgr"=dword:00000001
+
+[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\ProtocolExecute\access]
+"WarnOnOpen"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\ProtocolExecute\excel]
+"WarnOnOpen"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\ProtocolExecute\ms-access]
+"WarnOnOpen"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\ProtocolExecute\ms-excel]
+"WarnOnOpen"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\ProtocolExecute\ms-powerpoint]
+"WarnOnOpen"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\ProtocolExecute\ms-word]
+"WarnOnOpen"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\ProtocolExecute\msteams]
+"WarnOnOpen"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\ProtocolExecute\powerpoint]
+"WarnOnOpen"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\ProtocolExecute\word]
+"WarnOnOpen"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Security]
+"Safety Warning Level"="Query"
+"Sending_Security"="Medium"
+"Viewing_Security"="Low"
+
+[-HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Services]
+
+[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Settings]
+"Anchor Color"="0,0,255"
+"Anchor Color Visited"="128,0,128"
+"Background Color"="192,192,192"
+"Text Color"="0,0,0"
+"Use Anchor Hover Color"="No"
+
+[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Setup]
+"HaveCleanedUpOldShortcuts"=dword:00000001
+"UrlHistoryMigrationTime"=hex:5d,bb,d6,dc,df,3e,d8,01
+
+[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\SQM]
+"InstallDate"=hex(b):00,00,00,00,00,00,00,00
+
+[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Suggested Sites]
+"Enabled"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\TabbedBrowsing]
+"WarnOnClose"=dword:00000000
+"OpenInForeground"=dword:00000001
+"ShortcutBehavior"=dword:00000001
+"PopupsUseNewWindow"=dword:00000002
+
+[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Toolbar]
+"Locked"=dword:00000001
+
+[-HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Toolbar\ShellBrowser]
+
+[-HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\TypedURLs]
+
+[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\URLSearchHooks]
+"{CFBFAE00-17A6-11D0-99CB-00C04FD64497}"=""
+
+[HKEY_CURRENT_USER\Software\Policies\Microsoft\Internet Explorer\Restrictions]
+"NoHelpItemSendFeedback"=dword:00000001
+"NoHelpItemTipOfTheDay"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Url History]
+"DaysToKeep"=dword:00000001

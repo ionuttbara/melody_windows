@@ -1,0 +1,20 @@
+Windows Registry Editor Version 5.00
+
+
+[HKEY_CURRENT_USER\Software\Policies\think-cell\updates]
+"enabled"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Policies\think-cell\reports]
+"enabled"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Policies\think-cell]
+"nofirststart"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\Software\Policies\think-cell\updates]
+"enabled"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\Software\Policies\think-cell\reports]
+"enabled"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\Software\Policies\think-cell]
+"nofirststart"=dword:00000000

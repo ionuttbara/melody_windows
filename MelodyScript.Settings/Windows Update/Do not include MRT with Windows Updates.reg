@@ -1,0 +1,8 @@
+Windows Registry Editor Version 5.00
+
+;MRT
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\MRT]
+"DontOfferThroughWUAU"=dword:00000001
+"DontReportInfectionInformation"=dword:00000001
+"DoNotShowFeedbackNotifications"=dword:00000001

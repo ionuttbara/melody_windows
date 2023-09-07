@@ -1,0 +1,99 @@
+Windows Registry Editor Version 5.00
+
+[-HKEY_CLASSES_ROOT\DesktopBackground\Shell\Restart]
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\Restart]
+"MUIVerb"="Device Shutdown"
+"Icon"="shell32.dll,-16739"
+"Position"="Bottom"
+"SubCommands"=""
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\Restart\shell\001flyout]
+"MUIVerb"="Force apps to close, and full shutdown and restart PC with no time-out or warning"
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\Restart\shell\001flyout\command]
+@="shutdown /r /f /t 0"
+
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\Restart\shell\002flyout]
+"MUIVerb"="Full shutdown and restart PC with warning"
+"CommandFlags"=dword:00000020
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\Restart\shell\002flyout\command]
+@="shutdown /r"
+
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\Restart\shell\003flyout]
+"MUIVerb"="Full shutdown and restart PC. After rebooted, restart any opened registered apps."
+"CommandFlags"=dword:00000020
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\Restart\shell\003flyout\command]
+@="shutdown /g /t 0"
+
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\Restart\shell\004flyout]
+"MUIVerb"="Restart to Advanced Startup Options"
+"CommandFlags"=dword:00000020
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\Restart\shell\004flyout\command]
+@="shutdown /r /o /f /t 0"
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\Restart\shell\005flyout]
+"MUIVerb"="Shutdown the PC"
+"CommandFlags"=dword:00000020
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\Restart\shell\005flyout\command]
+@="shutdown /s /f /t 0"
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\Restart\shell\006-NormalMode]
+@="Restart in Normal Mode"
+"HasLUAShield"=""
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\Restart\shell\006-NormalMode\command]
+@="powershell -windowstyle hidden -command \"Start-Process cmd -ArgumentList '/s,/c,bcdedit /deletevalue {current} safeboot & bcdedit /deletevalue {current} safebootalternateshell & shutdown -r -t 00 -f' -Verb runAs\""
+
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\Restart\shell\006-SafeMode]
+@="Restart in Safe Mode"
+"HasLUAShield"=""
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\Restart\shell\006-SafeMode\command]
+@="powershell -windowstyle hidden -command \"Start-Process cmd -ArgumentList '/s,/c,bcdedit /set {current} safeboot minimal & bcdedit /deletevalue {current} safebootalternateshell & shutdown -r -t 00 -f' -Verb runAs\""
+
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\Restart\shell\006-SafeModeNetworking]
+@="Restart in Safe Mode with Networking"
+"HasLUAShield"=""
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\Restart\shell\006-SafeModeNetworking\command]
+@="powershell -windowstyle hidden -command \"Start-Process cmd -ArgumentList '/s,/c,bcdedit /set {current} safeboot network & bcdedit /deletevalue {current} safebootalternateshell & shutdown -r -t 00 -f' -Verb runAs\""
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\Restart\shell\006-SafeModeCommandPrompt]
+@="Restart in Safe Mode with Command Prompt"
+"HasLUAShield"=""
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\Restart\shell\006-SafeModeCommandPrompt\command]
+@="powershell -windowstyle hidden -command \"Start-Process cmd -ArgumentList '/s,/c,bcdedit /set {current} safeboot minimal & bcdedit /set {current} safebootalternateshell yes & shutdown -r -t 00 -f' -Verb runAs\""
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\Restart\shell\007-TurnOffDisplay]
+"Icon"="imageres.dll,-109"
+"MUIVerb"="Turn off display"
+"Position"="Bottom"
+"SubCommands"=""
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\Restart\shell\007-TurnOffDisplay\shell]
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\Restart\shell\007-TurnOffDisplay\shell\01menu]
+"Icon"="powercpl.dll,-513"
+"MUIVerb"="Turn off display"
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\Restart\shell\007-TurnOffDisplay\shell\01menu\command]
+@="cmd /c \"powershell.exe -Command \"(Add-Type '[DllImport(\\\"user32.dll\\\")]public static extern int SendMessage(int hWnd,int hMsg,int wParam,int lParam);' -Name a -Pas)::SendMessage(-1,0x0112,0xF170,2)\"\""
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\Restart\shell\007-TurnOffDisplay\shell\02menu]
+"MUIVerb"="Lock computer and Turn off display"
+"CommandFlags"=dword:00000020
+"Icon"="imageres.dll,-59"
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\Restart\shell\007-TurnOffDisplay\shell\02menu\command]
+@="cmd /c \"powershell.exe -Command \"(Add-Type '[DllImport(\\\"user32.dll\\\")]public static extern int SendMessage(int hWnd,int hMsg,int wParam,int lParam);' -Name a -Pas)::SendMessage(-1,0x0112,0xF170,2)\" & rundll32.exe user32.dll, LockWorkStation\""

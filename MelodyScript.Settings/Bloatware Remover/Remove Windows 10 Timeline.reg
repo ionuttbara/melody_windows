@@ -1,0 +1,13 @@
+Windows Registry Editor Version 5.00
+
+; Remove Windows 10 Timeline
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsRuntime\ActivatableClassId\TimelineUI.TimelineHost]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsRuntime\ActivatableClassId\TimelineUI.TimelineUI_XamlTypeInfo.XamlMetaDataProvider]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsRuntime\ActivatableClassId\TimelineUI.Views.ActivityCardButton]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsRuntime\ActivatableClassId\TimelineUI.Views.ActivityView]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsRuntime\ActivatableClassId\TimelineUI.Views.ActivityViewGridView]

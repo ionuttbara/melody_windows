@@ -1,0 +1,11 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\EdgeUpdate]
+"UpdaterExperimentationAndConfigurationServiceControl"=dword:00000000
+"Allowsxs"=dword:00000000
+"InstallDefault"=dword:00000004
+"UpdateDefault"=dword:00000003
+"ProxyMode"="direct"
+"AutoUpdateCheckPeriodMinutes"=dword:00005140
+"CreateDesktopShortcutDefault"=dword:00000000
+"TargetChannel{56EB18F8-B008-4CBD-B6D2-8C97FE7E9062}"="extended"

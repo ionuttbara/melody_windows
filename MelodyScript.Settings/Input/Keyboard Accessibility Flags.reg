@@ -1,0 +1,44 @@
+Windows Registry Editor Version 5.00
+
+
+[HKEY_CURRENT_USER\Control Panel\Accessibility\HighContrast]
+"Flags"="0"
+
+[HKEY_CURRENT_USER\Control Panel\Accessibility\Keyboard Response]
+"Flags"="0"
+
+[HKEY_CURRENT_USER\Control Panel\Accessibility\MouseKeys]
+"Flags"="0"
+
+[HKEY_CURRENT_USER\Control Panel\Accessibility\SoundSentry]
+"Flags"="0"
+
+[HKEY_CURRENT_USER\Control Panel\Accessibility\StickyKeys]
+"Flags"="0"
+
+[HKEY_CURRENT_USER\Control Panel\Accessibility\TimeOut]
+"Flags"="0"
+
+[HKEY_CURRENT_USER\Control Panel\Accessibility\ToggleKeys]
+"Flags"="0"
+
+[HKEY_CURRENT_USER\Control Panel\Accessibility\SlateLaunch]
+"ATapp"=-
+
+[HKEY_CURRENT_USER\Control Panel\Accessibility\TimeOut]
+"Flags"="0"
+
+[HKEY_CURRENT_USER\Software\Microsoft\ColorFiltering]
+"HotkeyEnabled"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Microsoft\ScreenMagnifier]
+"Invert"=dword:00000000
+
+;Accesibility
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows NT\CurrentVersion\Accessibility]
+"Configuration"=""
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Accessibility]
+"Configuration"=""
+

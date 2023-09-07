@@ -1,0 +1,10 @@
+Windows Registry Editor Version 5.00
+
+
+;device metadata
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FolderDescriptions\{5CE4A5E9-E4EB-479D-B89F-130C02886155}]
+
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Explorer\FolderDescriptions\{5CE4A5E9-E4EB-479D-B89F-130C02886155}]
+

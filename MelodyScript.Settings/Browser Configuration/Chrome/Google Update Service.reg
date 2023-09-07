@@ -1,0 +1,11 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Google\Update]
+"InstallDefault"=dword:00000004
+"UpdateDefault"=dword:00000003
+"ProxyMode"="direct"
+"CloudPolicyOverridesPlatformPolicy"=dword:00000000
+"AutoUpdateCheckPeriodMinutes"=dword:00005140
+"Install{4CCED17F-7852-4AFC-9E9E-C89D8795BDD2}"=dword:00000000
+"Install{ADDE8406-A0F3-4AC2-8878-ADC0BD37BD86}"=dword:00000000
+"TargetChannel{8A69D345-D564-463C-AFF1-A69D9E530F96}"="extended"

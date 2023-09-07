@@ -1,0 +1,12 @@
+Windows Registry Editor Version 5.00
+
+;Increasing the touch sample rate
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Wisp\Touch]
+"SampleTime"=dword:00000002
+
+[HKEY_CURRENT_USER\Control Panel\Desktop]
+"GestureExecutionDelay"=dword:00000000
+
+;Enable Palm Check
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Wisp\Touch]
+"PalmCheck"=dword:00000001

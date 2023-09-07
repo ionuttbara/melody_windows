@@ -1,0 +1,68 @@
+Windows Registry Editor Version 5.00
+
+;Region Settings
+
+[HKEY_CURRENT_USER\Control Panel\International]
+"iFirstDayOfWeek"="0"
+
+[HKEY_CURRENT_USER\Control Panel\International]
+"s1159"="AM"
+"s2359"="PM"
+"sCurrency"="$"
+"sDate"="."
+"sDecimal"=","
+"sGrouping"="3;0"
+"sList"="."
+"sLongDate"="dddd, dd.MM.yyyy"
+"sMonDecimalSep"="."
+"sMonGrouping"="3;0"
+"sMonThousandSep"=","
+"sNativeDigits"="0123456789"
+"sNegativeSign"="-"
+"sPositiveSign"=""
+"sShortDate"="dd.MM.yyyy"
+"sThousand"="."
+"sTime"=":"
+"sTimeFormat"="HH:mm:ss"
+"sShortTime"="HH:mm"
+"iFirstDayOfWeek"="0"
+"iLZero"="1"
+"iMeasure"="0"
+"iNegCurr"="0"
+
+[HKEY_USERS\.DEFAULT\Control Panel\International]
+"iFirstDayOfWeek"="0"
+
+[HKEY_USERS\.DEFAULT\Control Panel\International]
+"s1159"="AM"
+"s2359"="PM"
+"sCurrency"="$"
+"sDate"="."
+"sDecimal"=","
+"sGrouping"="3;0"
+"sList"="."
+"sLongDate"="dddd, dd.MM.yyyy"
+"sMonDecimalSep"="."
+"sMonGrouping"="3;0"
+"sMonThousandSep"=","
+"sNativeDigits"="0123456789"
+"sNegativeSign"="-"
+"sPositiveSign"=""
+"sShortDate"="dd.MM.yyyy"
+"sThousand"="."
+"sTime"=":"
+"sTimeFormat"="HH:mm:ss"
+"sShortTime"="HH:mm"
+"iFirstDayOfWeek"="0"
+"iLZero"="1"
+"iMeasure"="0"
+"iNegCurr"="0"
+
+[HKEY_CURRENT_USER\Control Panel\International\User Profile]
+"ShowAutoCorrection"=dword:00000000
+"ShowTextPrediction"=dword:00000000
+"ShowCasing"=dword:00000000
+"ShowShiftLock"=dword:00000001
+"HttpAcceptLanguageOptOut"=dword:00000001
+"DiagTrackAuthorization"=dword:00000000
+"UploadPermissionReceived"=-

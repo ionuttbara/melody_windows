@@ -1,0 +1,122 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\*\shell\FileManagement]
+"Icon"="shell32.dll,0"
+"MUIVerb"="File Management"
+"Position"="Middle"
+"SubCommands"=""
+
+[HKEY_CLASSES_ROOT\*\shell\FileManagement\shell\HideFiles]
+"SubCommands"=""
+"Icon"="imageres.dll,-5314"
+"MUIVerb"="Hide/Show Hidden items"
+
+[HKEY_CLASSES_ROOT\*\shell\FileManagement\shell\HideFiles\shell\Windows.ShowHiddenFiles]
+"CommandStateSync"=""
+"Description"="@shell32.dll,-37573"
+"ExplorerCommandHandler"="{f7300245-1f4b-41ba-8948-6fd392064494}"
+"Icon"="imageres.dll,-5314"
+"MUIVerb"="Hide/Show Hidden items"
+
+[HKEY_CLASSES_ROOT\*\shell\FileManagement\shell\HideFiles\shell\x1menu]
+"MUIVerb"="Hide protected OS files"
+"Icon"="imageres.dll,-5314"
+"CommandFlags"=dword:00000020
+
+[HKEY_CLASSES_ROOT\*\shell\FileManagement\shell\HideFiles\shell\x1menu\command]
+@="cmd /c, REG ADD \"HKCU\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced\" /V ShowSuperHidden /T REG_DWORD /D 0 /F & taskkill /f /im explorer.exe & start explorer.exe"
+
+[HKEY_CLASSES_ROOT\*\shell\FileManagement\shell\HideFiles\shell\x2menu]
+"MUIVerb"="Show protected OS files"
+"Icon"="imageres.dll,-5314"
+
+[HKEY_CLASSES_ROOT\*\shell\FileManagement\shell\HideFiles\shell\x2menu\command]
+@="cmd /c, REG ADD \"HKCU\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced\" /V Hidden /T REG_DWORD /D 1 /F & REG ADD \"HKCU\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced\" /V ShowSuperHidden /T REG_DWORD /D 1 /F & taskkill /f /im explorer.exe & start explorer.exe"
+
+[HKEY_CLASSES_ROOT\*\shell\FileManagement\shell\Windows.PermanentDelete]
+"CommandStateSync"=""
+"ExplorerCommandHandler"="{E9571AB2-AD92-4ec6-8924-4E5AD33790F5}"
+"Icon"="shell32.dll,-240"
+"Position"="Bottom"
+
+
+[HKEY_CLASSES_ROOT\*\shell\FileManagement\shell\GetFileHash]
+"MUIVerb"="Calculate Hash"
+"SubCommands"=""
+
+[HKEY_CLASSES_ROOT\*\shell\FileManagement\shell\GetFileHash\shell\01SHA1]
+"MUIVerb"="SHA1"
+
+[HKEY_CLASSES_ROOT\*\shell\FileManagement\shell\GetFileHash\shell\01SHA1\command]
+@="powershell.exe -noexit get-filehash -literalpath '%1' -algorithm SHA1 | format-list"
+
+[HKEY_CLASSES_ROOT\*\shell\FileManagement\shell\GetFileHash\shell\02SHA256]
+"MUIVerb"="SHA256"
+
+[HKEY_CLASSES_ROOT\*\shell\FileManagement\shell\GetFileHash\shell\02SHA256\command]
+@="powershell.exe -noexit get-filehash -literalpath '%1' -algorithm SHA256 | format-list"
+
+
+[HKEY_CLASSES_ROOT\*\shell\FileManagement\shell\GetFileHash\shell\03SHA384]
+"MUIVerb"="SHA384"
+
+[HKEY_CLASSES_ROOT\*\shell\FileManagement\shell\GetFileHash\shell\03SHA384\command]
+@="powershell.exe -noexit get-filehash -literalpath '%1' -algorithm SHA384 | format-list"
+
+
+[HKEY_CLASSES_ROOT\*\shell\FileManagement\shell\GetFileHash\shell\04SHA512]
+"MUIVerb"="SHA512"
+
+[HKEY_CLASSES_ROOT\*\shell\FileManagement\shell\GetFileHash\shell\04SHA512\command]
+@="powershell.exe -noexit get-filehash -literalpath '%1' -algorithm SHA512 | format-list"
+
+[HKEY_CLASSES_ROOT\*\shell\FileManagement\shell\GetFileHash\shell\05MACTripleDES]
+"MUIVerb"="MACTripleDES"
+
+[HKEY_CLASSES_ROOT\*\shell\FileManagement\shell\GetFileHash\shell\05MACTripleDES\command]
+@="powershell.exe -noexit get-filehash -literalpath '%1' -algorithm MACTripleDES | format-list"
+
+
+[HKEY_CLASSES_ROOT\*\shell\FileManagement\shell\GetFileHash\shell\06MD5]
+"MUIVerb"="MD5"
+
+[HKEY_CLASSES_ROOT\*\shell\FileManagement\shell\GetFileHash\shell\06MD5\command]
+@="powershell.exe -noexit get-filehash -literalpath '%1' -algorithm MD5 | format-list"
+
+[HKEY_CLASSES_ROOT\*\shell\FileManagement\shell\GetFileHash\shell\07RIPEMD160]
+"MUIVerb"="RIPEMD160"
+
+[HKEY_CLASSES_ROOT\*\shell\FileManagement\shell\GetFileHash\shell\07RIPEMD160\command]
+@="powershell.exe -noexit get-filehash -literalpath '%1' -algorithm RIPEMD160 | format-list"
+
+[HKEY_CLASSES_ROOT\*\shell\FileManagement\shell\Copy Content to Clipboard]
+"MUIVerb"="Copy Content to Clipboard"
+"Icon"="DxpTaskSync.dll,-52"
+"Position"="Center"
+
+[HKEY_CLASSES_ROOT\*\shell\FileManagement\shell\Copy Content to Clipboard\Command]
+@="cmd /c clip < \"%1\""
+
+[HKEY_CLASSES_ROOT\*\shell\FileManagement\shell\HiddenAttribute]
+"MUIVerb"="File Visibility"
+"SubCommands"=""
+"Position"=-
+"Icon"="imageres.dll,-5314"
+
+[HKEY_CLASSES_ROOT\*\shell\FileManagement\shell\HiddenAttribute\Shell\Item0]
+"MUIVerb"="Not Hidden"
+
+[HKEY_CLASSES_ROOT\*\shell\FileManagement\shell\HiddenAttribute\Shell\Item0\Command]
+@="attrib -s -h \"%1\""
+
+[HKEY_CLASSES_ROOT\*\shell\FileManagement\shell\HiddenAttribute\Shell\Item1]
+"MUIVerb"="Hidden"
+
+[HKEY_CLASSES_ROOT\*\shell\FileManagement\shell\HiddenAttribute\Shell\Item1\Command]
+@="attrib -s +h \"%1\""
+
+[HKEY_CLASSES_ROOT\*\shell\FileManagement\shell\HiddenAttribute\Shell\Item2]
+"MUIVerb"="System Hidden"
+
+[HKEY_CLASSES_ROOT\*\shell\FileManagement\shell\HiddenAttribute\Shell\Item2\Command]
+@="attrib +s +h \"%1\""

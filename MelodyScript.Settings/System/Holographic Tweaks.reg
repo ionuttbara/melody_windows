@@ -1,0 +1,11 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Holographic]
+"PreallocateVirtualMonitors"=dword:00000000
+"DesktopAppLaunchEnabled"=dword:00000001
+"ScreensaverModeEnabled"=dword:00000000
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\HoloSI\Audio]
+"AudioMirroringEnabled"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Holographic\DisplayThrottling]
+"ThrottleExperience"=dword:00000000

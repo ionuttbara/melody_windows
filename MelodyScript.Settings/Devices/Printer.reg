@@ -1,0 +1,9 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Print\Monitors\Standard TCP/IP Port\Ports]
+"LprAckTimeout"=dword:00000002
+"StatusUpdateEnabled"=dword:00000001
+"StatusUpdateInterval"=dword:0000000a
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Print]
+"EnableModernPrintDialog"=dword:00000001

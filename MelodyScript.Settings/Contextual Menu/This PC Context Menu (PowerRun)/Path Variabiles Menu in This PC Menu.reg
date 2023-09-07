@@ -1,0 +1,10 @@
+Windows Registry Editor Version 5.00
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{20D04FE0-3AEA-1069-A2D8-08002B30309D}\Shell\EnvironmentVariables]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{20D04FE0-3AEA-1069-A2D8-08002B30309D}\Shell\EnvironmentVariables]
+"Icon"="msconfig.exe,0"
+"MUIVerb"="Environment Variables"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{20D04FE0-3AEA-1069-A2D8-08002B30309D}\Shell\EnvironmentVariables\command]
+@="rundll32.exe sysdm.cpl,EditEnvironmentVariables"

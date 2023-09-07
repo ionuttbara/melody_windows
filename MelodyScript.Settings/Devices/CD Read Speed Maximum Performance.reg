@@ -1,0 +1,6 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\FileSystem\CDFS]
+"PrefetchTail"=dword:00004000
+"CacheSize"=hex(3):FF,FF,00,00
+"Prefetch"=dword:00004000

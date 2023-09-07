@@ -1,0 +1,31 @@
+Windows Registry Editor Version 5.00
+
+;Visual Apparence Settings
+
+[HKEY_USERS\.DEFAULT\Control Panel\Desktop]
+"DragFullWindows"="1"
+"FontSmoothing"="2"
+"FontSmoothingType"=dword:00000002
+"UserPreferencesMask"=hex:90,52,01,80,10,00,00,00
+"MouseWheelRouting"=dword:00000002
+"RestorePreviousStateRecalcBehavior"=dword:00000000
+
+[HKEY_CURRENT_USER\Control Panel\Desktop]
+"DragFullWindows"="1"
+"FontSmoothing"="2"
+"FontSmoothingType"=dword:00000002
+"UserPreferencesMask"=hex:90,52,01,80,10,00,00,00
+"MouseWheelRouting"=dword:00000002
+"RestorePreviousStateRecalcBehavior"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\VisualEffects]
+"VisualFxSetting"=dword:00000003
+
+[HKEY_USERS\.DEFAULT\Software\Microsoft\Windows\CurrentVersion\Explorer\VisualEffects]
+"VisualFxSetting"=dword:00000003
+
+[HKEY_CLASSES_ROOT\*]
+"DefaultDropEffect"=dword:00000001
+
+[HKEY_CLASSES_ROOT\AllFilesystemObjects]
+"DefaultDropEffect"=dword:00000001

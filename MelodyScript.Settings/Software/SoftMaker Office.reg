@@ -1,0 +1,57 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\SoftMaker\PlanMaker 2016]
+"OnlineCheck"=dword:00000000
+"HelpSoftMaker"=dword:00000000
+"OnlineBeep"=dword:00000000
+"Explorer"=dword:00000001
+"UpdateCheckEnabled"=dword:00000000
+"OptionsHunspell"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\SoftMaker\PlanMaker 2018]
+"OnlineCheck"=dword:00000000
+"HelpSoftMaker"=dword:00000000
+"OnlineBeep"=dword:00000000
+"Explorer"=dword:00000001
+"UpdateCheckEnabled"=dword:00000000
+"OptionsHunspell"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\SoftMaker\Presentations 2016]
+"OnlineCheck"=dword:00000000
+"HelpSoftMaker"=dword:00000000
+"OnlineBeep"=dword:00000000
+"Explorer"=dword:00000001
+"UpdateCheckEnabled"=dword:00000000
+"OptionsHunspell"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\SoftMaker\Presentations 2018]
+"OnlineCheck"=dword:00000000
+"HelpSoftMaker"=dword:00000000
+"OnlineBeep"=dword:00000000
+"Explorer"=dword:00000001
+"UpdateCheckEnabled"=dword:00000000
+"OptionsHunspell"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\SoftMaker\SoftMaker Office 2018]
+"OnlineCheck"=dword:00000000
+"HelpSoftMaker"=dword:00000000
+"OnlineBeep"=dword:00000000
+"Explorer"=dword:00000001
+"UpdateCheckEnabled"=dword:00000000
+"OptionsHunspell"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\SoftMaker\TextMaker 2016]
+"OnlineCheck"=dword:00000000
+"HelpSoftMaker"=dword:00000000
+"OnlineBeep"=dword:00000000
+"Explorer"=dword:00000001
+"UpdateCheckEnabled"=dword:00000000
+"OptionsHunspell"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\SoftMaker\TextMaker 2018]
+"OnlineCheck"=dword:00000000
+"HelpSoftMaker"=dword:00000000
+"OnlineBeep"=dword:00000000
+"Explorer"=dword:00000001
+"UpdateCheckEnabled"=dword:00000000
+"OptionsHunspell"=dword:00000000

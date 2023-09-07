@@ -1,0 +1,133 @@
+Windows Registry Editor Version 5.00
+
+; cleanup 
+
+[-HKEY_CLASSES_ROOT\Directory\shell\cmd]
+
+[-HKEY_CLASSES_ROOT\Directory\shell\Powershell]
+
+[-HKEY_CLASSES_ROOT\Directory\shell\WSL]
+
+[-HKEY_CLASSES_ROOT\Directory\Background\shell\OpenWindowsTerminalProfiles]
+
+[-HKEY_CLASSES_ROOT\Directory\shell\cmd]
+
+[-HKEY_CLASSES_ROOT\Directory\Background\shell\Powershell]
+
+[-HKEY_CLASSES_ROOT\Directory\Background\shell\WSL]
+
+[-HKEY_CLASSES_ROOT\Drive\shell\cmd]
+
+[-HKEY_CLASSES_ROOT\Drive\shell\Powershell]
+
+[-HKEY_CLASSES_ROOT\Drive\shell\WSL]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Shell Extensions\Blocked]
+"{9F156763-7844-4DC4-B2B1-901F640F5155}"=""
+
+; add intro into menu - Drives
+
+
+; Add intro single menu
+
+[HKEY_CLASSES_ROOT\Drive\shell\GalleryTerminalBehaivor]
+"MUIVerb"="Open terminal in place..."
+"Icon"="cmd.exe"
+"Position"="Middle"
+"SubCommands"=""
+
+[HKEY_CLASSES_ROOT\Drive\shell\GalleryTerminalBehaivor\shell\Powershell]
+@="Open PowerShell 5 Window here..."
+"Extended"=-
+"Icon"="powershell.exe"
+"NoWorkingDirectory"=""
+"ShowBasedOnVelocityId"=dword:00639bc8
+
+[HKEY_CLASSES_ROOT\Drive\shell\GalleryTerminalBehaivor\shell\Powershell\command]
+@="powershell.exe -noexit -command Set-Location -literalPath '%V'"
+
+[HKEY_CLASSES_ROOT\Drive\shell\GalleryTerminalBehaivor\shell\cmd2]
+@="Open CMD Window here..."
+"Extended"=-
+"Icon"="imageres.dll,-5323"
+"NoWorkingDirectory"=""
+
+[HKEY_CLASSES_ROOT\Drive\shell\GalleryTerminalBehaivor\shell\cmd2\command]
+@="cmd.exe /s /k pushd \"%V\""
+
+; add intro into menu - Directory
+
+
+[HKEY_CLASSES_ROOT\Directory\shell\GalleryTerminalBehaivor]
+"MUIVerb"="Open terminal in place..."
+"Icon"="cmd.exe"
+"Position"="Middle"
+"SubCommands"=""
+
+[HKEY_CLASSES_ROOT\Directory\shell\GalleryTerminalBehaivor\shell\Powershell]
+@="Open PowerShell 5 Window here..."
+"Extended"=-
+"Icon"="powershell.exe"
+"NoWorkingDirectory"=""
+"ShowBasedOnVelocityId"=dword:00639bc8
+
+[HKEY_CLASSES_ROOT\Directory\shell\GalleryTerminalBehaivor\shell\Powershell\command]
+@="powershell.exe -noexit -command Set-Location -literalPath '%V'"
+
+[HKEY_CLASSES_ROOT\Directory\shell\GalleryTerminalBehaivor\shell\cmd2]
+@="Open CMD Window here..."
+"Extended"=-
+"Icon"="imageres.dll,-5323"
+"NoWorkingDirectory"=""
+
+[HKEY_CLASSES_ROOT\Directory\shell\GalleryTerminalBehaivor\shell\cmd2\command]
+@="cmd.exe /s /k pushd \"%V\""
+
+; add intro into menu - Background Directory
+
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\GalleryTerminalBehaivor]
+"MUIVerb"="Open terminal in place..."
+"Icon"="cmd.exe"
+"Position"="Middle"
+"SubCommands"=""
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\GalleryTerminalBehaivor\shell\Powershell]
+@="Open PowerShell 5 Window here..."
+"Extended"=-
+"Icon"="powershell.exe"
+"NoWorkingDirectory"=""
+"ShowBasedOnVelocityId"=dword:00639bc8
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\GalleryTerminalBehaivor\shell\Powershell\command]
+@="powershell.exe -noexit -command Set-Location -literalPath '%V'"
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\GalleryTerminalBehaivor\shell\cmd2]
+@="Open CMD Window here..."
+"Extended"=-
+"Icon"="imageres.dll,-5323"
+"NoWorkingDirectory"=""
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\GalleryTerminalBehaivor\shell\cmd2\command]
+@="cmd.exe /s /k pushd \"%V\""
+
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\GalleryTerminalBehaivor\shell\TrustedInstaller]
+"MuiVerb"="Open PowerShell as TrusterInstaller User"
+"HasLUAShield"=""
+"NoWorkingDirectory"=""
+"Position"=-
+"Position"="Middle"
+"Icon"="powershell.exe,0"
+[HKEY_CLASSES_ROOT\Directory\Background\shell\GalleryTerminalBehaivor\shell\TrustedInstaller\command]
+@="C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -win 1 -nop -c iex((10..40|%%{(gp 'Registry::HKCR\\RunAsTI' $_ -ea 0).$_})-join[char]10); # --%% cmd /c pushd \"%V\" & start \"RunAsTI\" powershell.exe"
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\GalleryTerminalBehaivor\shell\TrustedInstaller2]
+"MuiVerb"="Open CMD as TrusterInstaller User"
+"HasLUAShield"=""
+"NoWorkingDirectory"=""
+"Position"=-
+"Position"="Middle"
+"Icon"="cmd.exe,0"
+[HKEY_CLASSES_ROOT\Directory\Background\shell\GalleryTerminalBehaivor\shell\TrustedInstaller2\command]
+@="C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -win 1 -nop -c iex((10..40|%%{(gp 'Registry::HKCR\\RunAsTI' $_ -ea 0).$_})-join[char]10); # --%% cmd /c pushd \"%V\" & start \"RunAsTI\" cmd.exe"

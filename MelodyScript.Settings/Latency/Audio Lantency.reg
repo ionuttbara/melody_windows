@@ -1,0 +1,8 @@
+Windows Registry Editor Version 5.00
+
+;Audio Latency
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\BackgroundModel\BackgroundAudioPolicy]
+"AllowHeadlessExecution"=dword:00000001
+"AllowMultipleBackgroundTasks"=dword:00000001
+"InactivityTimeoutMs"=dword:FFFFFFFF

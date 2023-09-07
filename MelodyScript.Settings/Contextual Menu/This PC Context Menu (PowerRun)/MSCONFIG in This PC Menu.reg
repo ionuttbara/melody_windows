@@ -1,0 +1,8 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{20D04FE0-3AEA-1069-A2D8-08002B30309D}\shell\msconfig]
+@="System Configuration (msconfig)"
+"Icon"="msconfig.exe,0"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{20D04FE0-3AEA-1069-A2D8-08002B30309D}\shell\msconfig\command]
+@="C:\\WINDOWS\\SYSTEM32\\msconfig.exe"

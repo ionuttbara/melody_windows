@@ -1,0 +1,65 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\exefile\shell\AppRunConfig]
+"MUIVerb"="Config Application Run"
+"SubCommands"=""
+"Icon"="taskmgr.exe,1"
+
+[HKEY_CLASSES_ROOT\exefile\Shell\AppRunConfig\shell\Priority]
+"MUIVerb"="Set priorities"
+"SubCommands"=""
+"Icon"="taskmgr.exe,1"
+
+[HKEY_CLASSES_ROOT\exefile\Shell\AppRunConfig\shell\Priority\shell\PermPrio]
+"MUIVerb"="Set permanent Priority"
+"SubCommands"=""
+"Icon"="taskmgr.exe"
+
+
+[HKEY_CLASSES_ROOT\exefile\Shell\AppRunConfig\shell\Priority\shell\PermPrio\shell\001flyout]
+@="Realtime (p)"
+
+[HKEY_CLASSES_ROOT\exefile\Shell\AppRunConfig\shell\Priority\shell\PermPrio\shell\001flyout\command]
+@="cmd /c for %%F in (%1) do (REG ADD \"HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\%%~nxF\\PerfOptions\" /v \"CpuPriorityClass\" /t REG_DWORD /d 4 /f)"
+
+[HKEY_CLASSES_ROOT\exefile\Shell\AppRunConfig\shell\Priority\shell\PermPrio\shell\002flyout]
+@="High (p)"
+
+[HKEY_CLASSES_ROOT\exefile\Shell\AppRunConfig\shell\Priority\shell\PermPrio\shell\002flyout\command]
+@="cmd /c for %%F in (%1) do (REG ADD \"HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\%%~nxF\\PerfOptions\" /v \"CpuPriorityClass\" /t REG_DWORD /d 3 /f)"
+
+
+[HKEY_CLASSES_ROOT\exefile\Shell\AppRunConfig\shell\Priority\shell\PermPrio\shell\003flyout]
+@="Above normal (p)"
+
+[HKEY_CLASSES_ROOT\exefile\Shell\AppRunConfig\shell\Priority\shell\PermPrio\shell\003flyout\command]
+@="cmd /c for %%F in (%1) do (REG ADD \"HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\%%~nxF\\PerfOptions\" /v \"CpuPriorityClass\" /t REG_DWORD /d 6 /f)"
+
+
+[HKEY_CLASSES_ROOT\exefile\Shell\AppRunConfig\shell\Priority\shell\PermPrio\shell\004flyout]
+@="Normal (p)"
+
+[HKEY_CLASSES_ROOT\exefile\Shell\AppRunConfig\shell\Priority\shell\PermPrio\shell\004flyout\command]
+@="cmd /c for %%F in (%1) do (REG ADD \"HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\%%~nxF\\PerfOptions\" /v \"CpuPriorityClass\" /t REG_DWORD /d 2 /f)"
+
+
+[HKEY_CLASSES_ROOT\exefile\Shell\AppRunConfig\shell\Priority\shell\PermPrio\shell\005flyout]
+@="Below normal (p)"
+
+[HKEY_CLASSES_ROOT\exefile\Shell\AppRunConfig\shell\Priority\shell\PermPrio\shell\005flyout\command]
+@="cmd /c for %%F in (%1) do (REG ADD \"HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\%%~nxF\\PerfOptions\" /v \"CpuPriorityClass\" /t REG_DWORD /d 5 /f)"
+
+
+[HKEY_CLASSES_ROOT\exefile\Shell\AppRunConfig\shell\Priority\shell\PermPrio\shell\006flyout]
+@="Low (p)"
+
+[HKEY_CLASSES_ROOT\exefile\Shell\AppRunConfig\shell\Priority\shell\PermPrio\shell\006flyout\command]
+@="cmd /c for %%F in (%1) do (REG ADD \"HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\%%~nxF\\PerfOptions\" /v \"CpuPriorityClass\" /t REG_DWORD /d 1 /f)"
+
+
+
+[HKEY_CLASSES_ROOT\exefile\Shell\AppRunConfig\shell\Priority\shell\PermPrio\shell\007flyout]
+@="Reset (p)"
+
+[HKEY_CLASSES_ROOT\exefile\Shell\AppRunConfig\shell\Priority\shell\PermPrio\shell\007flyout\command]
+@="cmd /c for %%F in (%1) do (REG DELETE \"HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\%%~nxF" /f)"

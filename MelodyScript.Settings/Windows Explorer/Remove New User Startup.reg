@@ -1,0 +1,5 @@
+Windows Registry Editor Version 5.00
+
+[-HKEY_USERS\DEFAULT\SOFTWARE\Microsoft\Windows\CurrentVersion\Run]
+
+[-HKEY_USERS\DEFAULT\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce]

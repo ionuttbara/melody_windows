@@ -1,0 +1,24 @@
+Windows Registry Editor Version 5.00
+
+[-HKEY_USERS\.DEFAULT\System\GameConfigStore\Children]
+
+[-HKEY_USERS\.DEFAULT\System\GameConfigStore\Parents]
+
+[HKEY_USERS\.DEFAULT\Software\Microsoft\Games]
+"EnableXBGM"=dword:00000000
+
+[-HKEY_CURRENT_USER\System\GameConfigStore\Children]
+
+[-HKEY_CURRENT_USER\System\GameConfigStore\Parents]
+
+[HKEY_CURRENT_USER\Software\Microsoft\Games]
+"EnableXBGM"=dword:00000000
+
+[HKEY_CURRENT_USER\System\GameConfigStore]
+"GameDVR_FSEBehavior"=dword:00000002
+
+[-HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\gameflt]
+
+[-HKEY_CLASSES_ROOT\CLSID\{7ECB3DBE-742D-4B43-BF3E-2587BE1BFF72}]
+
+[-HKEY_CLASSES_ROOT\Interface\{C7F208A4-C8CD-4689-983B-A2BABAE6A460}]

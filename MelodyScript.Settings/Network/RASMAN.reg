@@ -1,0 +1,7 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\RasMan\PPP]
+"RestartTimer"=dword:00000000
+"ForceEncryptedData"=dword:00000001
+"ForceEncryptedPassword"=dword:00000002
+"SecureVPN"=dword:00000001

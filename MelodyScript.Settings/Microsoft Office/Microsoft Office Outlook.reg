@@ -1,0 +1,22 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\16.0\Outlook]
+"EnableLogging"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\16.0\Outlook\Security]
+"InitEncrypt"=dword:00000002
+"InitSign"=dword:00000002
+
+[HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Outlook\Options\Calendar]
+"EnableCalendarLogging"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Outlook\Options\Mail]
+"BlockExtContent"=dword:00000000
+"UnblockSpecificSenders"=dword:00000000
+"EnableLogging"=dword:00000000
+
+[HKEY_CURRENT_USER\software\policies\microsoft\office\15.0\outlook\options\spelling]
+"check"=dword:00000000
+
+[HKEY_CURRENT_USER\software\policies\microsoft\office\16.0\outlook\options\spelling]
+"check"=dword:00000000

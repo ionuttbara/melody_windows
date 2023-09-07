@@ -1,0 +1,11 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Windows]
+"AllowDelayedFlips"=dword:00000000
+"GDIProcessIdleTimeout"=dword:00007500
+"UseDx"=dword:00000001
+"UseGpuForRender"=dword:00000001
+"UseTdx"=dword:00000001
+"UseThreadedOptimization"=dword:00000001
+"UseWddmForFullscreenVideo"=dword:00000001
+"UseSoftwareRender"=dword:00000000

@@ -1,0 +1,10 @@
+Windows Registry Editor Version 5.00
+
+:AMD Analytics
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\AMD\CN\ANALYTICS]
+
+; Windows Installer Logging
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Installer]
+"DisableLoggingFromPackage"=dword:00000001

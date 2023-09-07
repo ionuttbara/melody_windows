@@ -1,0 +1,13 @@
+Windows Registry Editor Version 5.00
+
+;Lock Screen
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Lock Screen\Creative]
+"LockImageFlags"=dword:00000000
+"CreativeId"="0"
+"PortraitAssetPath"="0"
+"LandscapeAssetPath"="0"
+"PlacementId"="0"
+"ImpressionToken"="0"
+"HotspotImageFolderPath"="0"
+"CreativeJson"="0"

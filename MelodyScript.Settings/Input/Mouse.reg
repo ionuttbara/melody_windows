@@ -1,0 +1,53 @@
+Windows Registry Editor Version 5.00
+
+; Enable RAW Input
+
+[HKEY_USERS\.DEFAULT\Control Panel\Mouse]
+"MouseSensitivity"="10"
+"MouseSpeed"="0"
+"MouseThreshold1"="0"
+"MouseThreshold2"="0"
+"MouseHoverTime"="0"
+"MouseTrails"="0"
+
+[HKEY_CURRENT_USER\Control Panel\Mouse]
+"MouseSensitivity"="10"
+"MouseSpeed"="0"
+"MouseThreshold1"="0"
+"MouseThreshold2"="0"
+"MouseHoverTime"="0"
+"MouseTrails"="0"
+
+; Optimize Mouse Buffer Transmision
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\mouclass\Parameters]
+"MouseDataQueueSize"=dword:00000010
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\mouhid\Parameters]
+"TreatAbsolutePointerAsAbsolute"=dword:00000001
+"TreatAbsoluteAsRelative"=dword:00000000
+
+[HKEY_USERS\.DEFAULT\Software\Microsoft\Input\TIPC]
+"Enabled"=dword:00000000
+
+; Defining Cursor Magnestism
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Input\Settings\ControllerProcessor\CursorSpeed]
+"CursorSensitivity"=dword:00002710
+"CursorUpdateInterval"=dword:00000001
+"IRRemoteNavigationDelta"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Input\Settings\ControllerProcessor\CursorMagnetism]
+"AttractionRectInsetInDIPS"=dword:00000005
+"DistanceThresholdInDIPS"=dword:00000028
+"MagnetismDelayInMilliseconds"=dword:00000002
+"MagnetismUpdateIntervalInMilliseconds"=dword:00000001
+"VelocityInDIPSPerSecond"=dword:00000168
+
+[HKEY_CURRENT_USER\Control Panel\Cursors]
+"CursorDeadzoneJumpingSetting"=dword:00000000
+"ContactVisualization"=dword:00000000
+"GestureVisualization"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System]
+"EnableCursorSuppression"=dword:00000000

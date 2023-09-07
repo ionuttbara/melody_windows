@@ -1,0 +1,8 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\Software\Dojo North Software\HomeServerSMART\Configuration]
+"CheckForUpdates"=dword:00000000
+"DebuggingControl"=dword:00000000
+"Dpa"=dword:00000000
+"TempCtl"=dword:00000000
+"AllowIgnoredItems"=dword:00000000

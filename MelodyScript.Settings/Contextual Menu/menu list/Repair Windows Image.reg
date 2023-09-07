@@ -1,0 +1,96 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\DismContextMenu]
+"Icon"="WmiPrvSE.exe"
+"MUIVerb"="Repair Windows Image"
+"Position"="Bottom"
+"SubCommands"=""
+
+[HKEY_CLASSES_ROOT\DesktopBackground\shell\DismContextMenu\shell\CheckHealth]
+"HasLUAShield"=""
+"MUIVerb"="Check Health of Windows Image"
+
+[HKEY_CLASSES_ROOT\DesktopBackground\shell\DismContextMenu\shell\CheckHealth\command]
+@="PowerShell -windowstyle hidden -command \"Start-Process cmd -ArgumentList '/s,/k, Dism /Online /Cleanup-Image /CheckHealth' -Verb runAs\""
+
+[HKEY_CLASSES_ROOT\DesktopBackground\shell\DismContextMenu\shell\RestoreHealth]
+"HasLUAShield"=""
+"MUIVerb"="Restore Windows Health"
+
+[HKEY_CLASSES_ROOT\DesktopBackground\shell\DismContextMenu\shell\RestoreHealth\command]
+@="PowerShell -windowstyle hidden -command \"Start-Process cmd -ArgumentList '/s,/k, Dism /Online /Cleanup-Image /RestoreHealth' -Verb runAs\""
+
+[HKEY_CLASSES_ROOT\DesktopBackground\shell\DismContextMenu\shell\Corruptions]
+"HasLUAShield"=""
+"MUIVerb"="Check for Corruptions"
+
+
+[HKEY_CLASSES_ROOT\DesktopBackground\shell\DismContextMenu\shell\Corruptions\command]
+@="PowerShell -windowstyle hidden -command \"Start-Process cmd -ArgumentList '/s,/k, sfc.exe /scannow' -Verb runAs\""
+
+[HKEY_CLASSES_ROOT\DesktopBackground\shell\DismContextMenu\shell\Corruptions_log]
+"HasLUAShield"=""
+"MUIVerb"="View Scan Logs"
+
+
+[HKEY_CLASSES_ROOT\DesktopBackground\shell\DismContextMenu\shell\Corruptions_log\command]
+@="PowerShell (Select-String [SR] $env:windir\\Logs\\CBS\\CBS.log -s).Line >\"$env:userprofile\\Desktop\\SFC_LOG.txt\""
+
+[HKEY_CLASSES_ROOT\DesktopBackground\shell\DismContextMenu\shell\ISODown]
+"Icon"="WmiPrvSE.exe"
+"MUIVerb"="Download Windows ISO"
+"Position"="Bottom"
+"SubCommands"=""
+
+
+[HKEY_CLASSES_ROOT\DesktopBackground\shell\DismContextMenu\shell\ISODown\shell\ISODown10]
+"HasLUAShield"=""
+"MUIVerb"="Download Windows 10 ISO (official)"
+
+[HKEY_CLASSES_ROOT\DesktopBackground\shell\DismContextMenu\shell\ISODown\shell\ISODown10\command]
+@="cmd /k start www.microsoft.com/en-gb/software-download/windows10 && exit"
+
+
+[HKEY_CLASSES_ROOT\DesktopBackground\shell\DismContextMenu\shell\ISODown\shell\ISODown11]
+"HasLUAShield"=""
+"MUIVerb"="Download Windows 11 ISO (official)"
+
+[HKEY_CLASSES_ROOT\DesktopBackground\shell\DismContextMenu\shell\ISODown\shell\ISODown11\command]
+@="cmd /k start www.microsoft.com/en-gb/software-download/windows11 && exit"
+
+
+[HKEY_CLASSES_ROOT\DesktopBackground\shell\DismContextMenu\shell\ISODown\shell\ISODownUUP1]
+"HasLUAShield"=""
+"MUIVerb"="Download Windows ISO from UUPDump"
+
+[HKEY_CLASSES_ROOT\DesktopBackground\shell\DismContextMenu\shell\ISODown\shell\ISODownUUP1\command]
+@="cmd /k start www.uupdump.net && exit"
+
+[HKEY_CLASSES_ROOT\DesktopBackground\shell\DismContextMenu\shell\ISODown\shell\ISODownUUP2]
+"HasLUAShield"=""
+"MUIVerb"="Download Windows ISO from UUPDump - AdGuard"
+
+[HKEY_CLASSES_ROOT\DesktopBackground\shell\DismContextMenu\shell\ISODown\shell\ISODownUUP2\command]
+@="cmd /k start https://uup.rg-adguard.net && exit"
+
+[HKEY_CLASSES_ROOT\DesktopBackground\shell\DismContextMenu\shell\WinSxS]
+"Icon"="cleanmgr.exe"
+"MUIVerb"="Component Store Cleanup (WinSxS)"
+"Position"="Bottom"
+"SubCommands"=""
+
+
+[HKEY_CLASSES_ROOT\DesktopBackground\shell\DismContextMenu\shell\WinSxS\shell\001menu]
+"HasLUAShield"=""
+"MUIVerb"="Analyze Component Store"
+
+[HKEY_CLASSES_ROOT\DesktopBackground\shell\DismContextMenu\shell\WinSxS\shell\001menu\command]
+@="PowerShell -windowstyle hidden -command \"Start-Process cmd -ArgumentList '/s,/k, DISM /Online /Cleanup-Image /AnalyzeComponentStore' -Verb runAs\""
+
+
+[HKEY_CLASSES_ROOT\DesktopBackground\shell\DismContextMenu\shell\WinSxS\shell\002menu]
+"HasLUAShield"=""
+"MUIVerb"="Clean Up Component Store"
+
+[HKEY_CLASSES_ROOT\DesktopBackground\shell\DismContextMenu\shell\WinSxS\shell\002menu\command]
+@="PowerShell -windowstyle hidden -command \"Start-Process cmd -ArgumentList '/s,/k, DISM /Online /Cleanup-Image /StartComponentCleanup' -Verb runAs\""

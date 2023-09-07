@@ -1,0 +1,14 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon]
+"ShowLogonOptions"=dword:00000001
+"AutoRestartShell"=dword:00000001
+"DeleteRoamingCache"=dword:00000001
+"KeepRASConnections"="1"
+"RasDisable"="1"
+"WinStationsDisabled"="1"
+"SyncForegroundPolicy"=dword:00000000
+"DisableBkGndGroupPolicy"=dword:00000001
+"WaitForNetwork"=dword:00000000
+"SFCDisable"=dword:00000001
+"AllowMultipleTSSessions"=dword:00000000

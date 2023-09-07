@@ -1,0 +1,427 @@
+Windows Registry Editor Version 5.00
+
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Adobe\Adobe Reader\2015\FeatureLockdown]
+"bUpdater"=dword:00000000
+"bUsageMeasurement"=dword:00000000
+"iProtectedView"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Adobe\Adobe Reader\2015\FeatureLockdown\cIPM]
+"bShowMsgAtLaunch"=dword:00000000
+
+
+[HKEY_CURRENT_USER\Software\Adobe\Adobe Reader\2015\Originals]
+"bDisplayAboutDialog"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Adobe\Adobe Reader\2015\JSPrefs]
+"bEnableJS"=dword:00000000
+
+
+[HKEY_CURRENT_USER\Software\Adobe\Adobe Reader\2015\AVAlert\cCheckbox]
+"iESDLangMSGDoNotShowAgain"=dword:00000001
+
+[HKEY_CURRENT_USER\Software\Adobe\Adobe Reader\2015\AVGeneral]
+"bCrashReporterEnabled"=dword:00000000
+"bCheckGPUAtStartup"=dword:00000000
+"bLogPrefsUsageData"=dword:00000000
+"bPromptBeforeClosingMultipleTabs"=dword:00000000
+"bForceQuitApp"=dword:00000001
+
+[HKEY_CURRENT_USER\Software\Adobe\Adobe Reader\2015\Collab\cDocumentCenter]
+"bDefault"=dword:00000000
+"bDefaultFD"=dword:00000000
+"tURL"=-
+
+[HKEY_CURRENT_USER\Software\Adobe\Adobe Reader\2015\PICommonPrefs]
+"bSpellingUnderline"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Adobe\Adobe Reader\2015\PICommonPrefs\cPICommonPrefs\cSpelling]
+"bSpellingUnderline"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Adobe\Adobe Reader\2015\Updater]
+"bFirstTimeAppHasRun"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Adobe\Adobe Reader\2015\HomeWelcome]
+"bIsReaderUpdated"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Adobe\Adobe Reader\2015\EnableProcAnalyticsLogging]
+"bEnableLogging"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Adobe\Adobe Reader\2015\ADM]
+"bEnableADMAnalytics"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Adobe\Adobe Reader\2015\AVTracker]
+"bLoadOnStart"=dword:00000000
+
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Adobe\Adobe Reader\2017\FeatureLockdown]
+"bUpdater"=dword:00000000
+"bUsageMeasurement"=dword:00000000
+"iProtectedView"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Adobe\Adobe Reader\2017\FeatureLockdown\cIPM]
+"bShowMsgAtLaunch"=dword:00000000
+
+
+[HKEY_CURRENT_USER\Software\Adobe\Adobe Reader\2017\Originals]
+"bDisplayAboutDialog"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Adobe\Adobe Reader\2017\JSPrefs]
+"bEnableJS"=dword:00000000
+
+
+[HKEY_CURRENT_USER\Software\Adobe\Adobe Reader\2017\AVAlert\cCheckbox]
+"iESDLangMSGDoNotShowAgain"=dword:00000001
+
+[HKEY_CURRENT_USER\Software\Adobe\Adobe Reader\2017\AVGeneral]
+"bCrashReporterEnabled"=dword:00000000
+"bCheckGPUAtStartup"=dword:00000000
+"bLogPrefsUsageData"=dword:00000000
+"bPromptBeforeClosingMultipleTabs"=dword:00000000
+"bForceQuitApp"=dword:00000001
+
+[HKEY_CURRENT_USER\Software\Adobe\Adobe Reader\2017\Collab\cDocumentCenter]
+"bDefault"=dword:00000000
+"bDefaultFD"=dword:00000000
+"tURL"=-
+
+[HKEY_CURRENT_USER\Software\Adobe\Adobe Reader\2017\PICommonPrefs]
+"bSpellingUnderline"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Adobe\Adobe Reader\2017\PICommonPrefs\cPICommonPrefs\cSpelling]
+"bSpellingUnderline"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Adobe\Adobe Reader\2017\Updater]
+"bFirstTimeAppHasRun"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Adobe\Adobe Reader\2017\HomeWelcome]
+"bIsReaderUpdated"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Adobe\Adobe Reader\2017\EnableProcAnalyticsLogging]
+"bEnableLogging"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Adobe\Adobe Reader\2017\ADM]
+"bEnableADMAnalytics"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Adobe\Adobe Reader\2017\AVTracker]
+"bLoadOnStart"=dword:00000000
+
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Adobe\Adobe Reader\11.0\FeatureLockdown]
+"bUpdater"=dword:00000000
+"bUsageMeasurement"=dword:00000000
+"iProtectedView"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Adobe\Adobe Reader\11.0\FeatureLockdown\cIPM]
+"bShowMsgAtLaunch"=dword:00000000
+
+
+[HKEY_CURRENT_USER\Software\Adobe\Adobe Reader\11.0\Originals]
+"bDisplayAboutDialog"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Adobe\Adobe Reader\11.0\JSPrefs]
+"bEnableJS"=dword:00000000
+
+
+[HKEY_CURRENT_USER\Software\Adobe\Adobe Reader\11.0\AVAlert\cCheckbox]
+"iESDLangMSGDoNotShowAgain"=dword:00000001
+
+[HKEY_CURRENT_USER\Software\Adobe\Adobe Reader\11.0\AVGeneral]
+"bCrashReporterEnabled"=dword:00000000
+"bCheckGPUAtStartup"=dword:00000000
+"bLogPrefsUsageData"=dword:00000000
+"bPromptBeforeClosingMultipleTabs"=dword:00000000
+"bForceQuitApp"=dword:00000001
+
+[HKEY_CURRENT_USER\Software\Adobe\Adobe Reader\11.0\Collab\cDocumentCenter]
+"bDefault"=dword:00000000
+"bDefaultFD"=dword:00000000
+"tURL"=-
+
+[HKEY_CURRENT_USER\Software\Adobe\Adobe Reader\11.0\PICommonPrefs]
+"bSpellingUnderline"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Adobe\Adobe Reader\11.0\PICommonPrefs\cPICommonPrefs\cSpelling]
+"bSpellingUnderline"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Adobe\Adobe Reader\11.0\Updater]
+"bFirstTimeAppHasRun"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Adobe\Adobe Reader\11.0\HomeWelcome]
+"bIsReaderUpdated"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Adobe\Adobe Reader\11.0\EnableProcAnalyticsLogging]
+"bEnableLogging"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Adobe\Adobe Reader\11.0\ADM]
+"bEnableADMAnalytics"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Adobe\Adobe Reader\11.0\AVTracker]
+"bLoadOnStart"=dword:00000000
+
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Adobe\Adobe Reader\DC\FeatureLockdown]
+"bUpdater"=dword:00000000
+"bUsageMeasurement"=dword:00000000
+"iProtectedView"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Adobe\Adobe Reader\DC\FeatureLockdown\cIPM]
+"bShowMsgAtLaunch"=dword:00000000
+
+
+[HKEY_CURRENT_USER\Software\Adobe\Adobe Reader\DC\Originals]
+"bDisplayAboutDialog"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Adobe\Adobe Reader\DC\JSPrefs]
+"bEnableJS"=dword:00000000
+
+
+[HKEY_CURRENT_USER\Software\Adobe\Adobe Reader\DC\AVAlert\cCheckbox]
+"iESDLangMSGDoNotShowAgain"=dword:00000001
+
+[HKEY_CURRENT_USER\Software\Adobe\Adobe Reader\DC\AVGeneral]
+"bCrashReporterEnabled"=dword:00000000
+"bCheckGPUAtStartup"=dword:00000000
+"bLogPrefsUsageData"=dword:00000000
+"bPromptBeforeClosingMultipleTabs"=dword:00000000
+"bForceQuitApp"=dword:00000001
+
+[HKEY_CURRENT_USER\Software\Adobe\Adobe Reader\DC\Collab\cDocumentCenter]
+"bDefault"=dword:00000000
+"bDefaultFD"=dword:00000000
+"tURL"=-
+
+[HKEY_CURRENT_USER\Software\Adobe\Adobe Reader\DC\PICommonPrefs]
+"bSpellingUnderline"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Adobe\Adobe Reader\DC\PICommonPrefs\cPICommonPrefs\cSpelling]
+"bSpellingUnderline"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Adobe\Adobe Reader\DC\Updater]
+"bFirstTimeAppHasRun"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Adobe\Adobe Reader\DC\HomeWelcome]
+"bIsReaderUpdated"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Adobe\Adobe Reader\DC\EnableProcAnalyticsLogging]
+"bEnableLogging"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Adobe\Adobe Reader\DC\ADM]
+"bEnableADMAnalytics"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Adobe\Adobe Reader\DC\AVTracker]
+"bLoadOnStart"=dword:00000000
+
+Windows Registry Editor Version 5.00
+
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Adobe\Adobe Acrobat\2015\FeatureLockdown]
+"bUpdater"=dword:00000000
+"bUsageMeasurement"=dword:00000000
+"iProtectedView"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Adobe\Adobe Acrobat\2015\FeatureLockdown\cIPM]
+"bShowMsgAtLaunch"=dword:00000000
+
+
+[HKEY_CURRENT_USER\Software\Adobe\Adobe Acrobat\2015\Originals]
+"bDisplayAboutDialog"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Adobe\Adobe Acrobat\2015\JSPrefs]
+"bEnableJS"=dword:00000000
+
+
+[HKEY_CURRENT_USER\Software\Adobe\Adobe Acrobat\2015\AVAlert\cCheckbox]
+"iESDLangMSGDoNotShowAgain"=dword:00000001
+
+[HKEY_CURRENT_USER\Software\Adobe\Adobe Acrobat\2015\AVGeneral]
+"bCrashReporterEnabled"=dword:00000000
+"bCheckGPUAtStartup"=dword:00000000
+"bLogPrefsUsageData"=dword:00000000
+"bPromptBeforeClosingMultipleTabs"=dword:00000000
+"bForceQuitApp"=dword:00000001
+
+[HKEY_CURRENT_USER\Software\Adobe\Adobe Acrobat\2015\Collab\cDocumentCenter]
+"bDefault"=dword:00000000
+"bDefaultFD"=dword:00000000
+"tURL"=-
+
+[HKEY_CURRENT_USER\Software\Adobe\Adobe Acrobat\2015\PICommonPrefs]
+"bSpellingUnderline"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Adobe\Adobe Acrobat\2015\PICommonPrefs\cPICommonPrefs\cSpelling]
+"bSpellingUnderline"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Adobe\Adobe Acrobat\2015\Updater]
+"bFirstTimeAppHasRun"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Adobe\Adobe Acrobat\2015\HomeWelcome]
+"bIsAcrobatUpdated"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Adobe\Adobe Acrobat\2015\EnableProcAnalyticsLogging]
+"bEnableLogging"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Adobe\Adobe Acrobat\2015\ADM]
+"bEnableADMAnalytics"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Adobe\Adobe Acrobat\2015\AVTracker]
+"bLoadOnStart"=dword:00000000
+
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Adobe\Adobe Acrobat\2017\FeatureLockdown]
+"bUpdater"=dword:00000000
+"bUsageMeasurement"=dword:00000000
+"iProtectedView"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Adobe\Adobe Acrobat\2017\FeatureLockdown\cIPM]
+"bShowMsgAtLaunch"=dword:00000000
+
+
+[HKEY_CURRENT_USER\Software\Adobe\Adobe Acrobat\2017\Originals]
+"bDisplayAboutDialog"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Adobe\Adobe Acrobat\2017\JSPrefs]
+"bEnableJS"=dword:00000000
+
+
+[HKEY_CURRENT_USER\Software\Adobe\Adobe Acrobat\2017\AVAlert\cCheckbox]
+"iESDLangMSGDoNotShowAgain"=dword:00000001
+
+[HKEY_CURRENT_USER\Software\Adobe\Adobe Acrobat\2017\AVGeneral]
+"bCrashReporterEnabled"=dword:00000000
+"bCheckGPUAtStartup"=dword:00000000
+"bLogPrefsUsageData"=dword:00000000
+"bPromptBeforeClosingMultipleTabs"=dword:00000000
+"bForceQuitApp"=dword:00000001
+
+[HKEY_CURRENT_USER\Software\Adobe\Adobe Acrobat\2017\Collab\cDocumentCenter]
+"bDefault"=dword:00000000
+"bDefaultFD"=dword:00000000
+"tURL"=-
+
+[HKEY_CURRENT_USER\Software\Adobe\Adobe Acrobat\2017\PICommonPrefs]
+"bSpellingUnderline"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Adobe\Adobe Acrobat\2017\PICommonPrefs\cPICommonPrefs\cSpelling]
+"bSpellingUnderline"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Adobe\Adobe Acrobat\2017\Updater]
+"bFirstTimeAppHasRun"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Adobe\Adobe Acrobat\2017\HomeWelcome]
+"bIsAcrobatUpdated"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Adobe\Adobe Acrobat\2017\EnableProcAnalyticsLogging]
+"bEnableLogging"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Adobe\Adobe Acrobat\2017\ADM]
+"bEnableADMAnalytics"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Adobe\Adobe Acrobat\2017\AVTracker]
+"bLoadOnStart"=dword:00000000
+
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Adobe\Adobe Acrobat\11.0\FeatureLockdown]
+"bUpdater"=dword:00000000
+"bUsageMeasurement"=dword:00000000
+"iProtectedView"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Adobe\Adobe Acrobat\11.0\FeatureLockdown\cIPM]
+"bShowMsgAtLaunch"=dword:00000000
+
+
+[HKEY_CURRENT_USER\Software\Adobe\Adobe Acrobat\11.0\Originals]
+"bDisplayAboutDialog"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Adobe\Adobe Acrobat\11.0\JSPrefs]
+"bEnableJS"=dword:00000000
+
+
+[HKEY_CURRENT_USER\Software\Adobe\Adobe Acrobat\11.0\AVAlert\cCheckbox]
+"iESDLangMSGDoNotShowAgain"=dword:00000001
+
+[HKEY_CURRENT_USER\Software\Adobe\Adobe Acrobat\11.0\AVGeneral]
+"bCrashReporterEnabled"=dword:00000000
+"bCheckGPUAtStartup"=dword:00000000
+"bLogPrefsUsageData"=dword:00000000
+"bPromptBeforeClosingMultipleTabs"=dword:00000000
+"bForceQuitApp"=dword:00000001
+
+[HKEY_CURRENT_USER\Software\Adobe\Adobe Acrobat\11.0\Collab\cDocumentCenter]
+"bDefault"=dword:00000000
+"bDefaultFD"=dword:00000000
+"tURL"=-
+
+[HKEY_CURRENT_USER\Software\Adobe\Adobe Acrobat\11.0\PICommonPrefs]
+"bSpellingUnderline"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Adobe\Adobe Acrobat\11.0\PICommonPrefs\cPICommonPrefs\cSpelling]
+"bSpellingUnderline"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Adobe\Adobe Acrobat\11.0\Updater]
+"bFirstTimeAppHasRun"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Adobe\Adobe Acrobat\11.0\HomeWelcome]
+"bIsAcrobatUpdated"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Adobe\Adobe Acrobat\11.0\EnableProcAnalyticsLogging]
+"bEnableLogging"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Adobe\Adobe Acrobat\11.0\ADM]
+"bEnableADMAnalytics"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Adobe\Adobe Acrobat\11.0\AVTracker]
+"bLoadOnStart"=dword:00000000
+
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Adobe\Adobe Acrobat\DC\FeatureLockdown]
+"bUpdater"=dword:00000000
+"bUsageMeasurement"=dword:00000000
+"iProtectedView"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Adobe\Adobe Acrobat\DC\FeatureLockdown\cIPM]
+"bShowMsgAtLaunch"=dword:00000000
+
+
+[HKEY_CURRENT_USER\Software\Adobe\Adobe Acrobat\DC\Originals]
+"bDisplayAboutDialog"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Adobe\Adobe Acrobat\DC\JSPrefs]
+"bEnableJS"=dword:00000000
+
+
+[HKEY_CURRENT_USER\Software\Adobe\Adobe Acrobat\DC\AVAlert\cCheckbox]
+"iESDLangMSGDoNotShowAgain"=dword:00000001
+
+[HKEY_CURRENT_USER\Software\Adobe\Adobe Acrobat\DC\AVGeneral]
+"bCrashReporterEnabled"=dword:00000000
+"bCheckGPUAtStartup"=dword:00000000
+"bLogPrefsUsageData"=dword:00000000
+"bPromptBeforeClosingMultipleTabs"=dword:00000000
+"bForceQuitApp"=dword:00000001
+
+[HKEY_CURRENT_USER\Software\Adobe\Adobe Acrobat\DC\Collab\cDocumentCenter]
+"bDefault"=dword:00000000
+"bDefaultFD"=dword:00000000
+"tURL"=-
+
+[HKEY_CURRENT_USER\Software\Adobe\Adobe Acrobat\DC\PICommonPrefs]
+"bSpellingUnderline"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Adobe\Adobe Acrobat\DC\PICommonPrefs\cPICommonPrefs\cSpelling]
+"bSpellingUnderline"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Adobe\Adobe Acrobat\DC\Updater]
+"bFirstTimeAppHasRun"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Adobe\Adobe Acrobat\DC\HomeWelcome]
+"bIsAcrobatUpdated"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Adobe\Adobe Acrobat\DC\EnableProcAnalyticsLogging]
+"bEnableLogging"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Adobe\Adobe Acrobat\DC\ADM]
+"bEnableADMAnalytics"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Adobe\Adobe Acrobat\DC\AVTracker]
+"bLoadOnStart"=dword:00000000

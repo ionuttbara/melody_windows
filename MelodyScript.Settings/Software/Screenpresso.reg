@@ -1,0 +1,5 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Learnpulse\Screenpresso\Policies]
+"NoUpdate"=dword:00000000
+"NoStats"=dword:00000000

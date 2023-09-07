@@ -1,0 +1,23 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\Control Panel\Keyboard]
+"KeyboardDelay"="0"
+"KeyboardSpeed"="0"
+"InitialKeyboardIndicators"="2"
+
+[HKEY_USERS\.DEFAULT\Control Panel\Keyboard]
+"KeyboardDelay"="0"
+"KeyboardSpeed"="0"
+"InitialKeyboardIndicators"="2"
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\kbdclass\Parameters]
+"KeyboardDataQueueSize"=dword:00000010
+
+[HKEY_CURRENT_USER\Control Panel\Accessibility\Keyboard Preference]
+"On"="1"
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\i8042prt\Parameters]
+"CrashOnCtrlScroll"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\kbdhid\Parameters]
+"CrashOnCtrlScroll"=dword:00000001

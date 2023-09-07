@@ -1,0 +1,48 @@
+Windows Registry Editor Version 5.00
+
+[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\MiniNT]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\System]
+"EnableFontProviders"=dword:00000001
+"DisableHHDEP"=dword:00000001
+"DisableForceUnload"=dword:00000001
+"SlowLinkDetectEnabled"=dword:00000000
+"DeleteRoamingCache"=dword:00000001
+"CompatibleRUPSecurity"=dword:00000001
+"DisableLockScreenAppNotifications"=dword:00000001
+"RSoPLogging"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\kernel]
+"DpcWatchdogProfileOffset"=dword:00000000
+"DpcTimeout"=dword:00000000
+"DpcWatchdogPeriod"=dword:00000000
+"DisableExceptionChainValidation"=dword:00000001
+"MaximumSharedReadyQueueSize"=dword:00000001
+"DisableAutoBoost"=dword:00000001
+"DistributeTimers"=dword:00000001
+"IdealDpcRate"=dword:00000001
+"MaximumDpcQueueDepth"=dword:00000001
+"MinimumDpcRate"=dword:00000001
+"ThreadDpcEnable"=dword:00000001
+"AdjustDpcThreshold"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager]
+"AllowProtectedRenames"="0"
+"ProtectionMode"=dword:00000000
+"ObjectSecurityMode"=dword:00000000
+"AuditBaseDirectories"=dword:00000000
+"AuditBaseObjects"=dword:00000000
+"EnableMCA"=dword:00000000
+"EnableMCE"=dword:00000000
+"SafeDllSearchMode"=dword:00000000
+"SafeProcessSearchMode"=dword:00000000
+"EnableTimerWatchdog"=-
+"HeapDeCommitFreeBlockThreshold"=dword:00040000
+"ResourceTimeoutCount"=dword:00000002
+"AutoChkSkipSystemPartition"=dword:00000001
+"AutoChkTimeOut"=dword:00000000
+"BootExecute"=-
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Windows]
+"RequireSignedAppInit_DLLs"=dword:00000000
+

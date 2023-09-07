@@ -1,0 +1,7 @@
+Windows Registry Editor Version 5.00
+
+[-HKEY_CLASSES_ROOT\Directory\shellex\ContextMenuHandlers\ FileSyncEx]
+
+[-HKEY_CLASSES_ROOT\*\shellex\ContextMenuHandlers\ FileSyncEx]
+
+[-HKEY_CLASSES_ROOT\lnkfile\shellex\ContextMenuHandlers\ FileSyncEx]
