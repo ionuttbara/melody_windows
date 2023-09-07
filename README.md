@@ -18,8 +18,8 @@
 <table>
 <tr>
 <td>
-  
-**Melody Tool for Windows ** is a bundled app  for **Windows 7/8.x/10/11** which consists of several **high-quality** *tweaks* that aim to **disable telemetry**, **optimizing windows updates**, **optimizing for gaming and better input latency**, **solve some unwanted security vulnerabilities** and **decreases** the number of loaded **annoncy elements**, thus **loading** the Windows **faster and be for better productivity**.
+
+**Melody Tool for Windows ** is a bundled app for **Windows 7/8.x/10/11** which consists of several **high-quality** *tweaks* that aim to **disable telemetry**, **optimizing windows updates**, **optimizing for gaming and better input latency**, **solve some unwanted security vulnerabilities** and **decreases** the number of loaded **annoncy elements**, thus **loading** the Windows **faster and be for better productivity**.
 
 </td>
 </tr>
@@ -82,7 +82,7 @@
 |Telemetry Data Collection| Disables Telemetry and Data Collection in Windows (registry part)| Windows 7/8/10/11 or newer|
 |Windows Update - Disable Driver Searching| |Disables Driver Searching with Windows Update|| Windows NT|
 |Windows Update - Derivery Optimization| Disables Delivery Optimization| Windows 10 or newer
-|Windows Update| Optimizes Windows Update. Disables notifications and deferes some Quality Updates and Features Updates |Windows 10 or newer 
+|Windows Update| Optimizes Windows Update. Disables notifications and deferes some Quality Updates and Features Updates |Windows 10 or newer
 |Xbox Gaming Optimization| Fixing errors with Teredo Connectivity (also in TCP-IP optimization) and disables GameBar| Windows 10 1511 or newer.
 |Removal of Drive Indicator Icon in This PC | Removing drive indicator it will show infos in 3 rows instead of one. (name , size and file system type) | Windows 7 or newer
 
@@ -99,7 +99,7 @@
 | Ditto Clipboard (modified) | Replaces Windows Clipboard (Win+V) shit-like tool. This tool is not require Microsoft Account or Telemetry. |
 
 ##### 3rd Party Software Optimization
-> In this part i have a research to disable 3rd party Updaters , metrics and telemetry. 
+> In this part i have a research to disable 3rd party Updaters , metrics and telemetry.
 > Some config!
 urations are policies and be found to [admx.help].
 
@@ -107,7 +107,7 @@ urations are policies and be found to [admx.help].
 | ------ | ------ |------ |
 |Office Tweaks| Disables Office Telemetry and data collection | Office 2013 or newer|
 |Chrome Tweaks| Adds uBlock Origin Extension, Tweaking DNS Client of Browser | Chrome 96 or newer|
-|Edge  Tweaks| Adds uBlock Origin Extension, Tweaking DNS Client of Browser | Edge 92 or newer|
+|Edge Tweaks| Adds uBlock Origin Extension, Tweaking DNS Client of Browser | Edge 92 or newer|
 |Chromium Browser Updater Tweaks| Optimizes Update Pipeline |Chrome/Edge Updater 1.42 or newer|
 
 ## Sources
