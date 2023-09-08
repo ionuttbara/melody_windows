@@ -2,7 +2,7 @@
 <h1 align="center">
  <img src=https://github.com/jbara2002/melody_windows/assets/76656855/58afdbe0-afee-4afc-8ec9-2f4037d7e174> </img>
 </h1>
-      
+
 <p align="center">
   <a href="#about">About</a> •
   <a href="#installation">Installation</a> •

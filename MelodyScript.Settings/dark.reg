@@ -1,5 +1,7 @@
 Windows Registry Editor Version 5.00
 
+; sets black color and enables color accent on title bars
+
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\DWM]
 "ColorizationColor"=dword:ff2b2b2b
 "ColorizationAfterglow"=dword:ff2b2b2b

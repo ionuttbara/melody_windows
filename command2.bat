@@ -1,11 +1,11 @@
-:--------------------------------------   
+:--------------------------------------
 :: Starting the script
 title [0 percent] Melody Script 14 & pushd "%CD%" & CD /D "%~dp0" >nul
-:--------------------------------------   
+:--------------------------------------
 CLS & echo Please wait...
 "powershell.exe" Enable-WindowsOptionalFeature -Online -FeatureName LegacyComponents -all -NoRestart
 "powershell.exe" Enable-WindowsOptionalFeature -Online -FeatureName DirectPlay -all -NoRestart
-:--------------------------------------   
+:--------------------------------------
 :: Configuration of unsplitting boot optimization
 
 :: Boot Parameters
@@ -41,40 +41,40 @@ bcdedit.exe /set NOINTEGRITYCHECKS OFF >nul
 bcdedit.exe /set TESTSIGNING OFF >nul
 bcdedit.exe /set x2apicpolicy enable >nul
 bcdedit.exe /set firstmegabytepolicy UseAll >nul
-:--------------------------------------   
+:--------------------------------------
 
-:--------------------------------------   
+:--------------------------------------
 :: cleaning Windows AuditPol Logging
 echo Cleaning Windows auditpol log...
 Auditpol.exe /set /category:* /Success:disable /failure:disable >nul
 Auditpol.exe /remove /allusers >nul
 Auditpol.exe /clear /y >nul
-:--------------------------------------   
+:--------------------------------------
 
-:--------------------------------------   
+:--------------------------------------
 :: Unsplit Services
 for /f %%a in ('Reg query HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\InstallService\Stubification /v "EnableAppOffloading" /s ^| findstr  "HKEY"') do (
 for /f %%i in ('Reg query "%%a" /v "EnableAppOffloading" ^| findstr "HKEY"') do (Reg add "%%i" /v "EnableAppOffloading" /t Reg_DWORD /d "0" /f) >nul)
 for /f "tokens=2 delims==" %%i in ('wmic os get TotalVisibleMemorySize /format:value') do set mem=%%i
 set /a ram=%mem% + 1024000
 reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control" /v "SvcHostSplitThresholdInKB" /t REG_DWORD /d "%ram%" /f
-:--------------------------------------   
+:--------------------------------------
 
-:--------------------------------------   
+:--------------------------------------
 :: Registry Tweaks Applying
 title [5 percent] Melody Script 14
 CLS & echo Applying registry tweaks...
 FOR /R %%f IN (*.reg) DO regedit.exe /s "%%f" >nul
 CLS & echo Applying System Registry Tweaks...
-FOR /R %%f IN (*.reg) DO PowerRun.exe  regedit.exe /s "%%f" >nul
-:--------------------------------------   
+FOR /R %%f IN (*.reg) DO PowerRun.exe regedit.exe /s "%%f" >nul
+:--------------------------------------
 
-:--------------------------------------   
+:--------------------------------------
 :: Network Tweaks
 title [10 percent] Melody Script 14
 CLS & echo Applying network tweaks...
 
-:: Autotuning Internet Speed and making it persistent 
+:: Autotuning Internet Speed and making it persistent
 netsh.exe interface tcp set global autotuning = experimental >nul
 netsh.exe interface tcp set heuristics disabled >nul
 
@@ -85,7 +85,7 @@ netsh.exe interface tcp set supplemental InternetCustom congestionprovider=ctcp 
 
 :: Reducing CPU for veryfast Internet Connections
 netsh.exe int isatap set state disable
-netsh.exe interface tcp set global chimney=disabled >nul 
+netsh.exe interface tcp set global chimney=disabled >nul
 netsh.exe interface tcp set global dca=enabled >nul
 netsh.exe interface tcp set global rsc=disabled >nul
 netsh.exe interface tcp set global ecncapability=enabled >nul
@@ -108,7 +108,7 @@ netsh.exe interface tcp set global rss=enabled >nul
 :: some powershell.exe commands which apply to all present network adapters (optimizations for I/O Overhead and getting better ping in worse internet connections)
 start /wait PowerRun.exe powershell.exe "Disable-NetAdapterChecksumOffload -Name "*"" >nul
 start /wait PowerRun.exe powershell.exe "Disable-NetAdapterLso -Name "*"" >nul
-start /wait PowerRun.exe powershell.exe "Set-NetOffloadGlobalSetting -PacketCoalescingFilter disabled" >nul 
+start /wait PowerRun.exe powershell.exe "Set-NetOffloadGlobalSetting -PacketCoalescingFilter disabled" >nul
 start /wait PowerRun.exe powershell.exe "Disable-NetAdapterRsc -Name "*"" >nul
 start /wait powershell.exe Disable-NetAdapterBinding -Name "*" -ComponentID ms_pacer
 start /wait powershell.exe Set-NetAdapterRSS -Name "*" -BaseProcessorNumber 2
@@ -124,7 +124,7 @@ netsh.exe advfirewall firewall set rule group="Microsoft Family Safety" new enab
 
 :: Adding NetBios Options
 for /f %%k in ('reg query HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\services\NetBT\Parameters\Interfaces') do (
-reg add %%k /v NetbiosOptions /t reg_dword /d 2 /f 
+reg add %%k /v NetbiosOptions /t reg_dword /d 2 /f
 ) >nul
 
 
@@ -177,52 +177,52 @@ for /f "tokens=3*" %%a in ('reg query "HKLM\Software\Microsoft\Windows NT\Curren
 
 :: Disabling Nagle's Algorithm for better Gaming Latency
 for /f %%r in ('Reg query "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters\Interfaces" /f "1" /d /s^|Findstr HKEY_') do (
-Reg add %%r /v "TCPNoDelay" /t Reg_DWORD /d "1" /f 
+Reg add %%r /v "TCPNoDelay" /t Reg_DWORD /d "1" /f
 Reg add %%r /v "TcpAckFrequency" /t Reg_DWORD /d "1" /f
 ) >nul
 
-:--------------------------------------   
+:--------------------------------------
 
 
-:--------------------------------------   
+:--------------------------------------
 :: Disable Hibernation (and Hiberboot), ReserveStorage to get free up to >10GB of Windows Storage
 title [20 percent] Melody Script 14
 powercfg -h off & DISM /Online /Set-ReservedStorageState /State:Disabled & reagentc /disable >nul
-:--------------------------------------   
+:--------------------------------------
 
-:--------------------------------------   
+:--------------------------------------
 :: Configuration of Icons
 title [40 percent] Melody Script 14
 xcopy "GalleryInc.Core.MelodyScript.Configurations\Icons\*" "C:\ProgramData\Melody\Icon\" /y /e /h /c /i /d >nul
-:--------------------------------------   
+:--------------------------------------
 
-:--------------------------------------   
+:--------------------------------------
 :: Configuration of HOSTS
 title [50 percent] Melody Script 14
 IF EXIST %windir%\SYSTEM32\DRIVERS\ETC\HOSTS*.* ATTRIB +A -H -R -S %windir%\SYSTEM32\DRIVERS\ETC\HOSTS*.*>NUL & IF EXIST %windir%\SYSTEM32\DRIVERS\ETC\HOSTS.BACK DEL %windir%\SYSTEM32\DRIVERS\ETC\HOSTS.BACK>NUL
 IF EXIST %windir%\SYSTEM32\DRIVERS\ETC\HOSTS REN %windir%\SYSTEM32\DRIVERS\ETC\HOSTS HOSTS.BACK>NUL & IF EXIST %windir%\SYSTEM32\DRIVERS\ETC\NUL COPY /Y "GalleryInc.Core.MelodyScript.Configurations\Hosts\HOSTS" %windir%\SYSTEM32\DRIVERS\ETC>NUL & IF EXIST %windir%\SYSTEM32\DRIVERS\ETC\HOSTS.BACK ECHO Hosts Applied.
-:--------------------------------------   
+:--------------------------------------
 
 CLS & echo Adding root certificates...
-:--------------------------------------   
+:--------------------------------------
 :: Certificate Installation
 title [90 percent] Melody Script 14
 @for /f "delims=" %%f in ('dir /b %~dp0\GalleryInc.Core.MelodyScript.Configurations\certificates\*') do (
 certutil -f -addstore Root "%~dp0\GalleryInc.Core.MelodyScript.Configurations\certificates\%%f"
 )
 echo Certificates added.
-:--------------------------------------   
+:--------------------------------------
 
-:--------------------------------------   
+:--------------------------------------
 ::Toggler Installer
 title [100 percent] Melody Script 14
 start /wait cmd.exe /k "MelodyScript.IntegratedTools\Toggler\Toggler.bat"
-:--------------------------------------   
+:--------------------------------------
 
-:--------------------------------------   
+:--------------------------------------
 :: echo
 echo Melody Script Applied. This PC will reboot.
 xcopy "MelodyScript.IntegratedTools\EmptyStandbyList\*" %windir% /y /e /h /c /i
 start /wait powershell.exe %windir%\install.ps1
 shutdown /r /f /t 0
-:--------------------------------------   
+:--------------------------------------
