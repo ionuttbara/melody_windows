@@ -708,3 +708,29 @@ uploadrar.com##.banner2 > .as_ads_guard > .adsbygoogle
 uploadrar.com##.sharefile > ul
 uploadrar.com##.blockpage > .adsbygoogle
 uploadrar.com##div.download0page > .blockpage
+
+! 2023-02-06 https://ak537.anime-kage.eu
+ak537.anime-kage.eu##.banner-container
+
+! 2023-09-08 https://www.g4media.ro
+||cdn.g4media.ro/wp-content/uploads/2023/07/www.SpitalulSfantulSava.ro_.gif$image
+www.g4media.ro##.bot-navigation
+www.g4media.ro###primary > [href="/autentificare"]
+www.g4media.ro##.comment-notes
+
+! 2023-09-08 https://www.neowin.net
+www.neowin.net##div.widget-header:nth-of-type(2)
+www.neowin.net##div.widget-content:nth-of-type(3)
+||cdn.neowin.com/news/images/uploaded/2023/04/1682607425_google-news-button-s.png$image
+||cdn.neowin.com/news/images/uploaded/2023/04/1682624434_test_1.png$image
+www.neowin.net###neowin_siderail_4 > script
+www.neowin.net##.comments-loaded.w-col-8.d-col-8.comments-col
+www.neowin.net###neowin_siderail_2
+www.neowin.net##.widget-community.widget
+www.neowin.net###sidebar > .widget-content
+www.neowin.net###sidebar > .widget-header
+www.neowin.net##.scrollto.comment-link
+www.neowin.net##.stickyAd.widget-ad-sidebar-footer.widget-ad.widget
+www.neowin.net##.header-banner-ads.header-banner
+www.neowin.net###content > .comments
+
