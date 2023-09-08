@@ -734,3 +734,144 @@ www.neowin.net##.stickyAd.widget-ad-sidebar-footer.widget-ad.widget
 www.neowin.net##.header-banner-ads.header-banner
 www.neowin.net###content > .comments
 
+
+! 2023-02-06 https://ak537.anime-kage.eu
+ak537.anime-kage.eu##.banner-container
+
+! 2023-09-08 https://edition.cnn.com
+edition.cnn.com##.product-zone-10-observer.product-zone--t-light.product-zone > .has-pseudo-class-fix-layout--full-width.product-zone__inner
+edition.cnn.com##.cnn-app-display-none.footer
+edition.cnn.com##.svelte-m29xxe
+edition.cnn.com##div.ad-slot-rail:nth-of-type(2)
+edition.cnn.com##div.ad-slot-rail:nth-of-type(4)
+edition.cnn.com##div.ad-slot-rail:nth-of-type(6)
+edition.cnn.com##.layout-with-rail__rail.layout__rail
+edition.cnn.com##.zone__outer
+edition.cnn.com##.zone-11-observer.zone--t-dark.zone > .has-pseudo-class-fix-layout--6-4.zone__inner
+edition.cnn.com##.product-zone-8-observer.product-zone--t-light.product-zone > .has-pseudo-class-fix-layout--full-width.product-zone__inner
+edition.cnn.com##.zone-9-observer.zone--t-light.zone > .has-pseudo-class-fix-layout--6-4.zone__inner
+
+! 2023-09-08 https://www.bbc.com
+www.bbc.com##.gs-u-clearfix.blue-tit
+www.bbc.com##.nw-o-news-branding
+
+! 2023-09-08 https://www.foxnews.com
+www.foxnews.com##.site-footer
+||stage-static.foxnews.com/static/isa/img/proud-american-htu.png$image
+www.foxnews.com##.fox-news-first.item-newsletter.item
+
+! 2023-09-08 https://www.antena3.ro
+www.antena3.ro##footer
+www.antena3.ro##div.home.bannerGrey.section:nth-of-type(21)
+www.antena3.ro##div.home.bannerGrey.section:nth-of-type(19)
+www.antena3.ro###ivm-inread
+www.antena3.ro##.dark-grey.section
+www.antena3.ro##.partners.grey.section
+www.antena3.ro##.bannerGrey.section
+www.antena3.ro##.ivmWrapper
+www.antena3.ro##.player
+www.antena3.ro##.tags
+
+! 2023-09-08 https://a1.ro
+a1.ro##.top-video.video-section
+
+! 2023-09-08 https://observatornews.ro
+observatornews.ro##p:nth-of-type(21)
+observatornews.ro##.taguri
+
+! 2023-09-08 https://www.realitatea.net
+www.realitatea.net##.rnet-advert-970-250-m-300-250.advert-placeholder.flex-row.w-100.justify-content-center.d-flex
+www.realitatea.net##div.container-basic-realitatea-advert:nth-of-type(1)
+www.realitatea.net##div.container-basic-realitatea-advert:nth-of-type(2)
+www.realitatea.net##div.rnet-advert-realitatea-970-250-only-desktop.flex-row.w-100.justify-content-center.d-flex:nth-of-type(25)
+www.realitatea.net##div.rnet-advert-realitatea-970-250-only-desktop.flex-row.w-100.justify-content-center.d-flex:nth-of-type(23)
+www.realitatea.net##div.rnet-advert-realitatea-970-250-only-desktop.flex-row.w-100.justify-content-center.d-flex:nth-of-type(27)
+www.realitatea.net##div.rnet-advert-realitatea-970-250-only-desktop.flex-row.w-100.justify-content-center.d-flex:nth-of-type(21)
+||media.realitatea.net/multimedia/footer/footer-desktop-*$image
+www.realitatea.net##.preview.progressive.realitatea-footer
+www.realitatea.net##div.rnet-advert-realitatea-970-250-only-desktop.flex-row.w-100.justify-content-center.d-flex:nth-of-type(33)
+www.realitatea.net##div.rnet-advert-realitatea-970-250-only-desktop.flex-row.w-100.justify-content-center.d-flex:nth-of-type(29)
+www.realitatea.net##main > .rnet-advert-realitatea-970-250-only-desktop.advert-placeholder.flex-row.w-100.justify-content-center.d-flex
+www.realitatea.net##.realitatea-advert-before-title.rnet-advert-realitatea-970-250-only-desktop.advert-placeholder.flex-row.w-100.justify-content-center.d-flex
+www.realitatea.net##.realitatea-aside-content-sticky-advert > div
+www.realitatea.net##.realitatea-aside-content-sticky-advert
+www.realitatea.net##.realitatea-article-tags-container
+www.realitatea.net##.realitatea-comment-section
+www.realitatea.net##.realitatea-aside-content
+www.realitatea.net##.realitatea-partners-design.realitatea-partners-news
+www.realitatea.net##.realitatea-big-partners-news-article-4
+www.realitatea.net##.realitatea-big-partners-news
+
+! 2023-09-08 https://www.b1tv.ro
+www.b1tv.ro##.height-250.branding__center
+www.b1tv.ro##div.strawberry-ads-manager-container > .height-250
+www.b1tv.ro##.mg-top-30.footer
+www.b1tv.ro##.square-xs.height-250
+www.b1tv.ro##div.strawberry-ads > .height-250
+www.b1tv.ro##[href^="https://news.google.com/publications/CAAqBwgKMI3jgAswsZWNAw"]
+www.b1tv.ro##.footer
+www.b1tv.ro##.single__related
+www.b1tv.ro##.single__sidebar
+www.b1tv.ro##div.height-250.mg-y-20:nth-of-type(3)
+www.b1tv.ro##div.height-250.mg-y-20:nth-of-type(5)
+
+! 2023-09-08 https://soft-windows.info
+soft-windows.info##.sidebar
+soft-windows.info###footer
+soft-windows.info##body > hr
+soft-windows.info##marquee
+soft-windows.info##body > table > tbody > tr > td
+soft-windows.info##body > table
+soft-windows.info##.sliderElements
+soft-windows.info##.sliderContent
+||soft-windows.info/templates/VAREZbook/images/slider_arrow.png$image
+||soft-windows.info/templates/VAREZbook/images/slider_arrow.png$image
+||soft-windows.info/templates/VAREZbook/images/jet_yandex.jpg$image
+||soft-windows.info/templates/VAREZbook/images/jet.png$image
+soft-windows.info##.berrors.clr
+soft-windows.info##.baseform
+soft-windows.info###related-news > h3
+soft-windows.info###menu-bar
+
+! 2023-09-08 https://lrepacks.net
+lrepacks.net###categories-2 > ul
+lrepacks.net##.header-top
+lrepacks.net##.header-middle
+lrepacks.net##.tabs-holder
+lrepacks.net##div.widget_upcoming_events.widget:nth-of-type(5)
+lrepacks.net##article.columns.large-6.medium-6:nth-of-type(2)
+lrepacks.net##article.columns.large-6.medium-6:nth-of-type(1)
+lrepacks.net##.respond-comments
+lrepacks.net##.full-width.post .padding-off.section
+lrepacks.net##hr
+lrepacks.net##.middle.button
+lrepacks.net##.berrors.clr
+lrepacks.net##.cat-links > [href="https://lrepacks.net/repaki-programm-dlya-interneta/"]
+lrepacks.net##.entry-footer
+
+! 2023-09-08 https://oxy.st
+||oxy.st/slake/asset/img/bg/flake-slider-header.jpg$image
+oxy.st##.header-top-area
+
+! 2023-09-08 https://diakov.net
+diakov.net##div.mb15.card:nth-of-type(4)
+diakov.net##div.mb15.card:nth-of-type(2)
+||diakov.net/uploads/posts/2023-09/1693802552_2023-09-04_073949.jpg$image
+||melban7.top/I$subdocument
+diakov.net##.relatedrate
+diakov.net###dle-comments-form > .my.col-lg-12 > .my.row
+diakov.net###dle-comments-list > .comments-tree-list
+diakov.net##td > .card-body
+diakov.net###thx
+
+! 2023-09-08 https://www.pbinfo.ro
+www.pbinfo.ro##div.center.well-sm.well > .hidden-xs
+www.pbinfo.ro##.col-sd-4.col-md-4.col-lg-4 > div.well-sm.well
+www.pbinfo.ro##div.center.well-sm.well:nth-of-type(1)
+www.pbinfo.ro###footer
+||www.pbinfo.ro/img/5x5-bg-blue.png$image
+www.pbinfo.ro##.bg-primary
+
+! 2023-09-08 https://bobpony.com
+bobpony.com###ipsLayout_footer > .ipsLayout_container
+
