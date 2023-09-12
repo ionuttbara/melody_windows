@@ -14,8 +14,3 @@ Windows Registry Editor Version 5.00
 "DelayedDesktopSwitchTimemout"=dword:00000000
 "PromptOnSecureDesktop"=dword:00000000
 "EnableVirtualization"=dword:00000000
-
-; Fix mouse cursor dissapeiring
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System]
-"EnableCursorSuppression"=dword:00000000

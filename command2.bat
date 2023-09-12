@@ -2,9 +2,21 @@
 :: Starting the script
 title [0 percent] Melody Script 14 & pushd "%CD%" & CD /D "%~dp0" >nul
 :--------------------------------------
+
+
+:--------------------------------------
 CLS & echo Please wait...
 "powershell.exe" Enable-WindowsOptionalFeature -Online -FeatureName LegacyComponents -all -NoRestart
 "powershell.exe" Enable-WindowsOptionalFeature -Online -FeatureName DirectPlay -all -NoRestart
+:--------------------------------------
+
+
+:--------------------------------------
+:: Remove all tiles from start menu
+"powershell.exe" -command "Import-StartLayout -layoutpath "StartLayout.xml" -MountPath "$env:SystemDrive""
+
+:--------------------------------------
+
 :--------------------------------------
 :: Configuration of unsplitting boot optimization
 
@@ -29,18 +41,22 @@ bcdedit.exe /set forcefipscrypto No >nul
 bcdedit.exe /set halbreakpoint No >nul
 bcdedit.exe /set tpmbootentropy ForceDisable >nul
 bcdedit.exe /set linearaddress57 OptOut >nul
+bcdedit.exe /set usephysicaldestination No >nul
 bcdedit.exe /set increaseuserva 3072 >nul
 bcdedit.exe /set bootmenupolicy Legacy >nul
 bcdedit.exe /set recoveryenabled NO >nul
 bcdedit.exe /set vsmlaunchtype off >nul
 bcdedit.exe /set graphicsmodedisabled No >nul
 bcdedit.exe /set useplatformclock false >nul
-bcdedit.exe /set tscsyncpolicy legacy >nul
-bcdedit.exe /set disabledynamictick no >nul
+bcdedit.exe /set tscsyncpolicy Enhanced >nul
+bcdedit.exe /set disabledynamictick yes >nul
+bcdedit.exe /set useplatformtick Yes >nul
 bcdedit.exe /set NOINTEGRITYCHECKS OFF >nul
 bcdedit.exe /set TESTSIGNING OFF >nul
 bcdedit.exe /set x2apicpolicy enable >nul
 bcdedit.exe /set firstmegabytepolicy UseAll >nul
+wmic path Win32_PnPEntity where "name='High precision event timer'" call disable
+wmic path Win32_PnPEntity where "name='Microsoft Hyper-V Virtualization Infrastructure Driver'" call disable
 :--------------------------------------
 
 :--------------------------------------
@@ -106,13 +122,18 @@ netsh.exe interface tcp set global netdma=enabled >nul
 netsh.exe interface tcp set global dca=enabled >nul
 netsh.exe interface tcp set global rss=enabled >nul
 :: some powershell.exe commands which apply to all present network adapters (optimizations for I/O Overhead and getting better ping in worse internet connections)
-start /wait PowerRun.exe powershell.exe "Disable-NetAdapterChecksumOffload -Name "*"" >nul
-start /wait PowerRun.exe powershell.exe "Disable-NetAdapterLso -Name "*"" >nul
-start /wait PowerRun.exe powershell.exe "Set-NetOffloadGlobalSetting -PacketCoalescingFilter disabled" >nul
-start /wait PowerRun.exe powershell.exe "Disable-NetAdapterRsc -Name "*"" >nul
-start /wait powershell.exe Disable-NetAdapterBinding -Name "*" -ComponentID ms_pacer
-start /wait powershell.exe Set-NetAdapterRSS -Name "*" -BaseProcessorNumber 2
-start /wait PowerRun.exe powershell.exe "ForEach($adapter In Get-NetAdapter){Disable-NetAdapterPowerManagement -Name $adapter.Name -ErrorAction SilentlyContinue}" >nul
+powershell.exe -command "Disable-NetAdapterChecksumOffload -Name "*"" >nul
+powershell.exe -command "Disable-NetAdapterLso -Name "*"" >nul
+powershell.exe -command "Set-NetOffloadGlobalSetting -PacketCoalescingFilter disabled" >nul
+powershell.exe -command "Disable-NetAdapterRsc -Name "*"" >nul
+powershell.exe -command Disable-NetAdapterBinding -Name "*" -ComponentID ms_pacer
+powershell.exe -command Set-NetAdapterRSS -Name "*" -BaseProcessorNumber 2
+powershell.exe -command "ForEach($adapter In Get-NetAdapter){Disable-NetAdapterPowerManagement -Name $adapter.Name -ErrorAction SilentlyContinue}" >nul
+
+
+:: set DNS
+powershell.exe -command Set-DNSClientServerAddress * -ServerAddresses ("94.140.14.14","94.140.15.15")
+
 
 :: Firewall Rules
 
@@ -140,7 +161,6 @@ for /f "tokens=3*" %%a in ('reg query "HKLM\Software\Microsoft\Windows NT\Curren
 		reg add "%%g" /v "EnableDynamicPowerGating" /t REG_SZ /d "0" /f
 		reg add "%%g" /v "EnableSavePowerNow" /t REG_SZ /d "0" /f
 		reg add "%%g" /v "PnPCapabilities" /t REG_SZ /d "24" /f
-		REM more powersaving options
 		reg add "%%g" /v "*NicAutoPowerSaver" /t REG_SZ /d "0" /f
 		reg add "%%g" /v "ULPMode" /t REG_SZ /d "0" /f
 		reg add "%%g" /v "EnablePME" /t REG_SZ /d "0" /f
@@ -223,6 +243,6 @@ start /wait cmd.exe /k "MelodyScript.IntegratedTools\Toggler\Toggler.bat"
 :: echo
 echo Melody Script Applied. This PC will reboot.
 xcopy "MelodyScript.IntegratedTools\EmptyStandbyList\*" %windir% /y /e /h /c /i
-start /wait powershell.exe %windir%\install.ps1
+start /wait powershell.exe -command %windir%\install.ps1
 shutdown /r /f /t 0
 :--------------------------------------

@@ -1,5 +1,6 @@
 Windows Registry Editor Version 5.00
 
+; disable keyboard accesibility key flags
 
 [HKEY_CURRENT_USER\Control Panel\Accessibility\HighContrast]
 "Flags"="0"

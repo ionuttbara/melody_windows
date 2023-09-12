@@ -1,8 +1,0 @@
-Windows Registry Editor Version 5.00
-; Keyboard Suggestions
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PolicyManager\default\TextInput\AllowHardwareKeyboardTextSuggestions]
-"value"=dword:00000000
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PolicyManager\default\TextInput\AllowTextInputSuggestionUpdate]
-"value"=dword:00000000
