@@ -1,0 +1,11 @@
+Windows Registry Editor Version 5.00
+
+[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Ndu]
+
+[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanServer]
+
+[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanWorkstation]
+
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\XSplit_VCam_Updater]
+"Start"=dword:00000004
