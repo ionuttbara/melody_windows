@@ -13,4 +13,4 @@ Windows Registry Editor Version 5.00
 "Position"="Top"
 
 [HKEY_CLASSES_ROOT\DesktopBackground\Shell\RestartSys\shell\KillDLLHost\command]
-@="CMD.exe /c taskkill /f /im dllhost.exe & taskkill /f /im rundll32.exe & exit"
+@="CMD.exe /c taskkill /f /im dllhost.exe & taskkill /f /im rundll32.exe"

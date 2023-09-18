@@ -20,3 +20,5 @@ Windows Registry Editor Version 5.00
 [-HKEY_CLASSES_ROOT\Drive\shellex\PropertySheetHandlers\Sharing]
 
 [-HKEY_CLASSES_ROOT\LibraryFolder\background\shellex\ContextMenuHandlers\Sharing]
+
+[-HKEY_CLASSES_ROOT\AllFilesystemObjects\shellex\ContextMenuHandlers\ModernSharing]

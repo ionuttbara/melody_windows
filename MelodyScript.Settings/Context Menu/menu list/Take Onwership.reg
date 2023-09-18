@@ -1,13 +1,13 @@
 Windows Registry Editor Version 5.00
 
-[HKEY_CLASSES_ROOT\*\shell\FileManagement\shell\TakeOwnership]
+[HKEY_CLASSES_ROOT\*\shell\FileManagement\shell\0TakeOwnership]
 @="Take Ownership"
 "Extended"=-
 "HasLUAShield"=""
 "NoWorkingDirectory"=""
 "NeverDefault"=""
 
-[HKEY_CLASSES_ROOT\*\shell\FileManagement\shell\TakeOwnership\command]
+[HKEY_CLASSES_ROOT\*\shell\FileManagement\shell\0TakeOwnership\command]
 @="powershell -windowstyle hidden -command \"Start-Process cmd -ArgumentList '/c takeown /f \\\"%1\\\" && icacls \\\"%1\\\" /grant *S-1-3-4:F /t /c /l' -Verb runAs\""
 "IsolatedCommand"= "powershell -windowstyle hidden -command \"Start-Process cmd -ArgumentList '/c takeown /f \\\"%1\\\" && icacls \\\"%1\\\" /grant *S-1-3-4:F /t /c /l' -Verb runAs\""
 

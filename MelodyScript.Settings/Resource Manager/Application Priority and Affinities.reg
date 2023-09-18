@@ -17,13 +17,10 @@ Windows Registry Editor Version 5.00
 ; High 00000003
 ;Critical 00000004
 
-
-
 ;Battery Mode
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\BatteryMode64.exe]
 "MaxLoaderThreads"=dword:00000001
-
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\BatteryMode64.exe\PerfOptions]
 "CpuPriorityClass"=dword:00000001
@@ -39,8 +36,6 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\AsusOSD.exe\PerfOptions]
 "CpuPriorityClass"=dword:00000001
 "IoPriority"=dword:00000001
-
-
 
 ;ASUS Optimization
 
@@ -82,7 +77,8 @@ Windows Registry Editor Version 5.00
 "IoPriority"=dword:00000001
 
 
-; Adobe Acrobat 
+; Adobe Acrobat
+
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\Acrobat.exe]
 "MaxLoaderThreads"=dword:00000001
 
@@ -289,26 +285,12 @@ Windows Registry Editor Version 5.00
 "CpuPriorityClass"=dword:00000006
 "IoPriority"=dword:00000003
 
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\explorer.exe]
-"MitigationAuditOptions"=hex:22,22,22,22,22,22,22,22,22,22,22,22,22,22,22,22,\
-  22,22,22,22,22,22,22,22
-"MitigationOptions"=hex:22,22,22,22,22,22,22,22,22,22,22,22,22,22,22,22,22,22,\
-  22,22,22,22,22,22
-
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\explorer.exe\PerfOptions]
 "CpuPriorityClass"=dword:00000006
 "IoPriority"=dword:00000004
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\Ext2Srv.exe]
 "MaxLoaderThreads"=dword:00000001
-
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\FarCry6.exe]
-"MitigationOptions"=hex:00,00,00,00,00,02,00,00,00,02,00,00,00,00,00,00,00,00,\
-  00,00,00,00,00,00
-"MitigationAuditOptions"=hex:00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\
-  00,00,00,00,00,00,00,00
-
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\FarCry6.exe\PerfOptions]
 "CpuPriorityClass"=dword:00000003
@@ -531,21 +513,6 @@ Windows Registry Editor Version 5.00
 "CpuPriorityClass"=dword:00000003
 "IoPriority"=dword:00000003
 
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\mpc-hc64.exe]
-"MitigationOptions"=hex:00,00,00,00,00,02,00,00,00,02,00,00,00,00,00,00,00,00,\
-  00,00,00,00,00,00
-"MitigationAuditOptions"=hex:00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\
-  00,00,00,00,00,00,00,00
-"EAFModules"=""
-
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\vgc.exe]
-"MitigationOptions"=hex:00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\
-  00,00,00,00,00,00
-"MitigationAuditOptions"=hex:00,00,00,00,10,00,00,00,00,00,00,00,00,00,00,00,\
-  00,00,00,00,00,00,00,00
-"EAFModules"=""
-
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\msaccess.exe\PerfOptions]
 "CpuPriorityClass"=dword:00000006
 "IoPriority"=dword:00000003
@@ -569,25 +536,9 @@ Windows Registry Editor Version 5.00
 "CpuPriorityClass"=dword:00000003
 "IoPriority"=dword:00000003
 
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\Notepad++.exe]
-"MaxLoaderThreads"=dword:00000001
-"MitigationOptions"=hex:00,00,00,00,00,02,00,00,00,02,00,00,00,00,00,00,00,00,\
-  00,00,00,00,00,00
-"MitigationAuditOptions"=hex:00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\
-  00,00,00,00,00,00,00,00
-"EAFModules"=""
-
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\Notepad++.exe\PerfOptions]
 "CpuPriorityClass"=dword:00000003
 "IoPriority"=dword:00000003
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\notepad.exe]
-"MaxLoaderThreads"=dword:00000001
-"MitigationOptions"=hex:00,00,00,00,00,02,00,00,00,02,00,00,00,00,00,00,00,00,\
-  00,00,00,00,00,00
-"MitigationAuditOptions"=hex:00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\
-  00,00,00,00,00,00,00,00
-"EAFModules"=""
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\NVDisplay.Container.exe]
 "MaxLoaderThreads"=dword:00000001
@@ -603,13 +554,6 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\operagx.exe\PerfOptions]
 "CpuPriorityClass"=dword:00000006
 "IoPriority"=dword:00000003
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\photoshop.exe]
-"MitigationOptions"=hex:00,00,00,00,00,02,00,00,00,02,00,00,00,00,00,00,00,00,\
-  00,00,00,00,00,00
-"MitigationAuditOptions"=hex:00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\
-  00,00,00,00,00,00,00,00
-"EAFModules"=""
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\photoshop.exe\PerfOptions]
 "CpuPriorityClass"=dword:00000003

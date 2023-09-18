@@ -1,6 +1,5 @@
 Windows Registry Editor Version 5.00
 
-
 [HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Search]
 "SearchboxTaskbarMode"=dword:00000000
 "HasAboveLockTips"=dword:00000000
@@ -15,10 +14,6 @@ Windows Registry Editor Version 5.00
 
 [HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Search]
 "ImmersiveSearch"=-
-
-[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Search\Flighting\Override]
-"CenterScreenRoundedCornerRadius"=-
-"ImmersiveSearchFull"=-
 
 [HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
 "SearchBoxVisibleInTouchImprovement"=dword:00000001

@@ -5,7 +5,6 @@ Windows Registry Editor Version 5.00
 "WebControlStatus"=dword:00000000
 "WebControlSecondaryStatus"=dword:00000000
 
-
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
 "DisableWebSearch"=dword:00000001
 "ConnectedSearchUseWeb"=dword:00000000

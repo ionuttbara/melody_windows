@@ -10,24 +10,9 @@ Windows Registry Editor Version 5.00
 "SwapEffectUpgradeCache"=dword:00000001
 "SpecificGPUOptionApplicable"=dword:00000001
 
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Avalon.Graphics]
-"DisableHWAcceleration"=dword:00000000
-"MaxMultisampleSize"=dword:00000000
-"UseReferenceRasterizer"=dword:00000001
-
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\DXGKrnl]
 "MonitorLatencyTolerance"=dword:00000001
 "MonitorRefreshLatencyTolerance"=dword:00000001
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Avalon.Graphics]
-"DisableHWAcceleration"=dword:00000000
-"MaxMultisampleSize"=dword:00000000
-"UseReferenceRasterizer"=dword:00000001
-
-[HKEY_USERS\.DEFAULT\SOFTWARE\Microsoft\Avalon.Graphics]
-"DisableHWAcceleration"=dword:00000000
-"MaxMultisampleSize"=dword:00000000
-"UseReferenceRasterizer"=dword:00000001
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Direct3D]
 "DisableVidMemVBs"=dword:00000001

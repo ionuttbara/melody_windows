@@ -62,7 +62,7 @@ Windows Registry Editor Version 5.00
 
 [-HKEY_CLASSES_ROOT\CLSID\{F82DF8F7-8B9F-442E-A48C-818EA735FF9B}]
 
-;indexing 
+;indexing
 
 [-HKEY_CLASSES_ROOT\CLSID\{87D66A43-7B11-4A28-9811-C86EE395ACF7}]
 
@@ -98,7 +98,7 @@ Windows Registry Editor Version 5.00
 
 [-HKEY_CLASSES_ROOT\WOW6432Node\CLSID\{F82DF8F7-8B9F-442E-A48C-818EA735FF9B}]
 
-;indexing 
+;indexing
 
 [-HKEY_CLASSES_ROOT\WOW6432Node\CLSID\{87D66A43-7B11-4A28-9811-C86EE395ACF7}]
 
@@ -149,10 +149,10 @@ Windows Registry Editor Version 5.00
 
 [-HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Explorer\ControlPanel\NameSpace\{40419485-C444-4567-851A-2DD7BFA1684D}]
 
-; indexing options 
+; indexing options
 [-HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Explorer\ControlPanel\NameSpace\{87D66A43-7B11-4A28-9811-C86EE395ACF7}]
 
-; sync center folder 
+; sync center folder
 
 [-HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Explorer\ControlPanel\NameSpace\{9C73F5E5-7AE7-4E32-A8E8-8D23B85255BF}]
 
@@ -190,3 +190,27 @@ Windows Registry Editor Version 5.00
 ;ease of access control panel
 
 [-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\ControlPanel\NameSpace\{D555645E-D4F8-4c29-A827-D93C859C4F2A}]
+
+
+;Maps
+
+[-HKEY_CLASSES_ROOT\WOW6432Node\CLSID\{5C03E1B1-EB13-4DF1-8943-2FE8E7D5F309}]
+
+[-HKEY_CLASSES_ROOT\CLSID\{5C03E1B1-EB13-4DF1-8943-2FE8E7D5F309}]
+
+; Set program access and defaults
+
+[-HKEY_CLASSES_ROOT\WOW6432Node\CLSID\{2559a1f7-21d7-11d4-bdaf-00c04f60b9f0}]
+
+[-HKEY_CLASSES_ROOT\CLSID\{2559a1f7-21d7-11d4-bdaf-00c04f60b9f0}]
+
+;E-mail
+
+[-HKEY_CLASSES_ROOT\WOW6432Node\CLSID\{2559a1f5-21d7-11d4-bdaf-00c04f60b9f0}]
+
+[-HKEY_CLASSES_ROOT\CLSID\{2559a1f5-21d7-11d4-bdaf-00c04f60b9f0}]
+
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\ShellIconOverlayIdentifiers\EnhancedStorageShell]
+
+[-HKEY_CLASSES_ROOT\Folder\shell\opennewprocess]

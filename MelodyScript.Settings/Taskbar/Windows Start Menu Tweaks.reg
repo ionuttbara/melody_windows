@@ -17,3 +17,13 @@ Windows Registry Editor Version 5.00
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PolicyManager\default\Start\ShowOrHideMostUsedApps]
 "value"=dword:00000002
+
+[HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\Explorer]
+"HideRecentlyAddedApps"=dword:00000001
+"ShowOrHideMostUsedApps"=dword:00000002
+"NoStartMenuMFUprogramsList"=dword:00000001
+
+[HKEY_CURRENT_USER\Software\Policies\Microsoft\Windows\Explorer]
+"HideRecentlyAddedApps"=dword:00000001
+"ShowOrHideMostUsedApps"=dword:00000002
+"NoStartMenuMFUprogramsList"=dword:00000001

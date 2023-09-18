@@ -6,7 +6,6 @@ Windows Registry Editor Version 5.00
 "ListviewShadow"=dword:00000000
 "HideFileExt"=dword:00000000
 "UseCompactMode"=dword:00000001
-"HideSCAMeetNow"=dword:00000001
 "FileExplorerInTouchImprovement"=dword:00000000
 "ListviewWatermark"=dword:00000000
 "ShowInfoTip"=dword:00000001
