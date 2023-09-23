@@ -78,3 +78,6 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SYSTEM\ResourcePolicyStore\ResourceSets\Policies\Memory\NoCap]
 "CommitLimit"=dword:ffffffff
 "CommitTarget"=dword:ffffffff
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Processor]
+"Capabilities"=dword:007e666

@@ -20,7 +20,7 @@ Windows Registry Editor Version 5.00
 "DeadGWDetectDefault"=dword:00000001
 "DisableTaskOffload"=dword:00000001
 "TcpMaxDupAcks"=dword:00000002
-"Tcp1323Opts"=dword:00000000
+"Tcp1323Opts"=dword:00000001
 "TcpTimedWaitDelay"=dword:0000001e
 "GlobalMaxTcpWindowSize"=dword:0000ffff
 "TcpWindowSize"=dword:0000ffff
@@ -28,7 +28,7 @@ Windows Registry Editor Version 5.00
 "TcpUseRFC1122UrgentPointe"=dword:00000001
 "TcpMaxSendFree"=dword:00065535
 "TcpCreateAndConnectTcbRateLimitDepth"=dword:00000000
-"TcpMaxDataRetransmissions"=dword:00000007
+"TcpMaxDataRetransmissions"=dword:00000002
 "TcpMaxConnectRetransmissions"=dword:00000002
 "TcpMaxConnectResponseRetransmissions"=dword:00000002
 "TCPCongestionControl"=dword:00000001
@@ -39,8 +39,19 @@ Windows Registry Editor Version 5.00
 "MaxForwardBufferMemory"=dword:00150016
 "NumForwardPackets"=dword:00000586
 "MaxNumForwardPackets"=dword:00000586
-"EnableDCA"=dword:00000001
+"EnableDCA"=dword:00000000
 "DisableLargeMtu"=dword:00000000
+"AllowUnqualifiedQuery"=dword:00000001
+"DisableMediaSenseEventLog"=dword:00000001
+"DisableRss"=dword:00000000
+"DisableTcpChimneyOffload"=dword:00000000
+"DnsOutstandingQueriesCount"=dword:000003e8
+"DnsQueryTimeouts"=REG_MULTI_SZ:"1 1 2 2 4 0"
+"EnableAddrMaskReply"=dword:00000000
+"EnableConnectionRateLimiting"=dword:00000000
+"EnableHeuristics"=dword:00000001
+"EnableIPAutoConfigurationLimits"=dword:00000000
+"EnableTCPA"=dword:00000000
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters]
 "EnableConnectionRateLimiting"=-
@@ -68,7 +79,7 @@ Windows Registry Editor Version 5.00
 "UseDomainNameDevolution"=dword:00000000
 "EnableIPAutoConfigurationLimits"=dword:00000000
 "EnableWsd"=dword:00000000
-"IPEnableRouter"=dword:00000000
+"IPEnableRouter"=dword:00000001
 
 ;Disabled cached Windows Logons
 

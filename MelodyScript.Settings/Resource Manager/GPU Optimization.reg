@@ -42,7 +42,8 @@ Windows Registry Editor Version 5.00
 "Optional"=""
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\GraphicsDrivers\Scheduler]
-"EnablePreemption"=dword:00000000
+"EnablePreemption"=dword:00000001
+"VsyncIdleTimeout"=dword:00000000
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\GraphicsDrivers]
 "TdrLevel"=dword:00000000

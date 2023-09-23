@@ -12,7 +12,7 @@ Windows Registry Editor Version 5.00
 "ShowPreviewHandlers"=dword:00000000
 "SharingWizardOn"=dword:00000000
 "ExpandableTaskbar"=dword:00000000
-"TaskbarFlashing"=dword:00000000
+"TaskbarFlashing"=dword:00000001
 "ShowSecondsInSystemClock"=dword:00000001
 "FriendlyDates"=dword:00000001
 

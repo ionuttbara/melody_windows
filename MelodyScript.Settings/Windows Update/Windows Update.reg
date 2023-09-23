@@ -278,3 +278,9 @@ Windows Registry Editor Version 5.00
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PolicyManager\default\Update\UpdateNotificationLevel]
 "value"=dword:00000000
+
+
+; disable Orchestrator Scan
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\WindowsUpdate\Orchestrator]
+"EnableUUPScan"=dword:00000000

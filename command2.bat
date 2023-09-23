@@ -101,8 +101,6 @@ netsh.exe interface tcp set supplemental InternetCustom congestionprovider=ctcp 
 
 :: Reducing CPU for veryfast Internet Connections
 netsh.exe int isatap set state disable
-netsh.exe interface tcp set global chimney=disabled >nul
-netsh.exe interface tcp set global dca=enabled >nul
 netsh.exe interface tcp set global rsc=disabled >nul
 netsh.exe interface tcp set global ecncapability=enabled >nul
 netsh.exe interface tcp set global timestamps=disabled >nul
@@ -114,20 +112,20 @@ netsh.exe interface tcp set global fastopenfallback=enabled >nul
 netsh.exe interface tcp set security mpp=disabled >nul
 netsh.exe interface tcp set security profiles=disabled >nul
 netsh.exe interface udp set global uro=enabled >nul
-netsh.exe int 6to4 set state state=enabled >nul
+netsh.exe int 6to4 set state state=disabled >nul
 netsh.exe interface ip set global multicastforwarding=disabled >nul
 netsh.exe interface tcp set security mpp=disabled profiles=disabled >nul
 netsh.exe interface ip set global icmpredirects=disabled >nul
-netsh.exe interface tcp set global netdma=enabled >nul
-netsh.exe interface tcp set global dca=enabled >nul
 netsh.exe interface tcp set global rss=enabled >nul
+netsh interface ip set global neighborcachelimit=4096 defaultcurhoplimit=64 taskoffload=enabled >nul
+netsh interface tcp set global hystart=disabled >nul
+netsh interface tcp set global fastopen=enabled >nul
 :: some powershell.exe commands which apply to all present network adapters (optimizations for I/O Overhead and getting better ping in worse internet connections)
 powershell.exe -command "Disable-NetAdapterChecksumOffload -Name "*"" >nul
 powershell.exe -command "Disable-NetAdapterLso -Name "*"" >nul
 powershell.exe -command "Set-NetOffloadGlobalSetting -PacketCoalescingFilter disabled" >nul
 powershell.exe -command "Disable-NetAdapterRsc -Name "*"" >nul
 powershell.exe -command Disable-NetAdapterBinding -Name "*" -ComponentID ms_pacer
-powershell.exe -command Set-NetAdapterRSS -Name "*" -BaseProcessorNumber 2
 powershell.exe -command "ForEach($adapter In Get-NetAdapter){Disable-NetAdapterPowerManagement -Name $adapter.Name -ErrorAction SilentlyContinue}" >nul
 
 
@@ -162,6 +160,7 @@ for /f "tokens=3*" %%a in ('reg query "HKLM\Software\Microsoft\Windows NT\Curren
 		reg add "%%g" /v "EnableSavePowerNow" /t REG_SZ /d "0" /f
 		reg add "%%g" /v "PnPCapabilities" /t REG_SZ /d "24" /f
 		reg add "%%g" /v "*NicAutoPowerSaver" /t REG_SZ /d "0" /f
+		reg add "%%g" /v "*FlowControl" /t REG_SZ /d "0" /f
 		reg add "%%g" /v "ULPMode" /t REG_SZ /d "0" /f
 		reg add "%%g" /v "EnablePME" /t REG_SZ /d "0" /f
 		reg add "%%g" /v "AlternateSemaphoreDelay" /t REG_SZ /d "0" /f
@@ -199,6 +198,7 @@ for /f "tokens=3*" %%a in ('reg query "HKLM\Software\Microsoft\Windows NT\Curren
 for /f %%r in ('Reg query "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters\Interfaces" /f "1" /d /s^|Findstr HKEY_') do (
 Reg add %%r /v "TCPNoDelay" /t Reg_DWORD /d "1" /f
 Reg add %%r /v "TcpAckFrequency" /t Reg_DWORD /d "1" /f
+Reg add %%r /v "TcpDelAckTicks" /t Reg_DWORD /d "0" /f
 ) >nul
 
 :--------------------------------------

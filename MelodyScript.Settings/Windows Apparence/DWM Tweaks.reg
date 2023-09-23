@@ -17,20 +17,19 @@ Windows Registry Editor Version 5.00
 "OneCoreNoBootDWM"=dword:00000001
 "ForceEffectMode"=-
 "DisableDrawListCaching"=dword:00000001
-"DisableHologramCompositor"=dword:00000000
 "EnableDwmInputProcessing"=dword:00000000
 "DisallowNonDrawListRendering"=dword:00000000
-"EnableCpuClipping"=dword:00000001
+"EnableCpuClipping"=dword:00000000
 "EnableDrawToBackbuffer"=dword:0000000
 "EnableImageProcessing"=dword:0000001
 "EnableMPCPerfCounter"=dword:0000000
-"EnableShadow"=dword:0000000
-"ImageProcessing8bit"=dword:0000001
-"MouseWheelScrollingMode"=dword:0000001
-"ParallelModePolicy"=dword:00000002 
-"ResampleInLinearSpace"=dword:0000000 
+"EnableShadow"=dword:00000000
+"ImageProcessing8bit"=dword:00000001
+"MouseWheelScrollingMode"=dword:00000001
+"ParallelModePolicy"=dword:00000001
+"ResampleInLinearSpace"=dword:00000000
 "SuperWetEnabled"=dword:00000000
-"TelemetryFramesSequenceMaximumPeriodMilliseconds"=dword:000001f4 
+"TelemetryFramesSequenceMaximumPeriodMilliseconds"=dword:000001f4
 "UseHWDrawListEntriesOnWARP"=dword:00000001
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DWM]
@@ -47,5 +46,5 @@ Windows Registry Editor Version 5.00
 "ForceEffectMode"=-
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\DWM\ExtendedComposition]
-"ExclusiveModeFramerateAveragingPeriodMs"=dword:000000f0
+"ExclusiveModeFramerateAveragingPeriodMs"=dword:000000fa
 "ExclusiveModeFramerateThresholdPercent"=dword:0000002d
