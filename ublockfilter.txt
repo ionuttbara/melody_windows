@@ -875,3 +875,37 @@ www.pbinfo.ro##.bg-primary
 ! 2023-09-08 https://bobpony.com
 bobpony.com###ipsLayout_footer > .ipsLayout_container
 
+
+! 2023-02-06 https://ak537.anime-kage.eu
+ak537.anime-kage.eu##.banner-container
+
+! 2023-09-26 https://stirileprotv.ro
+stirileprotv.ro###fakegrooveskin
+stirileprotv.ro##.blocksidebar
+stirileprotv.ro##.sidebar
+stirileprotv.ro##.stickycontent.bannerzone
+stirileprotv.ro##.follow__on_google_news
+stirileprotv.ro##.article--section-recomandare--sport
+stirileprotv.ro###latestFromSiteArticle
+stirileprotv.ro##.maxcontainer.box
+stirileprotv.ro###topRead > .maxcontainer
+stirileprotv.ro###relatedVideo > .maxcontainer
+stirileprotv.ro###voyoCarousel
+stirileprotv.ro###crosspromo > .maxcontainer
+stirileprotv.ro##.under-footer
+stirileprotv.ro##.social-footer
+stirileprotv.ro###latestnewsinsite
+stirileprotv.ro##.footer-internet-main
+stirileprotv.ro##.article--related-inside
+
+! 2023-09-26 https://ilikeit.stirileprotv.ro
+ilikeit.stirileprotv.ro##.adm
+ilikeit.stirileprotv.ro###billboard
+ilikeit.stirileprotv.ro###rectangle2
+ilikeit.stirileprotv.ro###rectangle
+ilikeit.stirileprotv.ro##div.col-12.col-sm-6.col-md-4.col-lg-4:nth-of-type(6)
+ilikeit.stirileprotv.ro##div.col-12.col-sm-6.col-md-4.col-lg-4:nth-of-type(9)
+ilikeit.stirileprotv.ro##.cross-related
+||protvplus.ro/embed/6zwi7XfpUpG$subdocument
+ilikeit.stirileprotv.ro###billboard2
+ilikeit.stirileprotv.ro##.socialbg
