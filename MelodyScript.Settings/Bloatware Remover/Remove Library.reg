@@ -1,143 +1,55 @@
 Windows Registry Editor Version 5.00
 
-; kill libraries
+; remove applet Commands
+[-HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\Windows.LibraryDefaultSaveLocation]
 
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced\NavPane\ShowLibraries]
+[-HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\Windows.LibraryIncludeInLibrary]
 
-[-HKEY_CLASSES_ROOT\CLSID\{031E4825-7B94-4dc3-B131-E946B44C8DD5}]
+[-HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\Windows.includeinlibrary]
 
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Desktop\NameSpace\{031E4825-7B94-4dc3-B131-E946B44C8DD5}]
+[-HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\Windows.LibraryManageLibrary]
 
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FolderDescriptions\{2112AB0A-C86A-4ffe-A368-0DE96E47012E}]
+[-HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\Windows.LibraryPublicSaveLocation]
 
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FolderDescriptions\{491E922F-5643-4af4-A7EB-4E7A138D8174}]
+[-HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\Windows.LibrarySelChangeIcon]
 
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FolderDescriptions\{7b0db17d-9cd2-4a93-9733-46cc89022e7c}]
+[-HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\Windows.LibrarySelDefaultSaveLocation]
 
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FolderDescriptions\{A302545D-DEFF-464b-ABE8-61C8648D939B}]
+[-HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\Windows.LibrarySelManageLibrary]
 
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FolderDescriptions\{A990AE9F-A03B-4e80-94BC-9912D7504104}]
+[-HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\Windows.LibrarySelOptimizeLibraryFor]
 
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\NewStartPanel]
-“{031E4825-7B94-4dc3-B131-E946B44C8DD5}”=-
+[-HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\Windows.LibrarySelPublicSaveLocation]
 
+[-HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\Windows.LibrarySelRestoreDefaults]
 
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced\NavPane\ShowLibraries]
+[-HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\Windows.LibrarySelShowInNavPane]
 
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FolderDescriptions\{2B20DF75-1EDA-4039-8097-38798227D5B7}]
+[-HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\Windows.LibraryShowInNavPane]
 
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FolderDescriptions\{E25B5812-BE88-4bd9-94B0-29233477B6C3}]
+[-HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\Windows.NavPaneShowLibraries]
 
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\NewStartPanel]
-"{031E4825-7B94-4dc3-B131-E946B44C8DD5}"=-
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\Windows.LibraryPublicSaveLocation]
 
-[-HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Explorer\Desktop\NameSpace\{031E4825-7B94-4dc3-B131-E946B44C8DD5}]
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\Windows.LibraryManageLibrary]
 
-[-HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Explorer\FolderDescriptions\{2112AB0A-C86A-4ffe-A368-0DE96E47012E}]
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\Windows.LibrarySelShowInNavPane]
 
-[-HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Explorer\FolderDescriptions\{2B20DF75-1EDA-4039-8097-38798227D5B7}]
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\Windows.LibrarySelRestoreDefaults]
 
-[-HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Explorer\FolderDescriptions\{491E922F-5643-4af4-A7EB-4E7A138D8174}]
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\Windows.LibrarySelOptimizeLibraryFor]
 
-[-HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Explorer\FolderDescriptions\{7b0db17d-9cd2-4a93-9733-46cc89022e7c}]
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\Windows.LibrarySelChangeIcon]
 
-[-HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Explorer\FolderDescriptions\{A302545D-DEFF-464b-ABE8-61C8648D939B}]
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\Windows.NavPaneShowLibraries]
 
-[-HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Explorer\FolderDescriptions\{A990AE9F-A03B-4e80-94BC-9912D7504104}]
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\Windows.LibrarySelManageLibrary]
 
-[HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\NewStartPanel]
-"{031E4825-7B94-4dc3-B131-E946B44C8DD5}"=-
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\Windows.LibrarySelDefaultSaveLocation]
 
-[-HKEY_CLASSES_ROOT\CLSID\{eea0c191-dda8-4656-8fc4-72bdedba8a78}]
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\Windows.LibrarySelPublicSaveLocation]
 
-[-HKEY_CLASSES_ROOT\WOW6432Node\CLSID\{eea0c191-dda8-4656-8fc4-72bdedba8a78}]
-
-[-HKEY_CLASSES_ROOT\WOW6432Node\CLSID\{0af96ede-aebf-41ed-a1c8-cf7a685505b6}]
-
-[-HKEY_CLASSES_ROOT\WOW6432Node\CLSID\{a5a3563a-5755-4a6f-854e-afa3230b199f}]
-
-[-HKEY_CLASSES_ROOT\WOW6432Node\CLSID\{C7CA6167-2F46-4C4C-98B2-C92591368971}]
-
-[-HKEY_CLASSES_ROOT\WOW6432Node\CLSID\{f3cc4ca3-22c2-40ec-ac3c-89d8a43373b0}]
-
-[-HKEY_CLASSES_ROOT\WOW6432Node\CLSID\{f8d1da80-9aea-4ca4-ba41-bee6fca037b1}]
-
-[-HKEY_CLASSES_ROOT\WOW6432Node\CLSID\{fe5afcf2-e681-4ada-9703-ef39b8ecb9bf}]
-
-[-HKEY_CLASSES_ROOT\CLSID\{0af96ede-aebf-41ed-a1c8-cf7a685505b6}]
-
-[-HKEY_CLASSES_ROOT\CLSID\{a5a3563a-5755-4a6f-854e-afa3230b199f}]
-
-[-HKEY_CLASSES_ROOT\CLSID\{C7CA6167-2F46-4C4C-98B2-C92591368971}]
-
-[-HKEY_CLASSES_ROOT\CLSID\{f3cc4ca3-22c2-40ec-ac3c-89d8a43373b0}]
-
-[-HKEY_CLASSES_ROOT\CLSID\{f8d1da80-9aea-4ca4-ba41-bee6fca037b1}]
-
-[-HKEY_CLASSES_ROOT\CLSID\{fe5afcf2-e681-4ada-9703-ef39b8ecb9bf}]
-
-[-HKEY_CLASSES_ROOT\CLSID\{8cec58e7-07a1-11d9-b15e-000d56bfe6ee}]
-
-[-HKEY_CLASSES_ROOT\WOW6432Node\CLSID\{031E4825-7B94-4dc3-B131-E946B44C8DD5}]
-
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\UsersLibraries]
-
-[-HKEY_CLASSES_ROOT\LibraryLocation]
-
-[-HKEY_CLASSES_ROOT\UserLibraryFolder]
-
-[-HKEY_CLASSES_ROOT\LibraryFolder]
-
-[-HKEY_CLASSES_ROOT\.library-ms]
-
-[-HKEY_CLASSES_ROOT\CLSID\{3dad6c5d-2167-4cae-9914-f99e41c12cfa}]
-
-[-HKEY_CLASSES_ROOT\WOW6432Node\CLSID\{3dad6c5d-2167-4cae-9914-f99e41c12cfa}]
-
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FolderTypes\{fbb3477e-c9e4-4b3b-a2ba-d3f5d3cd46f9}]
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FolderTypes\{C4D98F09-6124-4fe0-9942-826416082DA9}]
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FolderTypes\{978e0ed7-92d6-4cec-9b59-3135b9c49ccf}]
-
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FolderTypes\{da3f6866-35fe-4229-821a-26553a67fc18}]
-
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FolderTypes\{c1f8339f-f312-4c97-b1c6-ecdf5910c5c0}]
-
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FolderTypes\{0b2baaeb-0042-4dca-aa4d-3ee8648d03e5}]
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FolderTypes\{3f98a740-839c-4af7-8c36-5badfb33d5fd}]
-
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FolderTypes\{654a1b99-8a4b-4e7b-a4e1-46378ad77a61}]
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FolderTypes\{631958a6-ad0f-4035-a745-28ac066dc6ed}]
-
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FolderTypes\{524ddb2b-2a4f-43b8-b8fe-e91ef9d8ba69}]
-
-
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FolderTypes\{5f4eab9a-6833-4f61-899d-31cf46979d49}]
-
-;www
-[-HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Explorer\FolderDescriptions\{1B3EA5DC-B587-4786-B4EF-BD1DC332AEAE}]
-
-
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FolderTypes\{3f2a72a7-99fa-4ddb-a5a8-c604edf61d6b}]
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FolderTypes\{292108be-88ab-4f33-9a26-7748e62e37ad}]
-[-HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Explorer\FolderDescriptions\{48daf80b-e6cf-4f4e-b800-0e69d84ee384}]
-
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FolderDescriptions\{1B3EA5DC-B587-4786-B4EF-BD1DC332AEAE}]
-
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FolderDescriptions\{48daf80b-e6cf-4f4e-b800-0e69d84ee384}]
-
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FolderDescriptions\{1A6FDBA2-F42D-4358-A798-B74D745926C5}]
-
-[-HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Explorer\FolderDescriptions\{1A6FDBA2-F42D-4358-A798-B74D745926C5}]
-;{eea0c191-dda8-4656-8fc4-72bdedba8a78}
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\PropertySystem\SystemPropertyHandlers]
-".library-ms"=-
-
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\PropertySystem\SystemPropertyHandlers]
-".library-ms"=-
-
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\Windows.LibraryChangeIcon]
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\Windows.includeinlibrary]
 
 ;{6aa17c06-0c75-4006-81a9-57927e77ae87}
 
@@ -159,12 +71,14 @@ Windows Registry Editor Version 5.00
 
 ;{83472593-4fe6-4f44-a14c-fc8d4b4ff3f5}
 
-
 [-HKEY_CLASSES_ROOT\CLSID\{83472593-4fe6-4f44-a14c-fc8d4b4ff3f5}]
 
 [-HKEY_CLASSES_ROOT\CLSID\WOW6432Node\{83472593-4fe6-4f44-a14c-fc8d4b4ff3f5}]
 
 ;{69a568cf-86d1-4e47-b1fc-a74a110583fb}
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\NonEnum]
+"{031E4825-7B94-4dc3-B131-E946B44C8DD5}"=dword:00000001
 
 
 [-HKEY_CLASSES_ROOT\CLSID\{69a568cf-86d1-4e47-b1fc-a74a110583fb]
@@ -207,57 +121,22 @@ Windows Registry Editor Version 5.00
 
 [-HKEY_CLASSES_ROOT\CLSID\{f8d1da80-9aea-4ca4-ba41-bee6fca037b1}]
 
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\Windows.LibraryPublicSaveLocation]
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\Windows.LibraryManageLibrary]
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\Windows.LibrarySelShowInNavPane]
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\Windows.LibrarySelRestoreDefaults]
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\Windows.LibrarySelOptimizeLibraryFor]
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\Windows.LibrarySelChangeIcon]
-
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\Windows.NavPaneShowLibraries]
-
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\Windows.LibrarySelManageLibrary]
-
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\Windows.LibrarySelDefaultSaveLocation]
-
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\Windows.LibrarySelPublicSaveLocation]
-
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\Windows.includeinlibrary]
-
 ;{3756e7f5-e514-4776-a32b-eb24bc1efe7a}
 [HKEY_CLASSES_ROOT\CLSID\{3756e7f5-e514-4776-a32b-eb24bc1efe7a}]
 
 [HKEY_CLASSES_ROOT\WOW6432Node\CLSID\{3756e7f5-e514-4776-a32b-eb24bc1efe7a}]
 
+[HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\NewStartPanel]
+"{031E4825-7B94-4dc3-B131-E946B44C8DD5}"=dword:00000001
 
-[-HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\Windows.LibraryDefaultSaveLocation]
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\NewStartPanel]
+"{031E4825-7B94-4dc3-B131-E946B44C8DD5}"=dword:00000001
 
-[-HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\Windows.LibraryIncludeInLibrary]
 
-[-HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\Windows.includeinlibrary]
+[HKEY_CURRENT_USER\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\NewStartPanel]
+"{031E4825-7B94-4dc3-B131-E946B44C8DD5}"=dword:00000001
 
-[-HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\Windows.LibraryManageLibrary]
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\NewStartPanel]
+"{031E4825-7B94-4dc3-B131-E946B44C8DD5}"=dword:00000001
 
-[-HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\Windows.LibraryPublicSaveLocation]
-
-[-HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\Windows.LibrarySelChangeIcon]
-
-[-HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\Windows.LibrarySelDefaultSaveLocation]
-
-[-HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\Windows.LibrarySelManageLibrary]
-
-[-HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\Windows.LibrarySelOptimizeLibraryFor]
-
-[-HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\Windows.LibrarySelPublicSaveLocation]
-
-[-HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\Windows.LibrarySelRestoreDefaults]
-
-[-HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\Windows.LibrarySelShowInNavPane]
-
-[-HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\Windows.LibraryShowInNavPane]
-
-[-HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\Windows.NavPaneShowLibraries]
-
-[-HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Explorer\ShellServiceObjects\{811F592B-CDE7-4ca4-A6D4-7BB3F60AD8FB}]
-
-[-HKEY_CLASSES_ROOT\Folder\ShellEx\ContextMenuHandlers\Library Location]
+[-HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Explorer\Desktop\NameSpace\{031E4825-7B94-4dc3-B131-E946B44C8DD5}]
