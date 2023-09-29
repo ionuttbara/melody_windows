@@ -1,7 +1,5 @@
 Windows Registry Editor Version 5.00
 
-[-HKEY_CLASSES_ROOT\CLSID\{4AF4A5FC-912A-11D1-B945-00A0C90312E1}]
-
 ; Sync Gallery
 
 [-HKEY_CLASSES_ROOT\CLSID\{4F23C296-F56E-45AF-904D-D245BF750759}]
@@ -10,17 +8,6 @@ Windows Registry Editor Version 5.00
 
 [-HKEY_CLASSES_ROOT\CLSID\{d509c21a-b88c-4ad1-8fad-d6a7572728e5}]
 
-;workpalce class
-
-[-HKEY_CLASSES_ROOT\CLSID\{4F1DFCA6-3AAD-48E1-8406-4BC21A501D7C}]
-
-; internet toolbar
-
-[-HKEY_CLASSES_ROOT\CLSID\{5E6AB780-7743-11CF-A12B-00AA004AE837}]
-
-; deprecated
-
-[-HKEY_CLASSES_ROOT\CLSID\{8C7461EF-2B13-11d2-BE35-3078302C2030}]
 
 ; unregister cd burning shell folder
 
@@ -126,154 +113,9 @@ Windows Registry Editor Version 5.00
 
 [-HKEY_CLASSES_ROOT\TypeLib\{00F25AE8-3625-4E34-92D4-F0918CF010EE}]
 
-;{FFE2A43C-56B9-4BF5-9A79-CC6D4285608A}
-
-;remote printers command viewer
-
-[-HKEY_CLASSES_ROOT\CLSID\{0a9bbb1e-03ee-4201-9900-abbff56c9c6c}]
-
-; windows txt previewer
-
-[-HKEY_CLASSES_ROOT\CLSID\{1531d583-8375-4d3f-b5fb-d23bbd169f22}]
-
-
-;web browser utilities
-
-[-HKEY_CLASSES_ROOT\CLSID\{16CA098E-5156-4EDC-B064-741AB2B08A38}]
-
-[-HKEY_CLASSES_ROOT\CLSID\{196f128d-dce9-4090-b061-3d29c6ca32c2}]
-
-;unwanted commands
-
-; remove explorer url associations
-
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Capabilities\UrlAssociations]
-
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\Windows.CleanUp]
-
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\Windows.Burn.Action]
-
-[-HKEY_CLASSES_ROOT\Explorer.AssocActionId.ZipSelection]
-
-[-HKEY_CLASSES_ROOT\Explorer.ZipSelection]
-
-[-HKEY_CLASSES_ROOT\Explorer.AssocActionId.BurnSelection]
-
-[-HKEY_CLASSES_ROOT\Explorer.BurnSelection]
-
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\Windows.burn]
-
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\Windows.CompressedFile.extract]
-
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\Windows.CompressedFile.ExtractTo]
-
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\Windows.CompressedFolder.extract]
-
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\Windows.CompressedItem.extract]
-
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\Windows.CompressTo]
-
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\Windows.FinishBurn]
-
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\Windows.playmusic]
-
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\Windows.playall]
-
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\Windows.readingpane]
-
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\Windows.rotate270]
-
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\Windows.rotate90]
-
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\Windows.email]
-
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\Windows.slideshow]
-
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\Windows.Sync]
-
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\Windows.zip]
-
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\Windows.Zip.Action]
-
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\Windows.location.PowershellAsAdmin]
-
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\Windows.location.cmdPromptAsAdministrator]
-
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\Windows.location.Powershell]
-
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\Windows.location.cmd]
-
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\Windows.MultiVerb.PowershellAsAdmin]
-
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\Windows.MultiVerb.Powershell]
-
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\Windows.MultiVerb.cmdPromptAsAdministrator]
-
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\Windows.MultiVerb.cmd]
-
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CD Burning]
-
--HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\HomeFolderMSGraph_WithRecommendations]
-
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Kindmap]
-
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\NotificationArea]
-
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\PublishingWizard]
-
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\ShellServiceObjects\{4DC9C264-730E-4CF6-8374-70F079E4F82B}]
-
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\ExecuteTypeDelegates\Search.Contact]
-
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\ExecuteTypeDelegates\Search.Message]
-
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\ExecuteTypeDelegates\Search.Note]
-
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\ExecuteTypeDelegates\Search.ReadMail]
-
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\ExecuteTypeDelegates\Search.Appointment]
-
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\ExecuteTypeDelegates\MusicSearch.CollectionResult]
-
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Associations]
-
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\Windows.Defragment]
-
-; kill broadcast dvr component
-
-[-HKEY_CLASSES_ROOT\CLSID\{817F98C4-C9D9-4B8F-B8D0-413C8E5DBBB7}]
-
-[-HKEY_CLASSES_ROOT\WOW6432Node\CLSID\{817F98C4-C9D9-4B8F-B8D0-413C8E5DBBB7}]
-
-; erase disc
-
-[-HKEY_CLASSES_ROOT\Explorer.EraseDisc]
-
-[-HKEY_CLASSES_ROOT\Explorer.AssocActionId.EraseDisc]
-
-;{d20a3293-3341-4ae8-9aaf-8e397cb63c34} + {ab7c873b-eb14-49a6-be60-a602f80e6d22}
-
-[-HKEY_CLASSES_ROOT\CLSID\{d20a3293-3341-4ae8-9aaf-8e397cb63c34}]
-
-[-HKEY_CLASSES_ROOT\WOW6432Node\CLSID\{d20a3293-3341-4ae8-9aaf-8e397cb63c34}]
-
-[-HKEY_CLASSES_ROOT\DefragEngine.DefragEngine]
-
-[-HKEY_CLASSES_ROOT\DefragEngine.DefragEngine.1]
-
-; device information update server
-
-[-HKEY_CLASSES_ROOT\CLSID\{d064d602-c470-4162-8ae6-880edc553b89}]
-
-[-HKEY_CLASSES_ROOT\WOW6432Node\CLSID\{d064d602-c470-4162-8ae6-880edc553b89}]
-
-[-HKEY_CLASSES_ROOT\CLSID\{C947D50F-378E-4FF6-8835-FCB50305244D}]
-
-[-HKEY_CLASSES_ROOT\WOW6432Node\CLSID\{C947D50F-378E-4FF6-8835-FCB50305244D}]
 
 
 ; remove foldertype entires
-
 
 [-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\ExecuteTypeDelegates\Search.UnreadMail]
 
@@ -305,10 +147,6 @@ Windows Registry Editor Version 5.00
 
 [-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FolderTypes\{C45B8BA0-0635-40EF-9661-1C1300669F7B}]
 
-
-; remove shell extension +{E6FB5E20-DE35-11CF-9C87-00AA005127ED}
-
-
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Shell Extensions\Approved]
 "{7FC0B86E-5FA7-11d1-BC7C-00C04FD929DB}"=-
 "{08165EA0-E946-11CF-9C87-00AA005127ED}"=-
@@ -330,7 +168,33 @@ Windows Registry Editor Version 5.00
 
 [-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\HTML Help]
 
-
 [-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\ScriptedDiagnosticsProvider]
 
 [-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Mail]
+
+; device information update server
+
+[-HKEY_CLASSES_ROOT\CLSID\{d064d602-c470-4162-8ae6-880edc553b89}]
+
+[-HKEY_CLASSES_ROOT\WOW6432Node\CLSID\{d064d602-c470-4162-8ae6-880edc553b89}]
+
+[-HKEY_CLASSES_ROOT\CLSID\{C947D50F-378E-4FF6-8835-FCB50305244D}]
+
+[-HKEY_CLASSES_ROOT\WOW6432Node\CLSID\{C947D50F-378E-4FF6-8835-FCB50305244D}]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\Windows.playmusic]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\Windows.playall]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\Windows.readingpane]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\Windows.rotate270]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\Windows.rotate90]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\Windows.email]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\Windows.slideshow]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\Windows.Sync]
+
