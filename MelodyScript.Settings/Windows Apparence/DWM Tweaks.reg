@@ -30,6 +30,15 @@ Windows Registry Editor Version 5.00
 "SuperWetEnabled"=dword:00000000
 "TelemetryFramesSequenceMaximumPeriodMilliseconds"=dword:000001f4
 "UseHWDrawListEntriesOnWARP"=dword:00000001
+"DisableLockingMemory"=dword:00000001
+"DisableDeviceBitmaps"=dword:00000001
+"DisableDeviceBitmapsForMultiAdapter"=dword:00000001
+"DisableDynamicShutdownUI"=dword:00000001
+"LogExpressionPerfStats"=dword:00000000
+"OneCoreNoDWMRawGameController"=dword:00000001
+"DisableIndependentFlip"=dword:00000001
+"DisableProjectedShadows"=dword:00000001
+"DisableProjectedShadowsRendering"=dword:00000001
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DWM]
 "DWMWA_TRANSITIONS_FORCEDISABLED"=dword:00000001
