@@ -19,7 +19,6 @@ Windows Registry Editor Version 5.00
 "DisableDrawListCaching"=dword:00000001
 "EnableDwmInputProcessing"=dword:00000000
 "DisallowNonDrawListRendering"=dword:00000000
-"EnableCpuClipping"=dword:00000000
 "EnableDrawToBackbuffer"=dword:0000000
 "EnableImageProcessing"=dword:0000001
 "EnableMPCPerfCounter"=dword:0000000
