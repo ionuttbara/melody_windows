@@ -6,22 +6,13 @@ Windows Registry Editor Version 5.00
 "DesktopHeapLogging"=dword:00000000
 "DwmInputUsesIoCompletionPort"=dword:00000000
 
-[HKEY_USERS\.DEFAULT\Software\Microsoft\Windows\DWM]
-"CompositionPolicy"=dword:00000000
-
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Dwm]
-"Composition"=dword:00000000
 "EnableAeroPeek"=dword:00000000
 "AlwaysHibernateThumbnails"=dword:00000000
-"CompositionPolicy"=dword:00000000
-"OneCoreNoBootDWM"=dword:00000001
 "ForceEffectMode"=-
 "DisableDrawListCaching"=dword:00000001
 "EnableDwmInputProcessing"=dword:00000000
-"DisallowNonDrawListRendering"=dword:00000000
-"EnableDrawToBackbuffer"=dword:0000000
 "EnableImageProcessing"=dword:0000001
-"EnableMPCPerfCounter"=dword:0000000
 "EnableShadow"=dword:00000000
 "ImageProcessing8bit"=dword:00000001
 "MouseWheelScrollingMode"=dword:00000001
@@ -31,14 +22,12 @@ Windows Registry Editor Version 5.00
 "TelemetryFramesSequenceMaximumPeriodMilliseconds"=dword:000001f4
 "UseHWDrawListEntriesOnWARP"=dword:00000001
 "DisableLockingMemory"=dword:00000001
-"DisableDeviceBitmaps"=dword:00000001
-"DisableDeviceBitmapsForMultiAdapter"=dword:00000001
 "DisableDynamicShutdownUI"=dword:00000001
 "LogExpressionPerfStats"=dword:00000000
-"OneCoreNoDWMRawGameController"=dword:00000001
 "DisableIndependentFlip"=dword:00000001
 "DisableProjectedShadows"=dword:00000001
 "DisableProjectedShadowsRendering"=dword:00000001
+"OverlayTestMode"=dword:00000005
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DWM]
 "DWMWA_TRANSITIONS_FORCEDISABLED"=dword:00000001
@@ -46,11 +35,9 @@ Windows Registry Editor Version 5.00
 "DisallowColorizationColorChanges"=dword:00000001
 
 [HKEY_CURRENT_USER\Software\Microsoft\Windows\DWM]
-"Composition"=dword:00000000
 "EnableAeroPeek"=dword:00000000
 "AlwaysHibernateThumbnails"=dword:00000000
 "CompositionPolicy"=dword:00000000
-"OneCoreNoBootDWM"=dword:00000001
 "ForceEffectMode"=-
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\DWM\ExtendedComposition]
