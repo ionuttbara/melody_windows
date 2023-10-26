@@ -51,7 +51,7 @@ Windows Registry Editor Version 5.00
 "PreventDeviceMetadataFromNetwork"=dword:00000001
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DriverSearching]
-"SearchOrderConfig"=dword:00000003
+"SearchOrderConfig"=dword:00000000
 "DontSearchWindowsUpdate"=dword:00000001
 "DontPromptForWindowsUpdate"=dword:00000001
 "DriverServerSelection"=dword:00000001
@@ -132,3 +132,6 @@ Windows Registry Editor Version 5.00
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsUpdate\UpdatePolicy\PolicyState]
 "ExcludeWUDrivers"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Device Installer]
+"DisableCoInstallers"=dword:00000001

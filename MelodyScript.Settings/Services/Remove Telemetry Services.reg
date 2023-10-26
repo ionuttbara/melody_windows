@@ -72,11 +72,13 @@ Windows Registry Editor Version 5.00
 
 [-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\MozillaMaintenance]
 
-[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\COMSysApp]
+[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PerfHost]
 
-[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SENS]
+[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\UmRdpService]
 
-[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\EventSystem]
+[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Sense]
+
+[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WdNisSvc]
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Svchost]
 "rdxgroup"=-

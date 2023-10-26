@@ -92,8 +92,6 @@ Windows Registry Editor Version 5.00
 "Start"=dword:00000000
 "Status"=dword:00000000
 
-Windows Registry Editor Version 5.00
-
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\WMI\Autologger\Diagtrack-Listener]
 "BufferSize"=dword:00000040
 "MinimumBuffers"=dword:00000004
