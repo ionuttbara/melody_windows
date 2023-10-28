@@ -1,0 +1,19 @@
+Windows Registry Editor Version 5.00
+
+[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WdiServiceHost]
+
+[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WdiSystemHost]
+
+[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\DPS]
+
+[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\diagsvc]
+
+[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\TroubleshootingSvc]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Svchost\diagnostics]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Svchost\wercplsupport]
+
+[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\wercplsupport]
+
+[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WerSvc]

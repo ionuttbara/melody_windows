@@ -4,41 +4,6 @@ title [0 percent] Melody Script 14 & pushd "%CD%" & CD /D "%~dp0" >nul
 :--------------------------------------
 
 :--------------------------------------
-:: Boot Parameters
-bcdedit.exe /timeout 0 >nul
-bcdedit.exe /set hypervisorlaunchtype Auto >nul
-bcdedit.exe /set debug No >nul
-bcdedit.exe /set sos Yes >nul
-bcdedit.exe /set ems No >nul
-bcdedit.exe /set noumex Yes >nul
-bcdedit.exe /set bootems No >nul
-bcdedit.exe /set perfmem 0 >nul
-bcdedit.exe /set onecpu No >nul
-bcdedit.exe /set nolowmem Yes >nul
-bcdedit.exe /set MSI Default >nul
-bcdedit.exe /set vsmlaunchtype Off >nul
-bcdedit.exe /set nx AlwaysOff >nul
-bcdedit.exe /set pae ForceEnable >nul
-bcdedit.exe /set extendedinput Yes >nul
-bcdedit.exe /set highestmode Yes >nul
-bcdedit.exe /set forcefipscrypto No >nul
-bcdedit.exe /set halbreakpoint No >nul
-bcdedit.exe /set tpmbootentropy ForceDisable >nul
-bcdedit.exe /set linearaddress57 OptOut >nul
-bcdedit.exe /set usephysicaldestination No >nul
-bcdedit.exe /set increaseuserva 3072 >nul
-bcdedit.exe /set bootmenupolicy Legacy >nul
-bcdedit.exe /set recoveryenabled NO >nul
-bcdedit.exe /set vsmlaunchtype off >nul
-bcdedit.exe /set graphicsmodedisabled No >nul
-bcdedit.exe /set useplatformclock false >nul
-bcdedit.exe /set tscsyncpolicy Enhanced >nul
-bcdedit.exe /set disabledynamictick yes >nul
-bcdedit.exe /set useplatformtick Yes >nul
-bcdedit.exe /set NOINTEGRITYCHECKS OFF >nul
-bcdedit.exe /set TESTSIGNING OFF >nul
-bcdedit.exe /set x2apicpolicy enable >nul
-bcdedit.exe /set firstmegabytepolicy UseAll >nul
 wmic path Win32_PnPEntity where "name='High precision event timer'" call disable
 wmic path Win32_PnPEntity where "name='Microsoft Hyper-V Virtualization Infrastructure Driver'" call disable
 :--------------------------------------
@@ -78,13 +43,13 @@ CLS & echo Applying network tweaks...
 netsh.exe interface tcp set global autotuning = experimental >nul
 netsh.exe interface tcp set heuristics disabled >nul
 
-:: Setting the Congestion Provider for better Internet Speeds and Latency, to CTCP
+:: Setting the Congestion Provider for better Internet Speeds and Latency, to BBR2
 
-netsh.exe interface tcp set supplemental Internet congestionprovider=ctcp >nul
-netsh.exe interface tcp set supplemental InternetCustom congestionprovider=ctcp >nul
+netsh.exe interface tcp set supplemental Internet congestionprovider=bbr2
+netsh.exe interface tcp set supplemental InternetCustom congestionprovider=bbr2
 
 :: Reducing CPU for veryfast Internet Connections
-netsh.exe int isatap set state disable
+netsh.exe int isatap set state disable >nul
 netsh.exe interface tcp set global rsc=disabled >nul
 netsh.exe interface tcp set global ecncapability=enabled >nul
 netsh.exe interface tcp set global timestamps=disabled >nul
@@ -104,26 +69,24 @@ netsh.exe interface tcp set global rss=enabled >nul
 netsh interface ip set global neighborcachelimit=4096 defaultcurhoplimit=64 taskoffload=enabled >nul
 netsh interface tcp set global hystart=disabled >nul
 netsh interface tcp set global fastopen=enabled >nul
-:: some powershell.exe commands which apply to all present network adapters (optimizations for I/O Overhead and getting better ping in worse internet connections)
-powershell.exe -command "Disable-NetAdapterChecksumOffload -Name "*"" >nul
-powershell.exe -command "Disable-NetAdapterLso -Name "*"" >nul
-powershell.exe -command "Set-NetOffloadGlobalSetting -PacketCoalescingFilter disabled" >nul
-powershell.exe -command "Disable-NetAdapterRsc -Name "*"" >nul
-powershell.exe -command Disable-NetAdapterBinding -Name "*" -ComponentID ms_pacer
-powershell.exe -command "ForEach($adapter In Get-NetAdapter){Disable-NetAdapterPowerManagement -Name $adapter.Name -ErrorAction SilentlyContinue}" >nul
 
+:: some powershell.exe commands which apply to all present network adapters (optimizations for I/O Overhead and getting better ping in worse internet connections)
+powershell.exe "Disable-NetAdapterChecksumOffload -Name "*""
+powershell.exe "Disable-NetAdapterLso -Name "*"" >nul
+powershell.exe "Set-NetOffloadGlobalSetting -PacketCoalescingFilter disabled"
+powershell.exe "Disable-NetAdapterRsc -Name "*"" >nul
+powershell.exe Disable-NetAdapterBinding -Name "*" -ComponentID ms_pacer
+powershell.exe "ForEach($adapter In Get-NetAdapter){Disable-NetAdapterPowerManagement -Name $adapter.Name -ErrorAction SilentlyContinue}"
+powershell.exe "Get-NetAdapter -IncludeHidden | Set-NetIPInterface -WeakHostSend Enabled -WeakHostReceive Enabled -ErrorAction SilentlyContinue"
 
 :: set DNS
-powershell.exe -command Set-DNSClientServerAddress * -ServerAddresses ("94.140.14.14","94.140.15.15")
-
+powershell.exe Set-DNSClientServerAddress * -ServerAddresses ("94.140.14.14","94.140.15.15")
 
 :: Firewall Rules
 
 netsh.exe advfirewall firewall set rule group="Network Discovery" new enable=Yes >nul
 netsh.exe advfirewall firewall set rule group="File and Printer Sharing" new enable=Yes >nul
 netsh.exe advfirewall firewall set rule group="Delivery Optimization" new enable=No >nul
-netsh.exe advfirewall firewall set rule group="Microsoft Family Safety" new enable=No >nul
-
 
 :: Adding NetBios Options
 for /f %%k in ('reg query HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\services\NetBT\Parameters\Interfaces') do (
@@ -154,27 +117,23 @@ for /f "tokens=3*" %%a in ('reg query "HKLM\Software\Microsoft\Windows NT\Curren
 		reg add "%%g" /v "GigaLite" /t REG_SZ /d "0" /f
 		reg add "%%g" /v "NumRssQueues" /t REG_SZ /d "4" /f
 		reg add "%%g" /v "*RSS" /t REG_SZ /d "1" /f
-		reg add "%%g" /v "*IPChecksumOffloadIPv4" /t REG_SZ /d "3" /f
+		reg add "%%g" /v "*IPChecksumOffloadIPv4" /t REG_SZ /d "0" /f
 		reg add "%%g" /v "WakeOnLinkChange" /t REG_SZ /d "0" /f
 		reg add "%%g" /v "ModernStandbyWoLMagicPacket" /t REG_SZ /d "0" /f
 		reg add "%%g" /v "InterruptModeration" /t REG_SZ /d "0" /f
 		reg add "%%g" /v "*PMNSOffload" /t REG_SZ /d "0" /f
-		reg add "%%g" /v "*PMARPOffload" /t REG_SZ /d "1" /f
-		reg add "%%g" /v "*JumboPacket" /t REG_SZ /d "9014" /f
+		reg add "%%g" /v "*PMARPOffload" /t REG_SZ /d "0" /f
+		reg add "%%g" /v "*JumboPacket" /t REG_SZ /d "1514" /f
 		reg add "%%g" /v "*ReceiveBuffers" /t REG_SZ /d "512" /f
 		reg add "%%g" /v "*TransmitBuffers" /t REG_SZ /d "128" /f
-		reg add "%%g" /v "NumRssQueues" /t REG_SZ /d "4" /f
 		reg add "%%g" /v "*LsoV2IPv6" /t REG_SZ /d "0" /f
 		reg add "%%g" /v "*LsoV2IPv4" /t REG_SZ /d "0" /f
 		reg add "%%g" /v "*SpeedDuplex" /t REG_SZ /d "6" /f
 		reg add "%%g" /v "WolShutdownLinkSpeed" /t REG_SZ /d "2" /f
 		reg add "%%g" /v "*WakeOnPattern" /t REG_SZ /d "0" /f
 		reg add "%%g" /v "*WakeOnMagicPacket" /t REG_SZ /d "0" /f
-		reg add "%%g" /v "EnablePME" /t REG_SZ /d "0" /f
 		reg add "%%g" /v "ReduceSpeedOnPowerDown" /t REG_SZ /d "0" /f
-		reg add "%%g" /v "ULPMode" /t REG_SZ /d "0" /f
 		reg add "%%g" /v "EnablePowerManagement" /t REG_SZ /d "0" /f
-		reg add "%%g" /v "EnableSavePowerNow" /t REG_SZ /d "0" /f
 		)
 	)
 

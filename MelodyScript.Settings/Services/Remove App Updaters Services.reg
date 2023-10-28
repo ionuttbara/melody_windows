@@ -3,3 +3,26 @@ Windows Registry Editor Version 5.00
 [-HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\hola_updater]
 
 [-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\OverwolfUpdater]
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\XSplit_VCam_Updater]
+"Start"=dword:00000004
+
+; remove google update services
+
+[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\gupdatem]
+
+[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\gupdate]
+
+;remove mozilla maintenance service
+
+[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\MozillaMaintenance]
+
+;remove microsoft edge updaters service
+
+[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\edgeupdatem]
+
+[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\edgeupdate]
+
+;remove adobe acrobat updater service
+
+[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\AdobeARMservice]

@@ -36,9 +36,9 @@ Windows Registry Editor Version 5.00
 
 [-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\BcastDVRUserService]
 
-[-HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\CaptureService]
-
 [-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Svchost\BcastDVRUserService]
+
+[-HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\CaptureService]
 
 [-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Svchost\InvSvcGroup]
 
@@ -90,3 +90,5 @@ Windows Registry Editor Version 5.00
 [-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PhoneSvc]
 
 [-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SessionEnv]
+
+[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\amdwps]

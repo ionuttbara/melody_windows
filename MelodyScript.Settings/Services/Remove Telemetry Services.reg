@@ -8,17 +8,11 @@ Windows Registry Editor Version 5.00
 
 [-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\AMD External Events Utility]
 
-[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\GraphicsPerfSvc]
-
 [-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\GpuEnergyDrv]
 
 [-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\luafv]
 
 [-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PktMon]
-
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Svchost\diagnostics]
-
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Svchost\wercplsupport]
 
 [-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Svchost\GraphicsPerfSvcGroup]
 
@@ -32,21 +26,11 @@ Windows Registry Editor Version 5.00
 
 [-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Psched]
 
-[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WerSvc]
-
 [-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\gencounter]
 
 [-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\FileInfo]
 
 [-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Filetrace]
-
-[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WdiServiceHost]
-
-[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WdiSystemHost]
-
-[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\diagsvc]
-
-[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\TroubleshootingSvc]
 
 [-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\NDKPerf]
 
@@ -60,23 +44,17 @@ Windows Registry Editor Version 5.00
 
 [-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\lfsvc]
 
-[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\DPS]
-
-[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\wercplsupport]
-
 [-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\InventorySvc]
 
 [-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ss_conn_service]
 
 [-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ss_conn_service2]
 
-[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\MozillaMaintenance]
-
 [-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PerfHost]
 
 [-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\UmRdpService]
 
-[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Sense]
+[-r\Sense]
 
 [-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WdNisSvc]
 
@@ -85,3 +63,7 @@ Windows Registry Editor Version 5.00
 "GraphicsPerfSvcGroup"=-
 "autoTimeSvc"=-
 "NetworkServiceAndNoImpersonation"=-
+
+[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\VSStandardCollectorService150]
+
+[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\IObitUnlocker]
