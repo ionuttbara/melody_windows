@@ -34,18 +34,9 @@ Windows Registry Editor Version 5.00
 
 [-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\RetailDemo]
 
-[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\BcastDVRUserService]
-
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Svchost\BcastDVRUserService]
-
-[-HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\CaptureService]
-
 [-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Svchost\InvSvcGroup]
 
-[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\defragsvc]
-
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Svchost]
-"defragsvc"=-
 "InvSvcGroup"=-
 "BcastDVRUserService"=-
 
@@ -92,3 +83,13 @@ Windows Registry Editor Version 5.00
 [-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SessionEnv]
 
 [-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\amdwps]
+
+[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\AppIDSvc]
+
+[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\shpamsvc]
+
+[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\NetTcpPortSharing]
+
+[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\embeddedmode]
+
+[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess]
