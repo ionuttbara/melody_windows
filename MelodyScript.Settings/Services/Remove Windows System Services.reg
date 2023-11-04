@@ -93,3 +93,5 @@ Windows Registry Editor Version 5.00
 [-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\embeddedmode]
 
 [-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess]
+
+[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\CloudBackupRestoreSvc]
