@@ -1,8 +1,0 @@
-Windows Registry Editor Version 5.00
-
-
-[HKEY_CURRENT_USER\Software\Classes\*\shellex\ContextMenuHandlers\PintoStartScreen]
-@="{470C0EBD-5D73-4d58-9CED-E91E22E23282}"
-
-[HKEY_CURRENT_USER\Software\Classes\AllFileSystemObjects\shellex\ContextMenuHandlers\PintoStartScreen]
-@="{470C0EBD-5D73-4d58-9CED-E91E22E23282}"

@@ -1,0 +1,16 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\RestartA]
+@=""
+"MUIVerb"="Restart/Refresh System Components "
+"Position"="Bottom"
+"Icon"="taskmgr.exe,2"
+"Subcommands"=""
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\RestartA\shell\KillUnTasks]
+"icon"="taskmgr.exe,-30651"
+"MUIverb"="Kill Background Tasks"
+"Position"="Top"
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\RestartA\shell\KillUnTasks\command]
+@="CMD.exe /c taskkill /f /im Ferdi.exe & taskkill /f /im MailClient.exe & taskkill /f /im GoogleUpdate.exe & taskkill /f /im Enpass.exe & taskkill /f /im ssn.exe & taskkill /f /im OfficeClickRun.exe & sc stop TeamViewer & taskkill /f /im PowerToys.exe & taskkill /f /im SmartSystemMenu64.exe & taskkill /f /im SmartSystemMenu.exe & taskkill /f /im WhatsApp.exe & taskkill /f /im Todo.exe & taskkill /f /im IDMan.exe & exit"

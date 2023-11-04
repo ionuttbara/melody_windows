@@ -173,17 +173,6 @@ CLS & echo Please wait...
 "powershell.exe" Enable-WindowsOptionalFeature -Online -FeatureName DirectPlay -all -NoRestart
 :--------------------------------------
 
-
-CLS & echo Adding root certificates...
-:--------------------------------------
-:: Certificate Installation
-title [90 percent] Melody Script 14
-@for /f "delims=" %%f in ('dir /b %~dp0\GalleryInc.Core.MelodyScript.Configurations\certificates\*') do (
-certutil -f -addstore Root "%~dp0\GalleryInc.Core.MelodyScript.Configurations\certificates\%%f"
-)
-echo Certificates added.
-:--------------------------------------
-
 :--------------------------------------
 ::Toggler Installer
 title [100 percent] Melody Script 14
