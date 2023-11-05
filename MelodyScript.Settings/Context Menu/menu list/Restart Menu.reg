@@ -12,14 +12,14 @@ Windows Registry Editor Version 5.00
 "MUIVerb"="Shut Down PC"
 
 [HKEY_CLASSES_ROOT\DesktopBackground\Shell\RestartB\shell\001flyout\command]
-@="shutdown /r /f /t 0"
+@="shutdown /s /f /t 0"
 
 [HKEY_CLASSES_ROOT\DesktopBackground\Shell\RestartB\shell\002flyout]
-"MUIVerb"="Full restart PC with warning"
+"MUIVerb"="Restart PC"
 "CommandFlags"=dword:00000020
 
 [HKEY_CLASSES_ROOT\DesktopBackground\Shell\RestartB\shell\002flyout\command]
-@="shutdown /r"
+@="shutdown /r /t 0"
 
 [HKEY_CLASSES_ROOT\DesktopBackground\Shell\RestartB\shell\003flyout]
 "MUIVerb"="Restart PC. After rebooted, restart any opened registered apps."
