@@ -2,4 +2,6 @@ Windows Registry Editor Version 5.00
 
 [-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\AppID]
 
+[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\AppIDSvc]
+
 [-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\applockerfltr]

@@ -84,14 +84,14 @@ Windows Registry Editor Version 5.00
 
 [-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\amdwps]
 
-[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\AppIDSvc]
-
 [-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\shpamsvc]
 
 [-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\NetTcpPortSharing]
 
 [-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\embeddedmode]
 
-[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess]
-
 [-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\CloudBackupRestoreSvc]
+
+[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\AppleSSD]
+
+[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SENS]
