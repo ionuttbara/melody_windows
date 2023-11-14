@@ -4,8 +4,34 @@ title [0 percent] Melody Script 14 & pushd "%CD%" & CD /D "%~dp0" >nul
 :--------------------------------------
 
 :--------------------------------------
+:: disabling devices HPET + Virtualization HyperV for get better performance + latency
+:: if you use Hyper-V , enable it in Device Manager
 wmic path Win32_PnPEntity where "name='High precision event timer'" call disable
 wmic path Win32_PnPEntity where "name='Microsoft Hyper-V Virtualization Infrastructure Driver'" call disable
+:: Disable P-State for GPUs
+for /f %%i in ('wmic path Win32_VideoController get PNPDeviceID^| findstr /L "PCI\VEN_"') do (
+	for /f "tokens=3" %%a in ('reg query "HKLM\SYSTEM\ControlSet001\Enum\%%i" /v "Driver"') do (
+		for /f %%i in ('echo %%a ^| findstr "{"') do (
+		     reg add "HKLM\SYSTEM\CurrentControlSet\Control\Class\%%i" /v "DisableDynamicPstate" /t REG_DWORD /d "1" /f 
+                   )
+                )
+             )
+:: USB Devices Tweaks. Disable USB Power Saving per USB Device
+for /f %%i in ('wmic path Win32_USBController get PNPDeviceID^| findstr /l "PCI\VEN_"') do (
+reg add "HKLM\SYSTEM\CurrentControlSet\Enum\%%i\Device Parameters\Interrupt Management\MessageSignaledInterruptProperties" /v "MSISupported" /t REG_DWORD /d "1" /f 
+reg add "HKLM\SYSTEM\CurrentControlSet\Enum\%%i\Device Parameters\Interrupt Management\Affinity Policy" /v "DevicePriority" /t REG_DWORD /d "0" /f 
+reg add "HKLM\SYSTEM\CurrentControlSet\Enum\%%i\Device Parameters" /v "AllowIdleIrpInD3" /t REG_DWORD /d "0" /f 
+reg add "HKLM\SYSTEM\CurrentControlSet\Enum\%%i\Device Parameters" /v "D3ColdSupported" /t REG_DWORD /d "0" /f 
+reg add "HKLM\SYSTEM\CurrentControlSet\Enum\%%i\Device Parameters" /v "DeviceSelectiveSuspended" /t REG_DWORD /d "0" /f 
+reg add "HKLM\SYSTEM\CurrentControlSet\Enum\%%i\Device Parameters" /v "EnableSelectiveSuspend" /t REG_DWORD /d "0" /f 
+reg add "HKLM\SYSTEM\CurrentControlSet\Enum\%%i\Device Parameters" /v "EnhancedPowerManagementEnabled" /t REG_DWORD /d "0" /f 
+reg add "HKLM\SYSTEM\CurrentControlSet\Enum\%%i\Device Parameters" /v "SelectiveSuspendEnabled" /t REG_DWORD /d "0" /f 
+reg add "HKLM\SYSTEM\CurrentControlSet\Enum\%%i\Device Parameters" /v "SelectiveSuspendOn" /t REG_DWORD /d "0" /f 
+)
+for /f %%i in ('wmic path Win32_USBController get PNPDeviceID^| findstr /l "PCI\VEN_"') do (
+reg add "HKLM\SYSTEM\CurrentControlSet\Enum\%%i\Device Parameters\Interrupt Management\MessageSignaledInterruptProperties" /v "MSISupported" /t REG_DWORD /d "1" /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Enum\%%i\Device Parameters\Interrupt Management\Affinity Policy" /v "DevicePriority" /t REG_DWORD /d "0" /f 
+)
 :--------------------------------------
 
 :--------------------------------------
@@ -96,54 +122,88 @@ reg add %%k /v NetbiosOptions /t reg_dword /d 2 /f
 
 :: Adding Network Adapters Options (can be modified in Advanced Device Options from Device Manager)
 
-for /f "tokens=3*" %%a in ('reg query "HKLM\Software\Microsoft\Windows NT\CurrentVersion\NetworkCards" /k /v /f "Description" /s /e ^| findstr /ri "REG_SZ"') do (
-	for /f %%g in ('reg query "HKLM\System\CurrentControlSet\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}" /s /f "%%b" /d ^| findstr /C:"HKEY"') do (
-		reg add "%%g" /v "MIMOPowerSaveMode" /t REG_SZ /d "3" /f
-		reg add "%%g" /v "PowerSavingMode" /t REG_SZ /d "0" /f
-		reg add "%%g" /v "EnableGreenEthernet" /t REG_SZ /d "0" /f
-		reg add "%%g" /v "*EEE" /t REG_SZ /d "0" /f
-		reg add "%%g" /v "EnableConnectedPowerGating" /t REG_DWORD /d "0" /f
-		reg add "%%g" /v "EnableDynamicPowerGating" /t REG_SZ /d "0" /f
-		reg add "%%g" /v "EnableSavePowerNow" /t REG_SZ /d "0" /f
-		reg add "%%g" /v "PnPCapabilities" /t REG_SZ /d "24" /f
-		reg add "%%g" /v "*NicAutoPowerSaver" /t REG_SZ /d "0" /f
-		reg add "%%g" /v "*FlowControl" /t REG_SZ /d "0" /f
-		reg add "%%g" /v "ULPMode" /t REG_SZ /d "0" /f
-		reg add "%%g" /v "EnablePME" /t REG_SZ /d "0" /f
-		reg add "%%g" /v "AlternateSemaphoreDelay" /t REG_SZ /d "0" /f
-		reg add "%%g" /v "AutoPowerSaveModeEnabled" /t REG_SZ /d "0" /f
-		reg add "%%g" /v "S5WakeOnLan" /t REG_SZ /d "0" /f
-		reg add "%%g" /v "AutoDisableGigabit" /t REG_SZ /d "0" /f
-		reg add "%%g" /v "GigaLite" /t REG_SZ /d "0" /f
-		reg add "%%g" /v "NumRssQueues" /t REG_SZ /d "4" /f
-		reg add "%%g" /v "*RSS" /t REG_SZ /d "1" /f
-		reg add "%%g" /v "*IPChecksumOffloadIPv4" /t REG_SZ /d "0" /f
-		reg add "%%g" /v "WakeOnLinkChange" /t REG_SZ /d "0" /f
-		reg add "%%g" /v "ModernStandbyWoLMagicPacket" /t REG_SZ /d "0" /f
-		reg add "%%g" /v "InterruptModeration" /t REG_SZ /d "0" /f
-		reg add "%%g" /v "*PMNSOffload" /t REG_SZ /d "0" /f
-		reg add "%%g" /v "*PMARPOffload" /t REG_SZ /d "0" /f
-		reg add "%%g" /v "*JumboPacket" /t REG_SZ /d "1514" /f
-		reg add "%%g" /v "*ReceiveBuffers" /t REG_SZ /d "512" /f
-		reg add "%%g" /v "*TransmitBuffers" /t REG_SZ /d "128" /f
-		reg add "%%g" /v "*LsoV2IPv6" /t REG_SZ /d "0" /f
-		reg add "%%g" /v "*LsoV2IPv4" /t REG_SZ /d "0" /f
-		reg add "%%g" /v "*SpeedDuplex" /t REG_SZ /d "6" /f
-		reg add "%%g" /v "WolShutdownLinkSpeed" /t REG_SZ /d "2" /f
-		reg add "%%g" /v "*WakeOnPattern" /t REG_SZ /d "0" /f
-		reg add "%%g" /v "*WakeOnMagicPacket" /t REG_SZ /d "0" /f
-		reg add "%%g" /v "ReduceSpeedOnPowerDown" /t REG_SZ /d "0" /f
-		reg add "%%g" /v "EnablePowerManagement" /t REG_SZ /d "0" /f
+for /f %%n in ('Reg query "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}" /v "*SpeedDuplex" /s ^| findstr  "HKEY"') do (
+:: Disable NIC Power Savings
+reg add "%%n" /v "AutoPowerSaveModeEnabled" /t REG_SZ /d "0" /f
+reg add "%%n" /v "AutoDisableGigabit" /t REG_SZ /d "0" /f
+reg add "%%n" /v "AdvancedEEE" /t REG_SZ /d "0" /f
+reg add "%%n" /v "DisableDelayedPowerUp" /t REG_SZ /d "2" /f
+reg add "%%n" /v "*EEE" /t REG_SZ /d "0" /f
+reg add "%%n" /v "EEE" /t REG_SZ /d "0" /f
+reg add "%%n" /v "EnablePME" /t REG_SZ /d "0" /f
+reg add "%%n" /v "EEELinkAdvertisement" /t REG_SZ /d "0" /f
+reg add "%%n" /v "EnableGreenEthernet" /t REG_SZ /d "0" /f
+reg add "%%n" /v "EnableSavePowerNow" /t REG_SZ /d "0" /f
+reg add "%%n" /v "EnablePowerManagement" /t REG_SZ /d "0" /f
+reg add "%%n" /v "EnableDynamicPowerGating" /t REG_SZ /d "0" /f
+reg add "%%n" /v "EnableConnectedPowerGating" /t REG_SZ /d "0" /f
+reg add "%%n" /v "EnableWakeOnLan" /t REG_SZ /d "0" /f
+reg add "%%n" /v "GigaLite" /t REG_SZ /d "0" /f
+reg add "%%n" /v "NicAutoPowerSaver" /t REG_SZ /d "2" /f
+reg add "%%n" /v "PowerDownPll" /t REG_SZ /d "0" /f
+reg add "%%n" /v "PowerSavingMode" /t REG_SZ /d "0" /f
+reg add "%%n" /v "ReduceSpeedOnPowerDown" /t REG_SZ /d "0" /f
+reg add "%%n" /v "SmartPowerDownEnable" /t REG_SZ /d "0" /f
+reg add "%%n" /v "S5NicKeepOverrideMacAddrV2" /t REG_SZ /d "0" /f
+reg add "%%n" /v "S5WakeOnLan" /t REG_SZ /d "0" /f
+reg add "%%n" /v "ULPMode" /t REG_SZ /d "0" /f
+reg add "%%n" /v "WakeOnDisconnect" /t REG_SZ /d "0" /f
+reg add "%%n" /v "*WakeOnMagicPacket" /t REG_SZ /d "0" /f
+reg add "%%n" /v "*WakeOnPattern" /t REG_SZ /d "0" /f
+reg add "%%n" /v "WakeOnLink" /t REG_SZ /d "0" /f
+reg add "%%n" /v "WolShutdownLinkSpeed" /t REG_SZ /d "2" /f
+:: Disable Jumbo Frame
+echo Disabling Jumbo Frame
+reg add "%%n" /v "JumboPacket" /t REG_SZ /d "1514" /f
+:: Configure Receive/Transmit Buffers
+echo Configuring Buffer Sizes
+reg add "%%n" /v "TransmitBuffers" /t REG_SZ /d "4096" /f
+reg add "%%n" /v "ReceiveBuffers" /t REG_SZ /d "512" /f
+:: Configure Offloads
+echo Configuring Offloads
+reg add "%%n" /v "IPChecksumOffloadIPv4" /t REG_SZ /d "0" /f
+reg add "%%n" /v "LsoV1IPv4" /t REG_SZ /d "0" /f
+reg add "%%n" /v "LsoV2IPv4" /t REG_SZ /d "0" /f
+reg add "%%n" /v "LsoV2IPv6" /t REG_SZ /d "0" /f
+reg add "%%n" /v "PMARPOffload" /t REG_SZ /d "0" /f
+reg add "%%n" /v "PMNSOffload" /t REG_SZ /d "0" /f
+reg add "%%n" /v "TCPChecksumOffloadIPv4" /t REG_SZ /d "0" /f
+reg add "%%n" /v "TCPChecksumOffloadIPv6" /t REG_SZ /d "0" /f
+reg add "%%n" /v "UDPChecksumOffloadIPv6" /t REG_SZ /d "0" /f
+reg add "%%n" /v "UDPChecksumOffloadIPv4" /t REG_SZ /d "0" /f
+:: Enable RSS in NIC
+echo Enabling RSS in NIC
+reg add "%%n" /v "RSS" /t REG_SZ /d "1" /f
+reg add "%%n" /v "*NumRssQueues" /t REG_SZ /d "2" /f
+reg add "%%n" /v "RSSProfile" /t REG_SZ /d "3" /f
+:: Disable Flow Control
+echo Disabling Flow Control
+reg add "%%n" /v "*FlowControl" /t REG_SZ /d "0" /f
+reg add "%%n" /v "FlowControlCap" /t REG_SZ /d "0" /f
+:: Remove Interrupt Delays
+echo Removing Interrupt Delays
+reg add "%%n" /v "TxIntDelay" /t REG_SZ /d "0" /f
+reg add "%%n" /v "TxAbsIntDelay" /t REG_SZ /d "0" /f
+reg add "%%n" /v "RxIntDelay" /t REG_SZ /d "0" /f
+reg add "%%n" /v "RxAbsIntDelay" /t REG_SZ /d "0" /f
+:: Remove Adapter Notification
+echo Removing Adapter Notification Sending
+reg add "%%n" /v "FatChannelIntolerant" /t REG_SZ /d "0" /f
+:: Disable Interrupt Moderation
+echo Disabling Interrupt Moderation
+reg add "%%n" /v "*InterruptModeration" /t REG_SZ /d "0" /f
 		)
-	)
 
+:: Disabling Nagle's Algorithm for better Gaming Latency
 :: Disabling Nagle's Algorithm for better Gaming Latency
 for /f %%r in ('Reg query "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters\Interfaces" /f "1" /d /s^|Findstr HKEY_') do (
 Reg add %%r /v "TCPNoDelay" /t Reg_DWORD /d "1" /f
 Reg add %%r /v "TcpAckFrequency" /t Reg_DWORD /d "1" /f
 Reg add %%r /v "TcpDelAckTicks" /t Reg_DWORD /d "0" /f
 ) >nul
-
+reg add "HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters\Interfaces" /v "TcpAckFrequency" /t REG_DWORD /d "1" /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters\Interfaces" /v "TCPNoDelay" /t REG_DWORD /d "1" /f 
+reg add "HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters\Interfaces" /v "TcpDelAckTicks" /t REG_DWORD /d "0" /f
 :--------------------------------------
 
 
