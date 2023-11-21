@@ -1,5 +1,13 @@
 Windows Registry Editor Version 5.00
 
+[HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\16.0\Common\General]
+"PreferCloudSaveLocations"=dword:00000000
+"disablecomingsoon"=dword:00000001
+"disablebackgrounds"=dword:00000001
+"skydrivesigninoption"=dword:00000000
+"notrack"=dword:00000001
+"optindisable"=dword:00000001
+
 ;Office 2013
 
 [HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\15.0\Common\General]
