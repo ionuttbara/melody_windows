@@ -1,7 +1,5 @@
 Windows Registry Editor Version 5.00
 
-[-HKEY_LOCAL_MACHINE\Software\Policies\Google\Chrome]
-
 [HKEY_LOCAL_MACHINE\Software\Policies\Google\Chrome]
 "DefaultGeolocationSetting"=dword:00000002
 "DefaultKeygenSetting"=dword:00000002

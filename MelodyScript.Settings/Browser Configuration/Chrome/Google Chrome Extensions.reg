@@ -1,7 +1,5 @@
 Windows Registry Editor Version 5.00
 
-[-HKEY_LOCAL_MACHINE\Software\Policies\Google\Chrome]
-
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Google\Chrome\ExtensionInstallForcelist]
 "1"="cjpalhdlnbpafiamejdnhcphjbkeiagm"
 "2"="gebbhagfogifgggkldgodflihgfeippi"
