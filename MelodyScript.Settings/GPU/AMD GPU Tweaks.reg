@@ -1286,7 +1286,7 @@ Windows Registry Editor Version 5.00
 "PP_ForceMCLKHigh"=dword:00000001
 "PP_ForceSCLKHigh"=dword:00000001
 
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\ontrol\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0002]
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0002]
 "DisableAspmL0s"=dword:00000001
 "DisableAspmL1"=dword:00000001
 "EnableAspmL0s"=dword:00000000
