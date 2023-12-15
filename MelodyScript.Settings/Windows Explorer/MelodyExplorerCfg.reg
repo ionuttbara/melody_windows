@@ -1,7 +1,6 @@
 Windows Registry Editor Version 5.00
 
 [HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
-"HideMergeConflicts"=dword:00000000
 "FolderContentsInfoTip"=dword:00000001
 "ShowInfoTip"=dword:00000001
 "SharingWizardOn"=dword:00000000
