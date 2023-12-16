@@ -15,6 +15,7 @@ Windows Registry Editor Version 5.00
 "fEnableUsbBlockDeviceBySetupClass"=dword:00000000
 "fEnableUsbNoAckIsochWriteToDevice"=dword:00000000
 "fEnableUsbSelectDeviceByInterface"=dword:00000000
+"fClientDisableUDP"=dword:00000001
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Terminal Server]
 "fDenyTSConnections"=dword:00000001

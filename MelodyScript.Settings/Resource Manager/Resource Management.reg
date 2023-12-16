@@ -39,7 +39,25 @@ Windows Registry Editor Version 5.00
 "PriorityClass"=dword:00000020
 "SchedulingType"=dword:00000000
 
-; Resource Flags Flags
+
+; Resource Manager for Memory
+
+[HKEY_LOCAL_MACHINE\SYSTEM\ResourcePolicyStore\ResourceSets\Policies\Memory\NoCap]
+"CommitLimit"=dword:ffffffff
+"CommitTarget"=dword:ffffffff
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Processor]
+"Capabilities"=dword:007e666
+
+;Resource Manager for I/O
+
+[HKEY_LOCAL_MACHINE\SYSTEM\ResourcePolicyStore\ResourceSets\Policies\IO\NoCap]
+"IOBandwidth"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\I/O System]
+"IoEnableSessionZeroAccessCheck"=dword:00000001
+
+; flags policies
 
 [HKEY_LOCAL_MACHINE\SYSTEM\ResourcePolicyStore\ResourceSets\Policies\Flags\BackgroundDefault]
 "IsLowPriority"=dword:00000000
@@ -70,66 +88,3 @@ Windows Registry Editor Version 5.00
 
 [HKEY_LOCAL_MACHINE\SYSTEM\ResourcePolicyStore\ResourceSets\Policies\Flags\ThrottleGPUInterference]
 "IsLowPriority"=dword:00000000
-
-;Resource Manager for I/O
-
-[HKEY_LOCAL_MACHINE\SYSTEM\ResourcePolicyStore\ResourceSets\Policies\IO\NoCap]
-"IOBandwidth"=dword:00000000
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\I/O System]
-"IoEnableSessionZeroAccessCheck"=dword:00000001
-
-; Resource Manager for Memory
-
-[HKEY_LOCAL_MACHINE\SYSTEM\ResourcePolicyStore\ResourceSets\Policies\Memory\NoCap]
-"CommitLimit"=dword:ffffffff
-"CommitTarget"=dword:ffffffff
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Processor]
-"Capabilities"=dword:007e666
-
-; Importance for ResourcePolicy Resources
-
-[HKEY_LOCAL_MACHINE\SYSTEM\ResourcePolicyStore\ResourceSets\Policies\Importance\Critical]
-"BasePriority"=dword:00000052
-"OverTargetPriority"=dword:00000032
-
-[HKEY_LOCAL_MACHINE\SYSTEM\ResourcePolicyStore\ResourceSets\Policies\Importance\CriticalNoUi]
-"BasePriority"=dword:00000052
-"OverTargetPriority"=dword:00000032
-
-[HKEY_LOCAL_MACHINE\SYSTEM\ResourcePolicyStore\ResourceSets\Policies\Importance\EmptyHostPPLE]
-"BasePriority"=dword:00000052
-"OverTargetPriority"=dword:00000032
-
-[HKEY_LOCAL_MACHINE\SYSTEM\ResourcePolicyStore\ResourceSets\Policies\Importance\High]
-"BasePriority"=dword:00000052
-"OverTargetPriority"=dword:00000032
-
-[HKEY_LOCAL_MACHINE\SYSTEM\ResourcePolicyStore\ResourceSets\Policies\Importance\Low]
-"BasePriority"=dword:00000052
-"OverTargetPriority"=dword:00000032
-
-[HKEY_LOCAL_MACHINE\SYSTEM\ResourcePolicyStore\ResourceSets\Policies\Importance\Lowest]
-"BasePriority"=dword:00000052
-"OverTargetPriority"=dword:00000032
-
-[HKEY_LOCAL_MACHINE\SYSTEM\ResourcePolicyStore\ResourceSets\Policies\Importance\Medium]
-"BasePriority"=dword:00000052
-"OverTargetPriority"=dword:00000032
-
-[HKEY_LOCAL_MACHINE\SYSTEM\ResourcePolicyStore\ResourceSets\Policies\Importance\MediumHigh]
-"BasePriority"=dword:00000052
-"OverTargetPriority"=dword:00000032
-
-[HKEY_LOCAL_MACHINE\SYSTEM\ResourcePolicyStore\ResourceSets\Policies\Importance\StartHost]
-"BasePriority"=dword:00000052
-"OverTargetPriority"=dword:00000032
-
-[HKEY_LOCAL_MACHINE\SYSTEM\ResourcePolicyStore\ResourceSets\Policies\Importance\VeryHigh]
-"BasePriority"=dword:00000052
-"OverTargetPriority"=dword:00000032
-
-[HKEY_LOCAL_MACHINE\SYSTEM\ResourcePolicyStore\ResourceSets\Policies\Importance\VeryLow]
-"BasePriority"=dword:00000052
-"OverTargetPriority"=dword:00000032
