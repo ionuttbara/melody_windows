@@ -134,14 +134,6 @@ Windows Registry Editor Version 5.00
 
 [-HKEY_CLASSES_ROOT\WOW6432Node\CLSID\{7b81be6a-ce2b-4676-a29e-eb907a5126c5}]
 
-;Personalization
-
-[-HKEY_CLASSES_ROOT\CLSID\{ED834ED6-4B5A-4bfe-8F11-A626DCB6A921}]
-
-[-HKEY_CLASSES_ROOT\WOW6432Node\CLSID\{ED834ED6-4B5A-4bfe-8F11-A626DCB6A921}]
-
-
-
 ;control panel + workplaces center
 [-HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Explorer\ControlPanel\NameSpace\{241D7C96-F8BF-4F85-B01F-E2B043341A4B}]
 
