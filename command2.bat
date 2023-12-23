@@ -16,22 +16,6 @@ for /f %%i in ('wmic path Win32_VideoController get PNPDeviceID^| findstr /L "PC
                    )
                 )
              )
-:: USB Devices Tweaks. Disable USB Power Saving per USB Device
-for /f %%i in ('wmic path Win32_USBController get PNPDeviceID^| findstr /l "PCI\VEN_"') do (
-reg add "HKLM\SYSTEM\CurrentControlSet\Enum\%%i\Device Parameters\Interrupt Management\MessageSignaledInterruptProperties" /v "MSISupported" /t REG_DWORD /d "1" /f 
-reg add "HKLM\SYSTEM\CurrentControlSet\Enum\%%i\Device Parameters\Interrupt Management\Affinity Policy" /v "DevicePriority" /t REG_DWORD /d "0" /f 
-reg add "HKLM\SYSTEM\CurrentControlSet\Enum\%%i\Device Parameters" /v "AllowIdleIrpInD3" /t REG_DWORD /d "0" /f 
-reg add "HKLM\SYSTEM\CurrentControlSet\Enum\%%i\Device Parameters" /v "D3ColdSupported" /t REG_DWORD /d "0" /f 
-reg add "HKLM\SYSTEM\CurrentControlSet\Enum\%%i\Device Parameters" /v "DeviceSelectiveSuspended" /t REG_DWORD /d "0" /f 
-reg add "HKLM\SYSTEM\CurrentControlSet\Enum\%%i\Device Parameters" /v "EnableSelectiveSuspend" /t REG_DWORD /d "0" /f 
-reg add "HKLM\SYSTEM\CurrentControlSet\Enum\%%i\Device Parameters" /v "EnhancedPowerManagementEnabled" /t REG_DWORD /d "0" /f 
-reg add "HKLM\SYSTEM\CurrentControlSet\Enum\%%i\Device Parameters" /v "SelectiveSuspendEnabled" /t REG_DWORD /d "0" /f 
-reg add "HKLM\SYSTEM\CurrentControlSet\Enum\%%i\Device Parameters" /v "SelectiveSuspendOn" /t REG_DWORD /d "0" /f 
-)
-for /f %%i in ('wmic path Win32_USBController get PNPDeviceID^| findstr /l "PCI\VEN_"') do (
-reg add "HKLM\SYSTEM\CurrentControlSet\Enum\%%i\Device Parameters\Interrupt Management\MessageSignaledInterruptProperties" /v "MSISupported" /t REG_DWORD /d "1" /f
-reg add "HKLM\SYSTEM\CurrentControlSet\Enum\%%i\Device Parameters\Interrupt Management\Affinity Policy" /v "DevicePriority" /t REG_DWORD /d "0" /f 
-)
 :--------------------------------------
 
 :--------------------------------------
@@ -69,10 +53,10 @@ CLS & echo Applying network tweaks...
 netsh.exe interface tcp set global autotuning = experimental >nul
 netsh.exe interface tcp set heuristics disabled >nul
 
-:: Setting the Congestion Provider for better Internet Speeds and Latency, to BBR2
+:: Setting the Congestion Provider for better Internet Speeds and Latency, to CTCP
 
-netsh.exe interface tcp set supplemental Internet congestionprovider=bbr2
-netsh.exe interface tcp set supplemental InternetCustom congestionprovider=bbr2
+netsh.exe interface tcp set supplemental Internet congestionprovider=ctcp
+netsh.exe interface tcp set supplemental InternetCustom congestionprovider=ctcp
 
 :: Reducing CPU for veryfast Internet Connections
 netsh.exe int isatap set state disable >nul
@@ -109,10 +93,8 @@ powershell.exe "Get-NetAdapter -IncludeHidden | Set-NetIPInterface -WeakHostSend
 powershell.exe Set-DNSClientServerAddress * -ServerAddresses ("94.140.14.14","94.140.15.15")
 
 :: Firewall Rules
-
 netsh.exe advfirewall firewall set rule group="Network Discovery" new enable=Yes >nul
 netsh.exe advfirewall firewall set rule group="File and Printer Sharing" new enable=Yes >nul
-netsh.exe advfirewall firewall set rule group="Delivery Optimization" new enable=No >nul
 
 :: Adding NetBios Options
 for /f %%k in ('reg query HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\services\NetBT\Parameters\Interfaces') do (
@@ -122,7 +104,7 @@ reg add %%k /v NetbiosOptions /t reg_dword /d 2 /f
 
 :: Adding Network Adapters Options (can be modified in Advanced Device Options from Device Manager)
 
-for /f %%n in ('Reg query "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}" /v "*SpeedDuplex" /s ^| findstr  "HKEY"') do (
+for /f %%n in ('Reg query "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}" /v "*SpeedDuplex" /s ^| findstr "HKEY"') do (
 :: Disable NIC Power Savings
 reg add "%%n" /v "AutoPowerSaveModeEnabled" /t REG_SZ /d "0" /f
 reg add "%%n" /v "AutoDisableGigabit" /t REG_SZ /d "0" /f
@@ -195,15 +177,11 @@ reg add "%%n" /v "*InterruptModeration" /t REG_SZ /d "0" /f
 		)
 
 :: Disabling Nagle's Algorithm for better Gaming Latency
-:: Disabling Nagle's Algorithm for better Gaming Latency
 for /f %%r in ('Reg query "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters\Interfaces" /f "1" /d /s^|Findstr HKEY_') do (
 Reg add %%r /v "TCPNoDelay" /t Reg_DWORD /d "1" /f
 Reg add %%r /v "TcpAckFrequency" /t Reg_DWORD /d "1" /f
 Reg add %%r /v "TcpDelAckTicks" /t Reg_DWORD /d "0" /f
 ) >nul
-reg add "HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters\Interfaces" /v "TcpAckFrequency" /t REG_DWORD /d "1" /f
-reg add "HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters\Interfaces" /v "TCPNoDelay" /t REG_DWORD /d "1" /f 
-reg add "HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters\Interfaces" /v "TcpDelAckTicks" /t REG_DWORD /d "0" /f
 :--------------------------------------
 
 
