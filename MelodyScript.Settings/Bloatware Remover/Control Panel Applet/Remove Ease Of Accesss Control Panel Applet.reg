@@ -1,0 +1,9 @@
+Windows Registry Editor Version 5.00
+
+;ease of access
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Explorer\ControlPanel\NameSpace\{D555645E-D4F8-4c29-A827-D93C859C4F2A}]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Explorer\Desktop\NameSpace_41040327]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\ControlPanel\NameSpace\{D555645E-D4F8-4c29-A827-D93C859C4F2A}]
