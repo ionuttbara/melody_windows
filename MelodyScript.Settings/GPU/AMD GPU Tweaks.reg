@@ -2,8 +2,6 @@ Windows Registry Editor Version 5.00
 
 ; Disable AMD Kernel Logging
 
-
-
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\MSFTProxy\Enum]
 "Kernel Driver Event Logging Policy"="Disabled"
 
@@ -17,7 +15,6 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000\UMD]
 "DisableeRecord"=hex:30,00
 "EnableAmdLog"=hex:30,00
-
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0001]
 "DisableeRecord"=dword:00000001
