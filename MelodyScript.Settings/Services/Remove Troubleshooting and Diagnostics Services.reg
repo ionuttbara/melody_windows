@@ -17,3 +17,5 @@ Windows Registry Editor Version 5.00
 [-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\wercplsupport]
 
 [-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WerSvc]
+
+[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\AeLookupSvc]
