@@ -9,7 +9,6 @@ Windows Registry Editor Version 5.00
 "DisableWindowsSpotlightOnSettings"=dword:00000001
 "DisableThirdPartySuggestions"=dword:00000001
 "DisableTailoredExperiencesWithDiagnosticData"=dword:00000001
-"DisableWindowsConsumerFeatures"=dword:00000001
 "DisableSoftLanding"=dword:00000001
 "DisableCloudOptimizedContent"=dword:00000001
 
@@ -22,7 +21,6 @@ Windows Registry Editor Version 5.00
 "DisableWindowsSpotlightOnSettings"=dword:00000001
 "DisableThirdPartySuggestions"=dword:00000001
 "DisableTailoredExperiencesWithDiagnosticData"=dword:00000001
-"DisableWindowsConsumerFeatures"=dword:00000001
 "DisableSoftLanding"=dword:00000001
 "DisableCloudOptimizedContent"=dword:00000001
 
