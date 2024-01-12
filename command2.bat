@@ -60,8 +60,9 @@ netsh.exe interface tcp set supplemental InternetCustom congestionprovider=ctcp
 
 :: Reducing CPU for veryfast Internet Connections
 netsh.exe int isatap set state disable >nul
-netsh.exe interface tcp set global rsc=disabled >nul
-netsh.exe interface tcp set global ecncapability=enabled >nul
+netsh.exe int tcp set global rsc=disabled >nul
+netsh.exe int tcp set global ecncapability=enabled >nul
+netsh.exe int tcp set global ecn=enabled >nul
 netsh.exe interface tcp set global timestamps=disabled >nul
 netsh.exe interface tcp set global nonsackrttresiliency=disabled >nul
 netsh.exe interface tcp set global maxsynretransmissions=2 >nul
@@ -79,6 +80,7 @@ netsh.exe interface tcp set global rss=enabled >nul
 netsh interface ip set global neighborcachelimit=4096 defaultcurhoplimit=64 taskoffload=enabled >nul
 netsh interface tcp set global hystart=disabled >nul
 netsh interface tcp set global fastopen=enabled >nul
+netsh int tcp set global initialRto=2500 >nul
 
 :: some powershell.exe commands which apply to all present network adapters (optimizations for I/O Overhead and getting better ping in worse internet connections)
 powershell.exe "Disable-NetAdapterChecksumOffload -Name "*""

@@ -7,6 +7,7 @@ Windows Registry Editor Version 5.00
 "skydrivesigninoption"=dword:00000000
 "notrack"=dword:00000001
 "optindisable"=dword:00000001
+"signinoptions"=dword:00000000
 
 ;Office 2013
 
