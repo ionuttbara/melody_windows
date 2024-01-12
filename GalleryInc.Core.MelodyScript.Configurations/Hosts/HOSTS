@@ -1,7 +1,5 @@
 127.0.0.1 localhost
-
 ::1 localhost #[IPv6]
-
 #
 # [Misc A - Z]
 0.0.0.0 fr.a2dfp.net
