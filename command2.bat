@@ -7,12 +7,11 @@ title [0 percent] Melody Script 14 & pushd "%CD%" & CD /D "%~dp0" >nul
 :: disabling devices HPET + Virtualization HyperV for get better performance + latency
 :: if you use Hyper-V , enable it in Device Manager
 wmic path Win32_PnPEntity where "name='High precision event timer'" call disable
-wmic path Win32_PnPEntity where "name='Microsoft Hyper-V Virtualization Infrastructure Driver'" call disable
 :: Disable P-State for GPUs
 for /f %%i in ('wmic path Win32_VideoController get PNPDeviceID^| findstr /L "PCI\VEN_"') do (
 	for /f "tokens=3" %%a in ('reg query "HKLM\SYSTEM\ControlSet001\Enum\%%i" /v "Driver"') do (
 		for /f %%i in ('echo %%a ^| findstr "{"') do (
-		     reg add "HKLM\SYSTEM\CurrentControlSet\Control\Class\%%i" /v "DisableDynamicPstate" /t REG_DWORD /d "1" /f 
+		     reg add "HKLM\SYSTEM\CurrentControlSet\Control\Class\%%i" /v "DisableDynamicPstate" /t REG_DWORD /d "1" /f
                    )
                 )
              )
@@ -28,7 +27,7 @@ Auditpol.exe /clear /y >nul
 
 :--------------------------------------
 :: Unsplit Services
-for /f %%a in ('Reg query HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\InstallService\Stubification /v "EnableAppOffloading" /s ^| findstr  "HKEY"') do (
+for /f %%a in ('Reg query HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\InstallService\Stubification /v "EnableAppOffloading" /s ^| findstr "HKEY"') do (
 for /f %%i in ('Reg query "%%a" /v "EnableAppOffloading" ^| findstr "HKEY"') do (Reg add "%%i" /v "EnableAppOffloading" /t Reg_DWORD /d "0" /f) >nul)
 for /f "tokens=2 delims==" %%i in ('wmic os get TotalVisibleMemorySize /format:value') do set mem=%%i
 set /a ram=%mem% + 1024000
@@ -222,7 +221,5 @@ start /wait cmd.exe /k "MelodyScript.IntegratedTools\Toggler\Toggler.bat"
 :--------------------------------------
 :: echo
 echo Melody Script Applied. This PC will reboot.
-xcopy "MelodyScript.IntegratedTools\EmptyStandbyList\*" %windir% /y /e /h /c /i
-start /wait powershell.exe -command %windir%\install.ps1
 shutdown /r /f /t 0
 :--------------------------------------
