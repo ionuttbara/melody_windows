@@ -1,3 +1,5 @@
+# WARNING: When you run this script it will change  A LOT of windows preferences to the liking of autor of this script, Once executing the exe, it does start, it does not ask for anything and there is NO WAY TO ROLLABACK the changes. Proceed with extreme caution. Try in VM. Extract the source and use individual files.
+
 # Melody Script
 <h1 align="center">
  <img src=https://github.com/jbara2002/melody_windows/assets/76656855/58afdbe0-afee-4afc-8ec9-2f4037d7e174> </img>
