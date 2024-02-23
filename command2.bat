@@ -199,14 +199,6 @@ xcopy "GalleryInc.Core.MelodyScript.Configurations\Icons\*" "C:\ProgramData\Melo
 :--------------------------------------
 
 :--------------------------------------
-:: Configuration of HOSTS
-title [50 percent] Melody Script 14
-IF EXIST %windir%\SYSTEM32\DRIVERS\ETC\HOSTS*.* ATTRIB +A -H -R -S %windir%\SYSTEM32\DRIVERS\ETC\HOSTS*.*>NUL & IF EXIST %windir%\SYSTEM32\DRIVERS\ETC\HOSTS.BACK DEL %windir%\SYSTEM32\DRIVERS\ETC\HOSTS.BACK>NUL
-IF EXIST %windir%\SYSTEM32\DRIVERS\ETC\HOSTS REN %windir%\SYSTEM32\DRIVERS\ETC\HOSTS HOSTS.BACK>NUL & IF EXIST %windir%\SYSTEM32\DRIVERS\ETC\NUL COPY /Y "GalleryInc.Core.MelodyScript.Configurations\Hosts\HOSTS" %windir%\SYSTEM32\DRIVERS\ETC>NUL & IF EXIST %windir%\SYSTEM32\DRIVERS\ETC\HOSTS.BACK ECHO Hosts Applied.
-:--------------------------------------
-
-
-:--------------------------------------
 CLS & echo Please wait...
 "powershell.exe" Enable-WindowsOptionalFeature -Online -FeatureName LegacyComponents -all -NoRestart
 "powershell.exe" Enable-WindowsOptionalFeature -Online -FeatureName DirectPlay -all -NoRestart
