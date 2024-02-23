@@ -1,4 +1,5 @@
-# WARNING: When you run this script it will change  A LOT of windows preferences to the liking of autor of this script, Once executing the exe, it does start, it does not ask for anything and there is NO WAY TO ROLLABACK the changes. Proceed with extreme caution. Try in VM. Extract the source and use individual files. Before to open the app, extract with WinRAR or 7-Zip and remove the unwanted tweaks/registry files. There are organized in **MelodyScript.Settings** folder.
+# WARNING: 
+When you run this script it will change  A LOT of windows preferences to the liking of autor of this script, Once executing the exe, it does start, it does not ask for anything and there is NO WAY TO ROLLABACK the changes. Proceed with extreme caution. Try in VM. Extract the source and use individual files. Before to open the app, extract with WinRAR or 7-Zip and remove the unwanted tweaks/registry files. There are organized in **MelodyScript.Settings** folder.
 
 # Melody Script
 <h1 align="center">
