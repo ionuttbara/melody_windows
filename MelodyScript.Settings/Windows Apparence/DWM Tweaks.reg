@@ -8,26 +8,19 @@ Windows Registry Editor Version 5.00
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Dwm]
 "EnableAeroPeek"=dword:00000000
-"AlwaysHibernateThumbnails"=dword:00000000
-"ForceEffectMode"=-
-"DisableDrawListCaching"=dword:00000001
-"EnableDwmInputProcessing"=dword:00000000
-"EnableImageProcessing"=dword:0000001
-"EnableShadow"=dword:00000000
-"ImageProcessing8bit"=dword:00000001
-"MouseWheelScrollingMode"=dword:00000001
-"ParallelModePolicy"=dword:00000001
-"ResampleInLinearSpace"=dword:00000000
-"SuperWetEnabled"=dword:00000000
-"TelemetryFramesSequenceMaximumPeriodMilliseconds"=dword:000001f4
-"UseHWDrawListEntriesOnWARP"=dword:00000001
-"DisableLockingMemory"=dword:00000001
-"DisableDynamicShutdownUI"=dword:00000001
-"LogExpressionPerfStats"=dword:00000000
-"DisableIndependentFlip"=dword:00000001
-"DisableProjectedShadows"=dword:00000001
-"DisableProjectedShadowsRendering"=dword:00000001
 "OverlayTestMode"=dword:00000005
+"EnableMPCPerfCounter"=dword:00000000
+"ImageProcessing8bit"=dword:00000001
+"MouseWheelScrollingMode"=dword:0000001
+"ParallelModePolicy"=dword:00000002
+"ResampleInLinearSpace"=dword:0000000
+"SuperWetEnabled"=dword:00000000
+"UseHWDrawListEntriesOnWARP"=dword:00000001
+"DisallowNonDrawListRendering"=dword:00000000
+"EnableCpuClipping"=dword:00000000
+"EnableDrawToBackbuffer"=dword:00000001
+"EnableMPCPerfCounter"=dword:00000000
+"EnableShadow"=dword:00000001
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DWM]
 "DWMWA_TRANSITIONS_FORCEDISABLED"=dword:00000001
@@ -39,6 +32,7 @@ Windows Registry Editor Version 5.00
 "AlwaysHibernateThumbnails"=dword:00000000
 "CompositionPolicy"=dword:00000000
 "ForceEffectMode"=-
+
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\DWM\ExtendedComposition]
 "ExclusiveModeFramerateAveragingPeriodMs"=dword:000000fa
