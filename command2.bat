@@ -205,12 +205,6 @@ CLS & echo Please wait...
 :--------------------------------------
 
 :--------------------------------------
-::Toggler Installer
-title [100 percent] Melody Script 14
-start /wait cmd.exe /k "MelodyScript.IntegratedTools\Toggler\Toggler.bat"
-:--------------------------------------
-
-:--------------------------------------
 :: echo
 echo Melody Script Applied. This PC will reboot.
 shutdown /r /f /t 0
