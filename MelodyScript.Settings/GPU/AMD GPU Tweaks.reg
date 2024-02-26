@@ -2025,7 +2025,7 @@ Windows Registry Editor Version 5.00
 "PP_DGBMMMaxTransitionLatencyUvd"=dword:00000001
 "PP_DGBPMMaxTransitionLatencyGfx"=dword:00000001
 "DalNBLatencyForUnderFlow"=dword:00000001
-"DalDramClockChangeLatencyNs"=dword:00000001
+"DalDramClockChangeLatencyNs"=-
 "BGM_LTRSnoopL1Latency"=dword:00000001
 "BGM_LTRSnoopL0Latency"=dword:00000001
 "BGM_LTRNoSnoopL1Latency"=dword:00000001
@@ -2045,7 +2045,7 @@ Windows Registry Editor Version 5.00
 "PP_DGBMMMaxTransitionLatencyUvd"=dword:00000001
 "PP_DGBPMMaxTransitionLatencyGfx"=dword:00000001
 "DalNBLatencyForUnderFlow"=dword:00000001
-"DalDramClockChangeLatencyNs"=dword:00000001
+"DalDramClockChangeLatencyNs"=-
 "BGM_LTRSnoopL1Latency"=dword:00000001
 "BGM_LTRSnoopL0Latency"=dword:00000001
 "BGM_LTRNoSnoopL1Latency"=dword:00000001
@@ -2065,7 +2065,7 @@ Windows Registry Editor Version 5.00
 "PP_DGBMMMaxTransitionLatencyUvd"=dword:00000001
 "PP_DGBPMMaxTransitionLatencyGfx"=dword:00000001
 "DalNBLatencyForUnderFlow"=dword:00000001
-"DalDramClockChangeLatencyNs"=dword:00000001
+"DalDramClockChangeLatencyNs"=-
 "BGM_LTRSnoopL1Latency"=dword:00000001
 "BGM_LTRSnoopL0Latency"=dword:00000001
 "BGM_LTRNoSnoopL1Latency"=dword:00000001
@@ -2085,7 +2085,7 @@ Windows Registry Editor Version 5.00
 "PP_DGBMMMaxTransitionLatencyUvd"=dword:00000001
 "PP_DGBPMMaxTransitionLatencyGfx"=dword:00000001
 "DalNBLatencyForUnderFlow"=dword:00000001
-"DalDramClockChangeLatencyNs"=dword:00000001
+"DalDramClockChangeLatencyNs"=-
 "BGM_LTRSnoopL1Latency"=dword:00000001
 "BGM_LTRSnoopL0Latency"=dword:00000001
 "BGM_LTRNoSnoopL1Latency"=dword:00000001
