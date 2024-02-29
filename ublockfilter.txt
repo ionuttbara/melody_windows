@@ -193,18 +193,6 @@ www.google.com##div.gb_p.gb_o:nth-of-type(1)
 www.eneba.com###page-footer
 www.eneba.com##.iacaV8
 
-! 2023-02-03 https://www.olx.ro
-www.olx.ro###mainpageAds
-www.olx.ro##.sitepopularbox
-www.olx.ro##.clr.siteinfobox.pding15_0
-www.olx.ro##.footer-business-partner
-www.olx.ro##.footer-bottom
-www.olx.ro###body-container
-www.olx.ro##.topbarbanner
-www.olx.ro##.css-bq4r8t
-www.olx.ro##.css-9kkh8y.accordion-item__toggle-contents
-www.olx.ro##.css-slyno6
-
 ! 2023-02-03 https://www.booking.com
 www.booking.com##.emk_footer_update_space.emk_footer_centered.emk_footer_update
 www.booking.com##.footer-wrapper
@@ -302,22 +290,6 @@ www.umfst.ro##.copyright.row
 www.yahoo.com###footer-wrapper
 www.yahoo.com##.scores-container
 www.yahoo.com##.trendingNowTextList.srch-m
-
-! 2023-02-03 https://www.emag.ro
-www.emag.ro##.stories-section.page-section
-www.emag.ro##.ns-content
-www.emag.ro##.footer-inverse.footer-copy
-www.emag.ro##.collapse-group.footer-inverse.footer-content
-www.emag.ro##.sell-with-emag
-www.emag.ro##.footer-aux
-www.emag.ro###main-container > section.page-section > .pad-sep-xs.container
-||s13emagst.akamaized.net/layout/ro/images/db/$image
-www.emag.ro##.custom-page-section.page-section
-www.emag.ro##.hp-slider-section.hp-slider.pad-sep-xs.mrg-sep-sm.page-section > .container
-www.emag.ro##.widgets-holder > section > .container
-www.emag.ro##.hp-slider-section.hp-slider.pad-sep-xs.mrg-sep-sm.page-section
-www.emag.ro##.seo-links-section.page-section-light.page-section
-www.emag.ro##.mrg-sep-sm.disclaimer-section > p
 
 ! 2023-02-03 https://www.pcgamingwiki.com
 www.pcgamingwiki.com###site-notice
