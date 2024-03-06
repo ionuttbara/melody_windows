@@ -75,11 +75,11 @@ netsh.exe int 6to4 set state state=disabled >nul
 netsh.exe interface ip set global multicastforwarding=disabled >nul
 netsh.exe interface tcp set security mpp=disabled profiles=disabled >nul
 netsh.exe interface ip set global icmpredirects=disabled >nul
-netsh.exe interface tcp set global rss=enabled >nul
+netsh.exe interface tcp set global rss=enabled chimney=disabled netdma=disabled dca=disabled >nul
 netsh interface ip set global neighborcachelimit=4096 defaultcurhoplimit=64 taskoffload=enabled >nul
 netsh interface tcp set global hystart=disabled >nul
 netsh interface tcp set global fastopen=enabled >nul
-netsh int tcp set global initialRto=2500 >nul
+netsh int tcp set global initialRto=3000 >nul
 
 :: some powershell.exe commands which apply to all present network adapters (optimizations for I/O Overhead and getting better ping in worse internet connections)
 powershell.exe "Disable-NetAdapterChecksumOffload -Name "*""
