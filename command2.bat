@@ -76,6 +76,7 @@ netsh.exe interface ip set global multicastforwarding=disabled >nul
 netsh.exe interface tcp set security mpp=disabled profiles=disabled >nul
 netsh.exe interface ip set global icmpredirects=disabled >nul
 netsh.exe interface tcp set global rss=enabled >nul
+netsh interface tcp set heuristics wsh=enabled >nul
 netsh interface ip set global neighborcachelimit=4096 defaultcurhoplimit=64 taskoffload=enabled >nul
 netsh interface tcp set global hystart=disabled >nul
 netsh interface tcp set global fastopen=enabled >nul
@@ -154,11 +155,6 @@ reg add "%%n" /v "TCPChecksumOffloadIPv4" /t REG_SZ /d "0" /f
 reg add "%%n" /v "TCPChecksumOffloadIPv6" /t REG_SZ /d "0" /f
 reg add "%%n" /v "UDPChecksumOffloadIPv6" /t REG_SZ /d "0" /f
 reg add "%%n" /v "UDPChecksumOffloadIPv4" /t REG_SZ /d "0" /f
-:: Enable RSS in NIC
-echo Enabling RSS in NIC
-reg add "%%n" /v "RSS" /t REG_SZ /d "1" /f
-reg add "%%n" /v "*NumRssQueues" /t REG_SZ /d "2" /f
-reg add "%%n" /v "RSSProfile" /t REG_SZ /d "3" /f
 :: Disable Flow Control
 echo Disabling Flow Control
 reg add "%%n" /v "*FlowControl" /t REG_SZ /d "0" /f
