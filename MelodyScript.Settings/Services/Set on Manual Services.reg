@@ -3,6 +3,9 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\DoSvc]
 "Start"=dword:00000003
 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\BITS]
+"Start"=dword:00000003
+
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\FDResPub]
 "Start"=dword:00000002
 

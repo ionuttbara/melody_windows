@@ -54,8 +54,6 @@ Windows Registry Editor Version 5.00
 
 [-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\UmRdpService]
 
-[-r\Sense]
-
 [-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WdNisSvc]
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Svchost]
@@ -67,3 +65,20 @@ Windows Registry Editor Version 5.00
 [-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\VSStandardCollectorService150]
 
 [-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\IObitUnlocker]
+
+
+[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\IpxlatCfgSvc]
+
+[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\lltdsvc]
+[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\cloudidsvc]
+[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\NlaSvc]
+[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\refsdedupsvc]
+[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\RasAuto]
+[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\RemoteAccess]
+[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WinDefend]
+[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Sense]
+[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\lmhosts]
+[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\UevAgentService]
+
+[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\dcsvc]
+

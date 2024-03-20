@@ -26,3 +26,5 @@ Windows Registry Editor Version 5.00
 ;remove adobe acrobat updater service
 
 [-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\AdobeARMservice]
+
+[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\AzureAttestService]
