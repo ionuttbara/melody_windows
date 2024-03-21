@@ -1,6 +1,6 @@
 Windows Registry Editor Version 5.00
 
-;Network Settings for Melody 1x.0y (applied to 12.07.xx,13.07.xx, 14.06.xx, 15.y)
+;Network Settings for Melody 1x.0y (applied to 12.07.xx,13.07.xx and 14.06.xx)
 
 ;tcp-ip
 
@@ -46,8 +46,8 @@ Windows Registry Editor Version 5.00
 "DisableRss"=dword:00000000
 "DisableTcpChimneyOffload"=dword:00000000
 "DnsOutstandingQueriesCount"=dword:000003e8
-"DnsQueryTimeouts"=hex(7):31,00,00,00,31,00,00,00,32,00,00,00,32,00,00,00,34,\
-  00,00,00,30,00,00,00,00,00
+"DnsQueryTimeouts"=REG_MULTI_SZ:"1 1 2 2 4 0"
+"EnableAddrMaskReply"=dword:00000000
 "EnableConnectionRateLimiting"=dword:00000000
 "EnableHeuristics"=dword:00000001
 "EnableIPAutoConfigurationLimits"=dword:00000000
@@ -55,7 +55,7 @@ Windows Registry Editor Version 5.00
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters]
 "EnableConnectionRateLimiting"=-
-"QualifyingDestinationThreshold"=dword:fffffff
+"QualifyingDestinationThreshold"=dword:00000003
 "FastCopyReceiveThreshold"=dword:00004000
 "FastSendDatagramThreshold"=dword:00004000
 "DelayedAckFrequency"=dword:00000000
@@ -140,32 +140,3 @@ Windows Registry Editor Version 5.00
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\UDP\Parameters]
 "EnableUDPFastSend"=dword:00000001
-
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\lanmanserver\parameters]
-"AdjustedNullSessionPipes"=dword:00000001
-"Hidden"=dword:00000000
-"Lmannounce"=dword:00000001
-"PipeFirewallActive"=dword:00000000
-"Size"=dword:00000003
-"ThreadPriority"=dword:00000001
-"autodisconnect"=dword:0000000f
-"enableforcedlogoff"=dword:00000001
-"enablesecuritysignature"=dword:00000000
-"requiresecuritysignature"=dword:00000000
-"restrictnullsessaccess"=dword:00000001
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\lanmanworkstation\parameters]
-"DisableByteRangeLockingOnReadOnlyFiles"=dword:00000001
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\MRxSmb\Parameters]
-"BrowserFindMasterTimeout"=-
-"BrowserMinimumConfiguredBrowsers"=-
-"CscEnabled"=dword:00000000
-"DeferredOpensEnabled"=-
-"EnableCompression"=dword:00000001
-"IgnoreBindingOrder"=dword:00000000
-"InfoCacheLevel"=dword:00000010
-"IrpStackSize"=dword:00000032
-"MultiUserEnabled"=dword:00000001
-"OplocksDisabled"=-
