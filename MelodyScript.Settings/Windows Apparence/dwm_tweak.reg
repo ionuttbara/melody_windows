@@ -18,6 +18,10 @@ Windows Registry Editor Version 5.00
 "EnableAeroPeek"=dword:00000000
 "DisableDrawListCaching"=dword:00000000
 "DisallowNonDrawListRendering"=dword:00000000
+<<<<<<< HEAD
+=======
+"EnableCpuClipping"=dword:00000000
+>>>>>>> origin/main
 "EnableDrawToBackbuffer"=dword:0000001
 "EnableImageProcessing"=dword:0000001
 "EnableMPCPerfCounter"=dword:00000000
