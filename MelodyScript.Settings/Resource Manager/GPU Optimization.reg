@@ -14,30 +14,6 @@ Windows Registry Editor Version 5.00
 "MonitorLatencyTolerance"=dword:00000001
 "MonitorRefreshLatencyTolerance"=dword:00000001
 
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Direct3D]
-"DisableVidMemVBs"=dword:00000001
-"MMX Fast Path"=dword:00000001
-"FlipNoVsync"=dword:00000001
-
-[HKEY_USERS\.DEFAULT\SOFTWARE\Microsoft\Direct3D]
-"DisableVidMemVBs"=dword:00000001
-"MMX Fast Path"=dword:00000001
-"FlipNoVsync"=dword:00000001
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Direct3D\Drivers]
-"SoftwareOnly"=dword:00000000
-
-[HKEY_USERS\.DEFAULT\SOFTWARE\Microsoft\Direct3D\Drivers]
-"SoftwareOnly"=dword:00000000
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Direct3D]
-"DisableVidMemVBs"=dword:00000000
-"MMX Fast Path"=dword:00000001
-"FlipNoVsync"=dword:00000001
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Direct3D\Drivers]
-"SoftwareOnly"=dword:00000000
-
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\SubSystems]
 "Optional"=""
 
