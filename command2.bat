@@ -1,20 +1,11 @@
 :--------------------------------------
 :: Starting the script
-title [0 percent] Melody Script 14 & pushd "%CD%" & CD /D "%~dp0" >nul
+title [0 percent] Melody Script 15 & pushd "%CD%" & CD /D "%~dp0" >nul
 :--------------------------------------
 
 :--------------------------------------
 :: disabling devices HPET + Virtualization HyperV for get better performance + latency
-:: if you use Hyper-V , enable it in Device Manager
 wmic path Win32_PnPEntity where "name='High precision event timer'" call disable
-:: Disable P-State for GPUs
-for /f %%i in ('wmic path Win32_VideoController get PNPDeviceID^| findstr /L "PCI\VEN_"') do (
-	for /f "tokens=3" %%a in ('reg query "HKLM\SYSTEM\ControlSet001\Enum\%%i" /v "Driver"') do (
-		for /f %%i in ('echo %%a ^| findstr "{"') do (
-		     reg add "HKLM\SYSTEM\CurrentControlSet\Control\Class\%%i" /v "DisableDynamicPstate" /t REG_DWORD /d "1" /f
-                   )
-                )
-             )
 :--------------------------------------
 
 :--------------------------------------
@@ -89,6 +80,7 @@ powershell.exe "Disable-NetAdapterRsc -Name "*"" >nul
 powershell.exe Disable-NetAdapterBinding -Name "*" -ComponentID ms_pacer
 powershell.exe "ForEach($adapter In Get-NetAdapter){Disable-NetAdapterPowerManagement -Name $adapter.Name -ErrorAction SilentlyContinue}"
 powershell.exe "Get-NetAdapter -IncludeHidden | Set-NetIPInterface -WeakHostSend Enabled -WeakHostReceive Enabled -ErrorAction SilentlyContinue"
+powershell.exe "Set-NetAdapterAdvancedProperty -Name * -RegistryKeyword “*JumboPacket” -Registryvalue 9014"
 
 :: set DNS
 powershell.exe Set-DNSClientServerAddress * -ServerAddresses ("94.140.14.14","94.140.15.15")
@@ -106,42 +98,6 @@ reg add %%k /v NetbiosOptions /t reg_dword /d 2 /f
 :: Adding Network Adapters Options (can be modified in Advanced Device Options from Device Manager)
 
 for /f %%n in ('Reg query "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}" /v "*SpeedDuplex" /s ^| findstr "HKEY"') do (
-:: Disable NIC Power Savings
-reg add "%%n" /v "AutoPowerSaveModeEnabled" /t REG_SZ /d "0" /f
-reg add "%%n" /v "AutoDisableGigabit" /t REG_SZ /d "0" /f
-reg add "%%n" /v "AdvancedEEE" /t REG_SZ /d "0" /f
-reg add "%%n" /v "DisableDelayedPowerUp" /t REG_SZ /d "2" /f
-reg add "%%n" /v "*EEE" /t REG_SZ /d "0" /f
-reg add "%%n" /v "EEE" /t REG_SZ /d "0" /f
-reg add "%%n" /v "EnablePME" /t REG_SZ /d "0" /f
-reg add "%%n" /v "EEELinkAdvertisement" /t REG_SZ /d "0" /f
-reg add "%%n" /v "EnableGreenEthernet" /t REG_SZ /d "0" /f
-reg add "%%n" /v "EnableSavePowerNow" /t REG_SZ /d "0" /f
-reg add "%%n" /v "EnablePowerManagement" /t REG_SZ /d "0" /f
-reg add "%%n" /v "EnableDynamicPowerGating" /t REG_SZ /d "0" /f
-reg add "%%n" /v "EnableConnectedPowerGating" /t REG_SZ /d "0" /f
-reg add "%%n" /v "EnableWakeOnLan" /t REG_SZ /d "0" /f
-reg add "%%n" /v "GigaLite" /t REG_SZ /d "0" /f
-reg add "%%n" /v "NicAutoPowerSaver" /t REG_SZ /d "2" /f
-reg add "%%n" /v "PowerDownPll" /t REG_SZ /d "0" /f
-reg add "%%n" /v "PowerSavingMode" /t REG_SZ /d "0" /f
-reg add "%%n" /v "ReduceSpeedOnPowerDown" /t REG_SZ /d "0" /f
-reg add "%%n" /v "SmartPowerDownEnable" /t REG_SZ /d "0" /f
-reg add "%%n" /v "S5NicKeepOverrideMacAddrV2" /t REG_SZ /d "0" /f
-reg add "%%n" /v "S5WakeOnLan" /t REG_SZ /d "0" /f
-reg add "%%n" /v "ULPMode" /t REG_SZ /d "0" /f
-reg add "%%n" /v "WakeOnDisconnect" /t REG_SZ /d "0" /f
-reg add "%%n" /v "*WakeOnMagicPacket" /t REG_SZ /d "0" /f
-reg add "%%n" /v "*WakeOnPattern" /t REG_SZ /d "0" /f
-reg add "%%n" /v "WakeOnLink" /t REG_SZ /d "0" /f
-reg add "%%n" /v "WolShutdownLinkSpeed" /t REG_SZ /d "2" /f
-:: Disable Jumbo Frame
-echo Disabling Jumbo Frame
-reg add "%%n" /v "JumboPacket" /t REG_SZ /d "1514" /f
-:: Configure Receive/Transmit Buffers
-echo Configuring Buffer Sizes
-reg add "%%n" /v "TransmitBuffers" /t REG_SZ /d "4096" /f
-reg add "%%n" /v "ReceiveBuffers" /t REG_SZ /d "512" /f
 :: Configure Offloads
 echo Configuring Offloads
 reg add "%%n" /v "IPChecksumOffloadIPv4" /t REG_SZ /d "0" /f
@@ -194,9 +150,8 @@ xcopy "GalleryInc.Core.MelodyScript.Configurations\Icons\*" "C:\ProgramData\Melo
 :--------------------------------------
 
 :--------------------------------------
-CLS & echo Please wait...
-"powershell.exe" Enable-WindowsOptionalFeature -Online -FeatureName LegacyComponents -all -NoRestart
-"powershell.exe" Enable-WindowsOptionalFeature -Online -FeatureName DirectPlay -all -NoRestart
+CLS & echo Enabling DirectPlay...
+dism /online /Enable-Feature /FeatureName:DirectPlay /All /NoRestart
 :--------------------------------------
 
 :--------------------------------------

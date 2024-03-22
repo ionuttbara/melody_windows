@@ -3,12 +3,6 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Internet Explorer\Main]
 "DEPOff"=dword:00000001
 
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Ext]
-"RunThisTimeEnabled"=dword:00000000
-"DisableFlashInIE"=dword:00000000
-"VersionCheckEnabled"=dword:00000000
-"AuditModeEnabled"=dword:00000000
-
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Ext\CLSID]
 "{1FD49718-1D00-4B19-AF5F-070AF6D5D54C}"="1"
 
@@ -94,9 +88,6 @@ Windows Registry Editor Version 5.00
 "width"=hex:00,00,00,80
 "x"=hex:00,00,00,80
 "y"=hex:00,00,00,00
-
-[-HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\DOMStorage]
-
 
 [HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Download]
 "CheckExeSignatures"="no"
@@ -185,8 +176,6 @@ Windows Registry Editor Version 5.00
 "Sending_Security"="Medium"
 "Viewing_Security"="Low"
 
-[-HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Services]
-
 [HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Settings]
 "Anchor Color"="0,0,255"
 "Anchor Color Visited"="128,0,128"
@@ -209,16 +198,6 @@ Windows Registry Editor Version 5.00
 "OpenInForeground"=dword:00000001
 "ShortcutBehavior"=dword:00000001
 "PopupsUseNewWindow"=dword:00000002
-
-[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Toolbar]
-"Locked"=dword:00000001
-
-[-HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Toolbar\ShellBrowser]
-
-[-HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\TypedURLs]
-
-[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\URLSearchHooks]
-"{CFBFAE00-17A6-11D0-99CB-00C04FD64497}"=""
 
 [HKEY_CURRENT_USER\Software\Policies\Microsoft\Internet Explorer\Restrictions]
 "NoHelpItemSendFeedback"=dword:00000001

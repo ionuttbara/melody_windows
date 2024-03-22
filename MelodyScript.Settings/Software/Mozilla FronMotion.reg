@@ -1,8 +1,8 @@
 Windows Registry Editor Version 5.00
 
 [HKEY_LOCAL_MACHINE\Software\Policies\Mozilla\lockPref]
-"app.update.auto"=dword:00000000
-"app.update.autoUpdateEnabled"=dword:00000000
+"app.update.auto"=dword:00000001
+"app.update.autoUpdateEnabled"=dword:00000001
 "app.update.enabled"=dword:00000000
 "app.update.log"=dword:00000000
 "apz.test.logging_enabled"=dword:00000000
