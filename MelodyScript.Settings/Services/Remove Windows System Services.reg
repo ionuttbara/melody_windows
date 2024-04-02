@@ -95,3 +95,7 @@ Windows Registry Editor Version 5.00
 [-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\AppleSSD]
 
 [-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SENS]
+
+[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\VSInstallerElevationService]
+
+[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\VSStandardCollectorService150]

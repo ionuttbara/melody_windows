@@ -43,3 +43,10 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Accessibility]
 "Configuration"=""
 
+
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Ease of Access]
+"selfscan"=dword:00000000
+"selfvoice"=dword:00000000
+
+[HKEY_CURRENT_USER\Control Panel\Accessibility\SlateLaunch]
+"LaunchAT"=dword:00000000

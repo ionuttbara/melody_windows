@@ -1,19 +1,11 @@
 :--------------------------------------
 :: Starting the script
-title [0 percent] Melody Script 15 & pushd "%CD%" & CD /D "%~dp0" >nul
+title [0 percent] Melody Script & pushd "%CD%" & CD /D "%~dp0" >nul
 :--------------------------------------
 
 :--------------------------------------
-:: disabling devices HPET + Virtualization HyperV for get better performance + latency
+:: disabling HPET
 wmic path Win32_PnPEntity where "name='High precision event timer'" call disable
-:--------------------------------------
-
-:--------------------------------------
-:: cleaning Windows AuditPol Logging
-echo Cleaning Windows auditpol log...
-Auditpol.exe /set /category:* /Success:disable /failure:disable >nul
-Auditpol.exe /remove /allusers >nul
-Auditpol.exe /clear /y >nul
 :--------------------------------------
 
 :--------------------------------------
@@ -27,7 +19,7 @@ reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control" /v "SvcHostSplitTh
 
 :--------------------------------------
 :: Registry Tweaks Applying
-title [5 percent] Melody Script 14
+title [5 percent] Melody Script
 CLS & echo Applying registry tweaks...
 FOR /R %%f IN (*.reg) DO regedit.exe /s "%%f" >nul
 CLS & echo Applying System Registry Tweaks...
@@ -36,7 +28,7 @@ FOR /R %%f IN (*.reg) DO PowerRun.exe regedit.exe /s "%%f" >nul
 
 :--------------------------------------
 :: Network Tweaks
-title [10 percent] Melody Script 14
+title [10 percent] Melody Script
 CLS & echo Applying network tweaks...
 
 :: Autotuning Internet Speed and making it persistent
@@ -78,12 +70,9 @@ powershell.exe "Disable-NetAdapterLso -Name "*"" >nul
 powershell.exe "Set-NetOffloadGlobalSetting -PacketCoalescingFilter disabled"
 powershell.exe "Disable-NetAdapterRsc -Name "*"" >nul
 powershell.exe Disable-NetAdapterBinding -Name "*" -ComponentID ms_pacer
+powershell.exe Disable-NetAdapterBinding -Name "*" -ComponentID ms_msclient
 powershell.exe "ForEach($adapter In Get-NetAdapter){Disable-NetAdapterPowerManagement -Name $adapter.Name -ErrorAction SilentlyContinue}"
 powershell.exe "Get-NetAdapter -IncludeHidden | Set-NetIPInterface -WeakHostSend Enabled -WeakHostReceive Enabled -ErrorAction SilentlyContinue"
-powershell.exe "Set-NetAdapterAdvancedProperty -Name * -RegistryKeyword “*JumboPacket” -Registryvalue 9014"
-
-:: set DNS
-powershell.exe Set-DNSClientServerAddress * -ServerAddresses ("94.140.14.14","94.140.15.15")
 
 :: Firewall Rules
 netsh.exe advfirewall firewall set rule group="Network Discovery" new enable=Yes >nul
@@ -139,13 +128,13 @@ Reg add %%r /v "TcpDelAckTicks" /t Reg_DWORD /d "0" /f
 
 :--------------------------------------
 :: Disable Hibernation (and Hiberboot), ReserveStorage to get free up to >10GB of Windows Storage
-title [20 percent] Melody Script 14
+title [20 percent] Melody Script
 powercfg -h off & DISM /Online /Set-ReservedStorageState /State:Disabled & reagentc /disable >nul
 :--------------------------------------
 
 :--------------------------------------
 :: Configuration of Icons
-title [40 percent] Melody Script 14
+title [40 percent] Melody Script
 xcopy "GalleryInc.Core.MelodyScript.Configurations\Icons\*" "C:\ProgramData\Melody\Icon\" /y /e /h /c /i /d >nul
 :--------------------------------------
 
