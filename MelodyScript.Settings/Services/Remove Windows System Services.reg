@@ -24,8 +24,6 @@ Windows Registry Editor Version 5.00
 
 [-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\bam]
 
-[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Beep]
-
 [-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\CldFlt]
 
 [-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\dam]
@@ -62,8 +60,6 @@ Windows Registry Editor Version 5.00
 
 [-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PimIndexMaintenanceSvc]
 
-[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WwanSvc]
-
 [-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LMS]
 
 [-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\bttflt]
@@ -96,6 +92,6 @@ Windows Registry Editor Version 5.00
 
 [-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SENS]
 
-[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\VSInstallerElevationService]
 
-[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\VSStandardCollectorService150]
+[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PushToInstall]
+
