@@ -2,9 +2,6 @@ Windows Registry Editor Version 5.00
 
 ; Disable AMD Kernel Logging
 
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\MSFTProxy\Enum]
-"Kernel Driver Event Logging Policy"="Disabled"
-
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000]
 "DisableeRecord"=dword:00000001
 "EnableAmdLog"=dword:00000000
@@ -115,9 +112,6 @@ Windows Registry Editor Version 5.00
 "DisableeRecord"=hex:30,00
 "EnableAmdLog"=hex:30,00
 
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\MSFTProxy\Enum]
-"AMD External Events Service Logging Policy"="Disabled"
-
 [-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\AMD External Events Utility]
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Atierecord]
@@ -125,10 +119,6 @@ Windows Registry Editor Version 5.00
 "eRecordEnablePopups"=dword:00000000
 
 ; disable deep sleep state
-
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\MSFTProxy\Enum]
-"Deep Sleep Power State Mode"="Disabled"
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000]
 "DisableSamuLightSleep"=dword:00000001
@@ -212,9 +202,6 @@ Windows Registry Editor Version 5.00
 
 ; ULPS Disable
 
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\MSFTProxy\Enum]
-"ULPS GPU Sleep Mode"="Disabled"
-
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000]
 "EnableUlps_NA"="1"
 "EnableUlps"=dword:00000000
@@ -277,10 +264,6 @@ Windows Registry Editor Version 5.00
 
 
 ; GPU Virtualization
-
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\MSFTProxy\Enum]
-"GPU Virtualization Service Mode"="Enabled"
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000]
 "EnableGPUVirtulizationFeature"=dword:00000001
@@ -373,10 +356,6 @@ Windows Registry Editor Version 5.00
 "EnableGPUVirtulizationFeature"=hex:31,00
 
 ; GPU Queue to 64
-
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\MSFTProxy\Enum]
-"GPU Buffer Queue Override"="64T"
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000]
 "FlipQueueSize"="64"
@@ -540,9 +519,6 @@ Windows Registry Editor Version 5.00
 
 ; Full Screen Power Managment Disabled
 
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\MSFTProxy\Enum]
-"Fullscreen Display Power Management"="Disabled"
-
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000]
 "KMD_FullScreenPowerManagement"=dword:00000000
 "KMD_FullscreenDetectionSupport"=-
@@ -697,9 +673,6 @@ Windows Registry Editor Version 5.00
 ; Force V-Sync
 
 
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\MSFTProxy\Enum]
-"Global V-Sync Configuration"="Force On"
-
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000\UMD]
 "VSyncControl"=hex:33,00
 "VSyncControl_DEF"="3"
@@ -741,10 +714,6 @@ Windows Registry Editor Version 5.00
 "VSyncControl_DEF"="3"
 
 ; FSAA Off
-
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\MSFTProxy\Enum]
-"Fullscreen AA Configuration"="Disabled"
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0003]
 "FSAAPerfMode"=dword:00000000
@@ -849,8 +818,6 @@ Windows Registry Editor Version 5.00
 
 ; FBC Buffer to 32
 
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\MSFTProxy\Enum]
-"GPU Framebuffer Compression Queue Buffer Size"="32"
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0003]
 "KMD_FBCBufferSize"=dword:00000020
@@ -993,9 +960,6 @@ Windows Registry Editor Version 5.00
 
 ; disable stutter mode
 
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\MSFTProxy\Enum]
-"Stutter Mode Override"="Disable"
-
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000]
 "StutterMode"=dword:00000000
 "PP_MCLKStutterModeThreshold"=dword:00001388
@@ -1037,10 +1001,6 @@ Windows Registry Editor Version 5.00
 "PP_MCLKStutterModeThreshold"=dword:00001388
 
 ; TAA Disable
-
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\MSFTProxy\Enum]
-"Temporal AA Configuration"="Disabled"
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000]
 "TemporalAAMultiplier"="0"
@@ -1145,10 +1105,6 @@ Windows Registry Editor Version 5.00
 
 ; RSR Disable
 
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\MSFTProxy\Enum]
-"Radeon Software Super Resolution Service Mode"="Disabled"
-
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000]
 "RADEON_UPSCALING"="0"
 "RADEON_UPSCALING_NA"="1"
@@ -1252,10 +1208,6 @@ Windows Registry Editor Version 5.00
 
 
 ; GPU High Performance
-
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\MSFTProxy\Enum]
-"GPU P-State Management Configuration"="Overdrive"
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000]
 "DisableAspmL0s"=dword:00000001
@@ -1391,10 +1343,6 @@ Windows Registry Editor Version 5.00
 
 ; Disable OS GPU Power Management
 
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\MSFTProxy\Enum]
-"Operating System GPU Power Behavior"="Disabled"
-
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000]
 "KMD_OSControlsGPUPower"=-
 
@@ -1426,10 +1374,6 @@ Windows Registry Editor Version 5.00
 "KMD_OSControlsGPUPower"=-
 
 ; DirectPlay Accerelation
-
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\MSFTProxy\Enum]
-"DirectPlay HW Cursor Acceleration Mode"="Disabled"
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000]
 "KMD_EnableHWCursor"=-
@@ -1463,10 +1407,6 @@ Windows Registry Editor Version 5.00
 
 
 ; GPU Scheduler
-
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\MSFTProxy\Enum]
-"Radeon HSA Compute Policy"="Enabled Sch"
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000]
 "KMD_EnableHsa"=dword:00000001
@@ -1520,10 +1460,6 @@ Windows Registry Editor Version 5.00
 
 
 ; GPU Wave Size 64
-
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\MSFTProxy\Enum]
-"GPU Wave Size"="64"
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0003]
 "ForceWaveSize32"=-
@@ -1798,10 +1734,6 @@ Windows Registry Editor Version 5.00
 
 
 ; CPU Affinity Optimization for GPU
-
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\MSFTProxy\Enum]
-"CPU Affinity Optimization"="Enabled"
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0003]
 "CpuAffinityOptimization"=dword:00000001
