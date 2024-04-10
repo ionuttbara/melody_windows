@@ -88,7 +88,7 @@ When you run this script it will change  A LOT of windows preferences to the lik
 |Removal of Drive Indicator Icon in This PC | Removing drive indicator it will show infos in 3 rows instead of one. (name , size and file system type) | Windows 7 or newer
 |Disablation of Windows Protected Printer Mode | Allowing installation of custom drivers of printers. | Windows 11 26016 or newer|
 
-##### 3rd Party Software Optimization
+# Tweaks for 3rd party Software 
 > In this part i have a research to disable 3rd party Updaters , metrics and telemetry.
 > Some config!
 urations are policies and be found to [admx.help].
@@ -101,7 +101,7 @@ urations are policies and be found to [admx.help].
 |Chromium Browser Updater Tweaks| Optimizes Update Pipeline |Chrome/Edge Updater 1.42 or newer|
 
 
-##### Optimization and organizing Context Menus
+# Optimization and organizing Context Menus
 
 > In this part i will a list which elements are added / removed from Windows Context Menu. Always i use Classic Context Menu.
 
