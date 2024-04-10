@@ -47,9 +47,26 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows NT\SystemRestore
 > The resolvation will be in system configuration: 99.7% Registry and 0.03 % Batch.
 > I had rework some Winaero Tweaker's , O&O Shutup 10, W10 Privacy, WinSpyDisabler and BlackBird Application.
 
-| Applied Tweak | Description | Required Windows Version |
-| ------ | ------ |------ |
-| Accesibilty Tweaks| Disables Narrator annoying and Keyboard Flags | Windows 11 |
+- Windows Appearence Tweaks
+
+| Applied Tweak | Description |
+| ------ | ------ |
+| Windows Appearence | Disables animations and transparency. Adds regional configuration from (English (World)) and disable Windows Feeds Update. |
+| DWM Tweaks | Disables DWM Input processing for better input latency. Tweaks DWM to be snappier |
+| Dark mode | Enable system-wide and app-wide dark mode. Sets wallpaper to black color. |
+| Hiding Scrollbar | Disables Hides Scrollbar |
+| Disable Immersive Shell elements | **(Windows 10 only)** Tweaks to revert to legacy |
+
+- Windows Update Tweaks
+
+| Applied Tweak | Description |
+| ------ | ------ |
+| Disable MRT Inclusion in Windows Updates | Removes Malware Removal Tool from Windows Updates lists. |
+| Pauses Windows Update until 2099 | Pause updates (via good-way) |
+| Microsoft Store Apps Auto Updating | Disables Store Apps Auto-Updates |
+| Disables FoD Metadata | Disables Driver Updates and installation of Driver Software from Windows Update and Microsoft Store |
+| Speech Model Data Update Disablation | **(Windows 10 with Installed Cortana Only)** Speech Model Updating |
+
 
 # Tweaks for 3rd party Software 
 > In this part i have a research to disable 3rd party Updaters , metrics and telemetry.
@@ -62,6 +79,7 @@ urations are policies and be found to [admx.help].
 |Chrome Tweaks| Adds uBlock Origin Extension, Tweaking DNS Client of Browser | Chrome 96 or newer|
 |Edge Tweaks| Adds uBlock Origin Extension, Tweaking DNS Client of Browser | Edge 92 or newer|
 |Chromium Browser Updater Tweaks| Optimizes Update Pipeline |Chrome/Edge Updater 1.42 or newer|
+| StartAllBack Configurations | Revert to Windows 7 UI Explorer and optimize some menus in Start and more zones | StartIsBack 3.5 or newer |
 
 
 # Optimization and organizing Context Menus
