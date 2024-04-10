@@ -49,49 +49,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows NT\SystemRestore
 
 | Applied Tweak | Description | Required Windows Version |
 | ------ | ------ |------ |
-| StartAllBack | Integration of StartAllBack. 3rd Party Software. Fixing Windows inconsistency in UI. | Windows 10 or newer |
 | Accesibilty Tweaks| Disables Narrator annoying and Keyboard Flags | Windows 11 |
-| Holographic Tweaks| Optimizes Windows Holographic App | Windows 10 and 11 |
-| Certificates from Microsoft| Microsoft is removing some certificates in Windows 10 versions.| Windows 10.0 version 1803 or newer|
-| Apparence Optimization (registry)| Disables transparency and animations for Current User and SYSTEM USER (disables animations in WinLogonUI.exe)| Windows 10 or newer|
-|Application Priority | Changed some Windows Services and Application Priority| none |
-|App Permision| Set some UWP Apps Permission| Windows 10 1909|
-|AutoPlay Handlers| Open Folder automaticly when a storage device was inserted | none
-|Windows Quota| Disables Windows Quota | Windows NT|
-|Disable WMI KeyLogger| Disables KeyLoggers (from Blackbird), and Windows Event Logger Keylogger and Logger|Windows 10 1507 or newer|
-|Disk Optization| Manipulation of filesystem for security and performance| Windows 10 1507 or newer|
-|Feature Manipulation| Added some "hidden features" in Windows 10| Windows 10 2004 or newer|
-|Firewall Rules| Blocks unwanted applications to connect to the Internet (Notepad, csrss.exe etc.) and adds Telemetry Rules| Windows 10 1507 or newer|
-|GPU Optimization| Adds system applications to run into iGPU for better battery life in laptops|Windows 10 2004|
-|Input Tweaks|Latency Optimizations,Magnectic Cursor Fixes and more|Windows 10 1507 or newer|
-|Internet Speed Optimization (registry)| Change values to increase stability of Internet Connections and latency | Windows 10 1507 or newer|
-|Internet Speed Optimization (command) | Sets value for Network Adapters Driver for better ping and performance. Also it modifies the values which is helping to uncrease CPU Usage in loading.|Windows 10 1507 (cubic), Windows 10 1803 or newer (experimental)
-|IRQ Priority| Better device performance and latency| Windows 11|
-|Keyboard Flags| Disables shortcuts to go in Accesibility (Filter Keys, Sticky Keys)|Windows 10 or newer|
-|MMCSS Tweaks| Disables MMCSS Service. For better system responsive. Causes audio shuttering in Windows 10. Increase stability in Windows 11.| Windows 10 or newer|
-|No more Delay/Timeouts| Make things faster. System will load menus faster. Also the startup and shutting down will be faster. |Windows 10 or newer|
-|Notepad Tweaks| Adds Word Wrap and the Status bar in Notepad for current user and the SYSTEM user. | Windows 10 or newer
-|Power Tweaks| Disables Throlling|Windows 10 1709 or newer|
-|PowerShell Execution Policy| Changes policies running script.| Windows 10 or newer|
-|Push notifications| Disables Windows Security Pushes|Windows 10 or newer|
-|Remove Explorer Junk| Removes some shell bloat| Windows 11
-|Resource Management| CPU & GPU Prioritise | Windows 11|
-|Services Optimizer| Optimize services (remove, disable, and set to manual) some Windows Services. Optimizes driver services. Disables AMDPPM for 3rd Gen. Mobile Ryzen Processor for thermal throlling (Disables Clock Speeds). ATTENTION! Search Services, VR Services and Sensor Services will be disabled. Can be enabled in services.msc, if you rebooted the pc.| Windows 10 1803 or newer|
-|SVCHOST Split| Unsplit svchost.exe processes for ram comsumption savings.|Windows 10 1703 or newer|
-|System Tweaks| Optimizes the system. Disables SmartScreen.|Windows 10 or newer
-|Task Scheduler Tweaking| Remove some unwanted Windows Tasks, telemetry Office Tasks and blotware.|Windows 10 1809 or newer|
-|TCP-IP Optimization| Optimizes network speed. | Windows 10 or newer|
-|Windows Error Reporting| Disables Windows Error Reporting| Windows NT|
-|Windows Kernel Optimizations| Optimizes Kernel.|Windows 11|
-|Windows Sandbox Optimizations| Disables some software rendering in the app| Windows 10 2004 or newer|
-|Windows Search Optimizations| Optimizes Index Algorithm, disables web search in Windows Search and telemetry|Windows 10 1507 & Windows 10 2004 or newer|
-|Telemetry Data Collection| Disables Telemetry and Data Collection in Windows (registry part)| Windows 7/8/10/11 or newer|
-|Windows Update - Disable Driver Searching| |Disables Driver Searching with Windows Update|| Windows NT|
-|Windows Update - Derivery Optimization| Disables Delivery Optimization| Windows 10 or newer
-|Windows Update| Optimizes Windows Update. Disables notifications and deferes some Quality Updates and Features Updates |Windows 10 or newer
-|Xbox Gaming Optimization| Fixing errors with Teredo Connectivity (also in TCP-IP optimization) and disables GameBar| Windows 10 1511 or newer.
-|Removal of Drive Indicator Icon in This PC | Removing drive indicator it will show infos in 3 rows instead of one. (name , size and file system type) | Windows 7 or newer
-|Disablation of Windows Protected Printer Mode | Allowing installation of custom drivers of printers. | Windows 11 26016 or newer|
 
 # Tweaks for 3rd party Software 
 > In this part i have a research to disable 3rd party Updaters , metrics and telemetry.
@@ -192,7 +150,7 @@ This modifies next options:
  - switches boot manager options to old good version (Windows 7-like)
  - disables Hyper-V Hypervisor (This is a workaround to KILL VBS)
  - policies for x86 apps
- - disables usage of uefi resources
+ - disables usage of UEFI resources
 
 ## Updating
 
