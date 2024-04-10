@@ -120,6 +120,59 @@ Latency Tweaks are provided by me. Latency Service is a SFX version by TimerTool
 EarTrumpet Integration is created by me. The application is created by File-New-Project. (I forked the project).
 Also Clipboard "Integration" is provided by me. The Application is created by Ditto. (provided with GNU GPL-3 License).
 
+
+# Some bcdedit commands
+
+There are some commands of BCDEDIT for Melody Script. There are removed since version 14.9 because in some Windows versions
+ the commands are not running.
+ So i will publish in this list all commands of **bcdedit configuration**:
+ ```
+
+bcdedit.exe /set linearaddress57 OptOut >nul
+bcdedit.exe /set increaseuserva 268435328 >nul
+bcdedit.exe /set firstmegabytepolicy UseAll >nul
+bcdedit.exe /set avoidlowmemory 0x8000000 >nul
+bcdedit.exe /set nolowmem Yes >nul
+bcdedit.exe /set isolatedcontext No >nul
+bcdedit.exe /set vsmlaunchtype Off >nul
+bcdedit.exe /set vm No >nul
+bcdedit.exe /set x2apicpolicy Enable >nul
+bcdedit.exe /set configaccesspolicy Default >nul
+bcdedit.exe /set MSI Default >nul
+bcdedit.exe /set usephysicaldestination No >nul
+bcdedit.exe /set usefirmwarepcisettings No >nul
+bcdedit.exe /timeout 0 >nul
+bcdedit.exe /set hypervisorlaunchtype off >nul
+bcdedit.exe /set debug No >nul
+bcdedit.exe /set sos Yes >nul
+bcdedit.exe /set ems No >nul
+bcdedit.exe /set noumex Yes >nul
+bcdedit.exe /set onecpu No >nul
+bcdedit.exe /set nx AlwaysOff >nul
+bcdedit.exe /set extendedinput Yes >nul
+bcdedit.exe /set forcefipscrypto No >nul
+bcdedit.exe /set halbreakpoint No >nul
+bcdedit.exe /set tpmbootentropy ForceDisable >nul
+bcdedit.exe /set bootmenupolicy Legacy >nul
+bcdedit.exe /set recoveryenabled NO >nul
+bcdedit.exe /set graphicsmodedisabled No >nul
+bcdedit.exe /set useplatformclock false >nul
+bcdedit.exe /set tscsyncpolicy Enhanced >nul
+bcdedit.exe /set disabledynamictick yes >nul
+bcdedit.exe /set useplatformtick Yes >nul
+bcdedit.exe /set NOINTEGRITYCHECKS OFF >nul
+bcdedit.exe /set TESTSIGNING OFF >nul
+
+ ```
+This modifies next options:
+ - disables test signing
+ - disables HPET for better latency
+ - disables annoying disk verification dialog
+ - switches boot manager options to old good version (Windows 7-like)
+ - disables Hyper-V Hypervisor (This is a workaround to KILL VBS)
+ - policies for x86 apps
+ - disables usage of uefi resources
+
 ## Updating
 
 > You can create a own version of Melody by using the provided sources of cmds , registry files ,and apps integration.

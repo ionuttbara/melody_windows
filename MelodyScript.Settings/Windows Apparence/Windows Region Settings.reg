@@ -20,7 +20,7 @@ Windows Registry Editor Version 5.00
 "sNativeDigits"="0123456789"
 "sNegativeSign"="-"
 "sPositiveSign"=""
-"sShortDate"="dd.MM.yyyy"
+"sShortDate"="d.M.yyyy"
 "sThousand"="."
 "sTime"=":"
 "sTimeFormat"="HH:mm:ss"
