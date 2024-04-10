@@ -84,12 +84,12 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows NT\SystemRestore
 - Windows Explorer Tweaks
 
 
-- Virtualization Tweaks
+- <a href=https://github.com/ionuttbara/melody_windows/tree/main/MelodyScript.Settings/Virtualization> Virtualization Tweaks </a>
 
 | Applied Tweak | Description |
 | ------ | ------ |
-| App-V Virtualization Disabling | |
-| VBS Disablation| Disables Virtualization Based Security |
+| <a href=https://github.com/ionuttbara/melody_windows/blob/main/MelodyScript.Settings/Virtualization/Disable%20AppV%20Virtualization.reg> App-V Virtualization Disabling </a> | |
+| <a href=https://github.com/ionuttbara/melody_windows/blob/main/MelodyScript.Settings/Virtualization/Disable%20VBS.reg>VBS Disablation </a> | Disables Virtualization Based Security |
 
 
 - Telemetry Disablation
