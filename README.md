@@ -125,6 +125,8 @@ Defined locations which Melody Script modifies:
 | Terminal | Background, Folder | Run as admin/normal user command prompt and powershell, provided an API which you can add Git, Powershell 7 and even Linux WSL in this menu. |
 | Take onwership | Directory, File | Take onwership of files as current user. |
 | File Management Menu | File | Add attributes of hiding , copy file content to clipboard and more | 
+| Removing and cleaning context menu| All | Removes bloatware elements from menus to make context menu faster |
+| Restart and kill component | Desktop | Refresh processes such explorer.exe and windows stock start menu. also menu which kills all unresponsive apps and background apps (background apps can be added by you own list). |
 
 ## Sources
 
