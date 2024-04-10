@@ -34,6 +34,11 @@ When you run this script it will change  A LOT of windows preferences to the lik
 * **[Download]** the latest version of the settings.
 * After downloading them wait a bit. After settings was applied the PC will reboot.
 
+##### Re-enable System Restore
+* Melody Script is disabling System Restore due of a Windows bug of creating automatic system points. If you want to add it back just go to registry editor and remove this key
+```
+HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows NT\SystemRestore
+```
 
 ## Components of Melody
 
