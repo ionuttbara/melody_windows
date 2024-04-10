@@ -93,12 +93,33 @@ When you run this script it will change  A LOT of windows preferences to the lik
 > Some config!
 urations are policies and be found to [admx.help].
 
- | Applied Tweak | Description | Required Windows Version |
+| Applied Tweak | Description | Required Windows Version |
 | ------ | ------ |------ |
 |Office Tweaks| Disables Office Telemetry and data collection | Office 2013 or newer|
 |Chrome Tweaks| Adds uBlock Origin Extension, Tweaking DNS Client of Browser | Chrome 96 or newer|
 |Edge Tweaks| Adds uBlock Origin Extension, Tweaking DNS Client of Browser | Edge 92 or newer|
 |Chromium Browser Updater Tweaks| Optimizes Update Pipeline |Chrome/Edge Updater 1.42 or newer|
+
+
+##### Optimization and organizing Context Menus
+
+> In this part i will a list which elements are added / removed from Windows Context Menu. Always i use Classic Context Menu.
+
+> Here is a simple table which it has the name of menu and the type of menu. For understanting , menu type is the location of the menu element.
+
+Defined locations which Melody Script modifies:
+- File (File right-click menu)
+- Folder (Folder right-click menu)
+- Directory (Director right-click menu, including folders + system folders such as This PC, Library Folders, System Folders such Control Panel and custom system created folders)
+- Background (right click menu of desktop or an explorer window)
+- Disk (Drive Context Menu (Disk drives such CD, DVD, HDD, SSD, USB , SD cards etc.))
+
+| Context Menu Name | Menu Type | Description |
+| ------ | ------ | ------ |
+| Run app as... | File (.exe) | Used by some apps you an run an app as user/admin/trusted installer or as a file type |
+| Configuration app as... | File (.exe) | Configuration of app running. You can add rules such running priority , allow/block internet access using Windows Firewall |
+| Set GPU Usage to... | File (.exe, .pif) | Set default GPU Usage per app (integrated or dedicated GPU). Needs Hardware Acceleration Scheduler to be disabled. |
+
 
 ## Sources
 
