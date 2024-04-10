@@ -65,7 +65,54 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows NT\SystemRestore
 | Pauses Windows Update until 2099 | Pause updates (via good-way) |
 | Microsoft Store Apps Auto Updating | Disables Store Apps Auto-Updates |
 | Disables FoD Metadata | Disables Driver Updates and installation of Driver Software from Windows Update and Microsoft Store |
-| Speech Model Data Update Disablation | **(Windows 10 with Installed Cortana Only)** Speech Model Updating |
+| Speech Model Data Update Disablation | **(Windows 10 with Installed Cortana Only)** Speech Model Updating Disabling |
+| Disablation of Delivery Optimization | Disables Delivery Optimization (Updates Peer to peer). Replaces BITS and WebClient in 24H2. |
+
+
+- Windows Search Tweaks
+
+| Applied Tweak | Description |
+| ------ | ------ |
+| Disable WebSearch | Disables Bing on Windows Search |
+| Cloud Search | Disables search in PC with organizational Microsoft Account Connected |
+| Disable SearchBox Highlights| Disable icons on searchbox |
+| Disable Search History | Disables Search History in Windows Search |
+| Hidding Search in Taskbar | |
+| Disablation service | Disables Windows search service (maybe you're using Everything). Can be enabled from *services.msc*. |
+
+
+- Windows Explorer Tweaks
+
+
+- Virtualization Tweaks
+
+| Applied Tweak | Description |
+| ------ | ------ |
+| App-V Virtualization Disabling | |
+| VBS Disablation| Disables Virtualization Based Security |
+
+
+- Telemetry Disablation
+
+| Applied Tweak | Description |
+| ------ | ------ |
+| Windows Error Reporting Online Reports and switched to local reports | Disabling online error reportings on crash apps and moving dumps to folder dumps created in ```C:\dumps``` folder. |
+| Input telemetry | Removes Microsoft's keyloggers. |
+| Smart Screen | Disables and kills SmartScreen (like Windows Defender Remover) |
+| Disabling Messaging Cloud Sync | |
+| Windows EventLog and WMI Logger Optimizations | Removing loggers to get maximum disk performance (for HDD and eMMC disks without harming system). Also stops creating of WinEVT files. |
+| Disable Diagnostic Data | Disable Windows Diagnostic Data Collection, Windows Feedback Surveys and Dr. Whatson. |
+| Disable Windows Data Collection (Telemetry) | Disables Telemetry elements for KMS, Storage Health, SQM CEIP , Experimentation and Account Sycronization |
+
+
+- Tasks and Services
+
+Removes Services and Tasks to get PC to boot faster and get lower RAM usage. Go to MelodyScript.Settings\Tasks to check what tasks are removed and MelodyScript.Settings\Services for Services.
+
+- Taskbar
+
+
+
 
 
 # Tweaks for 3rd party Software 

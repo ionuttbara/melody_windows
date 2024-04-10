@@ -18,7 +18,6 @@ Windows Registry Editor Version 5.00
 "1"="pool.ntp.org"
 "0"="pool.ntp.org"
 "2"="pool.ntp.org"
-"3"="ceasu.gallery.com"
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\W32Time\Config]
 ; Evan if time slips off greatly, synchronization at the time.
