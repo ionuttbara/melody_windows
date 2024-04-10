@@ -107,7 +107,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows NT\SystemRestore
 
 - Tasks and Services
 
-Removes Services and Tasks to get PC to boot faster and get lower RAM usage. Go to MelodyScript.Settings\Tasks to check what tasks are removed and MelodyScript.Settings\Services for Services.
+Removes Services and Tasks to get PC to boot faster and get lower RAM usage. Go to <a href=https://github.com/ionuttbara/melody_windows/tree/main/MelodyScript.Settings/Tasks>MelodyScript.Settings\Tasks </a> to check what tasks are removed and <a href=https://github.com/ionuttbara/melody_windows/tree/main/MelodyScript.Settings/Services> MelodyScript.Settings\Services </a> for Services.
 
 - Taskbar
 
