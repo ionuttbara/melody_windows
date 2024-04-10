@@ -119,7 +119,12 @@ Defined locations which Melody Script modifies:
 | Run app as... | File (.exe) | Used by some apps you an run an app as user/admin/trusted installer or as a file type |
 | Configuration app as... | File (.exe) | Configuration of app running. You can add rules such running priority , allow/block internet access using Windows Firewall |
 | Set GPU Usage to... | File (.exe, .pif) | Set default GPU Usage per app (integrated or dedicated GPU). Needs Hardware Acceleration Scheduler to be disabled. |
-
+| MSI Extracting | File (.msi) | Extract files for .cab and .msi installation files |
+| Register DLL and OCX files | File (.dll,.ocx) | Register/Unregister files |
+| Restart Menu Component | Desktop | Advanced Shutdown Menu on Desktop right-click menu |
+| Terminal | Background, Folder | Run as admin/normal user command prompt and powershell, provided an API which you can add Git, Powershell 7 and even Linux WSL in this menu. |
+| Take onwership | Directory, File | Take onwership of files as current user. |
+| File Management Menu | File | Add attributes of hiding , copy file content to clipboard and more | 
 
 ## Sources
 
