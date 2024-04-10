@@ -88,18 +88,6 @@ When you run this script it will change  A LOT of windows preferences to the lik
 |Removal of Drive Indicator Icon in This PC | Removing drive indicator it will show infos in 3 rows instead of one. (name , size and file system type) | Windows 7 or newer
 |Disablation of Windows Protected Printer Mode | Allowing installation of custom drivers of printers. | Windows 11 26016 or newer|
 
-
-##### Integrations
-> In this part i had done a research about replacement of Windows OS shit-like apps and Tools.
-> This is why i forked Files-NewProjects's EarTrumpet, and added a custom clipboard system. Also the system is integrated for batter organise of management.
-
-
-| Added | Description |
-| ------ | ------ |
-| EarTrumpet | Replaces Windows Volume Flyout |
-| Start AllBack | Windows inconsistences. |
-| Ditto Clipboard (modified) | Replaces Windows Clipboard (Win+V) shit-like tool. This tool is not require Microsoft Account or Telemetry. |
-
 ##### 3rd Party Software Optimization
 > In this part i have a research to disable 3rd party Updaters , metrics and telemetry.
 > Some config!
