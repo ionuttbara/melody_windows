@@ -4,10 +4,10 @@ Windows Registry Editor Version 5.00
 "PreferCloudSaveLocations"=dword:00000000
 "disablecomingsoon"=dword:00000001
 "disablebackgrounds"=dword:00000001
-"skydrivesigninoption"=dword:00000000
+"skydrivesigninoption"=dword:00000001
 "notrack"=dword:00000001
 "optindisable"=dword:00000001
-"signinoptions"=dword:00000000
+"signinoptions"=dword:00000003
 
 ;Office 2013
 
@@ -76,3 +76,19 @@ Windows Registry Editor Version 5.00
 
 [HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\16.0\dlp]
 "policytipsenabled"=dword:00000000
+
+
+[HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Word\Security\ProtectedView]
+"DisableAttachementsInPV"=dword:00000001
+"DisableInternetFilesInPV"=dword:00000001
+"DisableUnsafeLocationsInPV"=dword:00000001
+
+[HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Excel\Security\ProtectedView]
+"DisableAttachementsInPV"=dword:00000001
+"DisableInternetFilesInPV"=dword:00000001
+"DisableUnsafeLocationsInPV"=dword:00000001
+
+[HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\PowerPoint\Security\ProtectedView]
+"DisableAttachementsInPV"=dword:00000001
+"DisableInternetFilesInPV"=dword:00000001
+"DisableUnsafeLocationsInPV"=dword:00000001

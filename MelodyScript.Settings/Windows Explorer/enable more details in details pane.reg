@@ -1,0 +1,10 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\dllfile]
+"PreviewDetails"="prop:System.FileVersion;System.Size;System.Kind;prop:System.Copyright;System.FileAttributes;System.SharingStatus;System.DateCreated;System.DateModified"
+
+[HKEY_CLASSES_ROOT\exefile]
+"PreviewDetails"="prop:System.FileVersion;System.Size;System.Kind;prop:System.Copyright;System.FileAttributes;System.SharingStatus;System.DateCreated;System.DateModified"
+
+[HKEY_CLASSES_ROOT\ocxfile]
+"PreviewDetails"="prop:System.FileVersion;System.Size;System.Kind;prop:System.Copyright;System.FileAttributes;System.SharingStatus;System.DateCreated;System.DateModified"

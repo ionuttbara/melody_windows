@@ -143,6 +143,16 @@ CLS & echo Enabling DirectPlay...
 dism /online /Enable-Feature /FeatureName:DirectPlay /All /NoRestart
 :--------------------------------------
 
+set filename2=%windir%\SysWOW64\gameux.dll
+set filename=%windir%\System32\gameux.dll
+rem
+TAKEOWN /F %filename%
+ICACLS %filename% /grant %USERNAME%:F
+TAKEOWN /F %filename2%
+ICACLS %filename2% /grant %USERNAME%:F
+ren %filename% "gameux.dll - go to helll!!!"
+ren %filename2% "gameux.dll - go to helll!!!"
+
 :--------------------------------------
 :: echo
 echo Melody Script Applied. This PC will reboot.
