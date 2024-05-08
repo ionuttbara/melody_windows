@@ -6,7 +6,7 @@ Windows Registry Editor Version 5.00
 "DragFullWindows"="1"
 "FontSmoothing"="2"
 "FontSmoothingType"=dword:00000002
-"UserPreferencesMask"=hex:90,52,01,80,10,00,00,00
+"UserPreferencesMask"=hex:90,12,01,80,10,00,00,00
 "MouseWheelRouting"=dword:00000002
 "RestorePreviousStateRecalcBehavior"=dword:00000000
 
@@ -14,7 +14,7 @@ Windows Registry Editor Version 5.00
 "DragFullWindows"="1"
 "FontSmoothing"="2"
 "FontSmoothingType"=dword:00000002
-"UserPreferencesMask"=hex:98,52,03,80,10,00,00,00
+"UserPreferencesMask"=hex:98,12,03,80,10,00,00,00
 "MouseWheelRouting"=dword:00000002
 "RestorePreviousStateRecalcBehavior"=dword:00000000
 
