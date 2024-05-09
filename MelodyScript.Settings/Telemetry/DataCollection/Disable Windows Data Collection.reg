@@ -117,12 +117,6 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PolicyManager\default\Experience\AllowDeviceDiscovery]
 "value"=dword:00000001
 
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PolicyManager\default\Experience\AllowManualMDMUnenrollment]
-"value"=dword:00000000
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PolicyManager\default\Experience\AllowScreenCapture]
-"value"=dword:00000000
-
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PolicyManager\default\System\AllowCommercialDataPipeline]
 "value"=dword:00000000
 

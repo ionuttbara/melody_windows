@@ -881,3 +881,7 @@ youtube.com##+js(set, yt.config_.openPopupConfig.supportedPopups.adBlockMessageV
 youtube.com##+js(set, Object.prototype.adBlocksFound, 0)
 youtube.com##+js(set, ytplayer.config.args.raw_player_response.adPlacements, [])
 youtube.com##+js(set, Object.prototype.hasAllowedInstreamAd, true)
+
+! 2024-05-08 https://www.g4media.ro
+www.g4media.ro##.code-block-1.code-block
+www.g4media.ro##.code-block-13.code-block
