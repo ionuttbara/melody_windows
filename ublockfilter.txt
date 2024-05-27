@@ -899,3 +899,25 @@ mesagerulneamt.ro##.has-sep.main-sidebar.col-4
 mesagerulneamt.ro##.elementor-widget-sidebar.elementor-widget.elementor-element-17b537bd.elementor-element
 mesagerulneamt.ro##.elementor-widget-smartmag-heading.elementor-widget.elementor-widget__width-initial.elementor-element-9d18f58.elementor-element > .elementor-widget-container > .is-center.block-head-a1.block-head-a.block-head-ac.block-head
 
+! May 27, 2024 https://zonait.ro
+zonait.ro###stream-item-widget-9 > .stream-item-widget-content > [href^="//consumer.huawei.com/ro/offer/christmas-promotion/"]
+zonait.ro###stream-item-widget-14 > .stream-item-widget-content > [href="//zona.store/"]
+zonait.ro##.logo-row.tie-row
+zonait.ro###stream-item-widget-12 > .stream-item-widget-content > [href^="//consumer.huawei.com/ro/offer/christmas-promotion/"]
+zonait.ro###stream-item-widget-18 > .stream-item-widget-content > [href="//zona.store/"]
+||zonait.ro/wp-content/uploads/2023/12/Zonait.ro-977-x-90px.jpg$image
+
+! May 27, 2024 https://tvmneamt.ro
+||tvmneamt.ro/wp-content/uploads/2024/04/26x4-cm-Piatra-copy-scaled.jpg$image
+||tvmneamt.ro/wp-content/uploads/2023/09/WhatsApp-Image-2023-09-27-at-00.59.03*.jpeg$image
+tvmneamt.ro##.td-ss-main-sidebar
+tvmneamt.ro##.td-pb-span4.tdc-column.vc_column_container.wpb_column.tdi_72.vc_column
+||tvmneamt.ro/wp-content/uploads/2024/05/Psd-banner-e1715875929961.jpeg$image
+||tvmneamt.ro/wp-content/uploads/2024/05/*-banner*g$image
+
+! May 27, 2024 https://mesagerulneamt.ro
+||mesagerulneamt.ro/wp-content/uploads/2024/05/PNL-alegeri.jpg.webp$image
+
+! May 27, 2024 https://vestea.net
+||vestea.net/wp-content/uploads/2024/05/abcd.gif$image
+||i0.wp.com/vestea.net/wp-content/uploads/2024/05/1200x288-Piatra-copy-1.png$image
