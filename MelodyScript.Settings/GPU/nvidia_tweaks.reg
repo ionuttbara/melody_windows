@@ -3,6 +3,9 @@ Windows Registry Editor Version 5.00
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\nvlddmkm\FTS]
 "EnableRID61684"=dword:00000001
+"EnableRID73779"=dword:00000001
+"EnableRID73780"=dword:00000001
+"EnableRID74361"=dword:00000001
 
 [HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\NVDisplay.ContainerLocalSystem\LocalSystem\NvcDispCorePlugin]
 "DisableLoad"=dword:00000001
@@ -116,10 +119,6 @@ Windows Registry Editor Version 5.00
 "EnableCEPreemption"=dword:00000000
 "RmGpsPsEnablePerCpuCoreDpc"=dword:00000001
 
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\nvlddmkm\FTS]
-"EnableRID61684"=dword:00000001
-
 [HKEY_CURRENT_USER\SOFTWARE\NVIDIA Corporation\Global\CoProcManager]
 "ShowTrayIcon"=dword:00000000
 
@@ -133,9 +132,3 @@ Windows Registry Editor Version 5.00
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\NVIDIA Corporation\Global\Startup\SendTelemetryData]
 @=dword:00000000
-
-
-[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\NVDisplay.ContainerLocalSystem\LocalSystem\NvcDispCorePlugin]
-"DisableLoad"=dword:00000001
-"LogFile"="-"
-"LogLevel"=dword:00000000

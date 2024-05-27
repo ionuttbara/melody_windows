@@ -28,7 +28,7 @@ Windows Registry Editor Version 5.00
 "TcpUseRFC1122UrgentPointe"=dword:00000001
 "TcpMaxSendFree"=dword:00065535
 "TcpCreateAndConnectTcbRateLimitDepth"=dword:00000000
-"TcpMaxDataRetransmissions"=dword:00000002
+"TcpMaxDataRetransmissions"=dword:00000005
 "TcpMaxConnectRetransmissions"=dword:00000002
 "TcpMaxConnectResponseRetransmissions"=dword:00000002
 "TCPCongestionControl"=dword:00000001
@@ -52,17 +52,18 @@ Windows Registry Editor Version 5.00
 "EnableHeuristics"=dword:00000001
 "EnableIPAutoConfigurationLimits"=dword:00000000
 "EnableTCPA"=dword:00000000
+"MaxUserPort"=dword:0000fffe
+"KeepAliveTime"=dword:006ddd00
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters]
 "EnableConnectionRateLimiting"=-
 "QualifyingDestinationThreshold"=dword:00000003
 "FastCopyReceiveThreshold"=dword:00004000
-"FastSendDatagramThreshold"=dword:00004000
-"DelayedAckFrequency"=dword:00000000
-"DelayedAckTicks"=dword:00000000
+"FastSendDatagramThreshold"=dword:00000000
+"DelayedAckFrequency"=dword:00000001
+"DelayedAckTicks"=dword:00000001
 "MaxConnectionsPer1_0Server"=dword:0000000a
 "MaxConnectionsPerServer"=dword:0000000a
-"MaxUserPort"=dword:00065534
 "ArpAlwaysSourceRoute"=dword:00000000
 "ArpCacheLife"=dword:00001800
 "ArpCacheMinReferencedLife"=dword:00003600
@@ -76,8 +77,7 @@ Windows Registry Editor Version 5.00
 "StrictTimeWaitSeqCheck"=dword:00000001
 "NumTcbTablePartitions"=dword:00000022
 "MultihopSets"=dword:0000000f
-"UseDomainNameDevolution"=dword:00000000
-"EnableIPAutoConfigurationLimits"=dword:00000000
+"EnableIPAutoConfigurationLimits"=dword:00000001
 "EnableWsd"=dword:00000000
 "IPEnableRouter"=dword:00000001
 
@@ -100,7 +100,7 @@ Windows Registry Editor Version 5.00
 "AutoShareWks"=dword:00000000
 "DisableCompression"=dword:00000001
 "EnableAuthenticateUserSharing"=dword:00000000
-"ServiceDllUnloadOnStop"=dword:00000001 
+"ServiceDllUnloadOnStop"=dword:00000001
 "autodisconnect"=dword:0000000f
 "enablesecuritysignature"=dword:00000000
 "requiresecuritysignature"=dword:00000000

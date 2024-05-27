@@ -4,7 +4,8 @@ Windows Registry Editor Version 5.00
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\AFD\Parameters]
 "DynamicSendBufferDisable"=dword:00000000
-"FastSendDatagramThreshold"=dword:00001000
+"FastSendDatagramThreshold"=dword:000005dc
+"FastCopyReceiveThreshold"=dword:000005dc
 "MaxActiveTransmitFileCount"=dword:00000000
 "MaxFastCopyTransmit"=dword:00001000
 "MaxFastTransmit"=dword:00008000
@@ -24,3 +25,4 @@ Windows Registry Editor Version 5.00
 "MaximumDynamicBacklog"=dword:00001000
 "DynamicBacklogGrowthDelta"=dword:00000010
 "BufferMultiplier"=dword:00000400
+"KeepAliveInterval"=dword:00000001

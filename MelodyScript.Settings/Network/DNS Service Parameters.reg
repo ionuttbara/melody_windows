@@ -20,3 +20,8 @@ Windows Registry Editor Version 5.00
 "ServiceDllUnloadOnStop"=dword:00000001
 "DisableParallelAandAAAA"=dword:00000001
 "MaxCacheTtl"=dword:00003840
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters]
+"NegativeCacheTime"=dword:00000000
+"NegativeSOACacheTime"=dword:00000000
+"MaximumUdpPacketSize"=dword:00001300

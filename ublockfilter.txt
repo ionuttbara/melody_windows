@@ -885,3 +885,17 @@ youtube.com##+js(set, Object.prototype.hasAllowedInstreamAd, true)
 ! 2024-05-08 https://www.g4media.ro
 www.g4media.ro##.code-block-1.code-block
 www.g4media.ro##.code-block-13.code-block
+
+! 2024-05-11 https://www.gandul.ro
+www.gandul.ro##.sm\:height-250.strawberry-ads-manager-container
+
+! 2024-05-21 https://www.ziarbicaz.ro
+www.ziarbicaz.ro##.unpinned-no-transition.normal.smart.bs-pinning-block.container > [src="https://www.ziarpiatraneamt.ro/wp-content/uploads/2024/05/voteaza-harpa.png"]
+
+! 2024-05-21 https://mesagerulneamt.ro
+mesagerulneamt.ro##.a-wrap-bg.a-wrap-2.a-wrap-base.a-wrap
+mesagerulneamt.ro##.a-wrap-bg.a-wrap-1.a-wrap-base.a-wrap
+mesagerulneamt.ro##.has-sep.main-sidebar.col-4
+mesagerulneamt.ro##.elementor-widget-sidebar.elementor-widget.elementor-element-17b537bd.elementor-element
+mesagerulneamt.ro##.elementor-widget-smartmag-heading.elementor-widget.elementor-widget__width-initial.elementor-element-9d18f58.elementor-element > .elementor-widget-container > .is-center.block-head-a1.block-head-a.block-head-ac.block-head
+
