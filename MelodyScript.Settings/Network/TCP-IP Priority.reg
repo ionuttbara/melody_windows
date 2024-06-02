@@ -8,9 +8,3 @@ Windows Registry Editor Version 5.00
 "NetbtPriority"=dword:00000007
 "HostsPriority"=dword:00000005
 "Class"=dword:00000008
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters]
-"EnablePMTUDiscovery"=dword:00000000
-"EnablePMTUBDetect"=dword:00000000
-"EnableICMPRedirect"=dword:00000001
-"DisableDynamicDiscovery"=dword:00000001

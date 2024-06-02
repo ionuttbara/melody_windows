@@ -1,25 +1,25 @@
 Windows Registry Editor Version 5.00
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000]
-"PerfLevelSrc"=dword:000008ae
-"PowerMizerEnable"=dword:00000000
-"PowerMizerLevel"=dword:00000000
-"PowerMizerLevelAC"=dword:00000000
+"PerfLevelSrc"=-
+"PowerMizerEnable"=dword:00000001
+"PowerMizerLevel"=-
+"PowerMizerLevelAC"=-
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0001]
-"PerfLevelSrc"=dword:000008ae
-"PowerMizerEnable"=dword:00000000
-"PowerMizerLevel"=dword:00000000
-"PowerMizerLevelAC"=dword:00000000
+"PerfLevelSrc"=-
+"PowerMizerEnable"=dword:00000001
+"PowerMizerLevel"=-
+"PowerMizerLevelAC"=-
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0002]
-"PerfLevelSrc"=dword:000008ae
-"PowerMizerEnable"=dword:00000000
-"PowerMizerLevel"=dword:00000000
-"PowerMizerLevelAC"=dword:00000000
+"PerfLevelSrc"=-
+"PowerMizerEnable"=dword:00000001
+"PowerMizerLevel"=-
+"PowerMizerLevelAC"=-
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0003]
-"PerfLevelSrc"=dword:000008ae
-"PowerMizerEnable"=dword:00000000
-"PowerMizerLevel"=dword:00000000
-"PowerMizerLevelAC"=dword:00000000
+"PerfLevelSrc"=-
+"PowerMizerEnable"=dword:00000001
+"PowerMizerLevel"=-
+"PowerMizerLevelAC"=-

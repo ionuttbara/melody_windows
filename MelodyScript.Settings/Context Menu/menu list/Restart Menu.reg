@@ -22,7 +22,7 @@ Windows Registry Editor Version 5.00
 @="shutdown /r /t 0"
 
 [HKEY_CLASSES_ROOT\DesktopBackground\Shell\RestartB\shell\003flyout]
-"MUIVerb"="Restart PC. After rebooted, restart any opened registered apps."
+"MUIVerb"="Restart PC. After reboot , re-open unclosed apps."
 "CommandFlags"=dword:00000020
 
 [HKEY_CLASSES_ROOT\DesktopBackground\Shell\RestartB\shell\003flyout\command]
@@ -30,13 +30,20 @@ Windows Registry Editor Version 5.00
 
 [HKEY_CLASSES_ROOT\DesktopBackground\Shell\RestartB\shell\004flyout]
 "MUIVerb"="Restart to Advanced Startup Options"
-"CommandFlags"=dword:00000020
+"HasLUAShield"=""
 
 [HKEY_CLASSES_ROOT\DesktopBackground\Shell\RestartB\shell\004flyout\command]
 @="shutdown /r /o /f /t 0"
 
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\RestartB\shell\005flyout]
+"MUIVerb"="Restart to UEFI/BIOS"
+"HasLUAShield"=""
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\RestartB\shell\005flyout\command]
+@="shutdown /r /fw /f /t 0"
+
 [HKEY_CLASSES_ROOT\DesktopBackground\Shell\RestartB\shell\006-NormalMode]
-@="Restart in Normal Mode"
+@="Restart to normal mode (Exit to Safe Mode)"
 "HasLUAShield"=""
 
 [HKEY_CLASSES_ROOT\DesktopBackground\Shell\RestartB\shell\006-NormalMode\command]

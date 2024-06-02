@@ -146,8 +146,8 @@ TAKEOWN /F %filename%
 ICACLS %filename% /grant %USERNAME%:F
 TAKEOWN /F %filename2%
 ICACLS %filename2% /grant %USERNAME%:F
-ren %filename% "gameux.dll - go to helll!!!"
-ren %filename2% "gameux.dll - go to helll!!!"
+ren %filename% "gameux.dll - go to hell!!!"
+ren %filename2% "gameux.dll - go to hell!!!"
 
 :--------------------------------------
 :: echo
