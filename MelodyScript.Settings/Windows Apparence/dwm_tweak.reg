@@ -18,3 +18,4 @@ Windows Registry Editor Version 5.00
 "EnableAeroPeek"=dword:00000000
 "SuperWetEnabled"=dword:00000000
 "ParallelModePolicy"=dword:00000002
+"ForceDisableModeChangeAnimation"=dword:00000000
