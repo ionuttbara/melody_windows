@@ -1,0 +1,13 @@
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\VSTXRAID
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\3ware
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\arcsas
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\HpSAMD
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ItSas35i
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\cht4iscsi
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\cht4vbd
