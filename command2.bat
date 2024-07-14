@@ -134,6 +134,7 @@ xcopy "GalleryInc.Core.MelodyScript.Configurations\Icons\*" "C:\ProgramData\Melo
 :--------------------------------------
 CLS & echo Enabling DirectPlay...
 dism /online /Enable-Feature /FeatureName:DirectPlay /All /NoRestart
+dism /online /Disable-Feature /FeatureName:SearchEngine-Client-Package /NoRestart
 :--------------------------------------
 
 set filename2=%windir%\SysWOW64\gameux.dll
