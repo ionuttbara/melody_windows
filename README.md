@@ -1,5 +1,5 @@
 # WARNING: 
-When you run this script it will change  A LOT of windows preferences to the liking of autor of this script, Once executing the exe, it does start, it does not ask for anything and there is NO WAY TO ROLLABACK the changes. Proceed with extreme caution. Try in VM. Extract the source and use individual files. Before to open the app, extract with WinRAR or 7-Zip and remove the unwanted tweaks/registry files. There are organized in **MelodyScript.Settings** folder.
+When you run this script it will change  A LOT of windows preferences to the liking of autor of this script, Once executing the exe, it does start, it does not ask for anything and there is NO WAY TO ROLLABACK the changes. Proceed with extreme caution. Try in VM. Extract the source and use individual files. Before to open the app, extract with WinRAR or 7-Zip and remove the unwanted tweaks/registry files. There are organized in **Settings** folder.
 
 # Melody Script
 <h1 align="center">
@@ -84,12 +84,12 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows NT\SystemRestore
 - Windows Explorer Tweaks
 
 
-- <a href=https://github.com/ionuttbara/melody_windows/tree/main/MelodyScript.Settings/Virtualization> Virtualization Tweaks </a>
+- <a href=https://github.com/ionuttbara/melody_windows/tree/main/Settings/Virtualization> Virtualization Tweaks </a>
 
 | Applied Tweak | Description |
 | ------ | ------ |
-| <a href=https://github.com/ionuttbara/melody_windows/blob/main/MelodyScript.Settings/Virtualization/Disable%20AppV%20Virtualization.reg> App-V Virtualization Disabling </a> | |
-| <a href=https://github.com/ionuttbara/melody_windows/blob/main/MelodyScript.Settings/Virtualization/Disable%20VBS.reg>VBS Disablation </a> | Disables Virtualization Based Security |
+| <a href=https://github.com/ionuttbara/melody_windows/blob/main/Settings/Virtualization/Disable%20AppV%20Virtualization.reg> App-V Virtualization Disabling </a> | |
+| <a href=https://github.com/ionuttbara/melody_windows/blob/main/Settings/Virtualization/Disable%20VBS.reg>VBS Disablation </a> | Disables Virtualization Based Security |
 
 
 - Telemetry Disablation
@@ -107,26 +107,26 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows NT\SystemRestore
 
 - Tasks and Services
 
-Removes Services and Tasks to get PC to boot faster and get lower RAM usage. Go to <a href=https://github.com/ionuttbara/melody_windows/tree/main/MelodyScript.Settings/Tasks>MelodyScript.Settings\Tasks </a> to check what tasks are removed and <a href=https://github.com/ionuttbara/melody_windows/tree/main/MelodyScript.Settings/Services> MelodyScript.Settings\Services </a> for Services.
+Removes Services and Tasks to get PC to boot faster and get lower RAM usage. Go to <a href=https://github.com/ionuttbara/melody_windows/tree/main/Settings/Tasks>Settings\Tasks </a> to check what tasks are removed and <a href=https://github.com/ionuttbara/melody_windows/tree/main/Settings/Services> Settings\Services </a> for Services.
 
 - Taskbar
 
 
+# Script Section
+> Starting with Melody Script 15.5, i've added Script Section. This some cmdlets ported to powershell. This helps to apply tweaks and things correctly.
+
+> They're located in *Script* folder.
 
 
-
-# Tweaks for 3rd party Software 
-> In this part i have a research to disable 3rd party Updaters , metrics and telemetry.
-> Some config!
-urations are policies and be found to [admx.help].
-
-| Applied Tweak | Description | Required Windows Version |
-| ------ | ------ |------ |
-|Office Tweaks| Disables Office Telemetry and data collection | Office 2013 or newer|
-|Chrome Tweaks| Adds uBlock Origin Extension, Tweaking DNS Client of Browser | Chrome 96 or newer|
-|Edge Tweaks| Adds uBlock Origin Extension, Tweaking DNS Client of Browser | Edge 92 or newer|
-|Chromium Browser Updater Tweaks| Optimizes Update Pipeline |Chrome/Edge Updater 1.42 or newer|
-| StartAllBack Configurations | Revert to Windows 7 UI Explorer and optimize some menus in Start and more zones | StartIsBack 3.5 or newer |
+| Script Name | Description |
+| ------ | ------ |
+| <a href=https://github.com/ionuttbara/melody_windows/blob/main/Scripts/Disable%20HPET.ps1>Disable HPET </a> | Disables *High precision event timer* from Device Manager.|
+| <a href=https://github.com/ionuttbara/melody_windows/blob/main/Scripts/Enable%DirectPlay
+.ps1>Enable DirectPlay</a> | Enables DirectPlay Support for Windows 8+. |
+| <a href=https://github.com/ionuttbara/melody_windows/blob/main/Scripts/Networking%20Tweaks.ps1>Networking Tweaks</a> | Optimizes network. Ported fron command2.bat. |
+| <a href=https://github.com/ionuttbara/melody_windows/blob/main/Scripts/Remove%20Capabilities.ps1>Remove Capabilities</a> and <a href=https://github.com/ionuttbara/melody_windows/blob/main/Scripts/Remove%20features.ps1>Remove features </a> | Removes features and FoD (Features OnDemand) packages |
+| <a href=https://github.com/ionuttbara/melody_windows/blob/main/Scripts/Unsplit%20Services.ps1>Unsplit Services</a> | Decreases svchost.exe processes. |
+| <a href=https://github.com/ionuttbara/melody_windows/blob/main/Scripts/Disable%20Device%20to%20TurnOff%20this%20device%20to%20save%20power.ps1>Disable Device to TurnOff this device to save power</a> | Untick the option to turn off devicess to save power from Device Manager. |
 
 
 # Optimization and organizing Context Menus
@@ -140,7 +140,7 @@ Defined locations which Melody Script modifies:
 - Folder (Folder right-click menu)
 - Directory (Director right-click menu, including folders + system folders such as This PC, Library Folders, System Folders such Control Panel and custom system created folders)
 - Background (right click menu of desktop or an explorer window)
-- Disk (Drive Context Menu (Disk drives such CD, DVD, HDD, SSD, USB , SD cards etc.))
+- Disk (Drive Context Menu (Disk drives such CD, DVD, HDD, SSD, USB, SD cards etc.))
 
 | Context Menu Name | Menu Type | Description |
 | ------ | ------ | ------ |
@@ -160,10 +160,6 @@ Defined locations which Melody Script modifies:
 
 Some privacy Tweaks (registry Settings) are provided by Microsoft (Policy Tweaks) Check out the website by clicking the <a href="https://admx.help">link</a>.
 A smaller part of performance Tweaks are provied by AskVG website, winaero.com Website and reverse engienerring of Winaero Tweaker, O&O ShutUp10, W10 Privacy and Wise Care 365, applied in Windows Telemetry Data Collection Registry File.
-Latency Tweaks are provided by me. Latency Service is a SFX version by TimerTool, which this tool isn't mine.
-EarTrumpet Integration is created by me. The application is created by File-New-Project. (I forked the project).
-Also Clipboard "Integration" is provided by me. The Application is created by Ditto. (provided with GNU GPL-3 License).
-
 
 # Some bcdedit commands
 

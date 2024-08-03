@@ -1,6 +1,7 @@
 Windows Registry Editor Version 5.00
 
 ; NLA Parameters
+; We solely depend on passive polling so we don't require to pass nlasvc and corresponding msft address through firewall/qos. Assuming this also quickens the process by skipping active probes.
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\NlaSvc\Parameters\Internet]
 "ActiveDnsProbeContent"="208.67.222.222"
@@ -14,6 +15,7 @@ Windows Registry Editor Version 5.00
 "ActiveWebProbePath"="success.txt"
 "ActiveWebProbePathV6"="success.txt"
 
+; Disable Passive Polling, saves CPU cycles.
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\NetworkConnectivityStatusIndicator]
 "NoActiveProbe"=dword:00000001
 

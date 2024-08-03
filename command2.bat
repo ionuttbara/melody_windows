@@ -1,121 +1,41 @@
 :--------------------------------------
 :: Starting the script
 title [0 percent] Melody Script & pushd "%CD%" & CD /D "%~dp0" >nul
+set "RegPath=HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}"
+:--------------------------------------
+
+:: Windows Update Services Failure Manager
+:--------------------------------------
+sc failure UsoSvc reset= 60 actions= "" actions= ""
+sc failure bits reset= 60 actions= "" actions= ""
 :--------------------------------------
 
 :--------------------------------------
 :: disabling HPET
-wmic path Win32_PnPEntity where "name='High precision event timer'" call disable
+Powershell -noprofile -executionpolicy bypass -file "%~dp0\Scripts\Disable HPET.ps1"
+:: unsplit svchost.exe processes
+Powershell -noprofile -executionpolicy bypass -file "%~dp0\Scripts\Unsplit Services.ps1"
 :--------------------------------------
 
 :--------------------------------------
-:: Unsplit Services
-for /f %%a in ('Reg query HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\InstallService\Stubification /v "EnableAppOffloading" /s ^| findstr "HKEY"') do (
-for /f %%i in ('Reg query "%%a" /v "EnableAppOffloading" ^| findstr "HKEY"') do (Reg add "%%i" /v "EnableAppOffloading" /t Reg_DWORD /d "0" /f) >nul)
+:: disabling Turning Off devices to save power
+Powershell -noprofile -executionpolicy bypass -file "%~dp0\Scripts\Disable Device to TurnOff this device to save power.ps1"
+:--------------------------------------
+
+:--------------------------------------
+for /f %%n in ('Reg query HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\InstallService\Stubification /v "EnableAppOffloading" /s ^| findstr "HKEY"') do (
+for /f %%i in ('Reg query "%%n" /v "EnableAppOffloading" ^| findstr "HKEY"') do (Reg add "%%i" /v "EnableAppOffloading" /t Reg_DWORD /d "0" /f) >nul)
 :--------------------------------------
 
 :--------------------------------------
 :: Registry Tweaks Applying
-title [5 percent] Melody Script
-CLS & echo Applying registry tweaks...
-FOR /R %%f IN (*.reg) DO regedit.exe /s "%%f" >nul
-CLS & echo Applying System Registry Tweaks...
-FOR /R %%f IN (*.reg) DO PowerRun.exe regedit.exe /s "%%f" >nul
+regedit.exe /s Output.reg
+PowerRun.exe regedit.exe /s Output.reg
 :--------------------------------------
 
 :--------------------------------------
 :: Network Tweaks
-title [10 percent] Melody Script
-CLS & echo Applying network tweaks...
-
-:: Autotuning Internet Speed and making it persistent
-netsh.exe interface tcp set global autotuning = experimental >nul
-netsh.exe interface tcp set heuristics disabled >nul
-
-:: Setting the Congestion Provider for better Internet Speeds and Latency, to CTCP
-
-netsh.exe interface tcp set supplemental Internet congestionprovider=ctcp
-netsh.exe interface tcp set supplemental InternetCustom congestionprovider=ctcp
-
-:: Reducing CPU for veryfast Internet Connections
-netsh.exe int isatap set state disable >nul
-netsh.exe int tcp set global rsc=disabled >nul
-netsh.exe int tcp set global ecncapability=enabled >nul
-netsh.exe int tcp set global ecn=enabled >nul
-netsh.exe interface tcp set global timestamps=disabled >nul
-netsh.exe interface tcp set global nonsackrttresiliency=disabled >nul
-netsh.exe interface tcp set supplemental template=custom icw=10 >nul
-netsh.exe interface tcp set global fastopen=enabled >nul
-netsh.exe interface tcp set global fastopenfallback=enabled >nul
-netsh.exe interface udp set global uro=enabled >nul
-netsh.exe int 6to4 set state state=disabled >nul
-netsh.exe interface ip set global multicastforwarding=disabled >nul
-netsh.exe interface tcp set security mpp=disabled profiles=disabled >nul
-netsh.exe interface ip set global icmpredirects=disabled >nul
-netsh.exe interface tcp set global rss=enabled netdma=disabled dca=disabled >nul
-netsh interface ip set global neighborcachelimit=4096 defaultcurhoplimit=64 taskoffload=enabled >nul
-netsh interface tcp set global hystart=disabled >nul
-netsh int tcp set global initialRto=3000 >nul
-
-:: some powershell.exe commands which apply to all present network adapters (optimizations for I/O Overhead and getting better ping in worse internet connections)
-powershell.exe "Disable-NetAdapterChecksumOffload -Name "*""
-powershell.exe "Disable-NetAdapterLso -Name "*"" >nul
-powershell.exe "Set-NetOffloadGlobalSetting -PacketCoalescingFilter disabled"
-powershell.exe "Disable-NetAdapterRsc -Name "*"" >nul
-powershell.exe Disable-NetAdapterBinding -Name "*" -ComponentID ms_pacer
-powershell.exe Disable-NetAdapterBinding -Name "*" -ComponentID ms_msclient
-powershell.exe "ForEach($adapter In Get-NetAdapter){Disable-NetAdapterPowerManagement -Name $adapter.Name -ErrorAction SilentlyContinue}"
-powershell.exe "Get-NetAdapter -IncludeHidden | Set-NetIPInterface -WeakHostSend Enabled -WeakHostReceive Enabled -ErrorAction SilentlyContinue"
-
-:: Firewall Rules
-netsh.exe advfirewall firewall set rule group="Network Discovery" new enable=Yes >nul
-netsh.exe advfirewall firewall set rule group="File and Printer Sharing" new enable=Yes >nul
-
-:: Adding NetBios Options
-for /f %%k in ('reg query HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\services\NetBT\Parameters\Interfaces') do (
-reg add %%k /v NetbiosOptions /t reg_dword /d 2 /f
-) >nul
-
-
-:: Adding Network Adapters Options (can be modified in Advanced Device Options from Device Manager)
-
-for /f %%n in ('Reg query "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}" /v "*SpeedDuplex" /s ^| findstr "HKEY"') do (
-:: Configure Offloads
-echo Configuring Offloads
-reg add "%%n" /v "IPChecksumOffloadIPv4" /t REG_SZ /d "0" /f
-reg add "%%n" /v "LsoV1IPv4" /t REG_SZ /d "0" /f
-reg add "%%n" /v "LsoV2IPv4" /t REG_SZ /d "0" /f
-reg add "%%n" /v "LsoV2IPv6" /t REG_SZ /d "0" /f
-reg add "%%n" /v "PMARPOffload" /t REG_SZ /d "0" /f
-reg add "%%n" /v "PMNSOffload" /t REG_SZ /d "0" /f
-reg add "%%n" /v "TCPChecksumOffloadIPv4" /t REG_SZ /d "0" /f
-reg add "%%n" /v "TCPChecksumOffloadIPv6" /t REG_SZ /d "0" /f
-reg add "%%n" /v "UDPChecksumOffloadIPv6" /t REG_SZ /d "0" /f
-reg add "%%n" /v "UDPChecksumOffloadIPv4" /t REG_SZ /d "0" /f
-:: Disable Flow Control
-echo Disabling Flow Control
-reg add "%%n" /v "*FlowControl" /t REG_SZ /d "0" /f
-reg add "%%n" /v "FlowControlCap" /t REG_SZ /d "0" /f
-:: Remove Interrupt Delays
-echo Removing Interrupt Delays
-reg add "%%n" /v "TxIntDelay" /t REG_SZ /d "0" /f
-reg add "%%n" /v "TxAbsIntDelay" /t REG_SZ /d "0" /f
-reg add "%%n" /v "RxIntDelay" /t REG_SZ /d "0" /f
-reg add "%%n" /v "RxAbsIntDelay" /t REG_SZ /d "0" /f
-:: Remove Adapter Notification
-echo Removing Adapter Notification Sending
-reg add "%%n" /v "FatChannelIntolerant" /t REG_SZ /d "0" /f
-:: Disable Interrupt Moderation
-echo Disabling Interrupt Moderation
-reg add "%%n" /v "*InterruptModeration" /t REG_SZ /d "0" /f
-		)
-
-:: Disabling Nagle's Algorithm for better Gaming Latency
-for /f %%r in ('Reg query "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters\Interfaces" /f "1" /d /s^|Findstr HKEY_') do (
-Reg add %%r /v "TCPNoDelay" /t Reg_DWORD /d "1" /f
-Reg add %%r /v "TcpAckFrequency" /t Reg_DWORD /d "1" /f
-Reg add %%r /v "TcpDelAckTicks" /t Reg_DWORD /d "0" /f
-) >nul
+Powershell -noprofile -executionpolicy bypass -file "%~dp0\Scripts\Networking Tweaks.ps1"
 :--------------------------------------
 
 
@@ -127,25 +47,19 @@ powercfg -h off & DISM /Online /Set-ReservedStorageState /State:Disabled & reage
 
 :--------------------------------------
 :: Configuration of Icons
-title [40 percent] Melody Script
 xcopy "GalleryInc.Core.MelodyScript.Configurations\Icons\*" "C:\ProgramData\Melody\Icon\" /y /e /h /c /i /d >nul
 :--------------------------------------
 
 :--------------------------------------
-CLS & echo Enabling DirectPlay...
-dism /online /Enable-Feature /FeatureName:DirectPlay /All /NoRestart
-dism /online /Disable-Feature /FeatureName:SearchEngine-Client-Package /NoRestart
+CLS & echo Enabling DirectPlay and Removing Features/Capabilities...
+Powershell -noprofile -executionpolicy bypass -file "%~dp0\Scripts\Remove Features.ps1"
+Powershell -noprofile -executionpolicy bypass -file "%~dp0\Scripts\Remove Capabilities.ps1"
+Powershell -noprofile -executionpolicy bypass -file "%~dp0\Scripts\Enable DirectPlay.ps1"
 :--------------------------------------
 
-set filename2=%windir%\SysWOW64\gameux.dll
-set filename=%windir%\System32\gameux.dll
-rem
-TAKEOWN /F %filename%
-ICACLS %filename% /grant %USERNAME%:F
-TAKEOWN /F %filename2%
-ICACLS %filename2% /grant %USERNAME%:F
-ren %filename% "gameux.dll - go to hell!!!"
-ren %filename2% "gameux.dll - go to hell!!!"
+:--------------------------------------
+taskkill /f /im explorer.exe & del /f /q "%localappdata%\Microsoft\GameDVR"
+:--------------------------------------
 
 :--------------------------------------
 :: echo

@@ -1,6 +1,8 @@
 Windows Registry Editor Version 5.00
 
-;DNS
+;DNS service parameter
+
+; disable mDNS and also enables multicast in case of something
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows NT\DNSClient]
 "DisableSmartNameResolution"=dword:00000001

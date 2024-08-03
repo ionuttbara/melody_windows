@@ -54,6 +54,7 @@ Windows Registry Editor Version 5.00
 "EnableTCPA"=dword:00000000
 "MaxUserPort"=dword:0000fffe
 "KeepAliveTime"=dword:006ddd00
+"TcpTimedWaitDelay"=dword:0000001d
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters]
 "EnableConnectionRateLimiting"=-

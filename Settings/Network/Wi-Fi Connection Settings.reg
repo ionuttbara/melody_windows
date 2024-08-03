@@ -32,7 +32,13 @@ Windows Registry Editor Version 5.00
 "DisableWcnUi"=dword:000000001
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\HotspotAuthentication]
-"Enabled"=dword:00000001
+"Enabled"=dword:00000000
 
 [HKEY_LOCAL_MACHINE\Software\Microsoft\wcmsvc\wifinetworkmanager\config]
 "AutoConnectAllowedOEM"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PolicyManager\default\WiFi\AllowWiFiHotSpotReporting]
+"value"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WlanSvc\AnqpCache]
+"OsuRegistrationStatus"=dword:00000000
