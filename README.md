@@ -121,8 +121,7 @@ Removes Services and Tasks to get PC to boot faster and get lower RAM usage. Go 
 | Script Name | Description |
 | ------ | ------ |
 | <a href=https://github.com/ionuttbara/melody_windows/blob/main/Scripts/Disable%20HPET.ps1>Disable HPET </a> | Disables *High precision event timer* from Device Manager.|
-| <a href=https://github.com/ionuttbara/melody_windows/blob/main/Scripts/Enable%DirectPlay
-.ps1>Enable DirectPlay</a> | Enables DirectPlay Support for Windows 8+. |
+| <a href=https://github.com/ionuttbara/melody_windows/blob/main/Scripts/Enable%DirectPlay.ps1>Enable DirectPlay</a> | Enables DirectPlay Support for Windows 8+. |
 | <a href=https://github.com/ionuttbara/melody_windows/blob/main/Scripts/Networking%20Tweaks.ps1>Networking Tweaks</a> | Optimizes network. Ported fron command2.bat. |
 | <a href=https://github.com/ionuttbara/melody_windows/blob/main/Scripts/Remove%20Capabilities.ps1>Remove Capabilities</a> and <a href=https://github.com/ionuttbara/melody_windows/blob/main/Scripts/Remove%20features.ps1>Remove features </a> | Removes features and FoD (Features OnDemand) packages |
 | <a href=https://github.com/ionuttbara/melody_windows/blob/main/Scripts/Unsplit%20Services.ps1>Unsplit Services</a> | Decreases svchost.exe processes. |
