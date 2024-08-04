@@ -4,8 +4,8 @@ title [0 percent] Melody Script & pushd "%CD%" & CD /D "%~dp0" >nul
 set "RegPath=HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}"
 :--------------------------------------
 
-:: Windows Update Services Failure Manager
 :--------------------------------------
+:: Windows Update Services Failure Manager
 sc failure UsoSvc reset= 60 actions= "" actions= ""
 sc failure bits reset= 60 actions= "" actions= ""
 :--------------------------------------
