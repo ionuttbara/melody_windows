@@ -2,7 +2,8 @@
 $flist = @("*Realtek*", "*Intel*", "*Broadcom*", "*Qualcomm*", "*Marvel*",
             "*Vmware*", "*Ethernet*", "*InternetExplorer*", "*StepsRecorder*",
             "*DirectX.Configuration.Database*", "*WindowsMediaPlayer*",
-            "*Wallpapers*", "*PowerShell*", "*QuickAssist*", "*OneSync*", "*LA57*", "*Ralink*", "*Virtual*", "*TCP*", "*Hello*")
+            "*Wallpapers*", "*Print*", "*MathRecognizer*", "*OpenSSH*", "*PowerShell*", 
+	    "*QuickAssist*", "*OneSync*", "*LA57*", "*Ralink*", "*Virtual*", "*TCP*", "*Hello*")
 
 foreach ($item in $flist) {
     # Get the list of capabilities that match the current item

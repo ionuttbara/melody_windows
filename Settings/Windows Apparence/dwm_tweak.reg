@@ -17,7 +17,6 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Dwm]
 "EnableAeroPeek"=dword:00000000
 "SuperWetEnabled"=dword:00000000
-"EnableCpuClipping"=dword:00000000
 "EnableMPCPerfCounter"=dword:00000000
 "ImageProcessing8bit"=dword:00000001
 "ResampleInLinearSpace"=dword:0000000

@@ -1,1 +1,0 @@
-Enable-WindowsOptionalFeature -Online -FeatureName "DirectPlay" -NoRestart

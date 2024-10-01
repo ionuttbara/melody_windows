@@ -809,7 +809,6 @@ lrepacks.net##.header-top
 lrepacks.net##.header-middle
 lrepacks.net##.tabs-holder
 lrepacks.net##div.widget_upcoming_events.widget:nth-of-type(5)
-lrepacks.net##.respond-comments
 lrepacks.net##.full-width.post .padding-off.section
 lrepacks.net##hr
 lrepacks.net##.middle.button
