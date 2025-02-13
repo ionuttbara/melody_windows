@@ -8,20 +8,7 @@ Windows Registry Editor Version 5.00
 [HKEY_CURRENT_USER\Software\Microsoft\Windows\DWM]
 "EnableAeroPeek"=dword:00000000
 "AlwaysHibernateThumbnails"=dword:00000000
-"CompositionPolicy"=dword:00000000
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\DWM\ExtendedComposition]
-"ExclusiveModeFramerateAveragingPeriodMs"=dword:000000fa
-"ExclusiveModeFramerateThresholdPercent"=dword:0000002d
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Dwm]
 "EnableAeroPeek"=dword:00000000
 "SuperWetEnabled"=dword:00000000
-"EnableMPCPerfCounter"=dword:00000000
-"ImageProcessing8bit"=dword:00000001
-"ResampleInLinearSpace"=dword:0000000
-"UseHWDrawListEntriesOnWARP"=dword:00000001
-"DisallowNonDrawListRendering"=dword:00000000
-"EnableDrawToBackbuffer"=dword:00000001
-"MouseWheelScrollingMode"=dword:0000001
-"ParallelModePolicy"=dword:00000002

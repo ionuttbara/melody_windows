@@ -10,8 +10,6 @@ Windows Registry Editor Version 5.00
 
 [-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WinRM]
 
-[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\KtmRm]
-
 [-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\smphost]
 
 [-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\BDESVC]
@@ -31,12 +29,6 @@ Windows Registry Editor Version 5.00
 [-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\hvcrash]
 
 [-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\RetailDemo]
-
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Svchost\InvSvcGroup]
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Svchost]
-"InvSvcGroup"=-
-"BcastDVRUserService"=-
 
 [-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ALG]
 
@@ -91,7 +83,6 @@ Windows Registry Editor Version 5.00
 [-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\AppleSSD]
 
 [-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SENS]
-
 
 [-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PushToInstall]
 

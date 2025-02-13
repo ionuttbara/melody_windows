@@ -29,11 +29,3 @@ Windows Registry Editor Version 5.00
 
 [HKEY_CLASSES_ROOT\AllFilesystemObjects]
 "DefaultDropEffect"=dword:00000001
-
-[HKEY_CURRENT_USER\Control Panel\Desktop\WindowMetrics]
-"CaptionHeight"="-270"
-"MenuHeight"="-270"
-"ScrollHeight"="-240"
-"ScrollWidth"="-240"
-"SmCaptionHeight"="-180"
-"SmCaptionWidth"="-180"

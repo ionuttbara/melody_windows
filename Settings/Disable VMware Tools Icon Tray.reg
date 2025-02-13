@@ -1,0 +1,5 @@
+Windows Registry Editor Version 5.00
+
+;Disable VMware Tools tray icon (VDI)
+[HKEY_CURRENT_USER\Software\VMWare, Inc.\VMWare Tools]
+"ShowTray"=dword:00000000

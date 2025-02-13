@@ -1,6 +1,0 @@
-Windows Registry Editor Version 5.00
-
-;CPU Core Parking
-[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Power\PowerSettings\54533251-82be-4824-96c1-47b60b740d00\0cc5b647-c1df-4637-891a-dec35c318583]
-"ValueMax"=dword:00000064
-"ValueMin"=dword:00000064

@@ -1,0 +1,13 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\CLSID\{ADEAD0A2-0A48-49cf-8416-FF0000000000}]
+@="User Accounts: Advanced"
+"InfoTip"="Configure advanced user account settings and passwords."
+
+[HKEY_CLASSES_ROOT\CLSID\{ADEAD0A2-0A48-49cf-8416-FF0000000000}\DefaultIcon]
+@="C:\\Windows\\System32\\netplwiz.dll,6"
+
+[HKEY_CLASSES_ROOT\CLSID\{ADEAD0A2-0A48-49cf-8416-FF0000000000}\Shell\Open\Command]
+@="Control userpasswords2"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\ControlPanel\NameSpace\{ADEAD0A2-0A48-49cf-8416-FF0000000000}]

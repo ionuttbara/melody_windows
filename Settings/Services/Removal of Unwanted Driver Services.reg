@@ -2,18 +2,6 @@ Windows Registry Editor Version 5.00
 
 [-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ZTDNS]
 
-[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\nvstor]
-
-[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\nvraid]
-
-[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\megasr]
-
-[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\megasas35i]
-
-[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\megasas2i]
-
 [-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\CSC]
 
 [-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\AppvVemgr]
-
-[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\1394ohci]

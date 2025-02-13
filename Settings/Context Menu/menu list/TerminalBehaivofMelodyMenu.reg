@@ -110,24 +110,3 @@ Windows Registry Editor Version 5.00
 
 [HKEY_CLASSES_ROOT\Directory\Background\shell\GalleryTerminalBehaivor\shell\cmd2\command]
 @="cmd.exe /s /k pushd \"%V\""
-
-
-[HKEY_CLASSES_ROOT\Directory\Background\shell\GalleryTerminalBehaivor\shell\TrustedInstaller]
-"MuiVerb"="Open PowerShell as TrusterInstaller User"
-"HasLUAShield"=""
-"NoWorkingDirectory"=""
-"Position"=-
-"Position"="Middle"
-"Icon"="powershell.exe,0"
-[HKEY_CLASSES_ROOT\Directory\Background\shell\GalleryTerminalBehaivor\shell\TrustedInstaller\command]
-@="C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -win 1 -nop -c iex((10..40|%%{(gp 'Registry::HKCR\\RunAsTI' $_ -ea 0).$_})-join[char]10); # --%% cmd /c pushd \"%V\" & start \"RunAsTI\" powershell.exe"
-
-[HKEY_CLASSES_ROOT\Directory\Background\shell\GalleryTerminalBehaivor\shell\TrustedInstaller2]
-"MuiVerb"="Open CMD as TrusterInstaller User"
-"HasLUAShield"=""
-"NoWorkingDirectory"=""
-"Position"=-
-"Position"="Middle"
-"Icon"="cmd.exe,0"
-[HKEY_CLASSES_ROOT\Directory\Background\shell\GalleryTerminalBehaivor\shell\TrustedInstaller2\command]
-@="C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -win 1 -nop -c iex((10..40|%%{(gp 'Registry::HKCR\\RunAsTI' $_ -ea 0).$_})-join[char]10); # --%% cmd /c pushd \"%V\" & start \"RunAsTI\" cmd.exe"

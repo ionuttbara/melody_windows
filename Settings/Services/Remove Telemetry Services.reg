@@ -1,28 +1,14 @@
 Windows Registry Editor Version 5.00
 
-[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\pla]
+[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Sense]
 
-[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\GraphicsPerfSvc]
+[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\lmhosts]
 
-[-HKEY_LOCAL_MACHINE\SOFTWARE\AMDLOG]
+[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\UevAgentService]
 
-[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\AMD External Events Utility]
+[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\dcsvc]
 
-[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\GpuEnergyDrv]
-
-[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\luafv]
-
-[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PktMon]
-
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Svchost\GraphicsPerfSvcGroup]
-
-[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\diagnosticshub.standardcollector.service]
-
-[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\DiagTrack]
-
-[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\dmwappushservice]
-
-[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SystemUsageReportSvc_QUEENCREEK]
+[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\DialogBlockingService]
 
 [-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Psched]
 
@@ -54,30 +40,44 @@ Windows Registry Editor Version 5.00
 
 [-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WdNisSvc]
 
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Svchost]
-"rdxgroup"=-
-"GraphicsPerfSvcGroup"=-
-"autoTimeSvc"=-
-"NetworkServiceAndNoImpersonation"=-
+[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\GpuEnergyDrv]
+
+[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\luafv]
+
+[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PktMon]
+
+[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\pla]
+
+[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\GraphicsPerfSvc]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\AMDLOG]
+
+[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\AMD External Events Utility]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Svchost\GraphicsPerfSvcGroup]
+
+[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\diagnosticshub.standardcollector.service]
+
+[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\DiagTrack]
+
+[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\dmwappushservice]
+
+[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SystemUsageReportSvc_QUEENCREEK]
 
 [-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\VSStandardCollectorService150]
 
 [-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\IObitUnlocker]
 
+[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\RasAuto]
+
+[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\RemoteAccess]
+
+[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WinDefend]
+
+[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\refsdedupsvc]
+
+[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\lltdsvc]
 
 [-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\IpxlatCfgSvc]
 
-[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\lltdsvc]
 [-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\cloudidsvc]
-[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\refsdedupsvc]
-[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\RasAuto]
-[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\RemoteAccess]
-[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WinDefend]
-[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Sense]
-[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\lmhosts]
-[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\UevAgentService]
-
-[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\dcsvc]
-
-[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\DialogBlockingService]
-

@@ -1,0 +1,25 @@
+Windows Registry Editor Version 5.00
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsRuntime\ActivatableClassId\PeopleBarContainer.App]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsRuntime\ActivatableClassId\PeopleBarContainer.MainPage]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsRuntime\ActivatableClassId\PeopleBarContainer.peoplebarcontainer_XamlTypeInfo.XamlMetaDataProvider]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsRuntime\ActivatableClassId\PeopleBarFlyout.App]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsRuntime\ActivatableClassId\PeopleBarFlyout.FlyoutViewModel]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsRuntime\ActivatableClassId\PeopleBarFlyout.MainPage]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsRuntime\ActivatableClassId\PeopleBarFlyout.peoplebarflyout_XamlTypeInfo.XamlMetaDataProvider]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsRuntime\ActivatableClassId\PeopleBarFlyout.PersonContextMenuControlMenuFlyoutItemHost]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsRuntime\ActivatableClassId\PeopleBarJumpView.App]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsRuntime\ActivatableClassId\PeopleBarJumpView.peoplebarjumpview_XamlTypeInfo.XamlMetaDataProvider]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsRuntime\ActivatableClassId\PeopleBarJumpView.PeopleBarJumpViewPage]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsRuntime\ActivatableClassId\PeopleBarJumpView.PeopleBarJumpViewViewModel]

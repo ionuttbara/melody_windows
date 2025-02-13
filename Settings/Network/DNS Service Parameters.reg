@@ -13,17 +13,10 @@ Windows Registry Editor Version 5.00
 "DisableSmartProtocolReordering"=dword:00000001
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters]
-"NetFailureCacheTime"=dword:00000000
-"MaxCacheEntryTtlLimit"=dword:0000fa00
-"MaxNegativeCacheTtl"=dword:00000000
-"CacheHashTableBucketSize"=dword:00000001
-"CacheHashTableSize"=dword:00000180
 "MaxSOACacheEntryTtlLimit"=dword:0000012d
 "ServiceDllUnloadOnStop"=dword:00000001
 "DisableParallelAandAAAA"=dword:00000001
-"MaxCacheTtl"=dword:00003840
+"MaxCacheTtl"=dword:00000001
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters]
-"NegativeCacheTime"=dword:00000000
-"NegativeSOACacheTime"=dword:00000000
 "MaximumUdpPacketSize"=dword:00001300

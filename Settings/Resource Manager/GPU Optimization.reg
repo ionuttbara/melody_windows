@@ -10,17 +10,6 @@ Windows Registry Editor Version 5.00
 "SwapEffectUpgradeCache"=dword:00000001
 "SpecificGPUOptionApplicable"=dword:00000001
 
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\DXGKrnl]
-"MonitorLatencyTolerance"=dword:00000001
-"MonitorRefreshLatencyTolerance"=dword:00000001
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\SubSystems]
-"Optional"=""
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\GraphicsDrivers\Scheduler]
-"EnablePreemption"=dword:00000001
-"VsyncIdleTimeout"=dword:00000000
-
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\GraphicsDrivers]
 "TdrLevel"=dword:00000000
 "UseGpuTimer"=dword:00000001

@@ -2,7 +2,6 @@ Windows Registry Editor Version 5.00
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power]
 "ExitLatency"=dword:00000001
-"DisableVsyncLatencyUpdate"=dword:00000001
 "DisableSensorWatchdog"=dword:00000001
 "ExitLatencyCheckEnabled"=dword:00000001
 "Latency"=dword:00000001
@@ -12,7 +11,6 @@ Windows Registry Editor Version 5.00
 "LatencyTolerancePerfOverride"=dword:00000001
 "LatencyToleranceScreenOffIR"=dword:00000001
 "LatencyToleranceVSyncEnabled"=dword:000000001
-"RtlCapabilityCheckLatency"=dword:00000001
 "MfBufferingThreshold"=dword:00000000
 "CsEnabled"=dword:00000000
 "QosManagesIdleProcessors"=dword:00000000
@@ -30,7 +28,6 @@ Windows Registry Editor Version 5.00
 "RMDeepLlEntryLatencyUsec"=dword:00000000
 "PciLatencyTimerControl"=dword:00000001
 "Node3DLowLatency"=dword:00000001
-"LOWLATENCY"=dword:00000001
 "RmDisableRegistryCaching"=dword:00000001
 "RMDisablePostL2Compression"=dword:00000001
 "DefaultMemoryRefreshLatencyToleranceNoContext"=dword:00000001
