@@ -1,11 +1,5 @@
 Windows Registry Editor Version 5.00
 
-[HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows Media Foundation]
-"EnableFrameServerMode"=-
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Media Foundation]
-"EnableFrameServerMode"=-
-
 [HKEY_CURRENT_USER\Software\Microsoft\DirectX\GraphicsSettings]
 "SwapEffectUpgradeCache"=dword:00000001
 "SpecificGPUOptionApplicable"=dword:00000001

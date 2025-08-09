@@ -1,0 +1,12 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\VideoSettings]
+"DisableHDROnBattery"=dword:00000000
+"EnableAutoEnhanceDuringPlayback"=dword:00000000
+"EnableHDRForPlayback"=dword:00000001
+
+[HKEY_CURRENT_USER\Control Panel\Cursors]
+"CursorDeadzoneJumpingSetting"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\GraphicsDrivers]
+"DisableCABC"=dword:00000001

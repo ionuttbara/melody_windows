@@ -1,5 +1,21 @@
 Windows Registry Editor Version 5.00
 
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\LeapSecondInformation]
+"Enabled"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\EnhancedStorageDevices]
+"TCGSecurityActivationDisabled"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\StorPort]
+"TelemetryPerformanceEnabled"=dword:00000000
+"TelemetryErrorDataEnabled"=dword:00000000
+"TelemetryDeviceHealthEnabled"=dword:00000000
+"HmbAllocationPolicy"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Classpnp]
+"NVMeDisablePerfThrottling"=dword:00000001
+
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\services\iaStor\Parameters\Port0]
 "LPM"=dword:00000000
 "LPMDSTATE"=dword:00000000
@@ -29,3 +45,6 @@ Windows Registry Editor Version 5.00
 "LPM"=dword:00000000
 "LPMDSTATE"=dword:00000000
 "DIPM"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management]
+"SwapfileControl"=dword:00000000

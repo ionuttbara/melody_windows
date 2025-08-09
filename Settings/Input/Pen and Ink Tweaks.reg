@@ -1,6 +1,6 @@
 Windows Registry Editor Version 5.00
 
-; Windows Pen Tweaks 
+; Windows Pen Tweaks
 
 [HKEY_CURRENT_USER\Software\Microsoft\Windows NT\CurrentVersion\Windows\Pen]
 "PenArbitrationType"=dword:00000001
@@ -38,4 +38,3 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsInkWorkspace]
 "AllowSuggestedAppsInWindowsInkWorkspace"=dword:00000000
 "AllowWindowsInkWorkspace"=dword:00000000
-

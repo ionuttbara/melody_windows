@@ -1,9 +1,0 @@
-Windows Registry Editor Version 5.00
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Environment]
-"DEVMGR_SHOW_DETAILS"=dword:00000001
-"DEVMGR_SHOW_NONPRESENT_DEVICES"="1"
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Driver Signing]
-; Allow no sign driver.
-"Policy"=hex:00

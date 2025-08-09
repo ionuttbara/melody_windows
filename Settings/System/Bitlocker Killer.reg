@@ -1,0 +1,14 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\FVE]
+"RDVAllowBDE"=dword:00000000
+"RDVEnforceBDE"=dword:00000000
+"RDVEnableBDE"=dword:00000000
+"EnableBDE"=dword:00000000
+"EnableBDEWithNoTPM"=dword:00000001
+"EncryptionMethodWithXtsFdv"=dword:00000000
+"EncryptionMethodWithXtsOs"=dword:00000000
+"FDVEncryptionType"=dword:00000000
+"OSDEncryptionType"=dword:00000000
+"UseAdvancedStartup"=dword:00000000
+"PreventDeviceEncryption"=dword:00000001

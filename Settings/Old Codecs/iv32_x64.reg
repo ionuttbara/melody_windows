@@ -1,0 +1,6 @@
+Windows Registry Editor Version 5.00
+
+;IV32 for 64bit Windows (IV32_x64.reg)
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows NT\CurrentVersion\Drivers32]
+"vidc.iv32"="ir32_32.dll"

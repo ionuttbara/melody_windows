@@ -10,6 +10,14 @@ Windows Registry Editor Version 5.00
 "fReverse"=dword:00000000
 "fWrapAround"=dword:00000001
 "fMatchCase"=dword:00000000
+"ShowStoreBanner"=dword:00000000
+"iWindowPosX"=dword:00000082
+"iWindowPosY"=dword:00000082
+"iWindowPosDX"=dword:00000780
+"iWindowPosDY"=dword:000002f7
+
+"searchString"=""
+"replaceString"=""
 
 [HKEY_CLASSES_ROOT\*\shell\Open with Notepad]
 "Icon"="notepad.exe,-2"

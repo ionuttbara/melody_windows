@@ -1,5 +1,0 @@
-Windows Registry Editor Version 5.00
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Print]
-"SpoolerPriority"=dword:00000080
-"SNMPLegacy"=dword:00000001

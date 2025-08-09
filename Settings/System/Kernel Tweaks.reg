@@ -1,7 +1,9 @@
 Windows Registry Editor Version 5.00
 
+; Eliminare MiniNT daca exista
 [-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\MiniNT]
 
+; Politici sistem pentru performanță
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\System]
 "EnableFontProviders"=dword:00000001
 "DisableHHDEP"=dword:00000001
@@ -12,6 +14,7 @@ Windows Registry Editor Version 5.00
 "DisableLockScreenAppNotifications"=dword:00000001
 "RSoPLogging"=dword:00000000
 
+; Optimizari Kernel DPC
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\kernel]
 "DpcWatchdogProfileOffset"=dword:00000000
 "DpcTimeout"=dword:00000000
@@ -26,6 +29,7 @@ Windows Registry Editor Version 5.00
 "ThreadDpcEnable"=dword:00000001
 "AdjustDpcThreshold"=dword:00000000
 
+; Optimizare Session Manager
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager]
 "AllowProtectedRenames"="0"
 "ProtectionMode"=dword:00000000
@@ -36,15 +40,24 @@ Windows Registry Editor Version 5.00
 "EnableMCE"=dword:00000000
 "SafeDllSearchMode"=dword:00000000
 "SafeProcessSearchMode"=dword:00000000
-"EnableTimerWatchdog"=-
 "HeapDeCommitFreeBlockThreshold"=dword:00040000
 "ResourceTimeoutCount"=dword:00000002
 "AutoChkSkipSystemPartition"=dword:00000001
 "AutoChkTimeOut"=dword:00000000
-"BootExecute"=-
 
+; Optimizare Memory Management
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management]
+"DisablePageCombining"=dword:00000001
+"IoPageLockLimit"=dword:08000000
+
+; Optimizare Windows loading DLLs
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Windows]
 "RequireSignedAppInit_DLLs"=dword:00000000
 
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management]
-"DisablePageCombining"=dword:00000001
+; Dezactivare Power Throttling (utile mai ales la gaming)
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power\PowerThrottling]
+"PowerThrottlingOff"=dword:00000001
+
+; Dezactivare Scheduled Defrag (safe pe SSD)
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Dfrg\BootOptimizeFunction]
+"Enable"="N"

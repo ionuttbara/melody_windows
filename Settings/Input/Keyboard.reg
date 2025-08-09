@@ -4,6 +4,7 @@ Windows Registry Editor Version 5.00
 "TypematicDelay"=dword:00000001
 "TypematicRate"=dword:00000001
 "InitialKeyboardIndicators"="2"
+"PrintScreenKeyForSnippingEnabled"=dword:00000000
 
 [HKEY_USERS\.DEFAULT\Control Panel\Keyboard]
 "TypematicDelay"=dword:00000001
@@ -11,7 +12,7 @@ Windows Registry Editor Version 5.00
 "InitialKeyboardIndicators"="2"
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\kbdclass\Parameters]
-"KeyboardDataQueueSize"=dword:00000010
+"KeyboardDataQueueSize"=dword:0000003C
 
 [HKEY_CURRENT_USER\Control Panel\Accessibility\Keyboard Preference]
 "On"="1"

@@ -9,6 +9,12 @@ set "RegPath=HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e972-e325-11ce-bfc
 Powershell -noprofile -executionpolicy bypass -file "%~dp0\Scripts\Disable HPET.ps1"
 :: unsplit svchost.exe processes
 Powershell -noprofile -executionpolicy bypass -file "%~dp0\Scripts\Unsplit Services.ps1"
+reg delete "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Environment" /v "__PSLockdownPolicy" /f
+:--------------------------------------
+
+:--------------------------------------
+:: disabling CrossDeviceResume process in Windows 11 25H2+
+schtasks /Create /TN "KillCrossDeviceResume" /TR "taskkill /IM CrossDeviceResume.exe /F" /SC ONLOGON /RL HIGHEST /F
 :--------------------------------------
 
 :--------------------------------------

@@ -45,11 +45,6 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PolicyManager\default\device\Update\ExcludeWUDriversInQualityUpdate]
 "value"=dword:00000001
 
-[HKEY_CURRENT_USER\Software\Policies\Microsoft\Windows\DeviceInstall\Settings]
-"DisableBalloonTips"=hex(b):01,00,00,00,00,00,00,00
-"DisableSendRequestAdditionalSoftwareToWER"=dword:00000001
-"PreventDeviceMetadataFromNetwork"=dword:00000001
-
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DriverSearching]
 "SearchOrderConfig"=dword:00000000
 "DontSearchWindowsUpdate"=dword:00000001
