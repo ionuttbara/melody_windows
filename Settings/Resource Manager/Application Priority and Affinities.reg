@@ -18,7 +18,7 @@ Windows Registry Editor Version 5.00
 ;Critical 00000004
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\csrss.exe\PerfOptions]
-"CpuPriorityClass"=dword:00000003
+"CpuPriorityClass"=dword:00000004
 "IoPriority"=dword:00000003
 
 
@@ -74,7 +74,4 @@ Windows Registry Editor Version 5.00
 "Debugger"="C:\\WINDOWS\\system32\\systray.exe"
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\wermgr.exe]
-"Debugger"="C:\\WINDOWS\\system32\\systray.exe"
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\CrossDeviceResume.exe]
 "Debugger"="C:\\WINDOWS\\system32\\systray.exe"

@@ -1,8 +1,0 @@
-Windows Registry Editor Version 5.00
-
-; GameExplorer Folder
-
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FolderDescriptions\{DEBF2536-E1A8-4c59-B6A2-414586476AEA}]
-
-[-HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Explorer\FolderDescriptions\{DEBF2536-E1A8-4c59-B6A2-414586476AEA}]
-;Microsoft\Windows\GameExplorer

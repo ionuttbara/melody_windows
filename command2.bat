@@ -1,7 +1,6 @@
 :--------------------------------------
 :: Starting the script
 title [0 percent] Melody Script & pushd "%CD%" & CD /D "%~dp0" >nul
-set "RegPath=HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318}"
 :--------------------------------------
 
 :--------------------------------------
@@ -10,11 +9,6 @@ Powershell -noprofile -executionpolicy bypass -file "%~dp0\Scripts\Disable HPET.
 :: unsplit svchost.exe processes
 Powershell -noprofile -executionpolicy bypass -file "%~dp0\Scripts\Unsplit Services.ps1"
 reg delete "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Environment" /v "__PSLockdownPolicy" /f
-:--------------------------------------
-
-:--------------------------------------
-:: disabling CrossDeviceResume process in Windows 11 25H2+
-schtasks /Create /TN "KillCrossDeviceResume" /TR "taskkill /IM CrossDeviceResume.exe /F" /SC ONLOGON /RL HIGHEST /F
 :--------------------------------------
 
 :--------------------------------------
@@ -42,7 +36,7 @@ Powershell -noprofile -executionpolicy bypass -file "%~dp0\Scripts\Networking Tw
 :--------------------------------------
 :: Disable Hibernation (and Hiberboot), ReserveStorage to get free up to >10GB of Windows Storage
 title [20 percent] Melody Script
-powercfg -h off & DISM /Online /Set-ReservedStorageState /State:Disabled & reagentc /disable >nul
+powercfg -h off & DISM /Online /Set-ReservedStorageState /State:Disabled >nul
 :--------------------------------------
 
 :--------------------------------------

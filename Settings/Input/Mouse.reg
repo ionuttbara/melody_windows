@@ -21,7 +21,7 @@ Windows Registry Editor Version 5.00
 ; Optimize Mouse Buffer Transmision
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\mouclass\Parameters]
-"MouseDataQueueSize"=dword:0000003C
+"MouseDataQueueSize"=dword:00000064
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\mouhid\Parameters]
 "TreatAbsolutePointerAsAbsolute"=dword:00000001

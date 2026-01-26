@@ -1,0 +1,24 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsAI]
+
+"AllowRecallEnablement"=dword:00000000
+
+"TurnOffSavingSnapshots"=dword:00000001
+
+"DisableAIDataAnalysis"=dword:00000001
+
+"DisableClickToDo"=dword:00000001
+
+"DisableSettingsAgent"=dword:00000001
+
+"DisableAgentConnectors"=dword:00000001
+
+
+
+; Elimină Recall din Taskbar
+
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Taskband\AuxilliaryPins]
+
+"RecallPin"=dword:00000000

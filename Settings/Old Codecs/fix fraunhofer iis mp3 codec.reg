@@ -1,0 +1,17 @@
+Windows Registry Editor Version 5.00
+
+; ---- 64-bit (WoW64) changes ----
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows NT\CurrentVersion\drivers.desc]
+[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows NT\CurrentVersion\drivers.desc]
+"%SYSTEMROOT%\\SysWOW64\\l3codecp.acm"="Fraunhofer IIS MPEG Audio Layer-3 Codec (professional)"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows NT\CurrentVersion\Drivers32]
+"msacm.l3acm"="%SYSTEMROOT%\\SysWOW64\\l3codecp.acm"
+
+; ---- 32-bit/Native changes ----
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\drivers.desc]
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\drivers.desc]
+"%SYSTEMROOT%\\System32\\l3codecp.acm"="Fraunhofer IIS MPEG Audio Layer-3 Codec (professional)"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Drivers32]
+"msacm.l3acm"="%SYSTEMROOT%\\System32\\l3codecp.acm"

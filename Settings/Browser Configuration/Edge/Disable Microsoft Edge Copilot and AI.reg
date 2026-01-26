@@ -1,0 +1,17 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Edge]
+
+"HubsSidebarEnabled"=dword:00000000
+
+"CopilotPageContext"=dword:00000000
+
+"ComposeInlineEnabled"=dword:00000000
+
+"GenAILocalFoundationalModelSettings"=dword:00000001
+
+"AIGenThemesEnabled"=dword:00000000
+
+"EdgeHistoryAISearchEnabled"=dword:00000000
+
+"BuiltInAIAPIsEnabled"=dword:00000000

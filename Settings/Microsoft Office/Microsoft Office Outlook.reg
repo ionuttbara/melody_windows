@@ -20,3 +20,7 @@ Windows Registry Editor Version 5.00
 
 [HKEY_CURRENT_USER\software\policies\microsoft\office\16.0\outlook\options\spelling]
 "check"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\16.0\Outlook\options\General]
+"DisableOutlookMobileHyperlink"=dword:00000001
+

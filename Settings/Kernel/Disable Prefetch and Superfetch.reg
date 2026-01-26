@@ -4,8 +4,8 @@ Windows Registry Editor Version 5.00
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management\PrefetchParameters]
 "EnablePrefetcher"=dword:00000000
-"EnableBootTrace"=dword:00000000
 "EnableSuperfetch"=dword:00000000
+"EnableBootTrace"=dword:00000000
 "FIFSOpMaxBlockTimeMs"=dword:00000000
 "FIBlockDbgBreak"=dword:00000001
 "FIPrefetchDelayMs"=dword:00000000

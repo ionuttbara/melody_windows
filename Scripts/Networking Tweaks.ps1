@@ -1,6 +1,6 @@
 # Autotuning Internet Speed and making it persistent
 Set-NetTCPSetting -SettingName * -AutoTuningLevelLocal Experimental -ScalingHeuristics Disabled
-Set-NetTCPSetting -SettingName * -InitialCongestionWindow 10 -InitialRto 3000 -Timestamps Disabled -MemoryPressureProtection Disabled -NonSackRttResiliency Disabled -MaxSynRetransmissions 2
+Set-NetTCPSetting -SettingName * -InitialRto 3000 -Timestamps Disabled -MemoryPressureProtection Disabled -NonSackRttResiliency Disabled -MaxSynRetransmissions 2
 Set-NetIPv4Protocol -IcmpRedirects Disabled -DefaultHopLimit 64 -MultipleArpAnnouncements Disabled
 
 

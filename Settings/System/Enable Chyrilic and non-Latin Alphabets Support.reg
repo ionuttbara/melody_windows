@@ -1,9 +1,0 @@
-Windows Registry Editor Version 5.00
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Nls\CodePage] 
-"1250"="c_1251.nls"
-"1251"="c_1251.nls"
-"1252"="c_1251.nls"
-"1253"="c_1251.nls"
-"1254"="c_1251.nls"
-"1255"="c_1251.nls"

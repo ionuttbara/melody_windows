@@ -1,0 +1,17 @@
+Windows Registry Editor Version 5.00
+# Resolve Task Manager process might continue to run in background after app is closed
+# Undo - Delete HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\FeatureManagement\Overrides\14 Registry Key and restore default values.
+# You will need to open CMD as administrator. Type the following command in CMD to Undo:
+# REG DELETE "HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\FeatureManagement\Overrides\14" /f
+
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\FeatureManagement\Overrides\14]
+
+# KB5067036 CU Main Feature Bundle, Enable Most features. ViVetool ID: 57048231 (CFR RKey: 1318466191)
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\FeatureManagement\Overrides\14\1318466191]
+"EnabledState"=dword:00000002
+"EnabledStateOptions"=dword:00000000
+
+# [Task Manager] Fixed: Some apps might unexpectedly not be grouped with their processes (Require 1318466191). ViVetool ID: 49407484 (CFR RKey: 4188347533)
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\FeatureManagement\Overrides\14\4188347533]
+"EnabledState"=dword:00000002
+"EnabledStateOptions"=dword:00000000
