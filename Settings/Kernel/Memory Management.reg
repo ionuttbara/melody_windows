@@ -1,7 +1,7 @@
 Windows Registry Editor Version 5.00
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management]
-"DisablePagingExecutive"=dword:00000001
+"DisablePagingExecutive"=dword:00000000
 "IoPageLockLimit"=dword:ffffffff
 "LargeSystemCache"=dword:00000000
 "NonPagedPoolSize"=dword:000000c0
