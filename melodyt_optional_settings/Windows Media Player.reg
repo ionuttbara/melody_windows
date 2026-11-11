@@ -1,0 +1,11 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\Software\Policies\Microsoft\WindowsMediaPlayer]
+"PreventCodecDownload"=dword:00000001
+"PreventCDDVDMetadataRetrieval"=dword:00000001
+"PreventMusicFileMetadataRetrieval"=dword:00000001
+"PreventRadioPresetsRetrieval"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MediaPlayer\PREFERENCES]
+"OEMServiceOverride11"=""
+"UsageTracking"=dword:00000000

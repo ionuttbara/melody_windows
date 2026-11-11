@@ -1,0 +1,21 @@
+Windows Registry Editor Version 5.00
+
+;Peernet
+
+[HKEY_LOCAL_MACHINE\Software\policies\Microsoft\Peernet]
+"Disabled"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\Software\policies\Microsoft\Peernet\Pnrp\IPv6-Global]
+"DisableMulticastBootstrap"=dword:00000001
+"Disabled"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\Software\policies\Microsoft\Peernet\Pnrp\IPv6-Local]
+"DisableMulticastBootstrap"=dword:00000001
+"Disabled"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\Software\policies\Microsoft\Peernet\Pnrp\IPv6-SiteLocal]
+"DisableMulticastBootstrap"=dword:00000001
+"Disabled"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Peernet]
+"Disabled"=dword:00000001

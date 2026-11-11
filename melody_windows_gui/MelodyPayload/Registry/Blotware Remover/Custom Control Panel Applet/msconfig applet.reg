@@ -1,0 +1,13 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\CLSID\{ADEAD0A2-0A48-49cf-8416-FF0000000001}]
+@="System Configuration (msconfig)"
+"InfoTip"="Configure advanced system."
+
+[HKEY_CLASSES_ROOT\CLSID\{ADEAD0A2-0A48-49cf-8416-FF0000000001}\DefaultIcon]
+@="C:\\Windows\\System32\\msconfig.exe,0"
+
+[HKEY_CLASSES_ROOT\CLSID\{ADEAD0A2-0A48-49cf-8416-FF0000000001}\Shell\Open\Command]
+@="msconfig.exe"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\ControlPanel\NameSpace\{ADEAD0A2-0A48-49cf-8416-FF0000000001}]

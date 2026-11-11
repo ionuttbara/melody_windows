@@ -1,0 +1,6 @@
+Windows Registry Editor Version 5.00
+
+; Use the documented Explorer HubMode preference without deleting CLSID trees
+; or removing the pin-to-Quick-Access context menu.
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer]
+"HubMode"=dword:00000001

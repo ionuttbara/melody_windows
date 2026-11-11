@@ -1,0 +1,5 @@
+﻿Windows Registry Editor Version 5.00
+
+; User-scoped Windows Copilot policy.
+[HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Windows\WindowsCopilot]
+"TurnOffWindowsCopilot"=dword:00000001

@@ -1,0 +1,62 @@
+# Privacy/UWP Permission/Allow Bluetooth Devices Permision.reg
+
+> Final bilingual Registry dossier / Fișă Registry bilingvă finală. Compatibility, execution verdict and real-machine testing are tracked separately.
+
+## Proveniență / Provenance
+
+- **Current `.reg` SHA-256:** `be34492f8f62319ff3194587935e9d3425b1f76e4c29fdea932e01d193c72d5f`
+- **Recipe verdict / verdict rețetă:** `CONDITIONAL`
+- **Windows container / interval Windows:** `7600+`
+- **Runtime prerequisite / condiție runtime:** `existing-key`
+- **Value/operation descriptions / operații:** 4
+- **Tested on real Windows / testat pe Windows real:** not recorded by this audit / neînregistrat de acest audit
+
+## Operații / Operations
+
+### L4 · SET-VALUE · `Value`
+
+- **Registry key:** `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\bluetooth`
+- **Raw .reg data:** `"Allow"`
+- **Type / tip:** `REG_SZ`
+- **Ce face / RO:** Configurează opțiunea „Value” în ramura Microsoft / Windows / CurrentVersion la Allow (REG_SZ). Melody modifică această țintă numai dacă cheia și, pentru operațiile pe valori, valoarea exactă există deja pe sistemul detectat; nu creează o țintă necunoscută.
+- **What it configures / EN:** Sets the “Value” option in registry branch Microsoft / Windows / CurrentVersion to Allow (REG_SZ). Melody changes this target only when the key and, for value operations, the exact value already exists on the detected system; it does not create an unknown target.
+- **Final verdict / verdict final:** `CONDITIONAL`
+- **Certitudine / Evidence:** Internal/user setting; only an existing value is changed, preventing creation on unsupported builds.
+- **OS support / versiuni:** `7600+`
+
+### L7 · SET-VALUE · `Value`
+
+- **Registry key:** `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\bluetoothSync`
+- **Raw .reg data:** `"Allow"`
+- **Type / tip:** `REG_SZ`
+- **Ce face / RO:** Configurează opțiunea „Value” în ramura Microsoft / Windows / CurrentVersion la Allow (REG_SZ). Melody modifică această țintă numai dacă cheia și, pentru operațiile pe valori, valoarea exactă există deja pe sistemul detectat; nu creează o țintă necunoscută.
+- **What it configures / EN:** Sets the “Value” option in registry branch Microsoft / Windows / CurrentVersion to Allow (REG_SZ). Melody changes this target only when the key and, for value operations, the exact value already exists on the detected system; it does not create an unknown target.
+- **Final verdict / verdict final:** `CONDITIONAL`
+- **Certitudine / Evidence:** Internal/user setting; only an existing value is changed, preventing creation on unsupported builds.
+- **OS support / versiuni:** `7600+`
+
+### L10 · SET-VALUE · `Value`
+
+- **Registry key:** `HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\bluetooth`
+- **Raw .reg data:** `"Allow"`
+- **Type / tip:** `REG_SZ`
+- **Ce face / RO:** Configurează opțiunea „Value” în ramura Microsoft / Windows / CurrentVersion la Allow (REG_SZ). Melody modifică această țintă numai dacă cheia și, pentru operațiile pe valori, valoarea exactă există deja pe sistemul detectat; nu creează o țintă necunoscută.
+- **What it configures / EN:** Sets the “Value” option in registry branch Microsoft / Windows / CurrentVersion to Allow (REG_SZ). Melody changes this target only when the key and, for value operations, the exact value already exists on the detected system; it does not create an unknown target.
+- **Final verdict / verdict final:** `CONDITIONAL`
+- **Certitudine / Evidence:** Internal/user setting; only an existing value is changed, preventing creation on unsupported builds.
+- **OS support / versiuni:** `7600+`
+
+### L13 · SET-VALUE · `Value`
+
+- **Registry key:** `HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\bluetoothSync`
+- **Raw .reg data:** `"Allow"`
+- **Type / tip:** `REG_SZ`
+- **Ce face / RO:** Configurează opțiunea „Value” în ramura Microsoft / Windows / CurrentVersion la Allow (REG_SZ). Melody modifică această țintă numai dacă cheia și, pentru operațiile pe valori, valoarea exactă există deja pe sistemul detectat; nu creează o țintă necunoscută.
+- **What it configures / EN:** Sets the “Value” option in registry branch Microsoft / Windows / CurrentVersion to Allow (REG_SZ). Melody changes this target only when the key and, for value operations, the exact value already exists on the detected system; it does not create an unknown target.
+- **Final verdict / verdict final:** `CONDITIONAL`
+- **Certitudine / Evidence:** Internal/user setting; only an existing value is changed, preventing creation on unsupported builds.
+- **OS support / versiuni:** `7600+`
+
+## Referințe / References
+
+- No exact vendor URL is attached. The final runtime rule requires the exact live Registry target to exist before Melody enables the recipe.

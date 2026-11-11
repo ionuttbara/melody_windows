@@ -1,0 +1,14 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\dllfile\shell\Register\Command]
+@="regsvr32.exe \"%1\""
+
+[HKEY_CLASSES_ROOT\dllfile\shell\Unregister\Command]
+@="regsvr32.exe /u \"%1\""
+
+[HKEY_CLASSES_ROOT\ocxfile\shell\Register\Command]
+@="regsvr32.exe \"%1\""
+
+[HKEY_CLASSES_ROOT\ocxfile\shell\Unregister\Command]
+@="regsvr32.exe /u \"%1\""
+

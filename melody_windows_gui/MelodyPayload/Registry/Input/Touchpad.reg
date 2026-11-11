@@ -1,0 +1,18 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\PrecisionTouchPad]
+"ThreeFingerTapEnabled"=dword:00000000
+"FourFingerSlideEnabled"=dword:00000000
+"FourFingerTapEnabled"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\TouchPrediction]
+"Latency"=dword:00000001
+"SampleTime"=dword:00000001
+"UseHWTimeStamp"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\PrecisionTouchPad]
+"AAPDisabled"=dword:00000001
+"HorizontalOffset"=dword:00000000
+"RightClickZoneHeight"=dword:00000000
+"RightClickZoneWidth"=dword:00000000
+"SpaceBarOffset"=dword:000003e8

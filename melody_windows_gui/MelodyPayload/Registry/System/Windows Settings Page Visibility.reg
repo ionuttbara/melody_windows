@@ -1,0 +1,4 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+"SettingsPageVisibility"="hide:quiethours;tabletmode;remotedesktop;datausage;maps;workplace;sync;speech;gaming-gamebar;gaming-gamedvr;privacy;privacy-speech;privacy-speechtyping;privacy-feedback;privacy-activityhistory;privacy-location;privacy-voiceactivation;privacy-accountinfo;privacy-calendar;privacy-callhistory;privacy-phone;privacy-email;privacy-eyetracker;privacy-tasks;privacy-messaging;privacy-radios;privacy-customdevices;privacy-appdiagnostics;privacy-automaticfiledownloads;privacy-phonecalls;windowsdefender;backup;troubleshoot;findmydevice;delivery-optimization;delivery-optimization-activity;delivery-optimization-advanced;maps-downloadmaps;appsforwebsites;videoplayback;sync;deviceusage;home;backup"

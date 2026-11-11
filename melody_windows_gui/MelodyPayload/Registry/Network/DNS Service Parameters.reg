@@ -1,0 +1,22 @@
+Windows Registry Editor Version 5.00
+
+;DNS service parameter
+
+; disable mDNS and also enables multicast in case of something
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows NT\DNSClient]
+"DisableSmartNameResolution"=dword:00000001
+"EnableIdnMapping"=dword:00000000
+"RegistrationEnabled"=dword:00000000
+"PreferLocalOverLowerBindingDNS"=dword:00000001
+"EnableMulticast"=dword:00000000
+"DisableSmartProtocolReordering"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters]
+"MaxSOACacheEntryTtlLimit"=dword:0000012d
+"ServiceDllUnloadOnStop"=dword:00000001
+"DisableParallelAandAAAA"=-
+"MaxCacheTtl"=-
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters]
+"MaximumUdpPacketSize"=dword:00001300

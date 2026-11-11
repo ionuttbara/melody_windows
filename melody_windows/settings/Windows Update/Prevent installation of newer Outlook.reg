@@ -1,0 +1,18 @@
+Windows Registry Editor Version 5.00
+
+;outlook
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsUpdate\Orchestrator\UScheduler_Oobe\OutlookUpdate]
+
+[HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Outlook\Options\General]
+"HideNewOutlookToggle"=dword:00000001
+
+[HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\16.0\Outlook\Preferences
+]
+"NewOutlookMigrationUserSetting"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsUpdate\Orchestrator\UScheduler_Oobe]
+"BlockedOobeUpdaters"="[\"MS_Outlook\"]"
+
+
+

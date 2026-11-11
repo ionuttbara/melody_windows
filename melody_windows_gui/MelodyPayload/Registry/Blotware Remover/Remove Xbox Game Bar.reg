@@ -1,0 +1,10 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsRuntime\WellKnownContracts]
+"Windows.Media.AppBroadcasting.AppBroadcastingContract"=-
+"Windows.Media.AppRecording.AppRecordingContract"=-
+"Windows.Media.Capture.AppBroadcastContract"=-
+"Windows.Media.Capture.AppCaptureContract"=-
+"Windows.Media.Capture.AppCaptureMetadataContract"=-
+"Windows.Media.Capture.CameraCaptureUIContract"-
+"Windows.Media.Capture.GameBarContract"=-

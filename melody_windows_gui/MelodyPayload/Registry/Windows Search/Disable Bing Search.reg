@@ -1,0 +1,15 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Search]
+"BingSearchEnabled"=dword:00000000
+"WebControlStatus"=dword:00000000
+"WebControlSecondaryStatus"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
+"DisableWebSearch"=dword:00000001
+"ConnectedSearchUseWeb"=dword:00000000
+"ConnectedSearchUseWebOverMeteredConnections"=dword:00000000
+"BingSearchEnabled"=dword:00000000
+"AllowCloudSearch"=dword:00000000
+"ConnectedSearchPrivacy"=dword:00000003
+"ConnectedSearchSafeSearch"=dword:00000003

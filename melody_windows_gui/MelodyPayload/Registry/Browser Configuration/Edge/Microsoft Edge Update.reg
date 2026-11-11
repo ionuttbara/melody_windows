@@ -1,0 +1,6 @@
+Windows Registry Editor Version 5.00
+
+; Keep automatic Edge and WebView2 security updates enabled.
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\EdgeUpdate]
+"UpdateDefault"=dword:00000001
+"Update{F3017226-FE2A-4295-8BDF-00C3A9A7E4C5}"=dword:00000001

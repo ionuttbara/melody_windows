@@ -1,0 +1,6 @@
+Windows Registry Editor Version 5.00
+
+; Minimum amount of hops for a packet to be considered having internet connection, in our case that is literally just 2 hops to our VPS endpoint.
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\services\NlaSvc\Parameters\Internet]
+"EnableActiveProbing"=dword:00000000
+"MinimumInternetHopCount"=dword:00000002

@@ -1,0 +1,81 @@
+Windows Registry Editor Version 5.00
+
+;feeds
+
+[-HKEY_CLASSES_ROOT\CLSID\{0b6d74fe-ad29-4c92-ac06-f06bc2f238a7}]
+
+[-HKEY_CLASSES_ROOT\CLSID\{34e6abfe-e9f4-4ddf-895a-7350e198f26e}]
+
+[-HKEY_CLASSES_ROOT\CLSID\{a7c922a0-a197-4ae4-8fcd-2236bb4cf515}]
+
+[-HKEY_CLASSES_ROOT\CLSID\{F4D36777-EAED-4cc5-9FE7-827BE5190B20}]
+
+[-HKEY_CLASSES_ROOT\CLSID\{faeb54c4-f66f-4806-83a0-805299f5e3ad}]
+
+[-HKEY_CLASSES_ROOT\CLSID\{FE6B11C3-C72E-4061-86C6-9D163121F229}]
+
+[-HKEY_CLASSES_ROOT\WOW6432Node\CLSID\{0b6d74fe-ad29-4c92-ac06-f06bc2f238a7}]
+
+[-HKEY_CLASSES_ROOT\WOW6432Node\CLSID\{34e6abfe-e9f4-4ddf-895a-7350e198f26e}]
+
+[-HKEY_CLASSES_ROOT\WOW6432Node\CLSID\{a7c922a0-a197-4ae4-8fcd-2236bb4cf515}]
+
+[-HKEY_CLASSES_ROOT\WOW6432Node\CLSID\{F4D36777-EAED-4cc5-9FE7-827BE5190B20}]
+
+[-HKEY_CLASSES_ROOT\WOW6432Node\CLSID\{faeb54c4-f66f-4806-83a0-805299f5e3ad}]
+
+[-HKEY_CLASSES_ROOT\WOW6432Node\CLSID\{FE6B11C3-C72E-4061-86C6-9D163121F229}]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Microsoft.FeedsManager]
+
+[-HKEY_CLASSES_ROOT\TypeLib\{9CDCD9C9-BC40-41C6-89C5-230466DB0BD0}]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_FEEDS]
+
+[-HKEY_CLASSES_ROOT\WOW6432Node\TypeLib\{9CDCD9C9-BC40-41C6-89C5-230466DB0BD0}]
+
+[-HKEY_CLASSES_ROOT\WOW6432Node\CLSID\{4C6470A6-3F91-4f41-850B-DB9BCD074537}]
+
+[-HKEY_CLASSES_ROOT\WOW6432Node\CLSID\{55b70dec-4b3b-4e26-ae9c-9e8d131843a1}]
+
+[-HKEY_CLASSES_ROOT\WOW6432Node\CLSID\{C8059EB6-D2FC-4ecf-A15F-AF427F5E4DB6}]
+
+;Cloud Experience Host
+
+[-HKEY_CLASSES_ROOT\CLSID\{0316BBC2-92D9-4E2E-8345-3609C6B5C167}]
+
+; Ink inkdiv.dll,inkobj.dll,tipsf.dll
+
+[-HKEY_CLASSES_ROOT\TypeLib\{56D04F5D-964F-4DBF-8D23-B97989E53418}]
+
+[-HKEY_CLASSES_ROOT\TypeLib\{7D868ACD-1A5D-4A47-A247-F39741353012}]
+
+[-HKEY_CLASSES_ROOT\TypeLib\{D7CA032C-B7D0-429E-9FD7-82241C356B4A}]
+
+[-HKEY_CLASSES_ROOT\WOW6432Node\TypeLib\{56D04F5D-964F-4DBF-8D23-B97989E53418}]
+
+[-HKEY_CLASSES_ROOT\WOW6432Node\TypeLib\{7D868ACD-1A5D-4A47-A247-F39741353012}]
+
+[-HKEY_CLASSES_ROOT\WOW6432Node\TypeLib\{D7CA032C-B7D0-429E-9FD7-82241C356B4A}]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsRuntime\ActivatableClassId\Windows.ApplicationModel.SocialInfo.SocialFeedChildItem]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsRuntime\ActivatableClassId\Windows.ApplicationModel.SocialInfo.SocialFeedItem]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsRuntime\ActivatableClassId\Windows.ApplicationModel.SocialInfo.SocialFeedSharedItem]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsRuntime\ActivatableClassId\Windows.ApplicationModel.SocialInfo.Provider.SocialInfoProviderManager]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsRuntime\ActivatableClassId\Windows.ApplicationModel.SocialInfo.SocialItemThumbnail]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsRuntime\WellKnownContracts]
+"Windows.ApplicationModel.SocialInfo.SocialInfoContract"=-
+"Windows.System.Profile.ProfileRetailInfoContract"=-
+
+
+
+; lockscreen feed manager aka {FE6B11C3-C72E-4061-86C6-9D163121F229}
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Lock Screen\FeedManager]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Lock Screen\FeedManager]

@@ -1,0 +1,26 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\Software\Microsoft\Notepad]
+"StatusBar"=dword:00000001
+"fWrap"=dword:00000001
+"fSavePageSettings"=dword:00000001
+"fSaveWindowPositions"=dword:00000001
+"fWindowsOnlyEOL"=dword:00000001
+"fPasteOriginalEOL"=dword:00000001
+"fReverse"=dword:00000000
+"fWrapAround"=dword:00000001
+"fMatchCase"=dword:00000000
+"ShowStoreBanner"=dword:00000000
+"iWindowPosX"=dword:00000082
+"iWindowPosY"=dword:00000082
+"iWindowPosDX"=dword:00000780
+"iWindowPosDY"=dword:000002f7
+
+"searchString"=""
+"replaceString"=""
+
+[HKEY_CLASSES_ROOT\*\shell\Open with Notepad]
+"Icon"="notepad.exe,-2"
+
+[HKEY_CLASSES_ROOT\*\shell\Open with Notepad\command]
+@="notepad.exe %1"

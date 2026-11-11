@@ -1,0 +1,13 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\CLSID\{ADEAD0A2-0A48-49cf-8416-FF0000000002}]
+@="System information (msinfo32)"
+"InfoTip"="Show informations system."
+
+[HKEY_CLASSES_ROOT\CLSID\{ADEAD0A2-0A48-49cf-8416-FF0000000002}\DefaultIcon]
+@="C:\\Windows\\System32\\msinfo32.exe,0"
+
+[HKEY_CLASSES_ROOT\CLSID\{ADEAD0A2-0A48-49cf-8416-FF0000000002}\Shell\Open\Command]
+@="msinfo32.exe"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\ControlPanel\NameSpace\{ADEAD0A2-0A48-49cf-8416-FF0000000002}]

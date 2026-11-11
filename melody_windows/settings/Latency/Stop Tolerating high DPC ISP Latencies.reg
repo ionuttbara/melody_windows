@@ -1,0 +1,20 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power]
+"ExitLatency"=dword:00000001
+"DisableSensorWatchdog"=dword:00000001
+"Latency"=dword:00000001
+"LatencyToleranceDefault"=dword:00000001
+"LatencyToleranceFSVP"=dword:00000001
+"LatencyTolerancePerfOverride"=dword:00000001
+"LatencyToleranceVSyncEnabled"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\GraphicsDrivers\Power]
+"RmGpsPsEnablePerCpuCoreDpc"=dword:00000001
+"DisableWriteCombining"=dword:00000001
+"Node3DLowLatency"=dword:00000001
+"RmDisableRegistryCaching"=dword:00000001
+"RMDisablePostL2Compression"=dword:00000001
+"DefaultMemoryRefreshLatencyToleranceActivelyUsed"=dword:00000001
+"DefaultD3TransitionLatencyIdleShortTime"=dword:00000001
+"TransitionLatency"=dword:00000001

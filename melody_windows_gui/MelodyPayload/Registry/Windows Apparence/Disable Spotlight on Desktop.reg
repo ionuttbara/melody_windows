@@ -1,0 +1,4 @@
+﻿Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Windows\CloudContent]
+"DisableSpotlightCollectionOnDesktop"=dword:00000001

@@ -1,0 +1,6 @@
+Windows Registry Editor Version 5.00
+
+; reg idle
+[-HKEY_CLASSES_ROOT\CLSID\{ca767aa8-9157-4604-b64b-40747123d5f2}]
+
+[-HKEY_CLASSES_ROOT\WOW6432Node\CLSID\{ca767aa8-9157-4604-b64b-40747123d5f2}]

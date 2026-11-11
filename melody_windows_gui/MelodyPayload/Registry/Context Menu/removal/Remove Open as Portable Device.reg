@@ -1,0 +1,9 @@
+Windows Registry Editor Version 5.00
+
+;Remove open as Portable
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Drive\shellex\ContextMenuHandlers\{D6791A63-E7E2-4fee-BF52-5DED8E86E9B8}]
+
+[-HKEY_CLASSES_ROOT\CLSID\{D6791A63-E7E2-4fee-BF52-5DED8E86E9B8}]
+
+[-HKEY_CLASSES_ROOT\Drive\shell\Optimize using PerfectDisk]

@@ -1,0 +1,11 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\Software\Microsoft\input]
+"IsInputAppPreloadEnabled"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Dsh]
+"IsPrelaunchEnabled"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\BackgroundAccessApplications\Microsoft.Windows.TextInput.InputApp_cw5n1h2txyewy]
+"Disabled"=dword:00000001
+"DisabledByUser"=dword:00000001

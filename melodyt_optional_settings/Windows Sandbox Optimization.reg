@@ -1,0 +1,9 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Sandbox]
+"AllowVideoInput"=dword:00000001
+"AllowVGPU"=dword:00000000
+"AllowPrinterRedirection"=dword:00000000
+"AllowNetworking"=dword:00000000
+"AllowClipboardRedirection"=dword:00000001
+"AllowAudioInput"=dword:00000001

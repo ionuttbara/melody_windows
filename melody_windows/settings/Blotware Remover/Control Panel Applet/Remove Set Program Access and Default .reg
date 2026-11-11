@@ -1,0 +1,7 @@
+Windows Registry Editor Version 5.00
+
+; Set program access and defaults
+
+[-HKEY_CLASSES_ROOT\WOW6432Node\CLSID\{2559a1f7-21d7-11d4-bdaf-00c04f60b9f0}]
+
+[-HKEY_CLASSES_ROOT\CLSID\{2559a1f7-21d7-11d4-bdaf-00c04f60b9f0}]

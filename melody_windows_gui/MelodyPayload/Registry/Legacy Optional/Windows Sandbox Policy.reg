@@ -1,0 +1,7 @@
+Windows Registry Editor Version 5.00
+
+; Opt-in, only if the Windows Sandbox optional feature is enabled.
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Sandbox]
+"AllowVGPU"=dword:00000000
+"AllowNetworking"=dword:00000000
+"AllowClipboardRedirection"=dword:00000001

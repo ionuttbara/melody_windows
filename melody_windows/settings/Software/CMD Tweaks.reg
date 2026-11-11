@@ -1,0 +1,6 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\Software\Microsoft\Command Processor]
+; "tab" to complete a command or path in cmd
+"CompletionChar"=dword:00000009
+"PathCompletionChar"=dword:00000009

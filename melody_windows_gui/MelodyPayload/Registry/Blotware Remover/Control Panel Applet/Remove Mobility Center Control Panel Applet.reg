@@ -1,0 +1,12 @@
+Windows Registry Editor Version 5.00
+
+;mobility center
+[-HKEY_CLASSES_ROOT\WOW6432Node\CLSID\{5ea4f148-308c-46d7-98a9-49041b1dd468}]
+
+[-HKEY_CLASSES_ROOT\WOW6432Node\DeviceDisplayObject\InterfaceClass\{BA1BB692-9B7A-4833-9A1E-525ED134E7E2}\Shell\Sensor]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\ControlPanel\NameSpace\{5ea4f148-308c-46d7-98a9-49041b1dd468}]
+
+[-HKEY_CLASSES_ROOT\CLSID\{5ea4f148-308c-46d7-98a9-49041b1dd468}]
+
+[-HKEY_CLASSES_ROOT\DeviceDisplayObject\InterfaceClass\{BA1BB692-9B7A-4833-9A1E-525ED134E7E2}\Shell\Sensor]

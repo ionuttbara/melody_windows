@@ -1,0 +1,5 @@
+Windows Registry Editor Version 5.00
+
+; Remove the enforced GPO only: not a guaranteed override of user-selected WPP.
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows NT\Printers\WPP]
+"WindowsProtectedPrintGroupPolicyState"=-

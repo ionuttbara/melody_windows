@@ -1,0 +1,5 @@
+﻿Windows Registry Editor Version 5.00
+
+; Windows 11 Chat icon policy: 3 = disabled.
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Chat]
+"ChatIcon"=dword:00000003

@@ -1,0 +1,6 @@
+﻿Windows Registry Editor Version 5.00
+
+; Enable WER local mini-dumps and keep the documented default dump folder.
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Windows Error Reporting\LocalDumps]
+"DumpType"=dword:00000001
+"DumpCount"=dword:0000000a

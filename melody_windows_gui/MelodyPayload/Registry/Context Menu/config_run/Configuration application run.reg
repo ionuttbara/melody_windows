@@ -1,0 +1,86 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\exefile\shell\AppRunConfig]
+"MUIVerb"="Config Application Run"
+"SubCommands"=""
+"Icon"="taskmgr.exe,1"
+
+[HKEY_CLASSES_ROOT\exefile\Shell\AppRunConfig\shell\RunPrio]
+"MUIVerb"="Run with Priority"
+"SubCommands"=""
+"Icon"="taskmgr.exe"
+
+
+
+; per-App Menu
+
+[HKEY_CLASSES_ROOT\exefile\shell\AppRunConfig\shell\WindowsFirewall]
+@=""
+"MUIVerb"="Configure Internet Access..."
+"icon"="%SystemRoot%\\system32\\FirewallControlPanel.dll,0"
+"subcommands"=""
+
+[HKEY_CLASSES_ROOT\exefile\shell\AppRunConfig\shell\WindowsFirewall\Shell]
+@=""
+
+
+[HKEY_CLASSES_ROOT\exefile\shell\AppRunConfig\shell\WindowsFirewall\Shell\block]
+@=""
+"MUIVerb"="Block internet access"
+"icon"="%SystemRoot%\\system32\\imageres.dll,100"
+
+[HKEY_CLASSES_ROOT\exefile\shell\AppRunConfig\shell\WindowsFirewall\Shell\block\command]
+@="\"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\" -Executionpolicy ByPass -WindowStyle Hidden -NoLogo -Command \"start powershell -Verb runas -ArgumentList \\\"-NoLogo -WindowStyle Hidden -command `\\\"New-NetFirewallRule -DisplayName ([System.IO.Path]::GetFilenameWithoutExtension('%1')) -Name '%1' -Enabled True -Direction Outbound -Action Block -Program '%1'`\\\"\\\"\""
+
+[HKEY_CLASSES_ROOT\exefile\shell\AppRunConfig\shell\WindowsFirewall\Shell\Remove]
+@=""
+"MUIVerb"="Restore the internet access"
+"icon"="%SystemRoot%\\system32\\imageres.dll,101"
+
+[HKEY_CLASSES_ROOT\exefile\shell\AppRunConfig\shell\WindowsFirewall\Shell\Remove\command]
+@="\"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\" -Executionpolicy ByPass -WindowStyle Hidden -NoLogo -Command \"start powershell -Verb runas -ArgumentList \\\"-NoLogo -WindowStyle Hidden -command `\\\"Remove-NetFirewallRule -Name '%1'`\\\"\\\"\""
+
+
+
+
+[HKEY_CLASSES_ROOT\exefile\Shell\AppRunConfig\shell\RunPrio\shell\001flyout]
+@="Realtime"
+
+[HKEY_CLASSES_ROOT\exefile\Shell\AppRunConfig\shell\RunPrio\shell\001flyout\command]
+@="cmd.exe /c start \"\" /Realtime \"%1\""
+
+
+[HKEY_CLASSES_ROOT\exefile\Shell\AppRunConfig\shell\RunPrio\shell\002flyout]
+@="High"
+
+[HKEY_CLASSES_ROOT\exefile\Shell\AppRunConfig\shell\RunPrio\shell\002flyout\command]
+@="cmd.exe /c start \"\" /High \"%1\""
+
+
+[HKEY_CLASSES_ROOT\exefile\Shell\AppRunConfig\shell\RunPrio\shell\003flyout]
+@="Above normal"
+
+[HKEY_CLASSES_ROOT\exefile\Shell\AppRunConfig\shell\RunPrio\shell\003flyout\command]
+@="cmd.exe /c start \"\" /AboveNormal \"%1\""
+
+
+[HKEY_CLASSES_ROOT\exefile\Shell\AppRunConfig\shell\RunPrio\shell\004flyout]
+@="Normal"
+
+[HKEY_CLASSES_ROOT\exefile\Shell\AppRunConfig\shell\RunPrio\shell\004flyout\command]
+@="cmd.exe /c start \"\" /Normal \"%1\""
+
+
+[HKEY_CLASSES_ROOT\exefile\Shell\AppRunConfig\shell\RunPrio\shell\005flyout]
+@="Below normal"
+
+[HKEY_CLASSES_ROOT\exefile\Shell\AppRunConfig\shell\RunPrio\shell\005flyout\command]
+@="cmd.exe /c start \"\" /BelowNormal \"%1\""
+
+
+[HKEY_CLASSES_ROOT\exefile\Shell\AppRunConfig\shell\RunPrio\shell\006flyout]
+@="Low"
+
+[HKEY_CLASSES_ROOT\exefile\Shell\AppRunConfig\shell\RunPrio\shell\006flyout\command]
+@="cmd.exe /c start \"\" /Low \"%1\""
+

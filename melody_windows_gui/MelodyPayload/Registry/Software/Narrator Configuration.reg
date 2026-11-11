@@ -1,0 +1,29 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows NT\CurrentVersion\Accessibility]
+"Configuration"=""
+
+[HKEY_CURRENT_USER\Software\Microsoft\Narrator\NoRoam]
+"WinEnterLaunchEnabled"=dword:00000000
+"DetailedFeedback"=dword:00000000
+"CapsLockAlert"=dword:00000002
+"OnlineServicesEnabled"=dword:00000000
+"ReadingWithIntent"=dword:00000000
+"UserVerbosityLevel"=dword:00000001
+"EchoToggleKeys"=dword:00000000
+"EchoNavigationKeys"=dword:00000000
+"EchoModifierKeys"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Microsoft\Narrator]
+"AutoreadAdvancedInfo"=dword:00000000
+"FastKeyEntryEnabled"=dword:00000000
+"LockNarratorKeys"=dword:00000000
+"IntonationPause"=dword:00000000
+"PlayAudioCues"=dword:00000000
+"ReadHints"=dword:00000000
+
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Narrator\NarratorHome]
+"AutoStart"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Microsoft\Narrator\NoRoam]
+"WinEnterLaunchEnabled"=dword:00000000

@@ -1,0 +1,15 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\SOFTWARE\POLICIES\ABBYY\FineReader\15]
+"WebSite"="false"
+"Updates"="false"
+"Feedback"="false"
+"Statistics"="false"
+"Buy"="false"
+"Marketing_Tips"="false"
+"AutoUpdates"="false"
+"OnlineHelp"="false"
+"EulaAcceptedByAdmin"="true"
+"DontAskAboutDefault"="true"
+"Ftp"="true"
+"CoreLimit"="4"

@@ -1,0 +1,15 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\Software\Microsoft\Speech_OneCore\Settings\OnlineSpeechPrivacy]
+"HasAccepted"=dword:00000001
+
+[HKEY_CURRENT_USER\Software\Microsoft\Speech_OneCore\Preferences]
+"VoiceActivationOn"=dword:0000000
+
+[HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\SpeechOneCore\Settings]
+"AgentActivationEnabled"=dword:00000000
+"AgentActivationLastUsed"=dword:00000000
+
+[HKEY_CURRENT_USER\Control Panel\Accessibility]
+"Warning Sounds"=dword:00000000
+"Sound on Activation"=dword:00000000

@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x64</Platform>
+    <ProjectGuid>{9D2E8E46-B759-45A6-A90A-7E7CFD89A26A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Melody</RootNamespace>
+    <AssemblyName>Melody</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <LangVersion>7.3</LangVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <ApplicationIcon>Melody.ico</ApplicationIcon>
+    <ApplicationManifest>Properties\App.manifest</ApplicationManifest>
+    <StartupObject>Melody.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>artifacts\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>artifacts\x64\Release\</OutputPath>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="AppInfo.cs" />
+    <Compile Include="Models.cs" />
+    <Compile Include="WindowsCompatibility.cs" />
+    <Compile Include="CompatibilityCatalog.cs" />
+    <Compile Include="EmbeddedAssets.cs" />
+    <Compile Include="RegistryUtil.cs" />
+    <Compile Include="RegistryBackupStore.cs" />
+    <Compile Include="RegFileEngine.cs" />
+    <Compile Include="PowerRunBridge.cs" />
+    <Compile Include="TaskSchedulerMaintenance.cs" />
+    <Compile Include="ServiceTaskCatalog.cs" />
+    <Compile Include="ScriptRunner.cs" />
+    <Compile Include="DefenderRemovalRunner.cs" />
+    <Compile Include="InstallerRunner.cs" />
+    <Compile Include="LucideIcons.cs" />
+    <Compile Include="RegistryValuePreview.cs" />
+    <Compile Include="MarkdownPreview.cs" />
+    <Compile Include="MelodyMarkdown.cs" />
+    <Compile Include="MainForm.cs"><SubType>Form</SubType></Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="RegistryValueDocumentation\IndividualDocs\**\*.md">
+      <LogicalName>Melody.ValueDocs/%(RecursiveDir)%(Filename)%(Extension)</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MelodyPayload\IndividualDocs\**\*.md">
+      <LogicalName>Melody.Compatibility/IndividualDocs/%(RecursiveDir)%(Filename)%(Extension)</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MelodyPayload\ScriptDocs\*.md">
+      <LogicalName>Melody.ScriptDocs/%(Filename)%(Extension)</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MelodyPayload\ResearchAudit\IndividualDocs\**\*.md">
+      <LogicalName>Melody.Research/IndividualDocs/%(RecursiveDir)%(Filename)%(Extension)</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MelodyPayload\ServiceTasks\catalog.xml">
+      <LogicalName>Melody.ServiceTasks/Catalog.xml</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lucide\*.png">
+      <LogicalName>Melody.Lucide/%(Filename)%(Extension)</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MelodyPayload\CompatibilityCatalog.xml">
+      <LogicalName>Melody.Compatibility/Catalog.xml</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MelodyPayload\Registry\**\*.reg">
+      <LogicalName>Melody.Registry/%(RecursiveDir)%(Filename)%(Extension)</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MelodyPayload\Scripts\**\*.*">
+      <LogicalName>Melody.Script/%(RecursiveDir)%(Filename)%(Extension)</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MelodyPayload\Tools\PowerRun.exe">
+      <LogicalName>Melody.Tool/PowerRun.exe</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MelodyPayload\Defender\**\*.reg">
+      <LogicalName>Melody.Defender/%(RecursiveDir)%(Filename)%(Extension)</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MelodyPayload\Defender\*.ps1">
+      <LogicalName>Melody.Defender/%(Filename)%(Extension)</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MelodyPayload\Installers\StartBack.exe">
+      <LogicalName>Melody.Installer/StartBack.exe</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MelodyPayload\Icons\*.ico">
+      <LogicalName>Melody.Icon/%(Filename)%(Extension)</LogicalName>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="Properties\App.manifest" />
+    <None Include="logo.png" />
+    <Content Include="Melody.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

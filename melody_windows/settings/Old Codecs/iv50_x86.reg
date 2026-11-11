@@ -1,0 +1,6 @@
+Windows Registry Editor Version 5.00
+
+;IV50 for 32bit Windows (IV50_x86.reg)
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Drivers32]
+"vidc.iv50"="ir50_32.dll"

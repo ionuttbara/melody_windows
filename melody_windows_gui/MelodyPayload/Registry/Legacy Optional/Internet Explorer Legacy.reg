@@ -1,0 +1,7 @@
+Windows Registry Editor Version 5.00
+
+; The original optional IE bundle disabled multiple browser security protections.
+; Keep only the old Internet Explorer compatibility-view UI preference.
+; Windows 11 does not offer the IE desktop browser.
+[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\CommandBar]
+"ShowCompatibilityViewButton"=dword:00000001

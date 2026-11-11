@@ -1,0 +1,33 @@
+﻿Windows Registry Editor Version 5.00
+
+; removes data and kills Security Health Service App
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Security Health]
+
+[-HKEY_CURRENT_USER\Software\Microsoft\Windows Security Health]
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows Security Health\State]
+"Disabled"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Security Health\Platform]
+"Registered"=dword:00000000
+
+; removal of Security Center from Action Center
+
+[-HKEY_CLASSES_ROOT\CLSID\{BB64F8A7-BEE7-4E1A-AB8D-7D8273F7FDB6}]
+
+[-HKEY_CLASSES_ROOT\WOW6432Node\CLSID\{BB64F8A7-BEE7-4E1A-AB8D-7D8273F7FDB6}]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{BB64F8A7-BEE7-4E1A-AB8D-7D8273F7FDB6}]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Classes\WOW6432Node\CLSID\{BB64F8A7-BEE7-4E1A-AB8D-7D8273F7FDB6}]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\ControlPanel\NameSpace\{BB64F8A7-BEE7-4E1A-AB8D-7D8273F7FDB6}]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Classes\CLSID\{BB64F8A7-BEE7-4E1A-AB8D-7D8273F7FDB6}]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Explorer\ControlPanel\NameSpace\{BB64F8A7-BEE7-4E1A-AB8D-7D8273F7FDB6}]
+
+; Remove Windows Security Health Service
+
+[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SecurityHealthService]

@@ -1,0 +1,6 @@
+Windows Registry Editor Version 5.00
+
+; removing the delay in doubleTap and setting the Spatial Tolerance to Medium.
+[HKEY_CURRENT_USER\Control Panel\Pen]
+"DoubleTapTime"=dword:00000000
+"DoubleClickHeight"=dword:00000040

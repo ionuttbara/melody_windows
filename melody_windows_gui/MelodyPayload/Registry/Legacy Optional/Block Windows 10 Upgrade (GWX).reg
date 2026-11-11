@@ -1,0 +1,8 @@
+﻿Windows Registry Editor Version 5.00
+
+; Historical Windows 7 SP1 / Windows 8.1 GWX controls.
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate]
+"DisableOSUpgrade"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\GWX]
+"DisableGwx"=dword:00000001

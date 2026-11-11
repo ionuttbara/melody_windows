@@ -1,0 +1,24 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\Software\Policies\Google\Chrome\3rdparty\extensions\emahakmocgideepebncgnmlmliepgpgb\Policy]
+"report_policy_data"=dword:00000000
+"report_machine_id_data"=dword:00000000
+"report_extensions_data"=dword:00000000
+"report_version_data"=dword:00000000
+"report_safe_browsing_data"=dword:00000000
+"report_system_telemetry_data"=dword:00000000
+"report_user_browsing_data"=dword:00000000
+"report_user_id_data"=dword:00000000
+"log_to_eventlog"=dword:00000000
+
+
+[HKEY_LOCAL_MACHINE\Software\Policies\Google\Chrome\3rdparty\extensions\emahakmocgideepebncgnmlmliepgpgb\Policy]
+"report_policy_data"=dword:00000000
+"report_machine_id_data"=dword:00000000
+"report_extensions_data"=dword:00000000
+"report_version_data"=dword:00000000
+"report_safe_browsing_data"=dword:00000000
+"report_system_telemetry_data"=dword:00000000
+"report_user_browsing_data"=dword:00000000
+"report_user_id_data"=dword:00000000
+"log_to_eventlog"=dword:00000000

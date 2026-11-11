@@ -1,0 +1,23 @@
+Windows Registry Editor Version 5.00
+
+;IPv6 Fix for Xbox Live Gaming
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\LLTD]
+"EnableLLTDIO"=dword:00000001
+"AllowLLTDIOOnDomain"=dword:00000001
+"ProhibitLLTDIOOnPrivateNet"=dword:00000000
+"AllowLLTDIOOnPublicNet"=dword:00000000
+"EnableRspndr"=dword:00000001
+"AllowRspndrOnDomain"=dword:00000001
+"AllowRspndrOnPublicNet"=dword:00000000
+"ProhibitRspndrOnPrivateNet"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\TCPIP\v6Transition]
+"Teredo_ClientPort"=dword:00000000
+"Teredo_DefaultQualified"="Enabled"
+"Teredo_RefreshRate"=dword:0000001e
+"Teredo_ServerName"="win10.ipv6.microsoft.com"
+"Teredo_State"="Enterprise Client"
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip6\Parameters]
+"DisabledComponents"=dword:00000000

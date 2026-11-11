@@ -1,0 +1,20 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PolicyManager\default\Experience\AllowCortana]
+"value"=dword:00000000
+
+; Disable Hey Cortana! 
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Speech_OneCore\Settings\VoiceActivation\Microsoft.549981C3F5F10_8wekyb3d8bbwe!App]
+"AgentActivationEnabled"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Search]
+"CanCortanaBeEnabled"=dword:00000000
+"CortanaCapabilities"=dword:00000000
+"CortanaCapabilityFlags"=dword:00000000
+"CortanaEnabled"=dword:00000000
+"CortanaInAmbientMode"=dword:00000000
+"CortanaConsent"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
+"AllowCortana"=dword:00000000
+"AllowCortanaAboveLock"=dword:00000000

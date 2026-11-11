@@ -1,0 +1,10 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power]
+"AwayModeEnabled"=dword:00000000
+"CoreParkingDisabled"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Configuration Manager]
+"SelfHealingEnabled"=dword:00000000
+"EnablePeriodicBackup"=dword:00000000
+"FreezeThawTimeoutInSeconds"=-

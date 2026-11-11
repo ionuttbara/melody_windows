@@ -1,0 +1,8 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\Software\Policies\SDL\Passolo Translator 2016]
+"DisableUpdates"=dword:00000001
+
+
+[HKEY_LOCAL_MACHINE\Software\Policies\SDL\Passolo 2016]
+"DisableUpdates"=dword:00000001

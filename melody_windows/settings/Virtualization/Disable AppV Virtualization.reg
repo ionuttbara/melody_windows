@@ -1,0 +1,5 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\AppV\Client\Virtualization]
+"EnableDynamicVirtualization"=dword:00000000
+"ProcessesUsingVirtualComponents"=dword:00000000

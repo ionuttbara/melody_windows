@@ -1,0 +1,6 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\TPM]
+"OSManagedAuthLevel"=dword:00000000
+"ActiveDirectoryBackup"=dword:00000000
+"RequireActiveDirectoryBackup"=dword:00000000

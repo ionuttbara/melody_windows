@@ -1,0 +1,19 @@
+Windows Registry Editor Version 5.00
+
+; Net-new service removals carried over from the IBB-DismTools maintenance optimizer.
+; Melody already removes whesvc, RetailDemo, wuqisvc and AmdPpkgSvc in its existing recipes.
+; Missing services are harmless: deleting a non-existing registry key is a no-op.
+
+[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\wersvc]
+
+[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\wecsvc]
+
+[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\wcncsvc]
+
+[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\wdnissvc]
+
+[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SEMgrSvc]
+
+[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\defragsvc]
+
+[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\lfsvc]

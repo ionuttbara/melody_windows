@@ -1,0 +1,11 @@
+Windows Registry Editor Version 5.00
+
+[-HKEY_CLASSES_ROOT\WOW6432Node\CLSID\{07FFDD7A-0300-4FDC-B113-1C5364E61F54}]
+
+[-HKEY_CLASSES_ROOT\CLSID\{07FFDD7A-0300-4FDC-B113-1C5364E61F54}]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsRuntime\ActivatableClassId\Windows.Internal.Feedback.FeedbackBroker]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsRuntime\ActivatableClassId\Windows.Internal.Feedback.StringFeedback.StringFeedbackEngine]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsRuntime\ActivatableClassId\Windows.Internal.FeedbackHub.FeedbackHubInternal]

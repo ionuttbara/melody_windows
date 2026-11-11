@@ -1,0 +1,11 @@
+Windows Registry Editor Version 5.00
+
+[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\UevAgentDriver]
+
+[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\AppvStrm]
+
+[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\AppvVermgr]
+
+[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\AppvVfs]
+
+[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\AppVClient]

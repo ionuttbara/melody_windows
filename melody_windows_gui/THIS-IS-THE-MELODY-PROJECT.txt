@@ -1,0 +1,17 @@
+MELODY 16.0-rcB - STANDALONE PROJECT
+
+Open ONLY:
+    Melody.sln
+
+Expected executable:
+    artifacts\x64\Release\Melody.exe
+
+Expected title bar:
+    Melody 16.0-rcB
+
+Expected UI:
+    3-step wizard: Tweaks -> Advanced -> Review
+    NO IBB-DismTools sidebar
+    NO Windows Features / Applications / Services / Tasks navigation
+
+If a window says "IBB-DismTools 1.1...", that is a different executable/project.

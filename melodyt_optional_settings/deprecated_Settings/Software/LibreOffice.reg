@@ -1,0 +1,19 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\Software\Policies\LibreOffice\org.openoffice.Office.Jobs\Jobs\org.openoffice.Office.Jobs:Job['UpdateCheck']\Arguments\AutoCheckEnabled]
+"Value"="false"
+
+[HKEY_CURRENT_USER\Software\Policies\LibreOffice\org.openoffice.Office.Jobs\Jobs\org.openoffice.Office.Jobs:Job['UpdateCheck']\Arguments\AutoDownloadEnabled]
+"Value"="false"
+
+[HKEY_CURRENT_USER\Software\Policies\LibreOffice\org.openoffice.Office.Common\Misc\ExperimentalMode]
+"Value"="false"
+
+[HKEY_LOCAL_MACHINE\Software\Policies\LibreOffice\org.openoffice.Office.Jobs\Jobs\org.openoffice.Office.Jobs:Job['UpdateCheck']\Arguments\AutoCheckEnabled]
+"Value"="false"
+
+[HKEY_LOCAL_MACHINE\Software\Policies\LibreOffice\org.openoffice.Office.Jobs\Jobs\org.openoffice.Office.Jobs:Job['UpdateCheck']\Arguments\AutoDownloadEnabled]
+"Value"="false"
+
+[HKEY_LOCAL_MACHINE\Software\Policies\LibreOffice\org.openoffice.Office.Common\Misc\ExperimentalMode]
+"Value"="false"

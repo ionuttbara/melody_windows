@@ -1,0 +1,14 @@
+Windows Registry Editor Version 5.00
+
+;In-kernel Mitigations
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\kernel]
+"MitigationAuditOptions"=hex:00,00,00,00,00,00,20,22,00,00,00,00,00,00,00,20,00,00,00,00,00,00,00,00
+"MitigationOptions"=hex:22,22,22,22,22,22,22,22,22,22,22,22,22,22,22,22,22,22,\
+  22,22,22,22,22,22
+"KernelSEHOPEnabled"=dword:00000000
+
+;Services Mitigations
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SCMConfig]
+"EnableSvchostMitigationPolicy"=hex(b):00,00,00,00,00,00,00,00

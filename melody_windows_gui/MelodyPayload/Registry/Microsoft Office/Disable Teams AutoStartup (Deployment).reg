@@ -1,0 +1,4 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\16.0\teams]
+"preventfirstlaunchafterinstall"=dword:00000001

@@ -1,0 +1,19 @@
+Windows Registry Editor Version 5.00
+
+;BitLocker
+
+[-HKEY_CLASSES_ROOT\Drive\shell\change-passphrase]
+
+[-HKEY_CLASSES_ROOT\Drive\shell\change-pin]
+
+[-HKEY_CLASSES_ROOT\Drive\shell\encrypt-bde]
+
+[-HKEY_CLASSES_ROOT\Drive\shell\encrypt-bde-elev]
+
+[-HKEY_CLASSES_ROOT\Drive\shell\manage-bde]
+
+[-HKEY_CLASSES_ROOT\Drive\shell\resume-bde]
+
+[-HKEY_CLASSES_ROOT\Drive\shell\resume-bde-elev]
+
+[-HKEY_CLASSES_ROOT\Drive\shell\unlock-bde]

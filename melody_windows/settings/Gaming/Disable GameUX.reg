@@ -1,0 +1,14 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\GameUX]
+"GamesGID"=-
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\GameUX]
+"ListFeatures"=dword:00000000
+"DownloadGameData"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\GameUX]
+"DownloadGameInfo"=dword:00000000
+
+[-HKEY_CLASSES_ROOT\CLSID\{96544c97-9dd6-4c12-ad13-3a1e289a3118}]
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{96544c97-9dd6-4c12-ad13-3a1e289a3118}]

@@ -1,0 +1,5 @@
+﻿Windows Registry Editor Version 5.00
+
+; Documented Game DVR policy.
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\GameDVR]
+"AllowGameDVR"=dword:00000000

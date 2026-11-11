@@ -1,0 +1,18 @@
+Windows Registry Editor Version 5.00
+
+;QoS
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Psched]
+"NonBestEffortLimit"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Psched\DiffservByteMappingConforming]
+"ServiceTypeGuaranteed"=dword:0000002e
+"ServiceTypeNetworkControl"=dword:00000038
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Psched\DiffservByteMappingNonConforming]
+"ServiceTypeGuaranteed"=dword:0000002e
+"ServiceTypeNetworkControl"=dword:00000038
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Psched\UserPriorityMapping]
+"ServiceTypeGuaranteed"=dword:00000005
+"ServiceTypeNetworkControl"=dword:00000007
