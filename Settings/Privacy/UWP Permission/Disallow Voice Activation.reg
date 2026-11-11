@@ -1,9 +1,0 @@
-Windows Registry Editor Version 5.00
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\AppPrivacy]
-"LetAppsActivateWithVoice"=dword:00000002
-"LetAppsActivateWithVoiceAboveLock"=dword:00000002
-
-[HKEY_CURRENT_USER\Software\Policies\Microsoft\Windows\AppPrivacy]
-"LetAppsActivateWithVoice"=dword:00000002
-"LetAppsActivateWithVoiceAboveLock"=dword:00000002

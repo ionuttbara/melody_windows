@@ -1,9 +1,0 @@
-Windows Registry Editor Version 5.00
-
-;Windows Store AutoUpdating Apps
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PolicyManager\default\ApplicationManagement\AllowAppStoreAutoUpdate]
-"value"=dword:00000002
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsStore]
-"AutoDownload"=dword:00000002

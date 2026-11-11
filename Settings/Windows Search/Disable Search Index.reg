@@ -1,9 +1,0 @@
-Windows Registry Editor Version 5.00
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
-"PreventIndexOnBattery"=dword:00000001
-"PreventIndex"=dword:00000001
-"DisableRemovableDriveIndexing"=dword:00000001
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\SearchCompanion]
-"DisableContentFileUpdate"=dword:00000001

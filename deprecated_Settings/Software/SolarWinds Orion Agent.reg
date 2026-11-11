@@ -1,5 +1,0 @@
-Windows Registry Editor Version 5.00
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\SolarWinds\Agent]
-"AutoUpgrade"="False"
-"LogginEnable"="False"

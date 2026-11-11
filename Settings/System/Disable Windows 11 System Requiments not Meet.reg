@@ -1,6 +1,0 @@
-Windows Registry Editor Version 5.00
-
-[HKEY_CURRENT_USER\Control Panel\UnsupportedHardwareNotificationCache]
-"SV3"=dword:00000000
-"SV2"=dword:00000000
-"SV1"=dword:00000000

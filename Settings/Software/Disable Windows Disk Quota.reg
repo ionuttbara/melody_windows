@@ -1,7 +1,0 @@
-Windows Registry Editor Version 5.00
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows NT\DiskQuota]
-"Enforce"=dword:00000000
-"Enable"=dword:00000000
-"LogEventOverLimit"=dword:00000000
-"LogEventOverThreshold"=dword:00000000

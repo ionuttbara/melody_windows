@@ -1,7 +1,0 @@
-Windows Registry Editor Version 5.00
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ClickToRun\OverRide]
-"DisableLogManagement"=dword:00000001
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\ClickToRun\Configuration]
-"TimerInterval"="900000"

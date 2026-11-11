@@ -1,9 +1,0 @@
-Windows Registry Editor Version 5.00
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\iSCSI]
-"ChangeIQNName"=dword:00000001
-"RestrictAdditionalLogins"=dword:00000001
-"ChangeCHAPSecret"=dword:00000001
-"RequireIPSec"=dword:00000001
-"RequireMutualCHAP"=dword:00000001
-"RequireOneWayCHAP"=dword:00000001

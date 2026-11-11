@@ -1,7 +1,0 @@
-Windows Registry Editor Version 5.00
-
-;KMS Telemetry
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows NT\CurrentVersion\Software Protection Platform]
-"NoGenTicket"=dword:00000001
-"AllowWindowsEntitlementReactivation"=dword:00000000

@@ -1,7 +1,0 @@
-Windows Registry Editor Version 5.00
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Video\{DEB039CC-B704-4F53-B43E-9DD4432FA2E9}\0000]
-"PerfLevelSrc"=dword:00003322
-"PowerMizerEnable"=dword:00000001
-"PowermizerLevel"=dword:00000001
-"PowermizerLevelAC"=dword:00000001

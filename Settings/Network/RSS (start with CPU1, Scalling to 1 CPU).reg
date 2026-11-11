@@ -1,5 +1,0 @@
-Windows Registry Editor Version 5.00
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\services\NDIS\Parameters]
-"RssBaseCpu"=dword:00000000
-"MaxNumRssCpus"=dword:00000001

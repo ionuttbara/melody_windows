@@ -1,7 +1,0 @@
-Windows Registry Editor Version 5.00
-
-[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ZTDNS]
-
-[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\CSC]
-
-[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\AppvVemgr]

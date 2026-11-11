@@ -1,8 +1,0 @@
-Windows Registry Editor Version 5.00
-
-;BITS
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\BITS]
-"EnablePeercaching"=dword:00000000
-"DisablePeerCachingClient"=dword:00000001
-"DisablePeerCachingServer"=dword:00000001

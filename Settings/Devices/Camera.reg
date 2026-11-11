@@ -1,4 +1,0 @@
-Windows Registry Editor Version 5.00
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OEM\Device\Capture]
-"NoPhysicalCameraLED"=dword:00000001

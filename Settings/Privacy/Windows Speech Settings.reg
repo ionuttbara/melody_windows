@@ -1,7 +1,0 @@
-Windows Registry Editor Version 5.00
-
-[HKEY_CURRENT_USER\Software\Microsoft\Speech_OneCore\Settings\OnlineSpeechPrivacy]
-"HasAccepted"=dword:00000001
-
-[HKEY_CURRENT_USER\Software\Microsoft\Speech_OneCore\Preferences]
-"VoiceActivationOn"=dword:0000000
